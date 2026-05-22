@@ -85,6 +85,23 @@
 		});
 	}
 
+	/* About Case Poster Slider JS */
+	if ($('.about-case-poster-slider').length) {
+		const about_case_poster_slider = new Swiper('.about-case-poster-slider .swiper', {
+			slidesPerView: 1,
+			speed: 900,
+			spaceBetween: 20,
+			loop: true,
+			autoplay: {
+				delay: 3500,
+			},
+			pagination: {
+				el: '.about-case-poster-pagination',
+				clickable: true,
+			},
+		});
+	}
+
 	/* Skill Bar */
 	if ($('.skills-progress-bar').length) {
 		$('.skills-progress-bar').waypoint(function() {

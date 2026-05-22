@@ -1214,6 +1214,43 @@ header.main-header .header-sticky.active{
 	margin-top: 40px;
 }
 
+.about-case-poster-slider{
+	margin-top: 30px;
+	padding-bottom: 28px;
+	overflow: hidden;
+}
+
+.about-case-poster-slider .swiper-slide{
+	background: var(--white-color);
+	border-radius: 18px;
+	overflow: hidden;
+}
+
+.about-case-poster-slider img{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / 0.72;
+	object-fit: cover;
+	border-radius: 18px;
+}
+
+.about-case-poster-pagination{
+	position: relative;
+	margin-top: 18px;
+	text-align: center;
+}
+
+.about-case-poster-pagination .swiper-pagination-bullet{
+	width: 12px;
+	height: 12px;
+	background: var(--accent-color);
+	opacity: 0.35;
+}
+
+.about-case-poster-pagination .swiper-pagination-bullet-active{
+	opacity: 1;
+}
+
 .about-contact-box{
 	display: flex;
 	align-items: center;
@@ -6580,6 +6617,18 @@ header.main-header .header-sticky.active{
         }
         .custom-result-card .transformation-image {
             margin-bottom: 25px; /* Chobir nicher faka jayga */
+        }
+        .custom-result-card .transformation-image::before {
+            display: none;
+        }
+        .custom-result-card .transformation-image figure.result-poster-image {
+            width: 100%;
+        }
+        .custom-result-card .transformation-image figure.result-poster-image img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-right: 0;
         }
         .custom-result-card h3.graft-title {
             font-size: 26px;
