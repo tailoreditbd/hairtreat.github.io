@@ -1567,6 +1567,91 @@ header.main-header .header-sticky.active{
 	color: inherit;
 }
 
+.treatment-case-card{
+	background: var(--white-color);
+	border: 1px solid var(--divider-color);
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 30px);
+	overflow: hidden;
+}
+
+.treatment-case-card .case-study-image,
+.treatment-case-card .case-study-image a,
+.treatment-case-card .case-study-image figure{
+	position: relative;
+	width: 100%;
+}
+
+.treatment-case-card .case-study-image figure::before{
+	display: none !important;
+}
+
+.treatment-case-card .case-study-image img{
+	aspect-ratio: 1 / 0.66 !important;
+	border-radius: 12px 12px 0 0;
+	object-fit: cover;
+}
+
+.treatment-case-card .case-study-body{
+	position: static !important;
+	left: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 22px 24px 24px;
+	background: var(--white-color);
+	z-index: 1;
+}
+
+.treatment-case-card .case-study-item-content{
+	width: 100% !important;
+}
+
+.treatment-case-card .case-study-item-content h3{
+	color: var(--primary-color);
+	font-size: 20px;
+	line-height: 1.25em;
+	margin-bottom: 12px;
+}
+
+.treatment-case-card .case-study-item-content p{
+	color: var(--text-color);
+	font-size: 15px;
+	line-height: 1.55em;
+	margin: 0;
+}
+
+.treatment-case-card .case-study-readmore-btn,
+.treatment-case-card .case-study-readmore-btn .btn-default{
+	width: 100%;
+}
+
+.treatment-case-card .case-study-readmore-btn .btn-default{
+	display: block;
+	justify-content: center;
+	margin-right: 0;
+	text-align: center;
+	border-radius: 8px;
+	padding: 15px 20px;
+	font-size: 15px;
+}
+
+.treatment-case-card .case-study-readmore-btn .btn-default::before,
+.treatment-case-card .case-study-readmore-btn .btn-default::after{
+	display: none;
+}
+
+.treatment-case-card .no-link-treatment{
+	cursor: default;
+	pointer-events: none;
+}
+
 /************************************/
 /***     10. Why Choose Us css	  ***/
 /************************************/
