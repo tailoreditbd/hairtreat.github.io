@@ -1924,6 +1924,7 @@ header.main-header .header-sticky.active{
 .why-choose-image figure{
 	display: block;
 	border-radius: 30px;
+	overflow: hidden;
 }
 
 .why-choose-image img{
