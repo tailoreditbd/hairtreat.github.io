@@ -1360,6 +1360,44 @@ header.main-header .header-sticky.active{
 	transform: scale(1.1)
 }
 
+.our-services .service-item{
+	display: flex;
+	flex-direction: column;
+}
+
+.our-services .service-content{
+	flex: 1;
+}
+
+.our-services .service-content-title h2{
+	width: 100%;
+}
+
+.our-services .service-image{
+	margin-top: auto;
+}
+
+.our-services .service-image .service-image-frame{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 190px;
+	min-height: 190px;
+	background: var(--primary-color);
+	border: 1px solid var(--divider-color);
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.our-services .service-image img{
+	width: auto;
+	max-width: 82px;
+	height: 82px;
+	aspect-ratio: auto;
+	object-fit: contain;
+	border-radius: 0;
+}
+
 .section-footer-text{
 	margin-top: 30px;
 	text-align: center;
