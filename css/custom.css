@@ -2442,12 +2442,57 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-blog{
-	padding: 100px 0 70px;
+	padding: 50px 0 70px;
 }
 
 .post-item{
 	height: calc(100% - 30px);
 	margin-bottom: 30px;
+}
+
+.blog-result-slider{
+	max-width: 1240px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.blog-result-slider .swiper-slide{
+	height: auto;
+}
+
+.blog-result-slider .post-item{
+	height: 100%;
+}
+
+.blog-result-slider .post-item-body{
+	display: block;
+}
+
+.blog-result-slider .post-item-content{
+	width: 100%;
+}
+
+.blog-result-pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 30px;
+}
+
+.blog-result-pagination .swiper-pagination-bullet{
+	width: 10px;
+	height: 10px;
+	margin: 0 !important;
+	background: var(--accent-color);
+	opacity: 0.25;
+	transition: all 0.3s ease-in-out;
+}
+
+.blog-result-pagination .swiper-pagination-bullet-active{
+	width: 30px;
+	border-radius: 10px;
+	opacity: 1;
 }
 
 .post-featured-image{
@@ -2457,7 +2502,7 @@ header.main-header .header-sticky.active{
 .post-featured-image a{
     cursor: none;	
     display: block;
-	border-radius: 30px;
+	border-radius: 18px;
     overflow: hidden;
 }
 
@@ -2471,8 +2516,35 @@ header.main-header .header-sticky.active{
     transition: all 0.5s ease-in-out;
 }
 
-.post-item:hover .post-featured-image img{
-	transform: scale(1.1);
+.post-featured-image .post-result-images{
+	display: flex;
+	align-items: stretch;
+	gap: 10px;
+	width: 100%;
+	padding: 8px;
+	background: var(--secondary-color);
+	overflow: hidden;
+}
+
+.post-featured-image .post-result-images a{
+	display: block;
+	flex: 0 0 calc(50% - 5px);
+	width: calc(50% - 5px) !important;
+	max-width: calc(50% - 5px);
+	border-radius: 12px;
+}
+
+.post-featured-image .post-result-images img{
+	display: block;
+	width: 100%;
+	height: 265px;
+	aspect-ratio: auto;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.blog-result-slider .post-item:hover .post-featured-image img{
+	transform: none;
 }
 
 .post-item-body{
@@ -2495,6 +2567,15 @@ header.main-header .header-sticky.active{
 .post-item-content h2 a{
 	display: inline-block;
     color: inherit;
+}
+
+.post-result-procedure{
+	display: block;
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.35em;
+	color: var(--accent-color);
 }
 
 /************************************/
@@ -5373,6 +5454,10 @@ header.main-header .header-sticky.active{
 		border-radius: 20px;
 	}
 
+	.post-featured-image .post-result-images img{
+		height: 220px;
+	}
+
 	.post-item-content h2{
 		font-size: 20px;
 	}
@@ -6233,6 +6318,14 @@ header.main-header .header-sticky.active{
 
 	.intro-more-video-content strong{
 		font-size: 13px;
+	}
+
+	.blog-result-slider{
+		max-width: 420px;
+	}
+
+	.post-featured-image .post-result-images img{
+		height: 180px;
 	}
 
 	.why-choose-images{

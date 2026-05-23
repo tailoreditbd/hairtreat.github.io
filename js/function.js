@@ -102,6 +102,60 @@
 		});
 	}
 
+	/* HairTreat Result Slider JS */
+	if ($('.blog-result-slider').length) {
+		const blog_result_slider = new Swiper('.blog-result-slider .swiper', {
+			slidesPerView: 1,
+			speed: 900,
+			spaceBetween: 24,
+			loop: true,
+			grabCursor: true,
+			autoplay: {
+				delay: 3500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.blog-result-pagination',
+				clickable: true,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				},
+			},
+		});
+
+		$('.blog-result-slider').on('click', '.result-lightbox', function(event) {
+			event.preventDefault();
+
+			const currentSrc = $(this).attr('href');
+			const $galleryItems = $('.blog-result-slider .swiper-slide:not(.swiper-slide-duplicate) .result-lightbox');
+			const items = $galleryItems.map(function() {
+				return {
+					src: $(this).attr('href'),
+					title: $(this).attr('title'),
+					type: 'image'
+				};
+			}).get();
+			const selectedIndex = Math.max(0, items.findIndex(function(item) {
+				return item.src === currentSrc;
+			}));
+
+			$.magnificPopup.open({
+				items: items,
+				type: 'image',
+				closeBtnInside: false,
+				mainClass: 'mfp-with-zoom',
+				gallery: {
+					enabled: true
+				},
+				image: {
+					verticalFit: true
+				}
+			}, selectedIndex);
+		});
+	}
+
 	/* Skill Bar */
 	if ($('.skills-progress-bar').length) {
 		$('.skills-progress-bar').waypoint(function() {
