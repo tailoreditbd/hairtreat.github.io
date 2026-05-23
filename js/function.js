@@ -4,6 +4,52 @@
 	var $window = $(window); 
 	var $body = $('body'); 
 
+	/* Shared HairTreat Header and Footer Content */
+	$('.navbar-brand img').attr({
+		src: 'images/hairtreat-logo.png',
+		alt: 'HairTreat'
+	});
+
+	$('.footer-logo img').attr({
+		src: 'images/hairtreat-logo.png',
+		alt: 'HairTreat'
+	});
+
+	$('.about-footer-content p').text('Our facility comprises advanced technological machines and equipment that help us find an adequate solution for your hair loss problem with a successful minimally invasive surgical process.');
+	$('.footer-social-links .fa-facebook-f').closest('a').attr('href', 'https://www.facebook.com/hairtreat');
+
+	$('.footer-links.quick-links ul').html(
+		'<li><a href="index.html">Home</a></li>' +
+		'<li><a href="services.html">Treatments</a></li>' +
+		'<li><a href="contact.html">Hours &amp; Locations</a></li>' +
+		'<li><a href="case-study.html">Case studies</a></li>' +
+		'<li><a href="blog.html">Happenings</a></li>' +
+		'<li><a href="about.html">About us</a></li>'
+	);
+
+	$('.footer-links-box .footer-links').not('.quick-links').first().html(
+		'<h3>Useful Treatments</h3>' +
+		'<ul>' +
+		'<li><a href="service-single.html">Hair Transplant</a></li>' +
+		'<li><a href="service-single.html">Hair Treatment</a></li>' +
+		'<li><a href="service-single.html">Hair PRP</a></li>' +
+		'<li><a href="service-single.html">Female Hair Transplant</a></li>' +
+		'<li><a href="service-single.html">GFC PRP</a></li>' +
+		'<li><a href="service-single.html">P Shot</a></li>' +
+		'</ul>'
+	);
+
+	$('.footer-contact-box .footer-contact-item').eq(0).find('ul').html(
+		'<li><i class="fa-solid fa-phone"></i><a href="tel:+8801805002681">+8801805002681</a>, <a href="tel:+8801805002682">01805002682</a></li>'
+	);
+	$('.footer-contact-box .footer-contact-item').eq(1).find('ul').html(
+		'<li><i class="fa-solid fa-envelope"></i><a href="mailto:hairtreatclinic@gmail.com">hairtreatclinic@gmail.com</a></li>'
+	);
+	$('.footer-contact-box .footer-contact-item').eq(2).find('h3').text('Contact Address:');
+	$('.footer-contact-box .footer-contact-item').eq(2).find('ul').html(
+		'<li><i class="fa-solid fa-location-dot"></i>HairTreat, Lift:4 1/B, Garib E Newaz Avenue, Sector:11 Uttara, Dhaka, Bangladesh</li>'
+	);
+
 	/* Preloader Effect */
 	$window.on('load', function(){
 		$(".preloader").fadeOut(600);
