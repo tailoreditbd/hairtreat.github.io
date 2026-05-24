@@ -1061,6 +1061,17 @@ header.main-header .header-sticky.active{
     max-width: initial;
 }
 
+.hero-image .hairtreat-hero-banner{
+	display: block;
+	width: 100%;
+	height: 520px;
+	max-width: 100%;
+	margin: 0;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 30px;
+}
+
 /************************************/
 /***       05. About Us css	      ***/
 /************************************/
@@ -5022,6 +5033,11 @@ header.main-header .header-sticky.active{
 		margin-top: -40px;
 		max-width: 100%;
 	}
+
+	.hero-image .hairtreat-hero-banner{
+		height: 450px;
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 991px){
@@ -5147,6 +5163,11 @@ header.main-header .header-sticky.active{
 		margin-bottom: -50px;
 		margin-top: 0px;
 		max-width: 100%;
+	}
+
+	.hero-image .hairtreat-hero-banner{
+		height: 340px;
+		margin: 0;
 	}
 
 	.about-us{
