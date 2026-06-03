@@ -394,6 +394,200 @@ body{
 	margin: 0 auto;
 }
 
+.services-treatment-heading .section-title{
+	margin-bottom: 0;
+}
+
+.services-treatment-heading .section-title h2{
+	font-family: var(--default-font);
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 1.15em;
+	color: var(--primary-color);
+	text-transform: none;
+}
+
+.services-treatment-heading-content{
+	max-width: 620px;
+	margin-left: auto;
+}
+
+.services-treatment-heading-content p{
+	font-size: 20px;
+	line-height: 1.45em;
+	color: var(--primary-color);
+	margin-bottom: 22px;
+}
+
+.services-treatment-heading-content p:last-child{
+	margin-bottom: 0;
+}
+
+.services-treatment-heading-content .services-treatment-lead{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.25em;
+}
+
+.available-treatments-section{
+	padding: 100px 0 70px;
+	background: var(--white-color);
+}
+
+.available-treatments-title h2{
+	font-family: var(--default-font);
+	font-size: 58px;
+	font-weight: 600;
+	line-height: 1.12em;
+	color: var(--primary-color);
+	margin-bottom: 0;
+	max-width: 640px;
+}
+
+.available-treatments-content{
+	max-width: 680px;
+	margin-left: auto;
+}
+
+.available-treatments-content h3{
+	font-family: var(--default-font);
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.25em;
+	color: var(--primary-color);
+	margin-bottom: 28px;
+}
+
+.available-treatments-content p{
+	font-size: 22px;
+	line-height: 1.35em;
+	color: var(--primary-color);
+	margin-bottom: 0;
+}
+
+.available-treatment-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;
+	margin-top: 70px;
+}
+
+.available-treatment-card{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 18px;
+	padding: 16px 16px 20px;
+	background: var(--white-color);
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.available-treatment-card figure{
+	display: block;
+	margin-bottom: 24px;
+	border-radius: 12px;
+	overflow: hidden;
+	aspect-ratio: 406 / 269;
+}
+
+.available-treatment-card figure img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.available-treatment-card-content{
+	padding: 0 12px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.available-treatment-card-content h3{
+	font-family: var(--default-font);
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.2em;
+	color: var(--primary-color);
+	margin-bottom: 22px;
+}
+
+.available-treatment-card-content p{
+	font-size: 22px;
+	line-height: 1.25em;
+	color: var(--primary-color);
+	margin-bottom: 34px;
+}
+
+.available-treatment-card-content .btn-default{
+	margin-top: auto;
+	width: 100%;
+	justify-content: center;
+	background: var(--accent-color);
+	border-radius: 8px;
+}
+
+.available-treatments-section .section-title.available-treatments-title{
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.available-treatments-section .section-title.available-treatments-title h2{
+	margin-bottom: 25px;
+}
+
+.available-treatments-section .section-title.available-treatments-title h3{
+	font-family: var(--default-font);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.25em;
+	color: var(--primary-color);
+	margin-bottom: 22px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+.available-treatments-section .service-item.available-treatment-card{
+	background: var(--white-color);
+}
+
+.available-treatments-section .available-treatment-card .service-content{
+	margin-bottom: 25px;
+}
+
+.available-treatments-section .available-treatment-card .service-image{
+	margin-top: auto;
+	margin-bottom: 24px;
+}
+
+.available-treatments-section .available-treatment-card .service-image .service-image-frame{
+	height: auto;
+	padding: 0;
+	background: transparent;
+	aspect-ratio: 406 / 269;
+	border-radius: 12px;
+	overflow: hidden;
+	display: block;
+}
+
+.available-treatments-section .available-treatment-card .service-image figure,
+.available-treatments-section .available-treatment-card .service-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.available-treatments-section .available-treatment-card .service-image img{
+	max-width: none;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.available-treatments-section .available-treatment-card .available-treatment-btn{
+	width: 100%;
+	justify-content: center;
+	border-radius: 8px;
+}
+
 .section-title{
 	margin-bottom: 40px;
 }
@@ -1888,6 +2082,16 @@ header.main-header .header-sticky.active{
 .treatment-case-card .no-link-treatment{
 	cursor: default;
 	pointer-events: none;
+}
+
+.treatment-case-card.treatment-image-only{
+	padding: 0;
+	overflow: hidden;
+}
+
+.treatment-case-card.treatment-image-only .case-study-image img{
+	aspect-ratio: 406 / 269 !important;
+	border-radius: 12px;
 }
 
 /************************************/
@@ -5119,6 +5323,53 @@ header.main-header .header-sticky.active{
 		font-size: 38px;
 	}
 
+	.services-treatment-heading .section-title h2{
+		font-size: 42px;
+	}
+
+	.available-treatments-section{
+		padding: 70px 0 50px;
+	}
+
+	.available-treatments-title h2{
+		font-size: 42px;
+	}
+
+	.available-treatments-content{
+		max-width: 100%;
+		margin-left: 0;
+		margin-top: 25px;
+	}
+
+	.available-treatments-content h3{
+		font-size: 28px;
+	}
+
+	.available-treatment-grid{
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		margin-top: 45px;
+	}
+
+	.available-treatment-card-content h3{
+		font-size: 28px;
+	}
+
+	.available-treatment-card-content p,
+	.available-treatments-content p{
+		font-size: 18px;
+	}
+
+	.services-treatment-heading-content{
+		max-width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.services-treatment-heading-content .services-treatment-lead{
+		font-size: 24px;
+	}
+
 	.section-title p{
 		margin-top: 15px;
 	}
@@ -5744,6 +5995,34 @@ header.main-header .header-sticky.active{
 
 	.page-services{
 		padding: 50px 0 20px;
+	}
+
+	.available-treatments-section{
+		padding: 50px 0 30px;
+	}
+
+	.available-treatments-title h2{
+		font-size: 34px;
+	}
+
+	.available-treatments-content h3{
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
+
+	.available-treatment-grid{
+		grid-template-columns: 1fr;
+		gap: 25px;
+		margin-top: 35px;
+	}
+
+	.available-treatment-card-content h3{
+		font-size: 26px;
+		margin-bottom: 14px;
+	}
+
+	.available-treatment-card-content p{
+		margin-bottom: 24px;
 	}
 
 	.page-service-single{
