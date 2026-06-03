@@ -2904,6 +2904,12 @@ header.main-header .header-sticky.active{
 	padding: 130px 0;
 }
 
+.page-header.page-header-treatment-image{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-treatments-header.png');
+	background-size: cover;
+	background-position: center center;
+}
+
 .page-header-box{
 	text-align: center;
 }
