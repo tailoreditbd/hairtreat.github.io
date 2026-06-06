@@ -7847,7 +7847,7 @@ header.main-header .header-sticky.active{
     gap: 15px; /* Chobi ar namer majhe ekta chotto space (proyojon onujayi change korte paren) */
 }
 .page-header{
- background-image: url('images/breadcrumb img/IMG_8597-1-2.png');
+ background-image: url('images/IMG_8597-1-2.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -7855,5 +7855,4 @@ header.main-header .header-sticky.active{
     display: flex;
     align-items: center;
 }
-
 
