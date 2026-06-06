@@ -3125,6 +3125,18 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 }
 
+.page-header.page-header-contact-image{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-contact-header.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.page-header.page-header-blog-image{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-blog-header.png');
+	background-size: cover;
+	background-position: center center;
+}
+
 .page-header.page-header-about-image{
 	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-about-header.png');
 	background-size: cover;
