@@ -7827,3 +7827,22 @@ header.main-header .header-sticky.active{
 		font-size: 16px;
 	}
 }
+/* Card take ekta vertical flex container banano hocche */
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Row er shobcheye lomba card er shoman height ensure korbe */
+}
+
+/* Text content div jeno extra space tuku niye ney */
+.testimonial-item-content {
+    flex-grow: 1; 
+}
+
+/* Author section take ekdom niche push korar jonno */
+.testimonial-author {
+    margin-top: auto; 
+    display: flex; 
+    align-items: center; /* Chobi ar text jeno vertically majhabarabor thake */
+    gap: 15px; /* Chobi ar namer majhe ekta chotto space (proyojon onujayi change korte paren) */
+}
