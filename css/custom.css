@@ -3176,6 +3176,12 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 }
 
+.page-header.page-header-about-image{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-about-header.png');
+	background-size: cover;
+	background-position: center center;
+}
+
 .page-header-box{
 	text-align: center;
 }
@@ -4966,6 +4972,17 @@ header.main-header .header-sticky.active{
 
 .page-testimonials .testimonial-item .testimonial-author .author-content h3{
 	color: var(--primary-color);
+}
+
+.page-testimonials .testimonial-author .author-image img{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+}
+
+.page-testimonials .testimonial-author .author-content p.review-stars{
+	color: #ffc400;
+	letter-spacing: 1px;
 }
 
 /************************************/
