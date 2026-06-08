@@ -3149,6 +3149,12 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 }
 
+.page-header.page-header-pricing-image{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-hours-location-header.png');
+	background-size: cover;
+	background-position: center center;
+}
+
 .page-header-box{
 	text-align: center;
 }
