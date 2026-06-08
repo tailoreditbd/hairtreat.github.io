@@ -4643,7 +4643,7 @@ header.main-header .header-sticky.active{
 }
 
 .hair-prp-glow-up-section{
-	padding: 0 0 100px;
+	padding: 0 0 30px;
 }
 
 .hair-prp-glow-up-section .glow-up-box{
@@ -4657,15 +4657,41 @@ header.main-header .header-sticky.active{
 }
 
 .hair-prp-glow-up-section .glow-up-content ul{
-	padding-left: 20px;
+	padding-left: 0;
+	list-style: none;
 }
 
 .hair-prp-glow-up-section .glow-up-content ul li{
+	position: relative;
 	margin-bottom: 10px;
+	padding-left: 46px;
+	min-height: 28px;
+	display: flex;
+	align-items: center;
 }
 
 .hair-prp-glow-up-section .glow-up-content ul li:last-child{
 	margin-bottom: 0;
+}
+
+.hair-prp-glow-up-section .glow-up-content ul li::before{
+	content: "\f00c";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--accent-color);
+	border-radius: 5px;
+	color: var(--white-color);
+	font-family: "Font Awesome 6 Free";
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 1;
+	transform: translateY(-50%);
 }
 
 .glow-up-image,
