@@ -3114,7 +3114,7 @@ header.main-header .header-sticky.active{
 }
 
 .page-header.page-header-treatment-image{
-	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-treatments-header.png');
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/treatment-services/hair-prp-revitalize.jpeg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -3943,6 +3943,10 @@ header.main-header .header-sticky.active{
 	aspect-ratio: 1 / 0.598;
 	object-fit: cover;
 	border-radius: 30px;
+}
+
+.hair-prp-page-service .page-single-faqs{
+	margin-bottom: 60px;
 }
 
 .service-entry{
