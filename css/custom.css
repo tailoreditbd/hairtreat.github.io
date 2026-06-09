@@ -4002,6 +4002,38 @@ header.main-header .header-sticky.active{
 	margin-bottom: 60px;
 }
 
+.laser-assessment-entry{
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin: 0 0 60px;
+}
+
+.post-entry blockquote.laser-assessment-quote{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 0;
+}
+
+.post-entry blockquote.laser-assessment-quote p{
+	margin-bottom: 0;
+}
+
+.laser-assessment-link{
+	flex: 0 0 auto;
+	color: var(--white-color) !important;
+	font-family: var(--default-font);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none !important;
+	text-transform: capitalize;
+	background-color: var(--accent-color);
+	border-radius: 100px;
+	padding: 16px 24px;
+}
+
 .service-entry{
 	margin-bottom: 60px;
 }
@@ -7834,6 +7866,23 @@ header.main-header .header-sticky.active{
 
 .services-faq-content .faq-accordion .accordion-item .accordion-body p:last-child{
 	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px){
+	.post-entry blockquote.laser-assessment-quote{
+		display: block;
+	}
+
+	.post-entry blockquote.laser-assessment-quote p{
+		margin-bottom: 18px;
+	}
+
+	.laser-assessment-link{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		padding: 14px 18px;
+	}
 }
 
 @media only screen and (max-width: 991px){
