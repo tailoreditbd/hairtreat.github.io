@@ -1089,6 +1089,18 @@ header.main-header .header-sticky.active{
 	max-width: 640px;
 }
 
+.hero.hero-home-banner .section-title h1{
+	max-width: 560px;
+	font-size: 52px;
+	line-height: 1.08;
+}
+
+.hero.hero-home-banner .section-title p{
+	max-width: 560px;
+	font-size: 17px;
+	line-height: 1.5;
+}
+
 .hero.hero-bg-image{
 	position: relative;
 	background: url('../images/hero-bg.jpg') no-repeat;
@@ -5577,6 +5589,16 @@ header.main-header .header-sticky.active{
 		height: 100%;
 		min-height: 450px;
 		margin: 0;
+	}
+
+	.hero.hero-home-banner .section-title h1{
+		max-width: 520px;
+		font-size: 46px;
+	}
+
+	.hero.hero-home-banner .section-title p{
+		max-width: 520px;
+		font-size: 16px;
 	}
 }
 
