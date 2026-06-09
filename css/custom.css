@@ -4040,20 +4040,20 @@ header.main-header .header-sticky.active{
 
 .p-shot-page-service .pricing-card-section{
 	padding-top: 80px;
-	padding-bottom: 70px;
-	margin-bottom: 40px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .p-shot-page-service .page-single-faqs{
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 .p-shot-page-service .service-single-content{
-	padding-bottom: 140px;
+	padding-bottom: 40px;
 }
 
 .p-shot-page-service{
-	padding-bottom: 140px;
+	padding-bottom: 40px;
 }
 
 .p-shot-page-service .page-single-sidebar{
