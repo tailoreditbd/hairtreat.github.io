@@ -4002,6 +4002,28 @@ header.main-header .header-sticky.active{
 	margin-bottom: 60px;
 }
 
+.p-shot-page-service .pricing-card-section{
+	padding-top: 80px;
+	padding-bottom: 70px;
+	margin-bottom: 40px;
+}
+
+.p-shot-page-service .page-single-faqs{
+	margin-bottom: 60px;
+}
+
+.p-shot-page-service .service-single-content{
+	padding-bottom: 140px;
+}
+
+.p-shot-page-service{
+	padding-bottom: 140px;
+}
+
+.p-shot-page-service .page-single-sidebar{
+	margin-bottom: 60px;
+}
+
 .laser-assessment-entry{
 	border-bottom: 0;
 	padding-bottom: 0;
