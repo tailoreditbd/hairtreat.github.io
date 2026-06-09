@@ -3998,6 +3998,10 @@ header.main-header .header-sticky.active{
 	margin-bottom: 60px;
 }
 
+.gfc-prp-page-service .page-single-faqs{
+	margin-bottom: 60px;
+}
+
 .service-entry{
 	margin-bottom: 60px;
 }
@@ -4341,6 +4345,17 @@ header.main-header .header-sticky.active{
 
 .post-entry blockquote p:last-child{
 	margin-bottom: 0;
+}
+
+.post-entry blockquote.no-quote-icon{
+	background-image: none;
+	padding-left: 30px;
+}
+
+.post-entry blockquote.no-quote-icon a{
+	color: var(--white-color);
+	font-weight: 600;
+	text-decoration: underline;
 }
 
 .tag-links{
@@ -6409,6 +6424,10 @@ header.main-header .header-sticky.active{
         padding: 20px 20px 20px 70px;
         margin-bottom: 20px;
     }
+
+    .post-entry blockquote.no-quote-icon{
+        padding-left: 20px;
+    }
     
     .post-entry blockquote p{
         font-size: 20px;
@@ -7275,6 +7294,10 @@ header.main-header .header-sticky.active{
     .post-entry blockquote{
         background-position: 15px 15px;
         padding: 60px 15px 15px 15px;
+    }
+
+    .post-entry blockquote.no-quote-icon{
+        padding: 15px;
     }
     
     .post-entry blockquote p{
