@@ -4064,6 +4064,16 @@ header.main-header .header-sticky.active{
 	padding-bottom: 40px;
 }
 
+.hair-transplant-treatment-faqs{
+	margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+	.hair-transplant-treatment-faqs{
+		margin-top: 50px;
+	}
+}
+
 .p-shot-page-service{
 	padding-bottom: 40px;
 }
