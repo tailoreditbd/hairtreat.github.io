@@ -3920,6 +3920,15 @@ header.main-header .header-sticky.active{
 	overflow: hidden;
 }
 
+.sidebar-cta-image figure img.sidebar-doctor-fit{
+	aspect-ratio: auto !important;
+	height: auto !important;
+	max-height: 520px;
+	object-fit: contain !important;
+	object-position: center top !important;
+	background: #f7f4ef;
+}
+
 .sidebar-cta-image::before{
     content: '';
     position: absolute;
