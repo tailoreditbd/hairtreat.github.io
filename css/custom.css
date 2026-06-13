@@ -4913,7 +4913,7 @@ header.main-header .header-sticky.active{
 }
 
 .contact-transformative-beauty{
-	padding: 100px 0 0;
+	padding: 30px 0 0;
 }
 
 .contact-real-transformation .case-study-entry{
@@ -5426,13 +5426,17 @@ header.main-header .header-sticky.active{
 }
 
 .conatct-us-form{
-	padding: 50px 0 100px;
+	padding: 50px 0 30px;
 }
 
 .contact-form{
 	background-color: var(--secondary-color);
 	border-radius: 40px 0 0 40px;
 	padding: 40px;
+}
+
+.conatct-us-form .contact-form{
+	border-radius: 40px;
 }
 
 .contact-form form .form-control{
