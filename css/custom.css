@@ -9046,6 +9046,8 @@ header.main-header .header-sticky.active{
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .package-price-box strong {
@@ -9053,6 +9055,7 @@ header.main-header .header-sticky.active{
   font-size: 40px;
   line-height: 1.1em;
   color: var(--primary-color);
+  text-shadow: 0 6px 16px rgba(72, 30, 11, 0.08);
 }
 
 .package-price-box-highlight strong,
@@ -9156,6 +9159,39 @@ header.main-header .header-sticky.active{
 
 .package-offer-list li:hover::after {
   top: 0;
+}
+
+.package-text-accent {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.package-text-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 10px;
+  margin: 0 4px;
+  border-radius: 999px;
+  background: rgba(222, 101, 53, 0.12);
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.package-offer-list li:hover .package-text-accent,
+.package-offer-note:hover .package-text-accent,
+.package-offer-list li:hover .package-text-badge,
+.package-offer-note:hover .package-text-badge {
+  color: var(--white-color);
+}
+
+.package-offer-list li:hover .package-text-badge,
+.package-offer-note:hover .package-text-badge {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .package-offer-note {
