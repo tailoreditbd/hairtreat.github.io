@@ -3167,6 +3167,10 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 }
 
+.page-header.page-header-treatment-image.page-header-gap{
+  margin-bottom: 70px;
+}
+
 .page-header.page-header-hours-location-image{
 	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-hours-location-header.png');
 	background-size: cover;
@@ -6217,6 +6221,10 @@ header.main-header .header-sticky.active{
 		padding: 60px 0;
 	}
 
+	.page-header.page-header-treatment-image.page-header-gap{
+		margin-bottom: 50px;
+	}
+
 	.page-header-box h1{
 		font-size: 45px;
 	}
@@ -7209,6 +7217,10 @@ header.main-header .header-sticky.active{
 		font-size: 30px;
 	}
 
+	.page-header.page-header-treatment-image.page-header-gap{
+		margin-bottom: 40px;
+	}
+
 	.page-header-box ol li.breadcrumb-item{
 		font-size: 14px;
 	}
@@ -8090,13 +8102,17 @@ header.main-header .header-sticky.active{
     gap: 15px; /* Chobi ar namer majhe ekta chotto space (proyojon onujayi change korte paren) */
 }
 .page-header{
- background-image: url('images/IMG_8597-1-2.png');
+	background-image: url('images/IMG_8597-1-2.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 450px;
     display: flex;
     align-items: center;
+}
+
+.page-header.page-header-treatment-image.page-header-gap{
+  margin-bottom: 70px;
 }
 
 .pricing-table-section {
