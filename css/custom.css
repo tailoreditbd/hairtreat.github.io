@@ -9702,7 +9702,43 @@ header.main-header .header-sticky.active{
 	display: none;
 }
 
+.hero.hero-home-banner::before{
+	content: '';
+	display: block;
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 34%, rgba(255, 255, 255, 0.35) 58%, rgba(255, 255, 255, 0) 78%);
+	z-index: 1;
+	pointer-events: none;
+}
+
+.hero.hero-home-banner .hero-content{
+	position: relative;
+	z-index: 2;
+	max-width: 700px;
+	text-align: left;
+}
+
+.hero.hero-home-banner .section-title h3{
+	color: #d35f38;
+}
+
+.hero.hero-home-banner .section-title h1,
+.hero.hero-home-banner .section-title h1 span{
+	color: #2b1b14 !important;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.hero.hero-home-banner .section-title p{
+	color: #4f403a !important;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
 @media (max-width: 767px){
+	.hero.hero-home-banner::before{
+		display: none;
+	}
+
 	.hero.hero-home-banner .hero-btn-text-desktop{
 		display: none;
 	}
