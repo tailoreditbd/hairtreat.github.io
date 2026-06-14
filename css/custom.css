@@ -1062,14 +1062,37 @@ header.main-header .header-sticky.active{
 }
 
 .hero.hero-home-banner{
-	background-image: linear-gradient(rgba(72, 30, 11, 0.62), rgba(72, 30, 11, 0.62)), url('../images/hero/hairtreat-hero-banner.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background: none;
 }
 
 .hero.hero-home-banner::before{
 	display: none;
+}
+
+.hero.hero-home-banner::after{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(rgba(72, 30, 11, 0.62), rgba(72, 30, 11, 0.62)), url('../images/hero/hairtreat-hero-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transform: scale(1);
+	transform-origin: center center;
+	animation: homeBannerZoom 8s ease-out forwards;
+	z-index: 0;
+}
+
+@keyframes homeBannerZoom{
+	from{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	to{
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
 }
 
 .hero.hero-home-banner .row{
@@ -5791,6 +5814,9 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner{
 		min-height: 520px;
 		padding: 120px 0;
+	}
+
+	.hero.hero-home-banner::after{
 		background-size: 100% 100%;
 		background-position: center center;
 		background-repeat: no-repeat;
