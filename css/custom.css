@@ -9397,8 +9397,8 @@ header.main-header .header-sticky.active{
 @media (max-width: 767px) {
   .hero.hero-home-banner {
     min-height: 0;
-    padding: 0 0 50px;
-    background: none;
+    padding: 22px 0 46px;
+    background: var(--secondary-color);
   }
 
   .hero.hero-home-banner::after {
@@ -9407,12 +9407,15 @@ header.main-header .header-sticky.active{
 
   .hero.hero-home-banner .row {
     align-items: center;
+    flex-direction: column;
+    gap: 0;
   }
 
   .hero.hero-home-banner .col-lg-6:first-child {
     order: 2;
     flex: 0 0 100%;
     max-width: 100%;
+    width: 100%;
   }
 
   .hero.hero-home-banner .col-lg-6:last-child {
@@ -9420,48 +9423,123 @@ header.main-header .header-sticky.active{
     order: 1;
     flex: 0 0 100%;
     max-width: 100%;
+    width: 100%;
   }
 
   .hero.hero-home-banner .hero-image {
-    max-width: 100%;
-    margin: 0 auto;
-    background: none;
+    position: relative;
+    width: min(86vw, 390px);
+    max-width: 390px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    align-content: initial;
+    margin: 12px auto 34px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .hero.hero-home-banner .hero-image::after {
+    content: '';
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 72%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    background: #2f7df4;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .hero.hero-home-banner .hero-image::before {
+    content: '';
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 78%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    border: 3px dashed var(--accent-color);
+    border-radius: 50%;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 1;
+    animation: heroCircleRotate 18s linear infinite;
   }
 
   .hero.hero-home-banner .hero-image .hairtreat-hero-banner {
     display: block;
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 68%;
+    height: 68%;
     min-height: 0;
-    object-fit: contain;
-    object-position: center;
-    margin: 0 auto;
+    max-width: none;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0;
+    background: #2f7df4;
+    border-radius: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+  }
+
+  @keyframes heroCircleRotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 
   .hero.hero-home-banner .hero-content {
+    display: block;
+    position: relative;
+    z-index: 2;
+    clear: both;
     max-width: 100%;
-    margin: 20px auto 0;
+    margin: 0 auto;
     text-align: center;
   }
 
   .hero.hero-home-banner .section-title h3 {
+    color: var(--accent-color);
     padding-left: 34px;
+    margin-bottom: 8px;
   }
 
   .hero.hero-home-banner .section-title h1 {
     max-width: 360px;
+    color: var(--primary-color);
     margin-right: auto;
     margin-left: auto;
   }
 
   .hero.hero-home-banner .section-title p {
     max-width: 340px;
+    color: var(--text-color);
     margin-right: auto;
     margin-left: auto;
   }
 
   .hero.hero-home-banner .hero-body {
     justify-content: center;
+  }
+
+  .hero.hero-home-banner .hero-review-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero.hero-home-banner .hero-review-box ul {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
