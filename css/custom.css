@@ -9395,6 +9395,77 @@ header.main-header .header-sticky.active{
 }
 
 @media (max-width: 767px) {
+  .hero.hero-home-banner {
+    min-height: 0;
+    padding: 0 0 50px;
+    background: none;
+  }
+
+  .hero.hero-home-banner::after {
+    display: none;
+  }
+
+  .hero.hero-home-banner .row {
+    align-items: center;
+  }
+
+  .hero.hero-home-banner .col-lg-6:first-child {
+    order: 2;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .hero.hero-home-banner .col-lg-6:last-child {
+    display: block;
+    order: 1;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .hero.hero-home-banner .hero-image {
+    max-width: 100%;
+    margin: 0 auto;
+    background: none;
+  }
+
+  .hero.hero-home-banner .hero-image .hairtreat-hero-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+  }
+
+  .hero.hero-home-banner .hero-content {
+    max-width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .hero.hero-home-banner .section-title h3 {
+    padding-left: 34px;
+  }
+
+  .hero.hero-home-banner .section-title h1 {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero.hero-home-banner .section-title p {
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero.hero-home-banner .hero-body {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
   .tpoffcanvas {
     width: 300px;
     padding: 40px 35px;
