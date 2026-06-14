@@ -9344,3 +9344,98 @@ header.main-header .header-sticky.active{
     font-size: 36px;
   }
 }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .hero.hero-home-banner {
+    padding: 110px 0 70px;
+    background-position: center center;
+  }
+
+  .hero.hero-home-banner .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero.hero-home-banner .section-title h1 {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0 auto;
+  }
+
+  .hero.hero-home-banner .section-title p {
+    max-width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .hero.hero-home-banner .hero-body {
+    justify-content: center;
+    gap: 16px 24px;
+  }
+
+  .hero.hero-home-banner .hero-review-box {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hero.hero-home-banner {
+    padding: 95px 0 55px;
+    background-position: center center;
+  }
+
+  .hero.hero-home-banner .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero.hero-home-banner .section-title h3 {
+    font-size: 14px;
+  }
+
+  .hero.hero-home-banner .section-title h1 {
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .hero.hero-home-banner .section-title p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero.hero-home-banner .hero-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hero.hero-home-banner .hero-btn,
+  .hero.hero-home-banner .video-play-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero.hero-home-banner .btn-default {
+    margin-right: 0;
+  }
+
+  .hero.hero-home-banner .hero-review-box {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  .hero.hero-home-banner .hero-review-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+  }
+
+  .hero.hero-home-banner .hero-review-box ul li {
+    margin-right: 0;
+  }
+}
