@@ -5782,6 +5782,14 @@ header.main-header .header-sticky.active{
 		bottom: 30px;
 	}
 
+	.hero.hero-home-banner{
+		min-height: 520px;
+		padding: 120px 0;
+		background-color: #000;
+		background-size: contain;
+		background-position: center center;
+	}
+
 	.hero-content{
 		margin-bottom: 30px;
 	}
