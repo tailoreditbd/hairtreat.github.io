@@ -9693,3 +9693,21 @@ header.main-header .header-sticky.active{
     color: #ffffff;
   }
 }
+
+.hero.hero-home-banner .hero-btn-text-desktop{
+	display: inline;
+}
+
+.hero.hero-home-banner .hero-btn-text-mobile{
+	display: none;
+}
+
+@media (max-width: 767px){
+	.hero.hero-home-banner .hero-btn-text-desktop{
+		display: none;
+	}
+
+	.hero.hero-home-banner .hero-btn-text-mobile{
+		display: inline;
+	}
+}
