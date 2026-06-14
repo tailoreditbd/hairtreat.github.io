@@ -1090,9 +1090,14 @@ header.main-header .header-sticky.active{
 }
 
 .hero.hero-home-banner .section-title h1{
-	max-width: 560px;
+	max-width: 680px;
+	font-family: 'Playfair Display', serif;
 	font-size: 52px;
-	line-height: 1.08;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 1.1;
+	letter-spacing: 1px;
+	color: #ffffff;
 }
 
 .hero.hero-home-banner .section-title p{
@@ -5619,8 +5624,9 @@ header.main-header .header-sticky.active{
 	}
 
 	.hero.hero-home-banner .section-title h1{
-		max-width: 520px;
-		font-size: 46px;
+		max-width: 620px;
+		font-size: 38px;
+		line-height: 1.12;
 	}
 
 	.hero.hero-home-banner .section-title p{
@@ -5785,8 +5791,7 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner{
 		min-height: 520px;
 		padding: 120px 0;
-		background-color: #000;
-		background-size: contain;
+		background-size: cover;
 		background-position: center center;
 	}
 
@@ -9350,5 +9355,13 @@ header.main-header .header-sticky.active{
 
   .pricing-amount {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero.hero-home-banner .section-title h1 {
+    font-size: 30px;
+    line-height: 1.15;
+    margin-bottom: 22px !important;
   }
 }
