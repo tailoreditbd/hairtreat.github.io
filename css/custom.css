@@ -9367,3 +9367,17 @@ header.main-header .header-sticky.active{
     margin-bottom: 22px !important;
   }
 }
+
+@media (max-width: 767px) {
+  .tpoffcanvas {
+    width: 300px;
+    padding: 40px 35px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tpoffcanvas {
+    width: 400px;
+    padding: 40px;
+  }
+}
