@@ -1077,7 +1077,7 @@ header.main-header .header-sticky.active{
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: linear-gradient(rgba(72, 30, 11, 0.62), rgba(72, 30, 11, 0.62)), url('../images/hero/hairtreat-hero-banner.jpg');
+	background-image: url('../images/hair-treat-slider-1.jpg.jpeg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
