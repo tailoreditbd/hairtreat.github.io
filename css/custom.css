@@ -1062,18 +1062,37 @@ header.main-header .header-sticky.active{
 }
 
 .hero.hero-home-banner{
+	isolation: isolate;
 	background-image: linear-gradient(rgba(72, 30, 11, 0.62), rgba(72, 30, 11, 0.62)), url('../images/hero/hairtreat-hero-banner.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover;
+	background-size: 108% auto;
+	animation: hero-banner-pan 18s ease-in-out infinite alternate;
 }
 
 .hero.hero-home-banner::before{
 	display: none;
 }
 
+.hero.hero-home-banner::after{
+	content: "";
+	position: absolute;
+	inset: -8%;
+	background:
+		radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.12), transparent 26%),
+		radial-gradient(circle at 82% 28%, rgba(205, 95, 55, 0.22), transparent 24%),
+		linear-gradient(120deg, transparent 32%, rgba(255, 255, 255, 0.08) 50%, transparent 68%);
+	opacity: 0.7;
+	transform: translate3d(-4%, 0, 0) scale(1);
+	animation: hero-banner-sheen 12s ease-in-out infinite alternate;
+	pointer-events: none;
+	z-index: 1;
+}
+
 .hero.hero-home-banner .row{
+	position: relative;
 	align-items: center;
+	z-index: 2;
 }
 
 .hero.hero-home-banner .col-lg-6:last-child{
@@ -1087,6 +1106,8 @@ header.main-header .header-sticky.active{
 
 .hero.hero-home-banner .hero-content{
 	max-width: 640px;
+	position: relative;
+	z-index: 2;
 }
 
 .hero.hero-home-banner .section-title h1{
@@ -1095,10 +1116,29 @@ header.main-header .header-sticky.active{
 	line-height: 1.08;
 }
 
+.hero.hero-home-banner .section-title h3,
+.hero.hero-home-banner .section-title h1,
+.hero.hero-home-banner .section-title p,
+.hero.hero-home-banner .hero-body,
+.hero.hero-home-banner .hero-review-box{
+	opacity: 0;
+	transform: translateY(18px);
+	animation: hero-content-rise 0.9s ease forwards;
+}
+
+.hero.hero-home-banner .section-title h3{
+	animation-delay: 0.10s;
+}
+
+.hero.hero-home-banner .section-title h1{
+	animation-delay: 0.20s;
+}
+
 .hero.hero-home-banner .section-title p{
 	max-width: 560px;
 	font-size: 17px;
 	line-height: 1.5;
+	animation-delay: 0.34s;
 }
 
 .hero.hero-bg-image{
@@ -1211,6 +1251,7 @@ header.main-header .header-sticky.active{
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px 40px;
+	animation-delay: 0.48s;
 }
 
 .hero-body .video-play-button{
@@ -1254,6 +1295,7 @@ header.main-header .header-sticky.active{
 
 .hero-review-box{
 	margin-top: 40px;
+	animation-delay: 0.62s;
 }
 
 .hero-review-box ul{
@@ -1312,6 +1354,54 @@ header.main-header .header-sticky.active{
 	object-fit: cover;
 	object-position: center;
 	border-radius: inherit;
+}
+
+@keyframes hero-banner-pan{
+	0%{
+		background-position: center center;
+	}
+
+	100%{
+		background-position: center 38%;
+	}
+}
+
+@keyframes hero-content-rise{
+	from{
+		opacity: 0;
+		transform: translateY(18px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce){
+	.hero.hero-home-banner,
+	.hero.hero-home-banner::after,
+	.hero.hero-home-banner .section-title h3,
+	.hero.hero-home-banner .section-title h1,
+	.hero.hero-home-banner .section-title p,
+	.hero.hero-home-banner .hero-body,
+	.hero.hero-home-banner .hero-review-box{
+		animation: none !important;
+		transform: none !important;
+		opacity: 1 !important;
+	}
+}
+
+@keyframes hero-banner-sheen{
+	0%{
+		transform: translate3d(-4%, 0, 0) scale(1);
+		opacity: 0.55;
+	}
+
+	100%{
+		transform: translate3d(4%, -1%, 0) scale(1.04);
+		opacity: 0.85;
+	}
 }
 
 /************************************/
