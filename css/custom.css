@@ -5791,7 +5791,8 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner{
 		min-height: 520px;
 		padding: 120px 0;
-		background-size: 100% 100%;
+		background-color: #000;
+		background-size: contain;
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
