@@ -5624,9 +5624,9 @@ header.main-header .header-sticky.active{
 	}
 
 	.hero.hero-home-banner .section-title h1{
-		max-width: 620px;
-		font-size: 38px;
-		line-height: 1.12;
+		max-width: 360px;
+		font-size: 30px;
+		line-height: 1.15;
 	}
 
 	.hero.hero-home-banner .section-title p{
@@ -9360,6 +9360,7 @@ header.main-header .header-sticky.active{
 
 @media (max-width: 575px) {
   .hero.hero-home-banner .section-title h1 {
+    max-width: 360px;
     font-size: 30px;
     line-height: 1.15;
     margin-bottom: 22px !important;
