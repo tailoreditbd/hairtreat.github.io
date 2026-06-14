@@ -9723,6 +9723,11 @@ header.main-header .header-sticky.active{
 	color: #d35f38;
 }
 
+.hero.hero-home-banner .section-title h3::before{
+	filter: none;
+	opacity: 1;
+}
+
 .hero.hero-home-banner .section-title h1,
 .hero.hero-home-banner .section-title h1 span{
 	color: #2b1b14 !important;
@@ -9732,6 +9737,20 @@ header.main-header .header-sticky.active{
 .hero.hero-home-banner .section-title p{
 	color: #4f403a !important;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.hero.hero-home-banner .video-play-button p{
+	color: #2b1b14;
+	font-weight: 600;
+}
+
+.hero.hero-home-banner .video-play-button a{
+	border-color: #d35f38;
+	background: rgba(255, 255, 255, 0.72);
+}
+
+.hero.hero-home-banner .video-play-button a i{
+	color: #2b1b14;
 }
 
 @media (max-width: 767px){
