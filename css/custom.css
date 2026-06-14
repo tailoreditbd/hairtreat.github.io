@@ -9407,3 +9407,102 @@ header.main-header .header-sticky.active{
     padding: 40px;
   }
 }
+
+@media (max-width: 767px) {
+  .hero.hero-bg-image.hero-slider-layout .hero-slide {
+    padding: 24px 0 36px;
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-slide .container {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: 18px;
+    z-index: 2;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-slide .hero-slider-image {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-slide .hero-slider-image img {
+    display: block;
+    width: min(100%, 420px);
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-content {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .section-title h3 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    padding-left: 0;
+    margin-bottom: 6px;
+    color: #2f6fe4;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .section-title h3::before {
+    display: none;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .section-title h1 {
+    font-family: "Sora", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #101010;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .section-title p {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.45;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-body {
+    gap: 12px;
+    margin-top: 18px;
+    justify-content: center;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-pagination {
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .hero-slide::before {
+    opacity: 0.12;
+  }
+
+  .hero.hero-bg-image.hero-slider-layout .video-play-button {
+    display: none;
+  }
+}
