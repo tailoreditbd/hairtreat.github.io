@@ -2740,12 +2740,18 @@ header.main-header .header-sticky.active{
 }
 
 .clinic-trust-counter{
-	margin-top: 24px !important;
-	padding-top: 36px;
+	margin-top: 12px !important;
+	padding-top: 24px;
 }
 
 .clinic-trust-counter .facts-counter-item{
 	align-items: center;
+}
+
+.clinic-trust-counter .facts-counter-item.fadeInUp{
+	animation-name: trustCounterRise;
+	animation-duration: 0.9s;
+	animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .clinic-trust-counter .facts-counter-item .icon-box{
@@ -2778,6 +2784,17 @@ header.main-header .header-sticky.active{
 
 .clinic-trust-counter .facts-counter-item:hover .icon-box{
 	animation: trustIconWiggle 0.55s ease, trustIconFloat 2.8s ease-in-out 0.55s infinite;
+}
+
+@keyframes trustCounterRise{
+	from{
+		opacity: 0;
+		transform: translate3d(0, 76px, 0) scale(0.96);
+	}
+	to{
+		opacity: 1;
+		transform: translate3d(0, 0, 0) scale(1);
+	}
 }
 
 @keyframes trustIconFloat{
