@@ -1077,7 +1077,7 @@ header.main-header .header-sticky.active{
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: url('../images/hair-treat-slider-1.png');
+	background-image: url('../images/hair-treat-slider-1.jpg.jpeg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -9767,6 +9767,67 @@ header.main-header .header-sticky.active{
 
 .hero.hero-home-banner .video-play-button a i{
 	color: #2b1b14;
+}
+
+@media (min-width: 768px){
+	.hero.hero-home-banner{
+		display: flex;
+		align-items: center;
+		min-height: clamp(620px, calc(100vh - 92px), 780px);
+		margin: 24px;
+		padding: 110px 0;
+		border-radius: 30px;
+		background: #0f2432;
+		overflow: hidden;
+	}
+
+	.hero.hero-home-banner::before{
+		background: linear-gradient(90deg, rgba(14, 34, 51, 0.68) 0%, rgba(14, 34, 51, 0.56) 34%, rgba(14, 34, 51, 0.22) 56%, rgba(14, 34, 51, 0) 76%);
+	}
+
+	.hero.hero-home-banner::after{
+		background-position: center center;
+		transform: scale(1);
+		transform-origin: center center;
+		animation: homeBannerZoom 8s ease-out forwards;
+	}
+
+	.hero.hero-home-banner .hero-content{
+		max-width: 620px;
+	}
+
+	.hero.hero-home-banner .section-title h3{
+		color: #ffffff !important;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+
+	.hero.hero-home-banner .section-title h3::before{
+		filter: brightness(0) invert(1);
+	}
+
+	.hero.hero-home-banner .section-title h1,
+	.hero.hero-home-banner .section-title h1 span,
+	.hero.hero-home-banner .section-title h1 .hero-heading-line{
+		color: #ffffff !important;
+		text-shadow: 0 2px 16px rgba(0, 0, 0, 0.26);
+	}
+
+	.hero.hero-home-banner .section-title p,
+	.hero.hero-home-banner .video-play-button p,
+	.hero.hero-home-banner .hero-review-box ul li{
+		color: #ffffff !important;
+		text-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
+	}
+
+	.hero.hero-home-banner .video-play-button a{
+		border-color: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.14);
+	}
+
+	.hero.hero-home-banner .video-play-button a i{
+		color: #ffffff;
+	}
 }
 
 @media (max-width: 767px){
