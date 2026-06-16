@@ -222,8 +222,79 @@
     }
 
     /* Init Counter */
-    if ($('.counter').length) {
-        $('.counter').counterUp({ delay: 6, time: 3000 });
+    if ($('.counter').not('.clinic-trust-counter .counter').length) {
+        $('.counter').not('.clinic-trust-counter .counter').counterUp({ delay: 6, time: 3000 });
+    }
+
+    /* Repeat Counter For Clinic Trust Section */
+    if ($('.clinic-trust-counter').length) {
+        const clinicCounterBox = document.querySelector('.clinic-trust-counter');
+        const clinicCounters = clinicCounterBox.querySelectorAll('.counter');
+        let clinicCounterRunning = false;
+        let clinicCounterRunId = 0;
+
+        clinicCounters.forEach((counter) => {
+            counter.dataset.target = counter.textContent.trim();
+            counter.textContent = '0';
+        });
+
+        function runClinicCounters() {
+            clinicCounterRunning = true;
+            clinicCounterRunId++;
+            const currentRunId = clinicCounterRunId;
+
+            clinicCounters.forEach((counter) => {
+                const target = parseInt(counter.dataset.target, 10);
+                const duration = 1600;
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+                    if (currentRunId !== clinicCounterRunId) {
+                        return;
+                    }
+
+                    const progress = Math.min((currentTime - startTime) / duration, 1);
+                    const easedProgress = 1 - Math.pow(1 - progress, 3);
+                    counter.textContent = Math.floor(easedProgress * target);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                }
+
+                requestAnimationFrame(updateCounter);
+            });
+        }
+
+        function resetClinicCounters() {
+            clinicCounterRunning = false;
+            clinicCounterRunId++;
+            clinicCounters.forEach((counter) => {
+                counter.textContent = '0';
+            });
+        }
+
+        if ('IntersectionObserver' in window) {
+            const clinicCounterObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !clinicCounterRunning) {
+                        runClinicCounters();
+                    }
+
+                    if (!entry.isIntersecting && clinicCounterRunning) {
+                        resetClinicCounters();
+                    }
+                });
+            }, {
+                threshold: 0.35
+            });
+
+            clinicCounterObserver.observe(clinicCounterBox);
+        } else {
+            runClinicCounters();
+        }
     }
 
     /* Image Reveal Animation */
