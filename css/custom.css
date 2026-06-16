@@ -1077,7 +1077,7 @@ header.main-header .header-sticky.active{
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: url('../images/hair-treat-slider-1.jpg.jpeg');
+	background-image: url('../images/hair-treat-slider-1.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -9484,7 +9484,7 @@ header.main-header .header-sticky.active{
     min-height: 0;
     max-width: none;
     object-fit: cover;
-    object-position: center center;
+    object-position: 86% center;
     margin: 0;
     background: #2f7df4;
     border-radius: 50%;
@@ -9519,6 +9519,8 @@ header.main-header .header-sticky.active{
   .hero.hero-home-banner .section-title h1 {
     max-width: 360px;
     color: var(--primary-color);
+    line-height: 1.1;
+    margin-bottom: 18px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -9526,6 +9528,10 @@ header.main-header .header-sticky.active{
   .hero.hero-home-banner .section-title h1 span{
     color: #ED2623;
     display: block;
+  }
+
+  .hero.hero-home-banner .section-title h1 .hero-heading-line{
+    color: var(--primary-color);
   }
 
   .hero.hero-home-banner .section-title p {
@@ -9732,6 +9738,16 @@ header.main-header .header-sticky.active{
 .hero.hero-home-banner .section-title h1 span{
 	color: #2b1b14 !important;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 767px){
+	.hero.hero-home-banner .section-title h1 span{
+		color: #ED2623 !important;
+	}
+
+	.hero.hero-home-banner .section-title h1 .hero-heading-line{
+		color: var(--primary-color) !important;
+	}
 }
 
 .hero.hero-home-banner .section-title p{
