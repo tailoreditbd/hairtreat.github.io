@@ -2739,6 +2739,73 @@ header.main-header .header-sticky.active{
 	max-width: 50px;
 }
 
+.clinic-trust-counter{
+	margin-top: 24px !important;
+	padding-top: 36px;
+}
+
+.clinic-trust-counter .facts-counter-item{
+	align-items: center;
+}
+
+.clinic-trust-counter .facts-counter-item .icon-box{
+	width: 58px;
+	height: 58px;
+	flex: 0 0 58px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 74, 59, 0.1);
+	color: var(--accent-color);
+	font-size: 26px;
+	box-shadow: 0 12px 28px rgba(255, 74, 59, 0.12);
+	animation: trustIconFloat 2.8s ease-in-out infinite;
+}
+
+.clinic-trust-counter .facts-counter-item:nth-child(even) .icon-box{
+	animation-delay: 0.45s;
+}
+
+.clinic-trust-counter .facts-counter-content h3{
+	line-height: 1;
+}
+
+.clinic-trust-counter .facts-counter-content p{
+	font-weight: 600;
+	line-height: 1.35em;
+}
+
+.clinic-trust-counter .facts-counter-item:hover .icon-box{
+	animation: trustIconWiggle 0.55s ease, trustIconFloat 2.8s ease-in-out 0.55s infinite;
+}
+
+@keyframes trustIconFloat{
+	0%,
+	100%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-7px);
+	}
+}
+
+@keyframes trustIconWiggle{
+	0%,
+	100%{
+		transform: rotate(0deg) translateY(0);
+	}
+	25%{
+		transform: rotate(-7deg) translateY(-4px);
+	}
+	55%{
+		transform: rotate(6deg) translateY(-6px);
+	}
+	80%{
+		transform: rotate(-3deg) translateY(-3px);
+	}
+}
+
 .facts-counter-content h3{
 	font-size: 30px;
 	margin-bottom: 5px;
