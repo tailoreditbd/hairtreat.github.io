@@ -9477,14 +9477,14 @@ header.main-header .header-sticky.active{
   .hero.hero-home-banner .hero-image .hairtreat-hero-banner {
     display: block;
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 50%;
-    width: 74%;
-    height: 74%;
+    width: 68%;
+    height: 68%;
     min-height: 0;
     max-width: none;
     object-fit: cover;
-    object-position: 88% 50%;
+    object-position: center center;
     margin: 0;
     background: #2f7df4;
     border-radius: 50%;
