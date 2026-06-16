@@ -1074,10 +1074,30 @@ header.main-header .header-sticky.active{
 }
 
 .hero.hero-home-banner::after{
+	display: none;
+}
+
+.hero.hero-home-banner .swiper,
+.hero.hero-home-banner .swiper-wrapper,
+.hero.hero-home-banner .swiper-slide,
+.hero.hero-home-banner .hero-slide{
+	height: 100%;
+}
+
+.hero.hero-home-banner .hero-slide{
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.hero.hero-home-banner .hero-slide::after{
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: url('../images/hair-treat-slider-1.jpg.jpeg');
+	background-image: inherit;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -1085,6 +1105,19 @@ header.main-header .header-sticky.active{
 	transform-origin: center center;
 	animation: homeBannerZoom 8s ease-out forwards;
 	z-index: 0;
+}
+
+.hero.hero-home-banner .hero-slide::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.hero.hero-home-banner .container{
+	position: relative;
+	z-index: 2;
 }
 
 @keyframes homeBannerZoom{
@@ -1099,17 +1132,34 @@ header.main-header .header-sticky.active{
 	}
 }
 
+@keyframes heroContentFadeUp{
+	from{
+		opacity: 0;
+		transform: translateY(28px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .hero.hero-home-banner .row{
 	align-items: center;
 }
 
 .hero.hero-home-banner .col-lg-6:last-child{
-	display: none;
+	display: block;
 }
 
 .hero.hero-home-banner .col-lg-6:first-child{
-	flex: 0 0 100%;
-	max-width: 100%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.hero.hero-home-banner .col-lg-6:last-child{
+	flex: 0 0 50%;
+	max-width: 50%;
 }
 
 .hero.hero-home-banner .hero-content{
@@ -9782,46 +9832,87 @@ header.main-header .header-sticky.active{
 
 @media (min-width: 768px){
 	.hero.hero-home-banner{
-		display: flex;
-		align-items: center;
 		min-height: clamp(620px, calc(100vh - 92px), 780px);
 		margin: 24px;
-		padding: 110px 0;
+		padding: 0;
 		border-radius: 30px;
 		background: #0f2432;
 		overflow: hidden;
 	}
 
-	.hero.hero-home-banner::before{
-		background: linear-gradient(90deg, rgba(14, 34, 51, 0.68) 0%, rgba(14, 34, 51, 0.56) 34%, rgba(14, 34, 51, 0.22) 56%, rgba(14, 34, 51, 0) 76%);
+	.hero.hero-home-banner .swiper-slide,
+	.hero.hero-home-banner .hero-slide{
+		min-height: clamp(620px, calc(100vh - 92px), 780px);
 	}
 
-	.hero.hero-home-banner::after{
+	.hero.hero-home-banner .hero-slide::before{
+		background: linear-gradient(90deg, rgba(250, 246, 239, 0.94) 0%, rgba(250, 246, 239, 0.9) 28%, rgba(250, 246, 239, 0.58) 50%, rgba(250, 246, 239, 0.16) 70%, rgba(250, 246, 239, 0) 82%);
+	}
+
+	.hero.hero-home-banner .hero-slide::after{
 		background-position: center center;
 		transform: scale(1);
 		transform-origin: center center;
 		animation: homeBannerZoom 8s ease-out forwards;
 	}
 
+	.hero.hero-home-banner .swiper-slide-active .hero-slide::after{
+		animation: homeBannerZoom 8s ease-out forwards;
+	}
+
+	.hero.hero-home-banner .container{
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
+
 	.hero.hero-home-banner .hero-content{
 		max-width: 620px;
 	}
 
+	.hero.hero-home-banner .section-title,
+	.hero.hero-home-banner .hero-body,
+	.hero.hero-home-banner .hero-review-box{
+		opacity: 0;
+		transform: translateY(28px);
+		will-change: transform, opacity;
+	}
+
+	.hero.hero-home-banner .swiper-slide-active .section-title{
+		animation: heroContentFadeUp 0.8s ease-out 0.12s forwards;
+	}
+
+	.hero.hero-home-banner .swiper-slide-active .hero-body{
+		animation: heroContentFadeUp 0.8s ease-out 0.3s forwards;
+	}
+
+	.hero.hero-home-banner .swiper-slide-active .hero-review-box{
+		animation: heroContentFadeUp 0.8s ease-out 0.46s forwards;
+	}
+
+	.hero.hero-home-banner .col-lg-6:first-child{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hero.hero-home-banner .col-lg-6:last-child{
+		display: none;
+	}
+
 	.hero.hero-home-banner .section-title h3{
-		color: #ffffff !important;
+		color: #b6542d !important;
 		letter-spacing: 5px;
 		text-transform: uppercase;
 	}
 
 	.hero.hero-home-banner .section-title h3::before{
-		filter: brightness(0) invert(1);
+		filter: none;
 	}
 
 	.hero.hero-home-banner .section-title h1,
 	.hero.hero-home-banner .section-title h1 span,
 	.hero.hero-home-banner .section-title h1 .hero-heading-line{
-		color: #ffffff !important;
-		text-shadow: 0 2px 16px rgba(0, 0, 0, 0.26);
+		color: #231815 !important;
+		text-shadow: none;
 	}
 
 	.hero.hero-home-banner .section-title h1 span,
@@ -9832,23 +9923,75 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner .section-title p,
 	.hero.hero-home-banner .video-play-button p,
 	.hero.hero-home-banner .hero-review-box ul li{
-		color: #ffffff !important;
-		text-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
+		color: #2b1b14 !important;
+		text-shadow: none;
 	}
 
 	.hero.hero-home-banner .video-play-button a{
-		border-color: rgba(255, 255, 255, 0.9);
-		background: rgba(255, 255, 255, 0.14);
+		border-color: #b6542d;
+		background: rgba(255, 255, 255, 0.96);
+		box-shadow: 0 10px 24px rgba(182, 84, 45, 0.18);
 	}
 
 	.hero.hero-home-banner .video-play-button a i{
+		color: #b6542d;
+	}
+
+	.hero.hero-home-banner .video-play-button:hover a{
+		background: #b6542d;
+		border-color: #b6542d;
+	}
+
+	.hero.hero-home-banner .video-play-button:hover a i{
 		color: #ffffff;
+	}
+
+	.hero.hero-home-banner .hero-pagination{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 28px;
+		z-index: 3;
+		text-align: center;
+	}
+
+	.hero.hero-home-banner .hero-pagination .swiper-pagination-bullet{
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+		background: rgba(255, 255, 255, 0.45);
+		opacity: 1;
+	}
+
+	.hero.hero-home-banner .hero-pagination .swiper-pagination-bullet-active{
+		width: 24px;
+		border-radius: 999px;
+		background: #ffffff;
 	}
 }
 
 @media (max-width: 767px){
-	.hero.hero-home-banner::before{
-		display: none;
+	.hero.hero-home-banner .hero-pagination{
+		position: absolute;
+		right: 0;
+		bottom: 8px;
+		left: 0;
+		z-index: 5;
+		text-align: center;
+	}
+
+	.hero.hero-home-banner .hero-pagination .swiper-pagination-bullet{
+		width: 9px;
+		height: 9px;
+		margin: 0 4px;
+		background: rgba(237, 38, 35, 0.34);
+		opacity: 1;
+	}
+
+	.hero.hero-home-banner .hero-pagination .swiper-pagination-bullet-active{
+		width: 22px;
+		border-radius: 999px;
+		background: #ED2623;
 	}
 
 	.hero.hero-home-banner .hero-btn-text-desktop{
