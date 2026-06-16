@@ -10050,7 +10050,7 @@ header.main-header .header-sticky.active{
 @media (min-width: 768px){
 	.hero.hairtreat-home-slider .section-title,
 	.hero.hairtreat-home-slider .hero-body{
-		opacity: 0;
+		opacity: 1;
 	}
 
 	.hero.hairtreat-home-slider .swiper-slide-active .section-title{
