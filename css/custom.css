@@ -9405,16 +9405,6 @@ header.main-header .header-sticky.active{
     background: var(--secondary-color);
   }
 
-  .hero.hero-home-banner .hero-mobile-banner-slider {
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 28px;
-  }
-
-  .hero.hero-home-banner .swiper-slide {
-    height: auto;
-  }
-
   .hero.hero-home-banner::after {
     display: none;
   }
@@ -9529,19 +9519,13 @@ header.main-header .header-sticky.active{
   .hero.hero-home-banner .section-title h1 {
     max-width: 360px;
     color: var(--primary-color);
-    line-height: 1.1;
     margin-right: auto;
     margin-left: auto;
   }
 
   .hero.hero-home-banner .section-title h1 span{
     color: #ED2623;
-    display: inline;
-  }
-
-  .hero.hero-home-banner .section-title h1 .hero-heading-line{
     display: block;
-    color: var(--primary-color);
   }
 
   .hero.hero-home-banner .section-title p {
@@ -9581,29 +9565,6 @@ header.main-header .header-sticky.active{
   .hero.hero-home-banner .hero-review-box ul {
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .hero.hero-home-banner .hero-mobile-banner-pagination {
-    position: absolute;
-    right: 0;
-    bottom: 8px;
-    left: 0;
-    z-index: 5;
-    text-align: center;
-  }
-
-  .hero.hero-home-banner .hero-mobile-banner-pagination .swiper-pagination-bullet {
-    width: 9px;
-    height: 9px;
-    margin: 0 4px;
-    background: rgba(237, 38, 35, 0.34);
-    opacity: 1;
-  }
-
-  .hero.hero-home-banner .hero-mobile-banner-pagination .swiper-pagination-bullet-active {
-    width: 22px;
-    border-radius: 999px;
-    background: #ED2623;
   }
 }
 
@@ -9960,16 +9921,6 @@ header.main-header .header-sticky.active{
 		display: block;
 	}
 
-	.hero.hero-home-banner .hero-mobile-banner-slider{
-		width: 100%;
-		overflow: hidden;
-		padding-bottom: 28px;
-	}
-
-	.hero.hero-home-banner .swiper-slide{
-		height: auto;
-	}
-
 	.hero.hero-home-banner::before{
 		display: none;
 	}
@@ -9991,19 +9942,13 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner .section-title h1{
 		max-width: 360px;
 		color: var(--primary-color) !important;
-		line-height: 1.1;
 		margin-right: auto;
 		margin-left: auto;
 	}
 
 	.hero.hero-home-banner .section-title h1 span{
 		color: #ED2623 !important;
-		display: inline;
-	}
-
-	.hero.hero-home-banner .section-title h1 .hero-heading-line{
 		display: block;
-		color: var(--primary-color) !important;
 	}
 
 	.hero.hero-home-banner .section-title p{
@@ -10020,29 +9965,6 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner .video-play-button,
 	.hero.hero-home-banner .hero-review-box{
 		display: none;
-	}
-
-	.hero.hero-home-banner .hero-mobile-banner-pagination{
-		position: absolute;
-		right: 0;
-		bottom: 8px;
-		left: 0;
-		z-index: 5;
-		text-align: center;
-	}
-
-	.hero.hero-home-banner .hero-mobile-banner-pagination .swiper-pagination-bullet{
-		width: 9px;
-		height: 9px;
-		margin: 0 4px;
-		background: rgba(237, 38, 35, 0.34);
-		opacity: 1;
-	}
-
-	.hero.hero-home-banner .hero-mobile-banner-pagination .swiper-pagination-bullet-active{
-		width: 22px;
-		border-radius: 999px;
-		background: #ED2623;
 	}
 
 }
