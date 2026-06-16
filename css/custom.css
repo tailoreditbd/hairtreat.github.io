@@ -9766,3 +9766,244 @@ header.main-header .header-sticky.active{
 		display: inline;
 	}
 }
+
+@media (min-width: 768px){
+	.hero.hairtreat-home-slider{
+		display: block;
+		position: relative;
+		padding: 0;
+		background: #ffffff;
+		overflow: hidden;
+	}
+
+	.hero.hero-home-banner{
+		display: none;
+	}
+
+	.hero.hairtreat-home-slider::before{
+		display: none;
+		content: none;
+	}
+
+	.hero.hairtreat-home-slider,
+	.hero.hairtreat-home-slider .swiper,
+	.hero.hairtreat-home-slider .swiper-wrapper,
+	.hero.hairtreat-home-slider .swiper-slide,
+	.hero.hairtreat-home-slider .hero-slide{
+		min-height: 760px;
+	}
+
+	.hero.hairtreat-home-slider .hero-slide{
+		position: relative;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.hero.hairtreat-home-slider .hero-slide::before{
+		display: none;
+		content: none;
+	}
+
+	.hero.hairtreat-home-slider .hero-slider-image{
+		position: absolute;
+		inset: 0;
+		z-index: 1;
+		background: #ffffff;
+	}
+
+	.hero.hairtreat-home-slider .hero-slider-image::before{
+		display: none;
+		content: none;
+	}
+
+	.hero.hairtreat-home-slider .hero-slider-image img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center center;
+		transform: scale(0.94);
+		transform-origin: center center;
+	}
+
+	.hero.hairtreat-home-slider .swiper-slide-active .hero-slider-image img{
+		animation: hairtreatSliderZoom 8s ease-out forwards;
+	}
+
+	.hero.hairtreat-home-slider .container{
+		position: relative;
+		z-index: 3;
+	}
+
+	.hero.hairtreat-home-slider .hero-content{
+		position: relative;
+		z-index: 2;
+		max-width: 700px;
+		text-align: left;
+	}
+
+	.hero.hairtreat-home-slider .section-title h3{
+		color: #d35f38;
+	}
+
+	.hero.hairtreat-home-slider .section-title h3::before{
+		filter: none;
+		opacity: 1;
+	}
+
+	.hero.hairtreat-home-slider .section-title h1{
+		max-width: 760px;
+		font-family: 'Playfair Display', serif;
+		font-size: 52px;
+		font-weight: 500;
+		line-height: 1.1;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+		color: #2b1b14 !important;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	}
+
+	.hero.hairtreat-home-slider .section-title p{
+		max-width: 620px;
+		font-size: 17px;
+		line-height: 1.5;
+		color: #4f403a !important;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	}
+
+	.hero.hairtreat-home-slider .video-play-button{
+		display: inline-flex;
+	}
+
+	.hero.hairtreat-home-slider .video-play-button p{
+		color: #2b1b14;
+		font-weight: 600;
+	}
+
+	.hero.hairtreat-home-slider .video-play-button a{
+		border-color: #d35f38;
+		background: rgba(255, 255, 255, 0.72);
+	}
+
+	.hero.hairtreat-home-slider .video-play-button a i{
+		color: #2b1b14;
+	}
+
+	.hero.hairtreat-home-slider .hero-btn-text-desktop{
+		display: inline;
+	}
+
+	.hero.hairtreat-home-slider .hero-btn-text-mobile{
+		display: none;
+	}
+
+	.hero.hairtreat-home-slider .hero-pagination{
+		z-index: 3;
+	}
+}
+
+@keyframes hairtreatSliderZoom{
+	from{
+		transform: scale(0.94);
+	}
+
+	to{
+		transform: scale(1.02);
+	}
+}
+
+@media (max-width: 767px){
+	.hero.hairtreat-home-slider{
+		display: none;
+	}
+
+	.hero.hero-home-banner{
+		display: block;
+	}
+
+	.hero.hero-home-banner::before{
+		display: none;
+	}
+
+	.hero.hero-home-banner .hero-content{
+		display: block;
+		position: relative;
+		z-index: 2;
+		clear: both;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.hero.hero-home-banner .section-title h3{
+		display: none;
+	}
+
+	.hero.hero-home-banner .section-title h1{
+		max-width: 360px;
+		color: var(--primary-color) !important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.hero.hero-home-banner .section-title h1 span{
+		color: #ED2623 !important;
+		display: block;
+	}
+
+	.hero.hero-home-banner .section-title p{
+		max-width: 340px;
+		color: var(--text-color) !important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.hero.hero-home-banner .hero-body{
+		justify-content: center;
+	}
+
+	.hero.hero-home-banner .video-play-button,
+	.hero.hero-home-banner .hero-review-box{
+		display: none;
+	}
+
+}
+
+@media (min-width: 768px){
+	.hero.hairtreat-home-slider .section-title,
+	.hero.hairtreat-home-slider .hero-body{
+		opacity: 0;
+	}
+
+	.hero.hairtreat-home-slider .swiper-slide-active .section-title{
+		animation: heroHeadingDrop 0.9s ease-out 0.15s forwards;
+	}
+
+	.hero.hairtreat-home-slider .swiper-slide-active .hero-body{
+		animation: heroButtonRise 0.85s ease-out 0.38s forwards;
+	}
+}
+
+@keyframes heroHeadingDrop{
+	from{
+		opacity: 0;
+		transform: translateY(-46px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes heroButtonRise{
+	from{
+		opacity: 0;
+		transform: translateY(42px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
