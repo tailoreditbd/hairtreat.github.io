@@ -9450,9 +9450,16 @@ header.main-header .header-sticky.active{
 
 @media (max-width: 767px) {
   .hero.hero-home-banner {
-    min-height: 0;
-    padding: 22px 0 46px;
+    min-height: 760px;
+    padding: 22px 0 44px;
     background: var(--secondary-color);
+  }
+
+  .hero.hero-home-banner .swiper,
+  .hero.hero-home-banner .swiper-wrapper,
+  .hero.hero-home-banner .swiper-slide,
+  .hero.hero-home-banner .hero-slide {
+    min-height: 760px;
   }
 
   .hero.hero-home-banner::after {
@@ -9559,6 +9566,7 @@ header.main-header .header-sticky.active{
     clear: both;
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 0;
     text-align: center;
   }
 
@@ -9971,10 +9979,29 @@ header.main-header .header-sticky.active{
 }
 
 @media (max-width: 767px){
+	.hero.hero-home-banner.hero-slider-layout .hero-slide{
+		padding: 18px 0 10px !important;
+		min-height: 760px !important;
+	}
+
+	.hero.hero-home-banner .hero-slide{
+		background-image: none !important;
+		animation: none !important;
+	}
+
+	.hero.hero-home-banner .hero-slide::after,
+	.hero.hero-home-banner .hero-slide::before{
+		display: none;
+	}
+
+	.hero.hero-home-banner .hero-image::before{
+		animation: none;
+	}
+
 	.hero.hero-home-banner .hero-pagination{
 		position: absolute;
 		right: 0;
-		bottom: 8px;
+		bottom: 3px;
 		left: 0;
 		z-index: 5;
 		text-align: center;
