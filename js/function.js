@@ -102,6 +102,46 @@
 		},
 	});
 
+	/* Mobile Hero Banner Slider JS */
+	let hero_mobile_banner_slider = null;
+	const heroMobileMedia = window.matchMedia('(max-width: 767px)');
+
+	function initHeroMobileBannerSlider(){
+		if (!$('.hero-mobile-banner-slider').length) {
+			return;
+		}
+
+		if (heroMobileMedia.matches && hero_mobile_banner_slider === null) {
+			hero_mobile_banner_slider = new Swiper('.hero-mobile-banner-slider', {
+				slidesPerView: 1,
+				speed: 900,
+				spaceBetween: 0,
+				loop: true,
+				autoplay: {
+					delay: 4000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.hero-mobile-banner-pagination',
+					clickable: true,
+				},
+			});
+		}
+
+		if (!heroMobileMedia.matches && hero_mobile_banner_slider !== null) {
+			hero_mobile_banner_slider.destroy(true, true);
+			hero_mobile_banner_slider = null;
+		}
+	}
+
+	initHeroMobileBannerSlider();
+
+	if (heroMobileMedia.addEventListener) {
+		heroMobileMedia.addEventListener('change', initHeroMobileBannerSlider);
+	} else if (heroMobileMedia.addListener) {
+		heroMobileMedia.addListener(initHeroMobileBannerSlider);
+	}
+
 	/* testimonial Slider JS */
 	if ($('.testimonial-slider').length) {
 		const testimonial_slider = new Swiper('.testimonial-slider .swiper', {
