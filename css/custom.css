@@ -2358,10 +2358,115 @@ header.main-header .header-sticky.active{
 	padding: 100px 0;
 }
 
+.home-clinic-focus-section{
+	padding-top: 130px;
+	padding-bottom: 30px;
+}
+
+.home-clinic-focus-section + .page-testimonials{
+	padding-top: 35px;
+}
+
 .how-work-content{
 	position: sticky;
 	top: 30px;
 	margin-right: 20px;
+}
+
+.how-work-clinic-content{
+	position: relative;
+	top: auto;
+}
+
+.clinic-focus-list{
+	margin: 0 0 30px;
+	padding-left: 22px;
+	color: var(--text-color);
+}
+
+.clinic-focus-list li{
+	font-size: 17px;
+	line-height: 1.6em;
+	margin-bottom: 10px;
+}
+
+.clinic-focus-list li:last-child{
+	margin-bottom: 0;
+}
+
+.how-work-clinic-image figure{
+	margin: 0;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.how-work-clinic-image img{
+	display: block;
+	width: 100%;
+	height: 620px;
+	object-fit: cover;
+	object-position: center center;
+}
+
+@media only screen and (min-width: 992px){
+	.how-work-clinic-image{
+		margin-top: -55px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.how-it-work{
+		padding: 70px 0 20px;
+	}
+
+	.how-it-work.home-clinic-focus-section{
+		padding-top: 90px;
+		padding-bottom: 25px;
+	}
+
+	.home-clinic-focus-section + .page-testimonials{
+		padding-top: 25px;
+	}
+
+	.how-work-clinic-content{
+		margin-right: 0;
+	}
+
+	.how-work-clinic-image{
+		margin-top: 22px;
+	}
+
+	.how-work-clinic-image img{
+		height: 320px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.how-it-work{
+		padding: 55px 0 15px;
+	}
+
+	.how-it-work.home-clinic-focus-section{
+		padding-top: 65px;
+		padding-bottom: 20px;
+	}
+
+	.home-clinic-focus-section + .page-testimonials{
+		padding-top: 20px;
+	}
+
+	.clinic-focus-list{
+		padding-left: 18px;
+		margin-bottom: 22px;
+	}
+
+	.clinic-focus-list li{
+		font-size: 15px;
+	}
+
+	.how-work-clinic-image img{
+		height: 250px;
+	}
 }
 
 .natural-hair-pattern-image figure{
