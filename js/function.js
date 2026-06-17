@@ -21,7 +21,7 @@
 
     $('.footer-links.quick-links ul').html(
         '<li><a href="index.html">Home</a></li>' +
-        '<li><a href="services.html">Treatments</a></li>' +
+        '<li><a href="treatments.html">Treatments</a></li>' +
         '<li><a href="contact.html">Hours &amp; Locations</a></li>' +
         '<li><a href="case-study.html">Case studies</a></li>' +
         '<li><a href="blog.html">Happenings</a></li>' +
