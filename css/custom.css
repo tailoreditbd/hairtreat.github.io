@@ -2916,7 +2916,27 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-blog{
-	padding: 50px 0 70px;
+	padding: 50px 0 30px;
+}
+
+.our-blog-title{
+	max-width: 840px;
+	margin: 0 auto 18px;
+	text-align: center;
+}
+
+.our-blog-title h2{
+	font-size: 34px;
+	line-height: 1.2em;
+	margin-bottom: 0;
+}
+
+.our-blog-title p{
+	font-size: 17px;
+	line-height: 1.7em;
+	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .post-item{
@@ -2928,6 +2948,10 @@ header.main-header .header-sticky.active{
 	max-width: 1240px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.our-blog .blog-result-slider{
+	margin-top: 0;
 }
 
 .blog-result-slider .swiper-slide{
@@ -2951,7 +2975,7 @@ header.main-header .header-sticky.active{
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
-	margin-top: 30px;
+	margin-top: 24px;
 }
 
 .blog-result-pagination .swiper-pagination-bullet{
@@ -6377,6 +6401,20 @@ header.main-header .header-sticky.active{
 
 	.our-blog{
 		padding: 50px 0 20px;
+	}
+
+	.our-blog-title{
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 16px;
+	}
+
+	.our-blog-title h2{
+		font-size: 30px;
+	}
+
+	.our-blog-title p{
+		font-size: 16px;
 	}
 
 	.post-featured-image{
