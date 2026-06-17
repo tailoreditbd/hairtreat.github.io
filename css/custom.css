@@ -3623,6 +3623,47 @@ header.main-header .header-sticky.active{
 	color: var(--primary-color);
 }
 
+.hair-transplant-service-intro .hair-transplant-service-content{
+	max-width: 680px;
+}
+
+.hair-transplant-service-intro .section-title h1{
+	font-size: 56px;
+	line-height: 1.12em;
+	text-transform: none;
+	margin-bottom: 28px;
+}
+
+.hair-transplant-service-intro h2{
+	font-size: 52px;
+	line-height: 1.3em;
+	margin-bottom: 22px;
+}
+
+.hair-transplant-service-intro h3{
+	font-size: 30px;
+	line-height: 1.35em;
+	margin-bottom: 14px;
+}
+
+.hair-transplant-service-copy{
+	margin-bottom: 30px;
+}
+
+.hair-transplant-service-copy p{
+	font-size: 16px;
+	line-height: 1.7em;
+	margin-bottom: 20px;
+}
+
+.hair-transplant-service-copy p:last-child{
+	margin-bottom: 0;
+}
+
+.hair-transplant-service-btn .btn-default{
+	text-transform: none;
+}
+
 .our-journey{
 	background-image: url('../images/journey-bg-shape.svg');
 	background-repeat: no-repeat;
@@ -6452,6 +6493,19 @@ header.main-header .header-sticky.active{
 		font-size: 20px;
 	}
 
+	.hair-transplant-service-intro .section-title h1{
+		font-size: 48px;
+		line-height: 1.15em;
+	}
+
+	.hair-transplant-service-intro h2{
+		font-size: 38px;
+	}
+
+	.hair-transplant-service-intro h3{
+		font-size: 26px;
+	}
+
 	.our-journey{
 		padding: 50px 0;
 	}
@@ -7467,6 +7521,37 @@ header.main-header .header-sticky.active{
 
 	.approach-support-box-content p{
 		font-size: 14px;
+	}
+
+	.hair-transplant-service-intro .section-title h1{
+		font-size: 34px;
+		line-height: 1.2em;
+		margin-bottom: 20px;
+	}
+
+	.hair-transplant-service-intro h2{
+		font-size: 28px;
+		line-height: 1.3em;
+	}
+
+	.hair-transplant-service-intro h3{
+		font-size: 22px;
+		line-height: 1.35em;
+	}
+
+	.hair-transplant-service-copy{
+		margin-bottom: 24px;
+	}
+
+	.hair-transplant-service-copy p{
+		font-size: 15px;
+		line-height: 1.65em;
+	}
+
+	.hair-transplant-service-btn .btn-default{
+		width: 100%;
+		justify-content: center;
+		text-align: center;
 	}
 
 	.our-journey-image{
