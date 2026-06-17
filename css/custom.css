@@ -1684,7 +1684,7 @@ header.main-header .header-sticky.active{
 }
 
 .section-footer-text{
-	margin-top: 30px;
+	margin-top: 12px;
 	text-align: center;
 }
 
@@ -1805,7 +1805,7 @@ header.main-header .header-sticky.active{
 
 .intro-video{
 	max-width: 100%;
-	padding: 60px 0;
+	padding: 30px 0 0;
 	border-radius: 0;
 	overflow: hidden;
 	background: var(--white-color);
@@ -1822,14 +1822,10 @@ header.main-header .header-sticky.active{
 	margin-bottom: 45px;
 }
 
-.intro-video-heading h3{
+.intro-video-heading h2{
 	margin: 0 0 16px;
-	font-family: var(--default-font);
-	font-size: 30px;
-	font-weight: 600;
-	line-height: 1.35em;
-	color: var(--primary-color);
-	letter-spacing: 0;
+	font-size: 48px;
+	line-height: 1.2em;
 	white-space: normal;
 }
 
@@ -2842,7 +2838,7 @@ header.main-header .header-sticky.active{
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 100% auto;
-	padding: 100px 0 0;
+	padding: 100px 0 80px;
 }
 
 .our-appointment-image{
@@ -6163,7 +6159,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.intro-video{
-		padding: 50px 0;
+		padding: 24px 0 0;
 	}
 
 	.intro-video-heading{
@@ -6171,9 +6167,9 @@ header.main-header .header-sticky.active{
 		margin-bottom: 30px;
 	}
 
-	.intro-video-heading h3{
+	.intro-video-heading h2{
 		margin-bottom: 14px;
-		font-size: 26px;
+		font-size: 36px;
 		white-space: normal;
 	}
 
@@ -6381,7 +6377,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.our-appointment{
-		padding: 50px 0 0;
+		padding: 50px 0 60px;
 	}
 
 	.appointment-form{
@@ -7305,7 +7301,7 @@ header.main-header .header-sticky.active{
     }
 
 	.intro-video{
-		padding: 40px 0;
+		padding: 18px 0 0;
 	}
 
 	.intro-video .container-fluid{
@@ -7317,9 +7313,9 @@ header.main-header .header-sticky.active{
 		margin-bottom: 24px;
 	}
 
-	.intro-video-heading h3{
+	.intro-video-heading h2{
 		margin-bottom: 12px;
-		font-size: 22px;
+		font-size: 28px;
 	}
 
 	.intro-video-heading-content p{
@@ -7455,6 +7451,10 @@ header.main-header .header-sticky.active{
         max-width: 100%;
         padding: 0 30px;
     }
+
+	.our-appointment{
+		padding-bottom: 50px;
+	}
 
 	.footer-header{
         margin-bottom: 30px;
