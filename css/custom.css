@@ -7581,9 +7581,21 @@ header.main-header .header-sticky.active{
 	}
 
 	.hair-transplant-service-btn .btn-default{
+		display: flex;
+		align-items: center;
 		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
 		justify-content: center;
+		padding-right: 64px;
+		margin-right: 0;
 		text-align: center;
+	}
+
+	.hair-transplant-service-btn .btn-default::before{
+		right: 6px;
+		width: 38px;
+		height: 38px;
 	}
 
 	.our-journey-image{
