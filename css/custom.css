@@ -2363,7 +2363,40 @@ header.main-header .header-sticky.active{
 	padding-bottom: 30px;
 }
 
-.home-clinic-focus-section + .page-testimonials{
+.testimonials-intro{
+	padding: 70px 0 20px;
+}
+
+.testimonials-intro .section-title{
+	max-width: 760px;
+	margin: 0 auto 25px;
+}
+
+.testimonials-intro .section-title h3{
+	display: block;
+	font-size: 30px;
+	line-height: 1.1em;
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--primary-color);
+	padding-left: 0;
+	margin-bottom: 15px;
+	text-align: center;
+	cursor: none;
+}
+
+.testimonials-intro .section-title h3::before{
+	display: none;
+}
+
+.testimonials-intro .section-title p{
+	max-width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.testimonials-intro + .page-testimonials{
 	padding-top: 35px;
 }
 
@@ -2376,6 +2409,11 @@ header.main-header .header-sticky.active{
 .how-work-clinic-content{
 	position: relative;
 	top: auto;
+}
+
+.clinic-focus-heading{
+	font-size: 30px;
+	margin-bottom: 20px;
 }
 
 .clinic-focus-list{
@@ -2424,8 +2462,16 @@ header.main-header .header-sticky.active{
 		padding-bottom: 25px;
 	}
 
-	.home-clinic-focus-section + .page-testimonials{
+	.testimonials-intro{
+		padding: 55px 0 15px;
+	}
+
+	.testimonials-intro + .page-testimonials{
 		padding-top: 25px;
+	}
+
+	.testimonials-intro .section-title h3{
+		font-size: 30px;
 	}
 
 	.how-work-clinic-content{
@@ -2451,7 +2497,19 @@ header.main-header .header-sticky.active{
 		padding-bottom: 20px;
 	}
 
-	.home-clinic-focus-section + .page-testimonials{
+	.testimonials-intro{
+		padding: 40px 0 10px;
+	}
+
+	.testimonials-intro .section-title{
+		margin-bottom: 20px;
+	}
+
+	.testimonials-intro .section-title h3{
+		font-size: 30px;
+	}
+
+	.testimonials-intro + .page-testimonials{
 		padding-top: 20px;
 	}
 
