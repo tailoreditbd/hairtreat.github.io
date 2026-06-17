@@ -2460,9 +2460,6 @@ header.main-header .header-sticky.active{
 
 .how-work-step-content{
 	width: calc(100% - 80px);
-	display: flex;
-	align-items: center;
-	min-height: 60px;
 }
 
 .how-work-step-content h3{
@@ -2472,30 +2469,6 @@ header.main-header .header-sticky.active{
 
 .how-work-step-content p{
 	margin: 0;
-}
-
-.how-work-step-label{
-	font-family: var(--default-font);
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 1.5em;
-	color: var(--primary-color);
-}
-
-.how-work-content .section-title h3{
-	font-size: 36px;
-	line-height: 1.2em;
-	margin-bottom: 18px;
-	padding-left: 0;
-}
-
-.how-work-content .section-title h3::before{
-	display: none;
-}
-
-.how-work-content .section-title p{
-	font-size: 16px;
-	line-height: 1.6em;
 }
 
 /************************************/
@@ -6318,19 +6291,6 @@ header.main-header .header-sticky.active{
 		font-size: 20px;
 	}
 
-	.how-work-step-label{
-		font-size: 17px;
-	}
-
-	.how-work-content .section-title h3{
-		font-size: 30px;
-		margin-bottom: 16px;
-	}
-
-	.how-work-content .section-title p{
-		font-size: 16px;
-	}
-
 	.our-testimonials{
 		padding: 50px 0;
 	}
@@ -7462,7 +7422,6 @@ header.main-header .header-sticky.active{
 
 	.how-work-step-content{
 		width: calc(100% - 60px);
-		min-height: 50px;
 	}
 
 	.how-work-step-content h3{
@@ -7471,20 +7430,6 @@ header.main-header .header-sticky.active{
 
 	.how-work-step-content p{
 		font-size: 14px;
-	}
-
-	.how-work-step-label{
-		font-size: 16px;
-		line-height: 1.45em;
-	}
-
-	.how-work-content .section-title h3{
-		font-size: 24px;
-		margin-bottom: 14px;
-	}
-
-	.how-work-content .section-title p{
-		font-size: 15px;
 	}
 
 	.our-testimonial-image img{
