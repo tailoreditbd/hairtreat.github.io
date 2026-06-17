@@ -9696,7 +9696,7 @@ header.main-header .header-sticky.active{
     height: auto;
     aspect-ratio: 1 / 1;
     align-content: initial;
-    margin: 12px auto 34px;
+    margin: 28px auto 14px;
     background: transparent;
     border: 0;
     border-radius: 0;
@@ -9768,6 +9768,7 @@ header.main-header .header-sticky.active{
     clear: both;
     max-width: 100%;
     margin: 0 auto;
+    padding-top: 0;
     padding-bottom: 0;
     text-align: center;
   }
@@ -10182,7 +10183,7 @@ header.main-header .header-sticky.active{
 
 @media (max-width: 767px){
 	.hero.hero-home-banner.hero-slider-layout .hero-slide{
-		padding: 18px 0 10px !important;
+		padding: 26px 0 10px !important;
 		min-height: 760px !important;
 	}
 
