@@ -1,4 +1,4 @@
-﻿/* ----------------------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------------------
 * Author        : Awaiken
 * Template Name : Glowix - Plastic Surgery & Beauty Clinic HTML Template
 * File          : CSS File
@@ -592,7 +592,7 @@ body{
 	margin-bottom: 40px;
 }
 
-.section-title h3, .section-subtitle{
+.section-title h3:not(.section-title-h3-override), .section-subtitle{
 	display: inline-block;
 	position: relative;
 	font-family: var(--default-font);
@@ -606,7 +606,7 @@ body{
     margin-bottom: 10px;
 }
 
-.section-title h3::before, .section-subtitle::before{
+.section-title h3:not(.section-title-h3-override)::before, .section-subtitle::before{
 	content: '';
     position: absolute;
     top: 50%;
@@ -619,11 +619,11 @@ body{
     height: 24px;
 }
 
-.dark-section .section-title h3, .dark-section .section-subtitle{
+.dark-section .section-title h3:not(.section-title-h3-override), .dark-section .section-subtitle{
 	color: var(--white-color);
 }
 
-.dark-section .section-title h3::before, .dark-section .section-subtitle::before{
+.dark-section .section-title h3:not(.section-title-h3-override)::before, .dark-section .section-subtitle::before{
 	filter: brightness(0) invert(1);
 }
 
@@ -640,8 +640,14 @@ body{
 	cursor: none;
 }
 
+.section-title h3.section-title-h3-override{
+	font-size: 32px;
+	margin-bottom: 0;
+	cursor: none;
+}
+
 .section-title h1 span, .section-title .hero-title span,
-.section-title h2 span{
+.section-title h2 span, .section-title h3.section-title-h3-override span{
 	color: var(--white-color);
 }
 
@@ -658,7 +664,8 @@ body{
 .dark-section .section-title p,
 .dark-section .section-title h2,
 .dark-section .section-title h1,
-.dark-section .section-title .hero-title{
+.dark-section .section-title .hero-title,
+.dark-section .section-title h3.section-title-h3-override{
 	color: var(--white-color);
 }
 
@@ -6096,23 +6103,27 @@ header.main-header .header-sticky.active{
 		margin-bottom: 30px;
 	}
 
-	.section-title h3,
+	.section-title h3:not(.section-title-h3-override),
 	.section-subtitle{
 		padding-left: 30px
 	}
 
-	.section-title h3::before,
+	.section-title h3:not(.section-title-h3-override)::before,
 	.section-subtitle::before{
 		width: 20px;
 		height: 20px;
 	}
 
 	.section-title h1, .section-title .hero-title{
-		font-size: 45px;
+		font-size: 38px !important;
 	}
 
 	.section-title h2{
-		font-size: 38px;
+		font-size: 32px !important;
+	}
+
+	.section-title h3.section-title-h3-override{
+		font-size: 26px !important;
 	}
 
 	.services-treatment-heading .section-title h2{
@@ -7342,11 +7353,15 @@ header.main-header .header-sticky.active{
 	}
 
 	.section-title h1, .section-title .hero-title{
-		font-size: 30px;
+		font-size: 28px !important;
 	}
 
 	.section-title h2{
-		font-size: 28px;
+		font-size: 24px !important;
+	}
+
+	.section-title h3.section-title-h3-override{
+		font-size: 20px !important;
 	}
 
 	.section-title p{
