@@ -627,7 +627,7 @@ body{
 	filter: brightness(0) invert(1);
 }
 
-.section-title h1{
+.section-title h1, .section-title .hero-title{
 	font-size: 60px;
 	text-transform: uppercase;
 	margin-bottom: 0;
@@ -640,7 +640,7 @@ body{
 	cursor: none;
 }
 
-.section-title h1 span,
+.section-title h1 span, .section-title .hero-title span,
 .section-title h2 span{
 	color: var(--white-color);
 }
@@ -657,7 +657,8 @@ body{
 .dark-section .section-title-content p,
 .dark-section .section-title p,
 .dark-section .section-title h2,
-.dark-section .section-title h1{
+.dark-section .section-title h1,
+.dark-section .section-title .hero-title{
 	color: var(--white-color);
 }
 
@@ -1167,7 +1168,7 @@ header.main-header .header-sticky.active{
 	padding-top: 60px;
 }
 
-.hero.hero-home-banner .section-title h1{
+.hero.hero-home-banner .section-title .hero-title{
 	max-width: 680px;
 	font-family: 'Playfair Display', serif;
 	font-size: 52px;
@@ -3828,7 +3829,7 @@ header.main-header .header-sticky.active{
 	right: 0;
 }
 
-.hair-transplant-service-intro .section-title h1{
+.hair-transplant-service-intro .section-title h1, .section-title .hero-title{
 	font-size: 56px;
 	line-height: 1.12em;
 	text-transform: none;
@@ -6027,7 +6028,7 @@ header.main-header .header-sticky.active{
 		margin: 0;
 	}
 
-	.hero.hero-home-banner .section-title h1{
+	.hero.hero-home-banner .section-title .hero-title{
 		max-width: 360px;
 		font-size: 30px;
 		line-height: 1.15;
@@ -6106,7 +6107,7 @@ header.main-header .header-sticky.active{
 		height: 20px;
 	}
 
-	.section-title h1{
+	.section-title h1, .section-title .hero-title{
 		font-size: 45px;
 	}
 
@@ -6710,7 +6711,7 @@ header.main-header .header-sticky.active{
 		font-size: 20px;
 	}
 
-	.hair-transplant-service-intro .section-title h1{
+	.hair-transplant-service-intro .section-title h1, .section-title .hero-title{
 		font-size: 48px;
 		line-height: 1.15em;
 	}
@@ -7340,7 +7341,7 @@ header.main-header .header-sticky.active{
 		margin-bottom: 30px;
 	}
 
-	.section-title h1{
+	.section-title h1, .section-title .hero-title{
 		font-size: 30px;
 	}
 
@@ -7752,7 +7753,7 @@ header.main-header .header-sticky.active{
 		font-size: 14px;
 	}
 
-	.hair-transplant-service-intro .section-title h1{
+	.hair-transplant-service-intro .section-title h1, .section-title .hero-title{
 		font-size: 34px;
 		line-height: 1.2em;
 		margin-bottom: 20px;
@@ -10218,13 +10219,13 @@ header.main-header .header-sticky.active{
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
-.hero.hero-home-banner .section-title h1 span,
+.hero.hero-home-banner .section-title h1 span, .section-title .hero-title span,
 .hero.hero-home-banner .section-title h1 .hero-heading-line{
 	white-space: nowrap;
 }
 
 @media (max-width: 767px){
-	.hero.hero-home-banner .section-title h1{
+	.hero.hero-home-banner .section-title .hero-title{
 		max-width: min(100%, 340px);
 	}
 
@@ -10337,13 +10338,13 @@ header.main-header .header-sticky.active{
 	}
 
 	.hero.hero-home-banner .section-title h1,
-	.hero.hero-home-banner .section-title h1 span,
+	.hero.hero-home-banner .section-title h1 span, .section-title .hero-title span,
 	.hero.hero-home-banner .section-title h1 .hero-heading-line{
 		color: #231815 !important;
 		text-shadow: none;
 	}
 
-	.hero.hero-home-banner .section-title h1 span,
+	.hero.hero-home-banner .section-title h1 span, .section-title .hero-title span,
 	.hero.hero-home-banner .section-title h1 .hero-heading-line{
 		display: block;
 	}
