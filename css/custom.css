@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------------------
+﻿/* ----------------------------------------------------------------------------------------
 * Author        : Awaiken
 * Template Name : Glowix - Plastic Surgery & Beauty Clinic HTML Template
 * File          : CSS File
@@ -592,7 +592,7 @@ body{
 	margin-bottom: 40px;
 }
 
-.section-title h3{
+.section-title h3, .section-subtitle{
 	display: inline-block;
 	position: relative;
 	font-family: var(--default-font);
@@ -606,7 +606,7 @@ body{
     margin-bottom: 10px;
 }
 
-.section-title h3::before{
+.section-title h3::before, .section-subtitle::before{
 	content: '';
     position: absolute;
     top: 50%;
@@ -619,11 +619,11 @@ body{
     height: 24px;
 }
 
-.dark-section .section-title h3{
+.dark-section .section-title h3, .dark-section .section-subtitle{
 	color: var(--white-color);
 }
 
-.dark-section .section-title h3::before{
+.dark-section .section-title h3::before, .dark-section .section-subtitle::before{
 	filter: brightness(0) invert(1);
 }
 
@@ -2370,9 +2370,10 @@ header.main-header .header-sticky.active{
 .testimonials-intro .section-title{
 	max-width: 760px;
 	margin: 0 auto 25px;
+	text-align: center;
 }
 
-.testimonials-intro .section-title h3{
+.testimonials-intro .section-title h2{
 	display: block;
 	font-size: 30px;
 	line-height: 1.1em;
@@ -2385,7 +2386,7 @@ header.main-header .header-sticky.active{
 	cursor: none;
 }
 
-.testimonials-intro .section-title h3::before{
+.testimonials-intro .section-title h2::before{
 	display: none;
 }
 
@@ -2470,7 +2471,7 @@ header.main-header .header-sticky.active{
 		padding-top: 25px;
 	}
 
-	.testimonials-intro .section-title h3{
+	.testimonials-intro .section-title h2{
 		font-size: 30px;
 	}
 
@@ -2505,7 +2506,7 @@ header.main-header .header-sticky.active{
 		margin-bottom: 20px;
 	}
 
-	.testimonials-intro .section-title h3{
+	.testimonials-intro .section-title h2{
 		font-size: 30px;
 	}
 
@@ -6094,11 +6095,13 @@ header.main-header .header-sticky.active{
 		margin-bottom: 30px;
 	}
 
-	.section-title h3{
+	.section-title h3,
+	.section-subtitle{
 		padding-left: 30px
 	}
 
-	.section-title h3::before{
+	.section-title h3::before,
+	.section-subtitle::before{
 		width: 20px;
 		height: 20px;
 	}
@@ -8250,7 +8253,7 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 }
 
-.testimonial-team-panel .section-title h3::before{
+.testimonial-team-panel .section-title h3::before, .testimonial-team-panel .section-subtitle::before{
 	filter: brightness(0) invert(1);
 }
 
@@ -10200,11 +10203,11 @@ header.main-header .header-sticky.active{
 	text-align: left;
 }
 
-.hero.hero-home-banner .section-title h3{
+.hero.hero-home-banner .section-title h3, .hero.hero-home-banner .section-subtitle{
 	color: #d35f38;
 }
 
-.hero.hero-home-banner .section-title h3::before{
+.hero.hero-home-banner .section-title h3::before, .hero.hero-home-banner .section-subtitle::before{
 	filter: none;
 	opacity: 1;
 }
@@ -10323,13 +10326,13 @@ header.main-header .header-sticky.active{
 		display: none;
 	}
 
-	.hero.hero-home-banner .section-title h3{
+	.hero.hero-home-banner .section-title h3, .hero.hero-home-banner .section-subtitle{
 		color: #b6542d !important;
 		letter-spacing: 5px;
 		text-transform: uppercase;
 	}
 
-	.hero.hero-home-banner .section-title h3::before{
+	.hero.hero-home-banner .section-title h3::before, .hero.hero-home-banner .section-subtitle::before{
 		filter: none;
 	}
 
