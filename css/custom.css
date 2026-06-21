@@ -1682,12 +1682,17 @@ header.main-header .header-sticky.active{
 	overflow: hidden;
 }
 
+.our-services .service-image .image-anime{
+	width: 100%;
+	height: 100%;
+}
+
 .our-services .service-image img{
-	width: auto;
-	max-width: 82px;
-	height: 82px;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
 	aspect-ratio: auto;
-	object-fit: contain;
+	object-fit: cover;
 	border-radius: 0;
 }
 
