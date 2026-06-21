@@ -108,6 +108,35 @@ h6{
 	color: var(--primary-color);
 }
 
+h1,
+h2,
+h3{
+	animation: globalHeadingRise 0.85s ease-out both;
+	will-change: transform, opacity;
+}
+
+@keyframes globalHeadingRise{
+	from{
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce){
+	h1,
+	h2,
+	h3{
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}
+
 figure{
 	margin: 0;
 }
