@@ -6,6 +6,19 @@
   RewriteRule ^(.*)/service-area\.html$ service-area.html [R=301,L]
   # Redirect any request where image-gallery.html or images-gallery.html is appended to another page to the correct path
   RewriteRule ^(.*)/image(s)?-gallery\.html$ image-gallery.html [R=301,L]
+
+  # Redirect direct HTML file accesses of branches to their clean URL structures
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*(uttara|uttura)\.html\s [NC]
+  RewriteRule ^(uttara|uttura)\.html$ service-area.html/uttara [R=301,L]
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*gulshan\.html\s [NC]
+  RewriteRule ^gulshan\.html$ service-area.html/gulshan [R=301,L]
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*dhaka\.html\s [NC]
+  RewriteRule ^dhaka\.html$ service-area.html/dhaka [R=301,L]
+
+  # Rewrite branch subpaths of service-area.html internally to their respective file
+  RewriteRule ^service-area(-)?\.html/(uttara|uttura)$ uttara.html [NC,L]
+  RewriteRule ^service-area(-)?\.html/gulshan$ gulshan.html [NC,L]
+  RewriteRule ^service-area(-)?\.html/dhaka$ dhaka.html [NC,L]
 </IfModule>
 
 # GZip Compression
