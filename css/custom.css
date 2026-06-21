@@ -4166,6 +4166,13 @@ header.main-header .header-sticky.active{
 	padding: 100px 0;
 }
 
+.our-faqs .section-title.section-title-center{
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+	margin: 0 auto 40px;
+}
+
 .our-faqs-images{
 	position: relative;
 	background: url('../images/faq-dot-img.svg') no-repeat;
