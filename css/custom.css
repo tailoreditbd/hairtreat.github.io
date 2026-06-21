@@ -732,11 +732,18 @@ header.main-header .header-sticky.active{
 	align-items: center;
 }
 
+.navbar > .container-fluid{
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
 .navbar-brand{
 	padding: 0;
 	margin: 0;
 	display: flex;
 	align-items: center;
+	flex: 0 0 auto;
 }
 
 .navbar-brand img{
@@ -753,12 +760,15 @@ header.main-header .header-sticky.active{
 .main-menu .nav-menu-wrapper{
 	flex: 1;
 	text-align: left;
-	margin: 0 40px;
+	min-width: 0;
+	margin: 0 24px;
 }
 
 .main-menu .nav-menu-wrapper > ul{
 	align-items: center;
-	display: inline-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
 .main-menu ul li{
@@ -770,9 +780,10 @@ header.main-header .header-sticky.active{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1em;
-	padding: 15px !important;
+	padding: 15px 10px !important;
 	color: var(--text-color);
 	text-transform: capitalize;
+	white-space: nowrap;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -901,7 +912,8 @@ header.main-header .header-sticky.active{
 .header-contact-btn{
 	display: flex;
 	align-items: center;
-	gap: 25px;
+	flex: 0 0 auto;
+	gap: 16px;
 }
 
 .header-contact-now{
@@ -930,6 +942,7 @@ header.main-header .header-sticky.active{
 
 .header-contact-btn .btn-default{
 	margin-right: 0;
+	white-space: nowrap;
 }
 
 .header-contact-btn .btn-default::before{
@@ -9919,10 +9932,10 @@ header.main-header .header-sticky.active{
 }
 
 @media (max-width: 575px) {
-  .hero.hero-home-banner .section-title h1 {
-    max-width: 100%;
-    font-size: clamp(24px, 6.8vw, 30px);
-    line-height: 1.12;
+  .hero.hero-home-banner .section-title .hero-title {
+    max-width: 100% !important;
+    font-size: clamp(24px, 6.8vw, 30px) !important;
+    line-height: 1.3 !important;
     margin-bottom: 22px !important;
   }
 }
@@ -9931,7 +9944,6 @@ header.main-header .header-sticky.active{
   .hero.hero-home-banner {
     min-height: 760px;
     padding: 22px 0 44px;
-    background: var(--secondary-color);
   }
 
   .hero.hero-home-banner .swiper,
@@ -9941,8 +9953,9 @@ header.main-header .header-sticky.active{
     min-height: 760px;
   }
 
-  .hero.hero-home-banner::after {
-    display: none;
+  .hero.hero-home-banner::after,
+  .hero.hero-home-banner::before {
+    display: none !important;
   }
 
   .hero.hero-home-banner .row {
@@ -9968,39 +9981,32 @@ header.main-header .header-sticky.active{
 
   .hero.hero-home-banner .hero-image {
     position: relative;
-    width: min(86vw, 390px);
+    width: 100%;
     max-width: 390px;
     height: auto;
-    aspect-ratio: 1 / 1;
-    align-content: initial;
-    margin: 28px auto 14px;
+    margin: 58px auto 14px;
     background: transparent;
     border: 0;
     border-radius: 0;
     box-shadow: none;
     overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero.hero-home-banner .hero-image::after {
-    content: '';
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    width: 72%;
-    aspect-ratio: 1 / 1;
-    transform: translate(-50%, -50%);
-    background: #2f7df4;
-    border-radius: 50%;
-    z-index: 0;
+    display: none !important;
   }
 
   .hero.hero-home-banner .hero-image::before {
-    content: '';
+    content: '' !important;
+    display: block !important;
     position: absolute;
-    top: 42%;
+    top: 50%;
     left: 50%;
-    width: 78%;
-    aspect-ratio: 1 / 1;
+    width: 330px;
+    height: 330px;
     transform: translate(-50%, -50%);
     border: 3px dashed var(--accent-color);
     border-radius: 50%;
@@ -10010,22 +10016,22 @@ header.main-header .header-sticky.active{
     animation: heroCircleRotate 18s linear infinite;
   }
 
+  .hero.hero-home-banner .hero-image picture,
   .hero.hero-home-banner .hero-image .hairtreat-hero-banner {
     display: block;
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    width: 68%;
-    height: 68%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 290px;
+    height: auto;
     min-height: 0;
-    max-width: none;
-    object-fit: cover;
-    object-position: 86% center;
-    margin: 0;
-    background: #2f7df4;
-    border-radius: 50%;
+    margin: 0 auto;
+    background: transparent !important;
+    border-radius: 0;
     z-index: 3;
-    transform: translateX(-50%);
+    transform: none;
+    object-fit: contain;
   }
 
   @keyframes heroCircleRotate {
@@ -10054,29 +10060,38 @@ header.main-header .header-sticky.active{
     display: none;
   }
 
-  .hero.hero-home-banner .section-title h1 {
-    max-width: 360px;
-    color: var(--primary-color);
-    line-height: 1.1;
-    margin-bottom: 18px;
-    margin-right: auto;
-    margin-left: auto;
+  .hero.hero-home-banner .section-title .hero-title {
+    max-width: 360px !important;
+    color: #ffffff !important;
+    line-height: 1.3 !important;
+    margin-bottom: 18px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 
-  .hero.hero-home-banner .section-title h1 span{
-    color: #ED2623;
-    display: block;
+  .hero.hero-home-banner .section-title .hero-title span{
+    color: #ffffff !important;
+    display: block !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
   }
 
-  .hero.hero-home-banner .section-title h1 .hero-heading-line{
-    color: var(--primary-color);
+  .hero.hero-home-banner .section-title .hero-title span:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .hero.hero-home-banner .section-title .hero-title .hero-heading-line{
+    color: #ffffff !important;
+    white-space: normal !important;
   }
 
   .hero.hero-home-banner .section-title p {
     max-width: 340px;
-    color: var(--text-color);
+    color: #4f403a !important;
     margin-right: auto;
     margin-left: auto;
+    text-shadow: none !important;
   }
 
   .hero.hero-home-banner .hero-body {
@@ -10278,24 +10293,78 @@ header.main-header .header-sticky.active{
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
-.hero.hero-home-banner .section-title h1 span, .section-title .hero-title span,
+.hero.hero-home-banner .section-title h1 span, .hero.hero-home-banner .section-title .hero-title span,
 .hero.hero-home-banner .section-title h1 .hero-heading-line{
 	white-space: nowrap;
 }
 
 @media (max-width: 767px){
+	.hero.hero-home-banner .section-title {
+		text-align: center !important;
+	}
+
 	.hero.hero-home-banner .section-title .hero-title{
-		max-width: min(100%, 340px);
+		max-width: min(100%, 340px) !important;
+		font-size: 28px !important;
+		line-height: 1.3 !important;
+		color: #2b1b14 !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		margin-bottom: 18px !important;
+		text-shadow: none !important;
+		text-align: center !important;
 	}
 
-	.hero.hero-home-banner .section-title h1 span{
-		color: #ED2623 !important;
-		white-space: normal;
+	.hero.hero-home-banner .section-title .hero-title span{
+		color: #2b1b14 !important;
+		white-space: normal !important;
+		display: block !important;
+		line-height: 1.3 !important;
+		margin-bottom: 8px !important;
+		text-shadow: none !important;
+		text-align: center !important;
 	}
 
-	.hero.hero-home-banner .section-title h1 .hero-heading-line{
-		color: var(--primary-color) !important;
-		white-space: normal;
+	.hero.hero-home-banner .section-title .hero-title span:last-child {
+		margin-bottom: 0 !important;
+	}
+
+	.hero.hero-home-banner .section-title .hero-title .hero-heading-line{
+		color: #2b1b14 !important;
+		white-space: normal !important;
+		text-align: center !important;
+	}
+
+	.hero.hero-home-banner .section-title .section-subtitle{
+		color: #d35f38 !important;
+		font-size: 13px !important;
+		font-weight: 600 !important;
+		letter-spacing: 3px !important;
+		text-transform: uppercase !important;
+		margin-bottom: 12px !important;
+		display: inline-block !important;
+		text-shadow: none !important;
+		padding-left: 34px !important;
+		text-align: center !important;
+	}
+
+	.hero.hero-home-banner .section-title .section-subtitle::before{
+		display: block !important;
+		filter: none !important;
+		opacity: 1 !important;
+	}
+
+	.hero.hero-home-banner .section-title p:not(.hero-title):not(.section-subtitle){
+		color: #4f403a !important;
+		font-size: 15px !important;
+		line-height: 1.62 !important;
+		max-width: 320px !important;
+		margin-top: 15px !important;
+		margin-bottom: 24px !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		text-shadow: none !important;
+		text-align: center !important;
 	}
 }
 
@@ -10397,13 +10466,13 @@ header.main-header .header-sticky.active{
 	}
 
 	.hero.hero-home-banner .section-title h1,
-	.hero.hero-home-banner .section-title h1 span, .section-title .hero-title span,
+	.hero.hero-home-banner .section-title h1 span, .hero.hero-home-banner .section-title .hero-title span,
 	.hero.hero-home-banner .section-title h1 .hero-heading-line{
 		color: #231815 !important;
 		text-shadow: none;
 	}
 
-	.hero.hero-home-banner .section-title h1 span, .section-title .hero-title span,
+	.hero.hero-home-banner .section-title h1 span, .hero.hero-home-banner .section-title .hero-title span,
 	.hero.hero-home-banner .section-title h1 .hero-heading-line{
 		display: block;
 	}
@@ -10460,7 +10529,7 @@ header.main-header .header-sticky.active{
 
 @media (max-width: 767px){
 	.hero.hero-home-banner.hero-slider-layout .hero-slide{
-		padding: 26px 0 10px !important;
+		padding: 60px 0 10px !important;
 		min-height: 760px !important;
 	}
 
@@ -10472,10 +10541,6 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner .hero-slide::after,
 	.hero.hero-home-banner .hero-slide::before{
 		display: none;
-	}
-
-	.hero.hero-home-banner .hero-image::before{
-		animation: none;
 	}
 
 	.hero.hero-home-banner .hero-pagination{
