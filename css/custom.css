@@ -400,7 +400,7 @@ body{
 
 .services-treatment-heading .section-title h2{
 	font-family: var(--default-font);
-	font-size: 52px;
+	font-size: 32px;
 	font-weight: 600;
 	line-height: 1.15em;
 	color: var(--primary-color);
@@ -436,7 +436,7 @@ body{
 
 .available-treatments-title h2{
 	font-family: var(--default-font);
-	font-size: 58px;
+	font-size: 32px;
 	font-weight: 600;
 	line-height: 1.12em;
 	color: var(--primary-color);
@@ -451,7 +451,7 @@ body{
 
 .available-treatments-content h3{
 	font-family: var(--default-font);
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 700;
 	line-height: 1.25em;
 	color: var(--primary-color);
@@ -504,8 +504,7 @@ body{
 }
 
 .available-treatment-card-content h3{
-	font-family: var(--default-font);
-	font-size: 34px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.2em;
 	color: var(--primary-color);
@@ -538,7 +537,7 @@ body{
 
 .available-treatments-section .section-title.available-treatments-title h3{
 	font-family: var(--default-font);
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 700;
 	line-height: 1.25em;
 	color: var(--primary-color);
@@ -628,14 +627,14 @@ body{
 }
 
 .section-title h1, .section-title .hero-title{
-	font-size: 56px;
+	font-size: 36px;
 	text-transform: uppercase;
 	margin-bottom: 0;
 	cursor: none;
 }
 
 .section-title h2{
-	font-size: 44px;
+	font-size: 32px;
 	margin-bottom: 0;
 	cursor: none;
 }
@@ -1576,7 +1575,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-contact-box-content h3{
-	font-size: 20px;
+	font-size: 28px;
 }
 
 .about-contact-box-content h3 a{
@@ -1623,12 +1622,13 @@ header.main-header .header-sticky.active{
 
 .service-content-title h2{
 	width: calc(100% - 90px);
-	font-size: 22px;
+	font-size: 32px;
 	text-transform: capitalize;
 	line-height: 1.4em;
 }
 
-.service-content-title h2 a{
+.service-content-title h2 a,
+.service-content-title h3 a{
 	color: inherit;
 }
 
@@ -1664,8 +1664,12 @@ header.main-header .header-sticky.active{
 	flex: 1;
 }
 
-.our-services .service-content-title h2{
+.our-services .service-content-title h2,
+.our-services .service-content-title h3{
 	width: 100%;
+	font-size: 22px;
+	text-transform: capitalize;
+	line-height: 1.4em;
 }
 
 .our-services .service-image{
@@ -1787,6 +1791,23 @@ header.main-header .header-sticky.active{
 	border-radius: 999px;
 }
 
+.why-choose-hairtreat-section .what-we-image-2{
+	padding-left: 0;
+	max-width: 430px;
+	margin-left: auto;
+}
+
+.why-choose-hairtreat-section .what-we-image-2 img{
+	min-height: 560px;
+}
+
+.why-choose-hairtreat-section .experirnce-box{
+	left: -78px;
+	bottom: 55px;
+	max-width: 145px;
+	padding: 34px 24px;
+}
+
 .experirnce-box{
 	position: absolute;
 	bottom: 100px;
@@ -1801,7 +1822,7 @@ header.main-header .header-sticky.active{
 
 .experirnce-box h2{
 	position: relative;
-	font-size: 46px;
+	font-size: 32px;
 	color: var(--white-color);
 	margin-bottom: 5px;
 	z-index: 1;
@@ -1839,7 +1860,7 @@ header.main-header .header-sticky.active{
 
 .intro-video-heading h2{
 	margin: 0 0 16px;
-	font-size: 30px;
+	font-size: 32px;
 	line-height: 1.2em;
 	white-space: normal;
 }
@@ -1852,7 +1873,7 @@ header.main-header .header-sticky.active{
 .intro-video-heading-content h3{
 	margin-bottom: 28px;
 	font-family: var(--default-font);
-	font-size: 26px;
+	font-size: 28px;
 	font-weight: 600;
 	line-height: 1.25em;
 	color: var(--primary-color);
@@ -2081,7 +2102,7 @@ header.main-header .header-sticky.active{
 }
 
 .case-study-item-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	line-height: 1.4em;
 	color: var(--white-color);
 }
@@ -2138,7 +2159,7 @@ header.main-header .header-sticky.active{
 
 .treatment-case-card .case-study-item-content h3{
 	color: var(--primary-color);
-	font-size: 20px;
+	font-size: 28px;
 	line-height: 1.25em;
 	margin-bottom: 12px;
 }
@@ -2257,7 +2278,7 @@ header.main-header .header-sticky.active{
 }
 
 .why-choose-contact-box h3{
-	font-size: 22px;
+	font-size: 28px;
 	line-height: 1.4em;
 }
 
@@ -2390,7 +2411,7 @@ header.main-header .header-sticky.active{
 
 .testimonials-intro .section-title h2{
 	display: block;
-	font-size: 26px;
+	font-size: 32px;
 	line-height: 1.1em;
 	letter-spacing: 0;
 	text-transform: none;
@@ -2464,7 +2485,7 @@ header.main-header .header-sticky.active{
 
 @media only screen and (min-width: 992px){
 	.how-work-clinic-image{
-		margin-top: -55px;
+		margin-top: 20px;
 	}
 }
 
@@ -2642,7 +2663,7 @@ header.main-header .header-sticky.active{
 }
 
 .how-work-step-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	margin-bottom: 10px;
 }
 
@@ -2685,7 +2706,7 @@ header.main-header .header-sticky.active{
 }
 
 .testimonial-author-details h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 	color: var(--white-color);
 	margin-bottom: 5px;
@@ -2739,7 +2760,7 @@ header.main-header .header-sticky.active{
 }
 
 .testimonial-author .author-content h3{
-	font-size: 20px;
+	font-size: 28px;
 	text-transform: capitalize;
 	color: var(--white-color);
 	margin-bottom: 5px;
@@ -2999,7 +3020,7 @@ header.main-header .header-sticky.active{
 }
 
 .facts-counter-content h3{
-	font-size: 30px;
+	font-size: 28px;
 	margin-bottom: 5px;
 }
 
@@ -3101,7 +3122,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-blog-title h2{
-	font-size: 34px;
+	font-size: 32px;
 	line-height: 1.2em;
 	margin-bottom: 0;
 }
@@ -3233,7 +3254,7 @@ header.main-header .header-sticky.active{
 }
 
 .post-item-content h2{
-    font-size: 22px;
+    font-size: 32px;
 	line-height: 1.4em;
 }
 
@@ -3391,7 +3412,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-links h3{
-    font-size: 22px;
+    font-size: 28px;
     color: var(--white-color);
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -3580,7 +3601,7 @@ header.main-header .header-sticky.active{
 .page-header-box h1{
 	display: inline-block;
 	color: var(--white-color);
-	font-size: 60px;
+	font-size: 36px;
     font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -3679,7 +3700,7 @@ header.main-header .header-sticky.active{
 }
 
 .mission-vison-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 	margin-bottom: 10px;
 }
@@ -3802,7 +3823,7 @@ header.main-header .header-sticky.active{
 }
 
 .approach-support-box-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 	color: var(--white-color);
 	margin-bottom: 5px;
@@ -3844,20 +3865,20 @@ header.main-header .header-sticky.active{
 }
 
 .hair-transplant-service-intro .section-title h1, .section-title .hero-title{
-	font-size: 56px;
+	font-size: 36px;
 	line-height: 1.12em;
 	text-transform: none;
 	margin-bottom: 28px;
 }
 
 .hair-transplant-service-intro h2{
-	font-size: 52px;
+	font-size: 32px;
 	line-height: 1.3em;
 	margin-bottom: 22px;
 }
 
 .hair-transplant-service-intro h3{
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 1.35em;
 	margin-bottom: 14px;
 }
@@ -4040,7 +4061,7 @@ header.main-header .header-sticky.active{
 
 .journey-item-content h3{
 	color: var(--white-color);
-	font-size: 20px;
+	font-size: 28px;
 	line-height: 1.4em;
 	text-transform: capitalize;
 }
@@ -4083,7 +4104,7 @@ header.main-header .header-sticky.active{
 }
 
 .team-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 }
 
@@ -4279,7 +4300,7 @@ header.main-header .header-sticky.active{
 }
 
 .page-single-category-list h3{
-    font-size: 22px;
+    font-size: 28px;
     color: var(--white-color);
     text-transform: uppercase;
 	background: var(--primary-color);
@@ -4448,7 +4469,7 @@ header.main-header .header-sticky.active{
 }
 
 .sidebar-cta-content h3{
-    font-size: 22px;
+    font-size: 28px;
     text-transform: capitalize;
     color: var(--white-color);
     margin-bottom: 15px;
@@ -4564,7 +4585,7 @@ header.main-header .header-sticky.active{
 }
 
 .service-entry h2{
-	font-size: 48px;
+	font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -4631,7 +4652,7 @@ header.main-header .header-sticky.active{
 }
 
 .service-enhance-item-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 	margin-bottom: 10px;
 }
@@ -4798,15 +4819,15 @@ header.main-header .header-sticky.active{
 }
 
 .post-entry h1{
-	font-size: 60px;
+	font-size: 36px;
 }
 
 .post-entry h2{
-	font-size: 48px;
+	font-size: 32px;
 }
 
 .post-entry h3{
-	font-size: 40px;
+	font-size: 28px;
 }
 
 .post-entry h4{
@@ -5060,7 +5081,7 @@ header.main-header .header-sticky.active{
 }
 
 .case-study-detail-item h3{
-	font-size: 20px;
+	font-size: 28px;
 	text-transform: capitalize;
 	margin-bottom: 5px;
 }
@@ -5121,7 +5142,7 @@ header.main-header .header-sticky.active{
 }
 
 .case-study-entry h2{
-	font-size: 48px;
+	font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -5827,7 +5848,7 @@ header.main-header .header-sticky.active{
 }
 
 .contact-info-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 	margin-bottom: 5px;
 }
@@ -5926,7 +5947,7 @@ header.main-header .header-sticky.active{
 }
 
 .appointment-item-content h3{
-	font-size: 22px;
+	font-size: 28px;
 	text-transform: capitalize;
 	margin-bottom: 10px;
 }
@@ -6161,8 +6182,7 @@ header.main-header .header-sticky.active{
 		margin-top: 45px;
 	}
 
-	.available-treatment-card-content h3{
-		font-size: 28px;
+	$122px;
 	}
 
 	.available-treatment-card-content p,
@@ -6329,6 +6349,20 @@ header.main-header .header-sticky.active{
 		max-width: 55%;
 		margin: 0 auto;
 		margin-top: 30px;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2{
+		max-width: 75%;
+		margin-top: 30px;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2 img{
+		min-height: 460px;
+	}
+
+	.why-choose-hairtreat-section .experirnce-box{
+		left: -62px;
+		bottom: 45px;
 	}
 
 	.experirnce-box h2{
@@ -6875,8 +6909,7 @@ header.main-header .header-sticky.active{
 		margin-top: 35px;
 	}
 
-	.available-treatment-card-content h3{
-		font-size: 26px;
+	$122px;
 		margin-bottom: 14px;
 	}
 
@@ -7469,6 +7502,10 @@ header.main-header .header-sticky.active{
 
 	.what-we-image-2{
 		max-width: 100%;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2 img{
+		min-height: 420px;
 	}
 
 	.experirnce-box{
@@ -8237,7 +8274,7 @@ header.main-header .header-sticky.active{
             border-right: 0;
         }
         .custom-result-card h3.graft-title {
-            font-size: 26px;
+            font-size: 28px;
             color: #000000;
             font-weight: 700;
             line-height: 1.3;
@@ -8359,7 +8396,7 @@ header.main-header .header-sticky.active{
 
 .doctor-card-title h3{
 	color: #ff3131;
-	font-size: 22px;
+	font-size: 28px;
 	line-height: 1.25em;
 	font-weight: 700;
 	margin-bottom: 8px;
@@ -8916,7 +8953,7 @@ header.main-header .header-sticky.active{
 
 .graft-price-title h2 {
   font-family: var(--default-font);
-  font-size: 52px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.2em;
   color: #000;
@@ -8933,7 +8970,7 @@ header.main-header .header-sticky.active{
 
 .graft-price-card h3 {
   font-family: var(--default-font);
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: #000;
   margin-bottom: 26px;
@@ -9558,7 +9595,7 @@ header.main-header .header-sticky.active{
 
 .package-offer-card .section-title h2 {
   font-family: var(--accent-font);
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1.3em;
   color: var(--primary-color);
@@ -9653,7 +9690,7 @@ header.main-header .header-sticky.active{
 .package-offer-block h3 {
   margin-bottom: 18px;
   font-family: var(--accent-font);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 1.3em;
   color: var(--primary-color);
