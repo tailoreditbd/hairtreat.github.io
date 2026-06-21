@@ -1,3 +1,13 @@
+# URL Rewriting
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /hairtreat/
+  # Redirect any request where service-area.html is appended to another page to the correct path
+  RewriteRule ^(.*)/service-area\.html$ service-area.html [R=301,L]
+  # Redirect any request where image-gallery.html or images-gallery.html is appended to another page to the correct path
+  RewriteRule ^(.*)/image(s)?-gallery\.html$ image-gallery.html [R=301,L]
+</IfModule>
+
 # GZip Compression
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
