@@ -11061,13 +11061,13 @@ header.main-header .header-sticky.active{
 		line-height: 1.2 !important;
 	}
 
-	.uttara-nrb-section .why-choose-content .section-title h2,
+	.uttara-cost-section .section-title h2,
 	.uttara-faq-section .section-title h2{
 		font-size: 28px !important;
 		line-height: 1.2 !important;
 	}
 
-	.uttara-cost-section .section-title h3,
+	.uttara-nrb-section .why-choose-content .section-title h3,
 	.why-choose-hairtreat-section .section-title h3{
 		font-size: 26px !important;
 		line-height: 1.2 !important;
@@ -11112,9 +11112,9 @@ header.main-header .header-sticky.active{
 		font-size: 26px !important;
 	}
 
-	.uttara-nrb-section .why-choose-content .section-title h2,
+	.uttara-nrb-section .why-choose-content .section-title h3,
 	.uttara-faq-section .section-title h2,
-	.uttara-cost-section .section-title h3,
+	.uttara-cost-section .section-title h2,
 	.why-choose-hairtreat-section .section-title h3{
 		font-size: 24px !important;
 	}
