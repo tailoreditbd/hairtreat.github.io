@@ -1933,7 +1933,8 @@ header.main-header .header-sticky.active{
 	z-index: 1;
 }
 
-.experirnce-box h2{
+.experirnce-box h2,
+.experirnce-box .experience-count{
 	position: relative;
 	font-size: 32px;
 	color: var(--white-color);
@@ -3711,7 +3712,8 @@ header.main-header .header-sticky.active{
 	text-align: center;
 }
 
-.page-header-box h1{
+.page-header-box h1,
+.page-header-box > p{
 	display: inline-block;
 	color: var(--white-color);
 	font-size: 36px;
@@ -6518,7 +6520,8 @@ header.main-header .header-sticky.active{
 		bottom: 45px;
 	}
 
-	.experirnce-box h2{
+	.experirnce-box h2,
+	.experirnce-box .experience-count{
 		font-size: 34px;
 	}
 
@@ -6872,7 +6875,8 @@ header.main-header .header-sticky.active{
 		margin-bottom: 50px;
 	}
 
-	.page-header-box h1{
+	.page-header-box h1,
+	.page-header-box > p{
 		font-size: 45px;
 	}
 
@@ -7667,7 +7671,8 @@ header.main-header .header-sticky.active{
 		padding: 25px 15px;
 	}
 
-	.experirnce-box h2{
+	.experirnce-box h2,
+	.experirnce-box .experience-count{
 		font-size: 26px;
 	}
 
@@ -7892,7 +7897,8 @@ header.main-header .header-sticky.active{
 		padding-right: 12px;
 	}
 
-	.page-header-box h1{
+	.page-header-box h1,
+	.page-header-box > p{
 		font-size: 30px;
 	}
 
@@ -11303,5 +11309,212 @@ header.main-header .header-sticky.active{
 		padding-top: 42px !important;
 		background-position: top 54px left 82px !important;
 		background-size: 36px auto !important;
+	}
+}
+
+
+
+/* Saudi Arabia NRBs landing page responsive refinements */
+.saudi-nrb-page .home-clinic-focus-section .clinic-focus-heading{
+	margin-bottom: 18px;
+}
+
+.saudi-nrb-page .home-clinic-focus-section > .container,
+.saudi-nrb-page .home-about-section > .container,
+.saudi-nrb-page .class-faq-saudi-nrb > .container,
+.saudi-nrb-page .our-services > .container,
+.saudi-nrb-page .why-choose-hairtreat-section > .container,
+.saudi-nrb-page .hair-transplant-service-intro > .container,
+.saudi-nrb-page .our-approach.bg-section > .container{
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 991px){
+	.saudi-nrb-page .hair-transplant-service-intro,
+	.saudi-nrb-page .why-choose-hairtreat-section,
+	.saudi-nrb-page .our-services,
+	.saudi-nrb-page .home-clinic-focus-section,
+	.saudi-nrb-page .home-about-section,
+	.saudi-nrb-page .class-faq-saudi-nrb,
+	.saudi-nrb-page .our-approach.bg-section{
+		padding: 60px 0 !important;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .row,
+	.saudi-nrb-page .why-choose-hairtreat-section .row,
+	.saudi-nrb-page .our-services .row,
+	.saudi-nrb-page .home-clinic-focus-section .row,
+	.saudi-nrb-page .home-about-section .row,
+	.saudi-nrb-page .class-faq-saudi-nrb .row,
+	.saudi-nrb-page .our-approach.bg-section .row{
+		row-gap: 30px;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image,
+	.saudi-nrb-page .home-clinic-focus-section .how-work-clinic-image,
+	.saudi-nrb-page .home-about-section .about-us-images,
+	.saudi-nrb-page .our-approach.bg-section .approach-image,
+	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-1,
+	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-2{
+		max-width: 380px;
+		margin: 0 auto;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image,
+	.saudi-nrb-page .our-approach.bg-section .approach-image{
+		padding: 0 !important;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-content,
+	.saudi-nrb-page .why-choose-hairtreat-section .what-we-content,
+	.saudi-nrb-page .home-clinic-focus-section .how-work-content,
+	.saudi-nrb-page .home-about-section .about-us-content,
+	.saudi-nrb-page .our-approach.bg-section .our-approach-content{
+		margin-top: 0;
+		max-width: 100%;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .section-title,
+	.saudi-nrb-page .why-choose-hairtreat-section .section-title,
+	.saudi-nrb-page .home-about-section .section-title,
+	.saudi-nrb-page .home-clinic-focus-section .section-title,
+	.saudi-nrb-page .our-approach.bg-section .section-title,
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title{
+		margin-bottom: 18px !important;
+	}
+
+	.saudi-nrb-page .why-choose-hairtreat-section .what-we-content,
+	.saudi-nrb-page .home-about-section .about-experience-list,
+	.saudi-nrb-page .home-clinic-focus-section .clinic-focus-list,
+	.saudi-nrb-page .our-approach.bg-section .our-approach-body{
+		text-align: left;
+	}
+
+	.saudi-nrb-page .our-services .section-title,
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title{
+		text-align: center;
+	}
+
+	.saudi-nrb-page .our-services .section-title p,
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title p{
+		text-align: center !important;
+	}
+
+	.saudi-nrb-page .why-choose-hairtreat-section .experirnce-box,
+	.saudi-nrb-page .our-approach.bg-section .approach-support-box{
+		left: 20px;
+		right: auto;
+		bottom: 20px;
+	}
+
+	.saudi-nrb-page .our-services .service-item{
+		height: 100%;
+	}
+
+	.saudi-nrb-page .our-services .service-content{
+		padding: 24px 20px 18px;
+	}
+
+	.saudi-nrb-page .our-services .service-content-title h3{
+		font-size: 22px;
+	}
+
+	.saudi-nrb-page .our-services .service-content p,
+	.saudi-nrb-page .hair-transplant-service-copy p,
+	.saudi-nrb-page .why-choose-hairtreat-section .section-title p,
+	.saudi-nrb-page .home-clinic-focus-section p,
+	.saudi-nrb-page .home-about-section .section-title p,
+	.saudi-nrb-page .our-approach.bg-section .section-title p,
+	.saudi-nrb-page .faq-accordion .accordion-body p{
+		font-size: 15px !important;
+		line-height: 1.7em !important;
+	}
+
+	.saudi-nrb-page .faq-accordion .accordion-header .accordion-button{
+		font-size: 18px;
+		line-height: 1.5;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.saudi-nrb-page .hair-transplant-service-intro,
+	.saudi-nrb-page .why-choose-hairtreat-section,
+	.saudi-nrb-page .our-services,
+	.saudi-nrb-page .home-clinic-focus-section,
+	.saudi-nrb-page .home-about-section,
+	.saudi-nrb-page .class-faq-saudi-nrb,
+	.saudi-nrb-page .our-approach.bg-section{
+		padding: 50px 0 !important;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .section-title h1{
+		font-size: 30px !important;
+		line-height: 1.18em !important;
+	}
+
+	.saudi-nrb-page .why-choose-hairtreat-section .section-title h2,
+	.saudi-nrb-page .our-services .section-title h2,
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title h2,
+	.saudi-nrb-page .home-clinic-focus-section .clinic-focus-heading,
+	.saudi-nrb-page .home-about-section .section-title h3.section-title-h3-override,
+	.saudi-nrb-page .our-approach.bg-section .section-title h3.section-title-h3-override{
+		font-size: 26px !important;
+		line-height: 1.2em !important;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image,
+	.saudi-nrb-page .home-clinic-focus-section .how-work-clinic-image,
+	.saudi-nrb-page .home-about-section .about-us-images,
+	.saudi-nrb-page .our-approach.bg-section .approach-image,
+	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-1,
+	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-2{
+		max-width: 320px;
+	}
+
+	.saudi-nrb-page .why-choose-hairtreat-section .experirnce-box,
+	.saudi-nrb-page .our-approach.bg-section .approach-support-box{
+		max-width: 120px;
+		padding: 22px 16px;
+	}
+
+	.saudi-nrb-page .our-services .service-content-title h3{
+		font-size: 20px;
+	}
+
+	.saudi-nrb-page .our-approach.bg-section .mission-vison-item,
+	.saudi-nrb-page .our-approach.bg-section .contact-info-item{
+		gap: 14px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.saudi-nrb-page .hair-transplant-service-intro .section-title h1{
+		font-size: 26px !important;
+	}
+
+	.saudi-nrb-page .why-choose-hairtreat-section .section-title h2,
+	.saudi-nrb-page .our-services .section-title h2,
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title h2,
+	.saudi-nrb-page .home-clinic-focus-section .clinic-focus-heading,
+	.saudi-nrb-page .home-about-section .section-title h3.section-title-h3-override,
+	.saudi-nrb-page .our-approach.bg-section .section-title h3.section-title-h3-override{
+		font-size: 23px !important;
+	}
+
+	.saudi-nrb-page .section-title .section-subtitle{
+		font-size: 13px;
+		letter-spacing: 0.16em;
+	}
+
+	.saudi-nrb-page .our-services .service-content,
+	.saudi-nrb-page .our-approach.bg-section .mission-vison-item,
+	.saudi-nrb-page .faq-accordion .accordion-item{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.saudi-nrb-page .faq-accordion .accordion-header .accordion-button{
+		font-size: 16px;
+		padding-right: 44px !important;
 	}
 }
