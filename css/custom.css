@@ -11524,3 +11524,239 @@ header.main-header .header-sticky.active{
 
 
 
+
+/* Template mobile parity for repeated home, city, and landing sections */
+@media only screen and (max-width: 991px){
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images,
+	.home-about-section .about-us-images{
+		background-size: 60px auto;
+		max-width: 80%;
+		margin: 0 auto 30px;
+	}
+
+	.uttara-intro-section .about-us-content,
+	.uttara-cost-section .about-us-content,
+	.home-about-section .about-us-content,
+	.hair-transplant-service-intro .hair-transplant-service-content,
+	.home-clinic-focus-section .how-work-content,
+	.our-approach-content{
+		margin-top: 0;
+		margin-left: 0 !important;
+		max-width: 100%;
+	}
+
+	.why-choose-hairtreat-section .row,
+	.home-clinic-focus-section .row,
+	.hair-transplant-service-intro .row,
+	.our-approach .row{
+		row-gap: 30px;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-1{
+		max-width: none;
+		margin: 0 10px 30px 0;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2{
+		max-width: 75%;
+		margin: 30px auto 0;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2 img{
+		min-height: 460px;
+	}
+
+	.why-choose-hairtreat-section .experirnce-box{
+		position: absolute;
+		left: -62px;
+		right: auto;
+		bottom: 45px;
+		max-width: 130px;
+		margin: 0;
+		padding: 30px 20px;
+	}
+
+	.how-work-clinic-image{
+		margin-top: 22px;
+	}
+
+	.how-work-clinic-image img{
+		height: 320px;
+	}
+
+	.approach-image{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	.hair-transplant-service-intro .hair-transplant-service-image{
+		padding: 40px 60px 30px 0 !important;
+	}
+
+	.approach-support-box{
+		top: 0;
+		right: 0;
+		left: auto;
+		bottom: auto;
+		padding: 15px;
+		max-width: none;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images,
+	.home-about-section .about-us-images{
+		background-position: top 30px left 40px;
+		background-size: 40px auto;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.uttara-intro-section .about-img-1,
+	.uttara-cost-section .about-img-1,
+	.home-about-section .about-img-1{
+		padding-left: 145px;
+	}
+
+	.uttara-intro-section .about-img-2,
+	.uttara-cost-section .about-img-2,
+	.home-about-section .about-img-2{
+		width: 63%;
+		max-width: 200px;
+		margin-top: -150px;
+	}
+
+	.uttara-intro-section .company-experience-circle,
+	.uttara-cost-section .company-experience-circle,
+	.home-about-section .company-experience-circle{
+		position: absolute;
+	}
+
+	.uttara-intro-section .company-experience-circle img,
+	.uttara-cost-section .company-experience-circle img,
+	.home-about-section .company-experience-circle img{
+		max-width: 100px;
+	}
+
+	.what-we-image-1{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.what-we-image-2{
+		max-width: 100%;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2{
+		max-width: 100%;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2 img{
+		min-height: 420px;
+	}
+
+	.why-choose-hairtreat-section .experirnce-box{
+		position: absolute;
+		left: 0;
+		right: auto;
+		bottom: 100px;
+		max-width: 95px;
+		margin: 0;
+		padding: 25px 15px;
+	}
+
+	.approach-image{
+		max-width: 100%;
+		padding: 50px 0 35px 50px;
+	}
+
+	.hair-transplant-service-intro .hair-transplant-service-image{
+		padding: 30px 40px 30px 0 !important;
+	}
+
+	.approach-img-2{
+		max-width: 170px;
+		border-width: 5px;
+	}
+
+	.approach-support-box{
+		top: 0;
+		right: 0;
+		left: auto;
+		bottom: auto;
+		max-width: 220px;
+		padding: 10px;
+	}
+
+	.approach-support-box-content{
+		width: calc(100% - 60px);
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images{
+		padding-top: 0 !important;
+		background-position: top 30px left 40px !important;
+		background-size: 40px auto !important;
+	}
+
+	.uttara-intro-section .company-experience-circle,
+	.uttara-cost-section .company-experience-circle,
+	.home-about-section .company-experience-circle,
+	.why-choose-hairtreat-section .experirnce-box{
+		position: absolute;
+		transform: none;
+		writing-mode: horizontal-tb;
+		margin: 0;
+	}
+
+	.why-choose-hairtreat-section .experirnce-box{
+		bottom: 100px;
+	}
+
+	.approach-support-box-content h3{
+		font-size: 18px;
+	}
+
+	.approach-support-box-content p{
+		font-size: 14px;
+	}
+}
+
+
+
+/* Final mobile badge alignment: keep badges on the image edge, not buried inside images */
+@media only screen and (max-width: 767px){
+	.why-choose-hairtreat-section .experirnce-box{
+		left: -30px !important;
+		right: auto !important;
+		bottom: 88px !important;
+		z-index: 4;
+	}
+
+	.uttara-intro-section .company-experience-circle,
+	.uttara-cost-section .company-experience-circle,
+	.home-about-section .company-experience-circle{
+		right: 58px !important;
+		bottom: -34px !important;
+		transform: none !important;
+		z-index: 5;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.why-choose-hairtreat-section .experirnce-box{
+		left: -22px !important;
+		bottom: 86px !important;
+	}
+
+	.uttara-intro-section .company-experience-circle,
+	.uttara-cost-section .company-experience-circle,
+	.home-about-section .company-experience-circle{
+		right: 46px !important;
+		bottom: -30px !important;
+	}
+}
