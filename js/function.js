@@ -368,10 +368,16 @@
 
     if ($('.text-anime-style-3, .section-title h1, .section-title h2, .section-title h3, .section-title-h3-override').length) {
         let	animatedTextElements = document.querySelectorAll('.text-anime-style-3, .section-title h1, .section-title h2, .section-title h3, .section-title-h3-override');
-
+ 
          animatedTextElements.forEach((element) => {
-            //Reset if needed
-            if (element.animation) {
+             // Remove WOW.js conflicts to let GSAP animate characters cleanly
+             element.classList.remove('wow', 'fadeInUp');
+             element.removeAttribute('data-wow-delay');
+             element.style.visibility = 'visible';
+             element.style.opacity = '1';
+
+             //Reset if needed
+             if (element.animation) {
                 element.animation.progress(1).kill();
                 element.split.revert();
             }
