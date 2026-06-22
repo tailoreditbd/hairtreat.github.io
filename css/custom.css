@@ -10610,3 +10610,226 @@ header.main-header .header-sticky.active{
 		display: inline;
 	}
 }
+
+/* --------------------------------------------------------
+* 34. Call for Appointment Section css
+* -------------------------------------------------------- */
+.call-for-appointment-section {
+	padding: 60px 0;
+	background-color: var(--white-color);
+}
+
+.appointment-banner-box {
+	background: linear-gradient(135deg, #102B4E 0%, #1B365D 100%);
+	border-radius: 20px;
+	padding: 40px 50px;
+	box-shadow: 0 15px 35px rgba(16, 43, 78, 0.15);
+	position: relative;
+	overflow: hidden;
+}
+
+.appointment-banner-box::before {
+	content: '';
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.03);
+	pointer-events: none;
+}
+
+.appointment-banner-box::after {
+	content: '';
+	position: absolute;
+	bottom: -80px;
+	left: -80px;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.02);
+	pointer-events: none;
+}
+
+.appointment-banner-image-placeholder {
+	width: 100%;
+	height: 180px;
+	border: 2px dashed rgba(255, 255, 255, 0.25);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.03);
+	transition: all 0.3s ease-in-out;
+}
+
+.appointment-banner-image-placeholder:hover {
+	border-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.appointment-banner-image-placeholder i {
+	font-size: 40px;
+	margin-bottom: 12px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.appointment-banner-image-placeholder span {
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.appointment-banner-info {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.appointment-banner-title {
+	font-family: var(--accent-font);
+	font-size: 32px;
+	font-weight: 700;
+	color: var(--white-color);
+	margin-bottom: 15px;
+	letter-spacing: 0.5px;
+}
+
+.appointment-banner-phone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	margin-bottom: 10px;
+}
+
+.appointment-banner-phone i {
+	font-size: 26px;
+	color: #FF4A3B;
+}
+
+.appointment-banner-phone a {
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--white-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-family: var(--default-font);
+}
+
+.appointment-banner-phone a:hover {
+	color: #FF4A3B;
+}
+
+.appointment-banner-time {
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	font-weight: 400;
+}
+
+.btn-appointment-red {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1em;
+	text-transform: capitalize;
+	background: #FF4A3B;
+	color: var(--white-color);
+	border-radius: 100px;
+	padding: 17px 55px 17px 25px;
+	border: none;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+	text-decoration: none;
+	box-shadow: 0 8px 20px rgba(255, 74, 59, 0.25);
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.btn-appointment-red::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	background-image: url('../images/arrow-white.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 12px auto;
+	transform: translateY(-50%);
+	transition: all 0.3s ease-in-out;
+	z-index: 2;
+}
+
+.btn-appointment-red::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	opacity: 0;
+	background: var(--primary-color);
+	border-radius: 100px;
+	transition: all 0.4s ease-in-out;
+	z-index: -1;
+}
+
+.btn-appointment-red:hover {
+	color: var(--white-color);
+	box-shadow: 0 8px 25px rgba(255, 74, 59, 0.35);
+}
+
+.btn-appointment-red:hover::before {
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.btn-appointment-red:hover::after {
+	left: 0;
+	right: 0;
+	opacity: 1;
+}
+
+/* Responsive CSS for Call for Appointment */
+@media (max-width: 991px) {
+	.appointment-banner-box {
+		padding: 40px 30px;
+	}
+	.appointment-banner-title {
+		font-size: 28px;
+	}
+	.appointment-banner-phone a {
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 767px) {
+	.appointment-banner-image-placeholder {
+		height: 150px;
+		margin-bottom: 25px;
+	}
+	.appointment-banner-info {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.appointment-banner-phone {
+		justify-content: center;
+	}
+	.appointment-banner-box {
+		text-align: center;
+		padding: 35px 20px;
+	}
+	.btn-appointment-red {
+		width: 100%;
+		max-width: 280px;
+		text-align: center;
+	}
+}
