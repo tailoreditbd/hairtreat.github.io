@@ -1472,12 +1472,34 @@ header.main-header .header-sticky.active{
 
 .about-img-1{
 	position: relative;
-	padding-left: 240px;
+	padding-left: 40%;
 }
 
 .about-img-2{
+	position: relative;
+	width: 63%;
 	max-width: 360px;
-	margin-top: -312px;
+	margin-top: -55%;
+}
+
+.about-img-2-overlay{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	background: var(--primary-color);
+	padding: 6px 16px;
+	border-radius: 50px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	margin: 0 !important;
+	z-index: 5;
+}
+
+.about-img-2-overlay p{
+	margin: 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--white-color);
+	line-height: 1;
 }
 
 .about-img-2 figure,
