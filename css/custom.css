@@ -1500,17 +1500,17 @@ header.main-header .header-sticky.active{
 @media only screen and (max-width: 575px){
 	.home-about-section .about-us-images{
 		max-width: 100%;
-		padding: 0 10px;
+		padding: 0 6px;
 	}
 
 	.home-about-section .about-img-1{
-		padding-left: 92px;
+		padding-left: 72px;
 	}
 
 	.home-about-section .about-img-2{
-		width: 72%;
-		max-width: 260px;
-		margin-top: -185px;
+		width: 76%;
+		max-width: 280px;
+		margin-top: -170px;
 	}
 }
 
@@ -11239,5 +11239,36 @@ header.main-header .header-sticky.active{
 
 	.uttara-nrb-section .why-choose-contact-item-content h3{
 		font-size: 20px !important;
+	}
+}
+@media only screen and (max-width: 575px){
+	.uttara-intro-section .company-experience-circle,
+	.uttara-cost-section .company-experience-circle,
+	.uttara-nrb-section .years-experience-text,
+	.why-choose-hairtreat-section .experirnce-box{
+		position: static;
+		transform: none;
+		writing-mode: horizontal-tb;
+		right: auto;
+		left: auto;
+		bottom: auto;
+		margin: 14px auto 0;
+	}
+
+	.uttara-intro-section .company-experience-circle img,
+	.uttara-cost-section .company-experience-circle img{
+		max-width: 110px;
+	}
+
+	.uttara-nrb-section .years-experience-text p{
+		color: var(--primary-color);
+	}
+}
+@media only screen and (max-width: 575px){
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images{
+		padding-top: 42px !important;
+		background-position: top 54px left 82px !important;
+		background-size: 36px auto !important;
 	}
 }
