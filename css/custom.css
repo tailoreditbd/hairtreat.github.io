@@ -11139,3 +11139,13 @@ header.main-header .header-sticky.active{
 		line-height: 1.5;
 	}
 }
+
+@media only screen and (max-width: 991px) {
+	.uttara-intro-section .section-title p,
+	.our-services .section-title p,
+	.uttara-nrb-section .why-choose-content .section-title p,
+	.uttara-cost-section .section-title p,
+	.why-choose-hairtreat-section .section-title p {
+		text-align: left !important;
+	}
+}
