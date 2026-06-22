@@ -11153,3 +11153,91 @@ header.main-header .header-sticky.active{
 .dhaka-cost-section .section-title{
 	margin-bottom: 12px;
 }
+/* service-area responsive cleanup */
+@media only screen and (max-width: 991px){
+	.uttara-intro-section,
+	.uttara-nrb-section,
+	.uttara-cost-section,
+	.why-choose-hairtreat-section,
+	.uttara-faq-section{
+		padding: 50px 0 !important;
+	}
+
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images,
+	.uttara-nrb-section .why-choose-images,
+	.why-choose-hairtreat-section .what-we-image-1,
+	.why-choose-hairtreat-section .what-we-image-2{
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+	.uttara-intro-section .about-us-content,
+	.uttara-cost-section .about-us-content,
+	.uttara-nrb-section .why-choose-content,
+	.why-choose-hairtreat-section .what-we-content{
+		margin-top: 20px;
+		margin-left: 0 !important;
+	}
+
+	.uttara-cost-section .about-experience-box{
+		flex-direction: column;
+		align-items: stretch;
+		gap: 18px;
+	}
+
+	.uttara-cost-section .about-experience-list,
+	.uttara-cost-section .about-experience-image{
+		width: 100%;
+	}
+
+	.uttara-nrb-section .why-choose-contact-box{
+		margin-top: 20px;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item{
+		align-items: flex-start;
+		gap: 12px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.uttara-intro-section,
+	.uttara-nrb-section,
+	.uttara-cost-section,
+	.why-choose-hairtreat-section,
+	.uttara-faq-section{
+		padding: 42px 0 !important;
+	}
+
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images,
+	.uttara-nrb-section .why-choose-images,
+	.why-choose-hairtreat-section .what-we-image-1,
+	.why-choose-hairtreat-section .what-we-image-2{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.uttara-cost-section .about-experience-box,
+	.uttara-nrb-section .why-choose-contact-box{
+		gap: 16px;
+	}
+
+	.uttara-cost-section .about-experience-list ul li,
+	.why-choose-hairtreat-section .about-experience-list ul li{
+		padding-left: 24px;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item .icon-box{
+		width: 54px !important;
+		height: 54px !important;
+		font-size: 22px !important;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item-content h3{
+		font-size: 20px !important;
+	}
+}
