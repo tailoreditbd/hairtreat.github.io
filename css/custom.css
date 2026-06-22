@@ -11847,28 +11847,3 @@ header.main-header .header-sticky.active{
 		max-width: 182px !important;
 	}
 }
-
-/* Slightly larger mobile approach collage after visual pass */
-@media only screen and (max-width: 767px){
-	.our-approach .approach-image{
-		max-width: 335px !important;
-		padding-left: 54px !important;
-	}
-
-	.our-approach .approach-img-2{
-		max-width: 154px !important;
-		bottom: 56px !important;
-	}
-}
-
-@media only screen and (max-width: 400px){
-	.our-approach .approach-image{
-		max-width: 320px !important;
-		padding-left: 50px !important;
-	}
-
-	.our-approach .approach-img-2{
-		max-width: 148px !important;
-		bottom: 52px !important;
-	}
-}
