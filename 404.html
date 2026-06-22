@@ -10,6 +10,18 @@
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
     <title>Glowix - Plastic Surgery & Beauty Clinic HTML Template</title>
+	<script>
+		(function () {
+			var path = window.location.pathname.replace(/\/+$/, '');
+			var match = path.match(/\/service-area\.html\/(uttara|uttura|gulshan|dhaka)$/i);
+
+			if (match) {
+				var city = match[1].toLowerCase() === 'uttura' ? 'uttara' : match[1].toLowerCase();
+				var target = path.replace(/\/service-area\.html\/[^/]+$/i, '/' + city + '.html');
+				window.location.replace(target + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -264,7 +276,7 @@
                     <div class="footer-copyright">
                         <!-- Footer Copyright Text Start -->
                         <div class="footer-copyright-text">
-                            <p>Copyright © 2025 All Rights Reserved.</p>
+                            <p>Copyright &copy; 2025 All Rights Reserved.</p>
                         </div>
                         <!-- Footer Copyright Text End -->
 
