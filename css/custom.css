@@ -10833,3 +10833,75 @@ header.main-header .header-sticky.active{
 		text-align: center;
 	}
 }
+
+/* FAQ Accordion Mobile and General Overrides */
+.faq-accordion .accordion-item {
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 1px solid var(--divider-color) !important;
+}
+
+.faq-accordion .accordion-header .accordion-button {
+	background: transparent !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	padding-left: 0 !important;
+	padding-right: 35px !important;
+	color: var(--primary-color) !important;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+	color: var(--accent-color) !important;
+}
+
+.faq-accordion .accordion-item .accordion-button::after,
+.faq-accordion .accordion-item .accordion-button.collapsed::after {
+	background-image: none !important;
+	content: '\f107' !important;
+	font-family: 'FontAwesome' !important;
+	display: block !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.faq-accordion .accordion-item .accordion-body {
+	padding-left: 0 !important;
+	padding-right: 25px !important;
+}
+
+/* Extra Mobile Responsiveness for FAQ Section Images */
+@media (max-width: 767px) {
+	.our-faqs-images {
+		padding: 0 110px 45px 0 !important;
+	}
+	.faqs-img-2 {
+		max-width: 150px !important;
+	}
+	.faqs-circle {
+		top: 15px !important;
+		right: 15px !important;
+	}
+	.faqs-circle a img {
+		max-width: 80px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.our-faqs-images {
+		padding: 0 85px 35px 0 !important;
+	}
+	.faqs-img-2 {
+		max-width: 110px !important;
+	}
+	.faqs-circle {
+		top: 10px !important;
+		right: 10px !important;
+	}
+	.faqs-circle a img {
+		max-width: 65px !important;
+	}
+	.faq-accordion .accordion-header .accordion-button {
+		font-size: 16px !important;
+	}
+}
