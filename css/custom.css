@@ -1490,6 +1490,13 @@ header.main-header .header-sticky.active{
 	}
 }
 
+
+@media only screen and (min-width: 992px){
+	.uttara-cost-section .about-us-content{
+		margin-left: -85px;
+	}
+}
+
 @media only screen and (max-width: 575px){
 	.home-about-section .about-us-images{
 		max-width: 100%;
@@ -10967,5 +10974,168 @@ header.main-header .header-sticky.active{
 	}
 	.faq-accordion .accordion-header .accordion-button {
 		font-size: 16px !important;
+	}
+}
+
+/* Uttara page mobile responsiveness */
+@media only screen and (max-width: 991px){
+	.uttara-intro-section,
+	.uttara-nrb-section,
+	.uttara-cost-section,
+	.why-choose-hairtreat-section,
+	.uttara-faq-section{
+		padding: 60px 0 !important;
+	}
+
+	.uttara-intro-section .about-us-content,
+	.uttara-cost-section .about-us-content,
+	.uttara-nrb-section .why-choose-content,
+	.why-choose-hairtreat-section .what-we-content{
+		margin-top: 30px;
+	}
+
+	.uttara-intro-section .section-title,
+	.uttara-nrb-section .why-choose-content .section-title,
+	.uttara-cost-section .section-title,
+	.why-choose-hairtreat-section .section-title,
+	.uttara-faq-section .section-title{
+		text-align: center !important;
+		margin-bottom: 20px !important;
+	}
+
+	.uttara-cost-section .about-us-content{
+		margin-left: 0;
+	}
+
+	.uttara-cost-section .about-experience-list,
+	.uttara-cost-section .about-experience-image{
+		width: 100%;
+	}
+
+	.uttara-cost-section .about-experience-image{
+		max-width: 420px;
+		margin: 0 auto;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item{
+		flex-wrap: wrap;
+		gap: 14px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item-content{
+		width: 100%;
+		margin-left: 0 !important;
+	}
+
+	.uttara-nrb-section .why-choose-contact-box > div:last-child,
+	.uttara-intro-section .about-us-body,
+	.why-choose-hairtreat-section .what-we-btn{
+		text-align: center;
+	}
+
+	.why-choose-hairtreat-section .row{
+		row-gap: 30px;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-1{
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2{
+		max-width: 360px;
+		margin: 0 auto;
+	}
+
+	.why-choose-hairtreat-section .experirnce-box{
+		left: 20px;
+		bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.uttara-intro-section .section-title h1{
+		font-size: 30px !important;
+		line-height: 1.2 !important;
+	}
+
+	.uttara-nrb-section .why-choose-content .section-title h2,
+	.uttara-faq-section .section-title h2{
+		font-size: 28px !important;
+		line-height: 1.2 !important;
+	}
+
+	.uttara-cost-section .section-title h3,
+	.why-choose-hairtreat-section .section-title h3{
+		font-size: 26px !important;
+		line-height: 1.2 !important;
+	}
+
+	.uttara-intro-section .about-us-images,
+	.uttara-cost-section .about-us-images,
+	.uttara-nrb-section .why-choose-images{
+		margin-bottom: 10px;
+	}
+
+	.uttara-cost-section .about-experience-box{
+		gap: 24px;
+	}
+
+	.uttara-nrb-section .doctor-specialist-list,
+	.uttara-cost-section .about-experience-list,
+	.why-choose-hairtreat-section .about-experience-list{
+		text-align: left;
+	}
+
+	.why-choose-hairtreat-section .what-we-image-2{
+		max-width: 300px;
+	}
+
+	.why-choose-hairtreat-section .experirnce-box{
+		max-width: 115px;
+		padding: 24px 16px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.uttara-intro-section,
+	.uttara-nrb-section,
+	.uttara-cost-section,
+	.why-choose-hairtreat-section,
+	.uttara-faq-section{
+		padding: 50px 0 !important;
+	}
+
+	.uttara-intro-section .section-title h1{
+		font-size: 26px !important;
+	}
+
+	.uttara-nrb-section .why-choose-content .section-title h2,
+	.uttara-faq-section .section-title h2,
+	.uttara-cost-section .section-title h3,
+	.why-choose-hairtreat-section .section-title h3{
+		font-size: 24px !important;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item{
+		margin-top: 24px !important;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item .icon-box{
+		width: 54px !important;
+		height: 54px !important;
+		font-size: 22px !important;
+	}
+
+	.uttara-nrb-section .why-choose-contact-item-content h3{
+		font-size: 20px !important;
+	}
+
+	.uttara-faq-section .accordion-button{
+		padding-right: 48px;
+		font-size: 16px;
+		line-height: 1.5;
 	}
 }
