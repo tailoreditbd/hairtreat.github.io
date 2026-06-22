@@ -11319,15 +11319,6 @@ header.main-header .header-sticky.active{
 	margin-bottom: 18px;
 }
 
-.saudi-nrb-page .home-clinic-focus-section > .container,
-.saudi-nrb-page .home-about-section > .container,
-.saudi-nrb-page .class-faq-saudi-nrb > .container,
-.saudi-nrb-page .our-services > .container,
-.saudi-nrb-page .why-choose-hairtreat-section > .container,
-.saudi-nrb-page .hair-transplant-service-intro > .container,
-.saudi-nrb-page .our-approach.bg-section > .container{
-	overflow: hidden;
-}
 
 @media only screen and (max-width: 991px){
 	.saudi-nrb-page .hair-transplant-service-intro,
@@ -11351,18 +11342,23 @@ header.main-header .header-sticky.active{
 	}
 
 	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image,
-	.saudi-nrb-page .home-clinic-focus-section .how-work-clinic-image,
-	.saudi-nrb-page .home-about-section .about-us-images,
-	.saudi-nrb-page .our-approach.bg-section .approach-image,
-	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-1,
-	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-2{
-		max-width: 380px;
+	.saudi-nrb-page .our-approach.bg-section .approach-image{
+		max-width: 80%;
 		margin: 0 auto;
 	}
 
-	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image,
-	.saudi-nrb-page .our-approach.bg-section .approach-image{
-		padding: 0 !important;
+	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image{
+		padding: 40px 60px 30px 0 !important;
+	}
+
+	.saudi-nrb-page .home-about-section .about-us-images{
+		width: 100%;
+		max-width: 560px;
+		margin: 0 auto 30px;
+	}
+
+	.saudi-nrb-page .home-clinic-focus-section .how-work-clinic-image{
+		margin-top: 22px;
 	}
 
 	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-content,
@@ -11454,21 +11450,25 @@ header.main-header .header-sticky.active{
 
 	.saudi-nrb-page .why-choose-hairtreat-section .section-title h2,
 	.saudi-nrb-page .our-services .section-title h2,
-	.saudi-nrb-page .class-faq-saudi-nrb .section-title h2,
-	.saudi-nrb-page .home-clinic-focus-section .clinic-focus-heading,
-	.saudi-nrb-page .home-about-section .section-title h3.section-title-h3-override,
-	.saudi-nrb-page .our-approach.bg-section .section-title h3.section-title-h3-override{
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title h2{
 		font-size: 26px !important;
 		line-height: 1.2em !important;
 	}
 
-	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image,
-	.saudi-nrb-page .home-clinic-focus-section .how-work-clinic-image,
-	.saudi-nrb-page .home-about-section .about-us-images,
-	.saudi-nrb-page .our-approach.bg-section .approach-image,
-	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-1,
-	.saudi-nrb-page .why-choose-hairtreat-section .what-we-image-2{
-		max-width: 320px;
+	.saudi-nrb-page .home-clinic-focus-section .clinic-focus-heading,
+	.saudi-nrb-page .home-about-section .section-title h3.section-title-h3-override,
+	.saudi-nrb-page .our-approach.bg-section .section-title h3.section-title-h3-override{
+		font-size: 20px !important;
+		line-height: 1.3em !important;
+	}
+
+	.saudi-nrb-page .hair-transplant-service-intro .hair-transplant-service-image{
+		padding: 30px 40px 30px 0 !important;
+	}
+
+	.saudi-nrb-page .our-approach.bg-section .approach-image{
+		max-width: 100%;
+		padding: 50px 0 35px 50px;
 	}
 
 	.saudi-nrb-page .why-choose-hairtreat-section .experirnce-box,
@@ -11494,11 +11494,14 @@ header.main-header .header-sticky.active{
 
 	.saudi-nrb-page .why-choose-hairtreat-section .section-title h2,
 	.saudi-nrb-page .our-services .section-title h2,
-	.saudi-nrb-page .class-faq-saudi-nrb .section-title h2,
+	.saudi-nrb-page .class-faq-saudi-nrb .section-title h2{
+		font-size: 24px !important;
+	}
+
 	.saudi-nrb-page .home-clinic-focus-section .clinic-focus-heading,
 	.saudi-nrb-page .home-about-section .section-title h3.section-title-h3-override,
 	.saudi-nrb-page .our-approach.bg-section .section-title h3.section-title-h3-override{
-		font-size: 23px !important;
+		font-size: 20px !important;
 	}
 
 	.saudi-nrb-page .section-title .section-subtitle{
@@ -11518,3 +11521,6 @@ header.main-header .header-sticky.active{
 		padding-right: 44px !important;
 	}
 }
+
+
+
