@@ -366,8 +366,8 @@
         });
     }
 
-    if ($('.text-anime-style-3').length) {
-        let	animatedTextElements = document.querySelectorAll('.text-anime-style-3');
+    if ($('.text-anime-style-3, .section-title h1, .section-title h2, .section-title h3, .section-title-h3-override').length) {
+        let	animatedTextElements = document.querySelectorAll('.text-anime-style-3, .section-title h1, .section-title h2, .section-title h3, .section-title-h3-override');
 
          animatedTextElements.forEach((element) => {
             //Reset if needed
