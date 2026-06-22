@@ -19,6 +19,13 @@
   RewriteRule ^service-area(-)?\.html/(uttara|uttura)$ uttara.html [NC,L]
   RewriteRule ^service-area(-)?\.html/gulshan$ gulshan.html [NC,L]
   RewriteRule ^service-area(-)?\.html/dhaka$ dhaka.html [NC,L]
+
+  # Redirect direct HTML file access of Saudi Arabia NRB landing page
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*hair-loss-treatment-for-saudi-arabia-nrbs\.html\s [NC]
+  RewriteRule ^hair-loss-treatment-for-saudi-arabia-nrbs\.html$ hair-loss-treatment-for-saudi-arabia-nrbs [R=301,L]
+
+  # Rewrite clean URL internally to its file
+  RewriteRule ^hair-loss-treatment-for-saudi-arabia-nrbs$ hair-loss-treatment-for-saudi-arabia-nrbs.html [NC,L]
 </IfModule>
 
 # GZip Compression
