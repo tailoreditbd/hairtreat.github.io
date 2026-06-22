@@ -1465,6 +1465,48 @@ header.main-header .header-sticky.active{
 	margin-right: 20px;
 }
 
+@media only screen and (min-width: 992px){
+	.home-about-section .about-us-images{
+		width: calc(100% + 180px);
+		margin-left: 35px;
+		margin-right: -215px;
+	}
+
+	.home-about-section .about-img-1{
+		padding-left: 34%;
+	}
+
+	.home-about-section .about-img-2{
+		width: 72%;
+		max-width: 600px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.home-about-section .about-us-images{
+		width: 100%;
+		max-width: 560px;
+		margin: 0 auto 30px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.home-about-section .about-us-images{
+		max-width: 100%;
+		padding: 0 10px;
+	}
+
+	.home-about-section .about-img-1{
+		padding-left: 92px;
+	}
+
+	.home-about-section .about-img-2{
+		width: 72%;
+		max-width: 260px;
+		margin-top: -185px;
+	}
+}
+
 .about-img-2,
 .about-img-1{
 	width: 100%;
