@@ -3961,6 +3961,39 @@ header.main-header .header-sticky.active{
 	margin-left: auto;
 }
 
+.hair-transplant-service-intro .row{
+	align-items: flex-start !important;
+}
+
+.hair-transplant-service-intro .hair-transplant-service-content .section-title{
+	margin-bottom: 18px;
+}
+
+.hair-transplant-service-intro .hair-transplant-service-content .section-subtitle{
+	padding-left: 0;
+	margin-bottom: 8px;
+}
+
+.hair-transplant-service-intro .hair-transplant-service-content .section-subtitle::before{
+	position: static;
+	transform: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.hair-transplant-service-intro .section-title h2{
+	margin-bottom: 10px;
+	line-height: 1.18em;
+}
+
+.hair-transplant-service-intro .hair-transplant-service-copy{
+	margin-top: 0;
+}
+
+.hair-transplant-service-intro .hair-transplant-service-copy p:first-child{
+	margin-top: 0;
+}
 .hair-transplant-service-intro{
 	padding-top: 40px;
 }
