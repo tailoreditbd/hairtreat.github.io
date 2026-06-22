@@ -11760,3 +11760,90 @@ header.main-header .header-sticky.active{
 		bottom: -30px !important;
 	}
 }
+
+/* Shared mobile approach/support image layout: match template screenshot across home, city, and landing pages */
+@media only screen and (max-width: 767px){
+	.our-approach .approach-image{
+		width: 100% !important;
+		max-width: 312px !important;
+		margin: 0 auto !important;
+		padding: 50px 0 34px 52px !important;
+	}
+
+	.our-approach .approach-img-1{
+		position: relative;
+		z-index: 1;
+	}
+
+	.our-approach .approach-img-1 figure,
+	.our-approach .approach-img-1 img{
+		border-radius: 18px !important;
+	}
+
+	.our-approach .approach-img-2{
+		left: 0 !important;
+		right: auto !important;
+		bottom: 58px !important;
+		width: 48% !important;
+		max-width: 145px !important;
+		border: 5px solid var(--secondary-color) !important;
+		border-radius: 999px !important;
+		z-index: 2;
+	}
+
+	.our-approach .approach-support-box{
+		top: 10px !important;
+		right: 4px !important;
+		left: auto !important;
+		bottom: auto !important;
+		width: auto !important;
+		max-width: 185px !important;
+		padding: 9px 12px !important;
+		border: 5px solid var(--secondary-color) !important;
+		border-radius: 14px 14px 0 14px !important;
+		z-index: 3;
+	}
+
+	.our-approach .approach-support-box .icon-box{
+		width: 42px !important;
+		height: 42px !important;
+		margin-right: 8px !important;
+		padding: 10px !important;
+		flex: 0 0 42px;
+	}
+
+	.our-approach .approach-support-box-content{
+		width: auto !important;
+		flex: 1 1 auto;
+	}
+
+	.our-approach .approach-support-box-content h3{
+		font-size: 16px !important;
+		line-height: 1.1 !important;
+		margin-bottom: 4px !important;
+		white-space: nowrap;
+	}
+
+	.our-approach .approach-support-box-content p{
+		font-size: 13px !important;
+		line-height: 1.2 !important;
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.our-approach .approach-image{
+		max-width: 300px !important;
+		padding-left: 48px !important;
+	}
+
+	.our-approach .approach-img-2{
+		max-width: 138px !important;
+		bottom: 54px !important;
+	}
+
+	.our-approach .approach-support-box{
+		right: 0 !important;
+		max-width: 182px !important;
+	}
+}
