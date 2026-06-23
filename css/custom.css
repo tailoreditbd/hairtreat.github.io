@@ -4447,6 +4447,26 @@ header.main-header .header-sticky.active{
 	margin-right: 20px;
 }
 
+.treatment-info-box{
+	position: sticky;
+	top: 20px;
+}
+@media only screen and (min-width: 992px){
+	.page-service-single > .container > .row{
+		align-items: flex-start;
+	}
+
+	.page-service-single > .container > .row > .col-lg-4:first-child{
+		position: sticky;
+		top: 20px;
+		align-self: flex-start;
+	}
+
+	.page-service-single > .container > .row > .col-lg-4:first-child .page-single-sidebar{
+		position: static;
+	}
+}
+
 .page-single-category-list{
 	background: var(--secondary-color);
 	border-radius: 20px;
@@ -7078,7 +7098,8 @@ header.main-header .header-sticky.active{
 		padding: 50px 0;
 	}
 
-	.page-single-sidebar{
+	.page-single-sidebar,
+	.treatment-info-box{
 		position: initial;
 		margin: 0 0 30px 0;
 	}
