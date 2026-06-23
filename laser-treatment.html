@@ -410,7 +410,7 @@
                                     <div class="col-lg-6">
                                         <!-- Appointment Form Start -->
                                         <div class="appointment-form">
-                                            <form id="appointmentForm" action="#" method="POST" data-toggle="validator" data-whatsapp-number="8801805002681" data-service-name="Laser Treatment" class="wow fadeInUp">
+                                            <form id="appointmentForm" action="#" method="POST" data-toggle="validator" data-whatsapp-number="8801805002681" data-service-name="Laser Treatment" class="wow fadeInUp" onsubmit="return redirectLaserTreatmentWhatsapp(event)">
                                                 <div class="row">
                                                     <div class="form-group col-md-12 mb-4">
                                                         <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Full Name" required>
@@ -530,8 +530,34 @@
 	<script src="js/parallaxie.js"></script>
 	<script src="js/jquery.mb.YTPlayer.min.js"></script>
 	<script src="js/function.js"></script>
+	<script>
+		function redirectLaserTreatmentWhatsapp(event) {
+			if (event) {
+				event.preventDefault();
+			}
+
+			var form = document.getElementById("appointmentForm");
+			if (!form || !form.reportValidity()) {
+				return false;
+			}
+
+			var whatsappNumber = (form.getAttribute("data-whatsapp-number") || "8801805002681").replace(/[^0-9]/g, "");
+			var serviceName = form.getAttribute("data-service-name") || "Laser Treatment";
+			var fullName = document.getElementById("full_name").value.trim();
+			var phone = document.getElementById("phone").value.trim();
+			var address = document.getElementById("address").value.trim();
+			var message = "Hello, I want to book a " + serviceName + ".\n"
+				+ "Full Name: " + fullName + "\n"
+				+ "Phone Number: " + phone + "\n"
+				+ "Address: " + address;
+
+			window.location.href = "https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + encodeURIComponent(message);
+			return false;
+		}
+	</script>
 </body>
 </html>
+
 
 
 

@@ -483,10 +483,14 @@
     /* Appointment form validation */
     var $appointmentForm = $("#appointmentForm");
     $appointmentForm.validator({focus: false}).on("submit", function (event) {
-        if (!event.isDefaultPrevented()) {
-            event.preventDefault();
-            submitappointmentForm();
+        var isValid = !event.isDefaultPrevented();
+        event.preventDefault();
+
+        if (!isValid) {
+            return;
         }
+
+        submitappointmentForm();
     });
 
     function submitappointmentForm(){
@@ -497,13 +501,13 @@
             var fullName = $.trim($("#full_name").val());
             var phone = $.trim($("#phone").val());
             var address = $.trim($("#address").val());
+            var cleanWhatsappNumber = (whatsappNumber + "").replace(/[^0-9]/g, "");
             var message = "Hello, I want to book a " + serviceName + ".\n"
                 + "Full Name: " + fullName + "\n"
                 + "Phone Number: " + phone + "\n"
                 + "Address: " + address;
 
-            window.open("https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message), "_blank");
-            appointmentformSuccess();
+            window.location.href = "https://api.whatsapp.com/send?phone=" + cleanWhatsappNumber + "&text=" + encodeURIComponent(message);
             return;
         }
 
@@ -521,7 +525,6 @@
             }
         });
     }
-
     function appointmentformSuccess(){
         $appointmentForm[0].reset();
         appointmentsubmitMSG(true, "Message Sent Successfully!")
@@ -552,5 +555,10 @@
     }
 
 })(jQuery);
+
+
+
+
+
 
 
