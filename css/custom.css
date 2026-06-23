@@ -3595,11 +3595,12 @@ header.main-header .header-sticky.active{
 .footer-copyright{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 20px;
 	border-top: 1px solid var(--dark-divider-color);
 	margin-top: 50px;
 	padding: 50px 0;
+	text-align: center;
 }
 
 .footer-copyright-text p{
