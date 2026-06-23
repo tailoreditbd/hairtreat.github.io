@@ -12003,7 +12003,7 @@ header.main-header .header-sticky.active{
   font-weight: 600;
   padding: 20px 15px;
   border-bottom: 2px solid rgba(72, 30, 11, 0.15);
-  text-align: left;
+  text-align: center;
   border-right: 1px solid rgba(72, 30, 11, 0.08);
 }
 .comparison-table thead th:last-child {
@@ -12022,7 +12022,7 @@ header.main-header .header-sticky.active{
   box-shadow: 0 6px 15px rgba(72, 30, 11, 0.06);
 }
 .comparison-table tbody td {
-  padding: 18px 15px;
+  padding: 18px 25px;
   font-size: 15px;
   color: #555;
   line-height: 1.6;
@@ -12034,7 +12034,7 @@ header.main-header .header-sticky.active{
 }
 .comparison-table tbody td:first-child {
   text-align: left;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--primary-color);
   font-size: 16px;
   width: 25%;
@@ -12072,4 +12072,179 @@ header.main-header .header-sticky.active{
     transform: scale(1.2) rotate(15deg);
   }
 }
+/* Sapphire page mobile table boxes */
+@media only screen and (max-width: 767px){
+	.sapphire-hair-transplant-page .pricing-table-card,
+	.sapphire-hair-transplant-page .comparison-table-card{
+		padding: 14px;
+		border-radius: 18px;
+		overflow: visible;
+	}
 
+	.sapphire-hair-transplant-page .pricing-table-card .table-responsive,
+	.sapphire-hair-transplant-page .comparison-table-card .table-responsive{
+		overflow-x: visible;
+	}
+
+	.sapphire-hair-transplant-page .steps-process-table{
+		width: 100%;
+		min-width: 0;
+		table-layout: fixed;
+		margin-bottom: 0;
+	}
+
+	.sapphire-hair-transplant-page .steps-process-table th,
+	.sapphire-hair-transplant-page .steps-process-table td{
+		width: 50% !important;
+		padding: 13px 10px !important;
+		font-size: 13.5px;
+		line-height: 1.45em;
+		white-space: normal;
+		word-break: normal;
+		overflow-wrap: anywhere;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table,
+	.sapphire-hair-transplant-page .comparison-table thead,
+	.sapphire-hair-transplant-page .comparison-table tbody,
+	.sapphire-hair-transplant-page .comparison-table tr,
+	.sapphire-hair-transplant-page .comparison-table th,
+	.sapphire-hair-transplant-page .comparison-table td{
+		display: block;
+		width: 100% !important;
+		min-width: 0;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table thead{
+		display: none;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table{
+		margin-bottom: 0;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody tr{
+		padding: 14px;
+		margin-bottom: 14px;
+		border: 1px solid rgba(205, 95, 55, 0.14);
+		border-radius: 14px;
+		background: var(--white-color);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody tr:last-child{
+		margin-bottom: 0;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td{
+		padding: 7px 0 !important;
+		border: 0 !important;
+		font-size: 14px;
+		line-height: 1.45em;
+		white-space: normal;
+		overflow-wrap: anywhere;
+		text-align: left;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td:first-child{
+		padding-top: 0 !important;
+		font-size: 16px;
+		font-weight: 600;
+		color: var(--primary-color);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-traditional::before,
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-sapphire::before{
+		display: block;
+		margin-bottom: 3px;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--accent-color);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-traditional::before{
+		content: 'Normal FUE';
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-sapphire::before{
+		content: 'Sapphire FUE';
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.sapphire-hair-transplant-page .pricing-table-card,
+	.sapphire-hair-transplant-page .comparison-table-card{
+		padding: 10px;
+	}
+
+	.sapphire-hair-transplant-page .steps-process-table th,
+	.sapphire-hair-transplant-page .steps-process-table td{
+		padding: 12px 9px !important;
+		font-size: 13px;
+	}
+}
+/* Clear mobile comparison cards for Sapphire page */
+@media only screen and (max-width: 767px){
+	.sapphire-hair-transplant-page .comparison-table-card{
+		background: transparent;
+		box-shadow: none;
+		border: 0;
+		padding: 0;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody tr{
+		display: grid !important;
+		grid-template-columns: 1fr;
+		gap: 10px;
+		padding: 16px !important;
+		margin-bottom: 16px;
+		border: 1px solid rgba(205, 95, 55, 0.18);
+		border-radius: 16px;
+		background: var(--white-color);
+		box-shadow: 0 8px 24px rgba(72, 30, 11, 0.06);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td:first-child{
+		padding: 0 0 4px !important;
+		font-family: var(--accent-font);
+		font-size: 20px;
+		line-height: 1.25em;
+		color: var(--primary-color);
+		border-bottom: 1px solid rgba(205, 95, 55, 0.16) !important;
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-traditional,
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-sapphire{
+		padding: 12px 12px !important;
+		border: 1px solid rgba(205, 95, 55, 0.12) !important;
+		border-radius: 12px;
+		background: #fbf4f1;
+		color: var(--text-color);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-sapphire{
+		background: rgba(205, 95, 55, 0.09);
+		border-color: rgba(205, 95, 55, 0.22) !important;
+		color: var(--primary-color);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-traditional::before,
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-sapphire::before{
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		margin-bottom: 6px;
+		font-family: var(--default-font);
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1.2em;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--accent-color);
+	}
+
+	.sapphire-hair-transplant-page .comparison-table tbody td.val-sapphire i{
+		margin-right: 5px;
+	}
+}
