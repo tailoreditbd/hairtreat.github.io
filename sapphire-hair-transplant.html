@@ -93,6 +93,23 @@
                 color: #ff9f75 !important;
             }
         }
+
+        /* Desktop and Tablet specific layout override for Section 1 image collage:
+           Shift the small overlap image box to the left side and set padding-left instead of padding-right */
+        @media only screen and (min-width: 768px) {
+            .hair-transplant-service-intro .hair-transplant-service-image {
+                padding: 40px 0 40px 90px !important;
+            }
+            .hair-transplant-service-intro .approach-img-2 {
+                left: 0 !important;
+                right: auto !important;
+            }
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .hair-transplant-service-intro .hair-transplant-service-image {
+                padding: 40px 0 30px 60px !important;
+            }
+        }
     </style>
 </head>
 <body class="sapphire-hair-transplant-page">
