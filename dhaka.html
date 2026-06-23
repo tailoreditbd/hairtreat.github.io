@@ -27,6 +27,60 @@
         gtag('js', new Date());
         gtag('config', 'G-5SDWQWJSN2');
     </script>
+    
+    <!-- Page Specific CSS for Responsive Banner -->
+    <style>
+        .dhaka-custom-banner {
+            background-image: linear-gradient(rgba(72, 30, 11, 0.45), rgba(72, 30, 11, 0.45)), url('images/dhaka-branch.png') !important;
+            background-size: cover !important;
+            background-position: center center !important;
+        }
+        @media only screen and (max-width: 767px) {
+            .dhaka-custom-banner {
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-position: center center !important;
+                height: auto !important;
+                min-height: 180px !important;
+                padding: 40px 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                border-radius: 20px !important;
+                overflow: hidden !important;
+            }
+            .dhaka-custom-banner .page-header-box {
+                padding: 0 15px !important;
+                text-align: center !important;
+                background: transparent !important;
+            }
+            .dhaka-custom-banner .page-header-box h1 {
+                font-size: 28px !important;
+                line-height: 1.2em !important;
+                display: block !important;
+                color: var(--white-color) !important;
+                margin-bottom: 8px !important;
+                font-weight: 500 !important;
+                font-family: var(--accent-font) !important;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+            }
+            .dhaka-custom-banner .page-header-box ol.breadcrumb {
+                justify-content: center !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+            }
+            .dhaka-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item {
+                font-size: 14px !important;
+                color: var(--white-color) !important;
+                text-transform: uppercase !important;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+            }
+            .dhaka-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item a {
+                color: #ff9f75 !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Preloader -->
@@ -104,7 +158,7 @@
     <!-- Header End -->
 
     <!-- Page Header Start -->
-    <div class="page-header bg-section dark-section">
+    <div class="page-header bg-section dark-section dhaka-custom-banner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
