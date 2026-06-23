@@ -3709,6 +3709,13 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 }
 
+.page-header.page-header-service-area-image{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/service-areas.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+
 .page-header-box{
 	text-align: center;
 }
