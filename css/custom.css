@@ -11957,3 +11957,20 @@ header.main-header .header-sticky.active{
 	}
 }
 
+/* Custom Step Table Text Styles */
+.pricing-table tbody td.step-title-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.pricing-table tbody td.step-details-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.6;
+}
+.pricing-table tbody tr:hover td.step-title-text,
+.pricing-table tbody tr:hover td.step-details-text {
+  color: var(--white-color);
+}
+
