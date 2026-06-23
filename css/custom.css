@@ -5973,6 +5973,12 @@ header.main-header .header-sticky.active{
 	margin-bottom: 0;
 }
 
+.contact-us-sticky-col{
+	position: sticky;
+	top: 120px;
+	align-self: flex-start;
+}
+
 .contact-info-list{
 	display: flex;
 	gap: 30px;
@@ -7477,6 +7483,11 @@ header.main-header .header-sticky.active{
 
 	.contact-us-content .section-title{
 		margin-bottom: 30px;
+	}
+
+	.contact-us-sticky-col{
+		position: static;
+		top: auto;
 	}
 
 	.contact-info-item{
@@ -11945,3 +11956,4 @@ header.main-header .header-sticky.active{
 		margin-left: 0;
 	}
 }
+

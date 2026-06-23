@@ -490,6 +490,23 @@
     });
 
     function submitappointmentForm(){
+        var whatsappNumber = $appointmentForm.data("whatsapp-number");
+
+        if (whatsappNumber) {
+            var serviceName = $appointmentForm.data("service-name") || "Appointment";
+            var fullName = $.trim($("#full_name").val());
+            var phone = $.trim($("#phone").val());
+            var address = $.trim($("#address").val());
+            var message = "Hello, I want to book a " + serviceName + ".\n"
+                + "Full Name: " + fullName + "\n"
+                + "Phone Number: " + phone + "\n"
+                + "Address: " + address;
+
+            window.open("https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message), "_blank");
+            appointmentformSuccess();
+            return;
+        }
+
         /* Ajax call to submit form */
         $.ajax({
             type: "POST",
@@ -535,3 +552,5 @@
     }
 
 })(jQuery);
+
+
