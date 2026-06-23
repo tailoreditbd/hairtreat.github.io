@@ -10770,7 +10770,9 @@ header.main-header .header-sticky.active{
 
 .appointment-banner-image-placeholder {
 	width: 100%;
-	height: 180px;
+	max-width: 272px;
+	height: auto;
+	aspect-ratio: 272 / 182;
 	border: 0;
 	border-radius: 15px;
 	display: block;
@@ -10791,7 +10793,7 @@ header.main-header .header-sticky.active{
 	width: 100%;
 	height: 100%;
 	display: block;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: center center;
 	filter: none;
 	opacity: 1;
@@ -10924,7 +10926,7 @@ header.main-header .header-sticky.active{
 		padding: 40px 30px;
 	}
 	.appointment-banner-image-placeholder {
-		height: 170px;
+		max-width: 272px;
 	}
 	.appointment-banner-title {
 		font-size: 28px;
@@ -10937,7 +10939,7 @@ header.main-header .header-sticky.active{
 @media (max-width: 767px) {
 	.appointment-banner-image-placeholder {
 		height: auto;
-		max-width: 420px;
+		max-width: 272px;
 		margin-bottom: 25px;
 		margin-left: auto;
 		margin-right: auto;
