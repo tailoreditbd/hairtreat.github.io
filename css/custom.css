@@ -11920,3 +11920,28 @@ header.main-header .header-sticky.active{
 		bottom: 52px !important;
 	}
 }
+/* Center desktop header navigation */
+@media only screen and (min-width: 992px){
+	.main-menu{
+		flex: 1 1 auto;
+		display: flex !important;
+		align-items: center;
+		justify-content: space-between;
+		min-width: 0;
+	}
+
+	.main-menu .nav-menu-wrapper{
+		flex: 1 1 auto;
+		margin: 0 34px;
+		text-align: center;
+	}
+
+	.main-menu .nav-menu-wrapper > ul{
+		justify-content: center !important;
+		gap: 6px;
+	}
+
+	.header-contact-btn{
+		margin-left: 0;
+	}
+}
