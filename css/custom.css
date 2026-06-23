@@ -10738,6 +10738,12 @@ header.main-header .header-sticky.active{
 	overflow: hidden;
 }
 
+.appointment-banner-box .row {
+	position: relative;
+	z-index: 1;
+	row-gap: 24px;
+}
+
 .appointment-banner-box::before {
 	content: '';
 	position: absolute;
@@ -10765,26 +10771,30 @@ header.main-header .header-sticky.active{
 .appointment-banner-image-placeholder {
 	width: 100%;
 	height: 180px;
-	border: 2px dashed rgba(255, 255, 255, 0.25);
+	border: 0;
 	border-radius: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: rgba(255, 255, 255, 0.7);
-	background-color: rgba(255, 255, 255, 0.03);
+	display: block;
+	background-color: transparent;
 	transition: all 0.3s ease-in-out;
+	overflow: hidden;
 }
 
 .appointment-banner-image-placeholder:hover {
-	border-color: rgba(255, 255, 255, 0.4);
-	background-color: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
 .appointment-banner-image-placeholder i {
-	font-size: 40px;
-	margin-bottom: 12px;
-	color: rgba(255, 255, 255, 0.6);
+	display: none;
+}
+
+.appointment-banner-image-placeholder img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center center;
+	filter: none;
+	opacity: 1;
 }
 
 .appointment-banner-image-placeholder span {
@@ -10913,6 +10923,9 @@ header.main-header .header-sticky.active{
 	.appointment-banner-box {
 		padding: 40px 30px;
 	}
+	.appointment-banner-image-placeholder {
+		height: 170px;
+	}
 	.appointment-banner-title {
 		font-size: 28px;
 	}
@@ -10923,8 +10936,12 @@ header.main-header .header-sticky.active{
 
 @media (max-width: 767px) {
 	.appointment-banner-image-placeholder {
-		height: 150px;
+		height: auto;
+		max-width: 420px;
 		margin-bottom: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		aspect-ratio: 16 / 10;
 	}
 	.appointment-banner-info {
 		text-align: center;
@@ -10932,6 +10949,13 @@ header.main-header .header-sticky.active{
 	}
 	.appointment-banner-phone {
 		justify-content: center;
+		flex-wrap: wrap;
+		gap: 8px 12px;
+	}
+	.appointment-banner-phone a {
+		font-size: 24px;
+		line-height: 1.2;
+		word-break: break-word;
 	}
 	.appointment-banner-box {
 		text-align: center;
