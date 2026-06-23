@@ -11960,7 +11960,7 @@ header.main-header .header-sticky.active{
 /* Custom Step Table Text Styles */
 .steps-process-table tbody td.step-title-text {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400 !important;
   color: var(--primary-color);
 }
 .steps-process-table tbody td.step-details-text {
