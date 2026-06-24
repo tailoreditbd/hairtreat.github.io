@@ -13,6 +13,11 @@
 	<script>
 		(function () {
 			var path = window.location.pathname.replace(/\/+$/, '');
+			if (/\/hair-transplant-cost$/i.test(path)) {
+				window.location.replace(path.replace(/hair-transplant-cost$/i, 'pricing.html') + window.location.search + window.location.hash);
+				return;
+			}
+
 			var match = path.match(/\/service-area\.html\/(uttara|uttura|gulshan|dhaka)$/i);
 
 			if (match) {
@@ -101,7 +106,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Hours &amp; Locations</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                                <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
                                 <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
                             </ul>

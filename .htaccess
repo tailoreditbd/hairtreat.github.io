@@ -1,4 +1,4 @@
-﻿# URL Rewriting
+# URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /hairtreat/
@@ -17,6 +17,9 @@
   # Redirect direct HTML file access of Saudi Arabia NRB landing page
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*hair-loss-treatment-for-saudi-arabia-nrbs\.html\s [NC]
   RewriteRule ^hair-loss-treatment-for-saudi-arabia-nrbs\.html$ hair-loss-treatment-for-saudi-arabia-nrbs [R=301,L]
+
+  # Redirect trailing slash Hair Transplant Cost URL to the clean no-slash URL
+  RewriteRule ^hair-transplant-cost/$ hair-transplant-cost [NC,R=301,L]
 
   # Redirect direct HTML file access of Hair Transplant Cost page
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*pricing\.html\s [NC]
