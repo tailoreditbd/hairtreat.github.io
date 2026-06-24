@@ -3725,8 +3725,11 @@ header.main-header .header-sticky.active{
 .page-header-box > p{
 	display: inline-block;
 	color: var(--white-color);
+	font-family: var(--accent-font);
 	font-size: 36px;
     font-weight: 400;
+	line-height: 1.2em;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	cursor: none;
