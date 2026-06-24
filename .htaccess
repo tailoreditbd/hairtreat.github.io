@@ -18,12 +18,17 @@
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*hair-loss-treatment-for-saudi-arabia-nrbs\.html\s [NC]
   RewriteRule ^hair-loss-treatment-for-saudi-arabia-nrbs\.html$ hair-loss-treatment-for-saudi-arabia-nrbs [R=301,L]
 
+  # Redirect direct HTML file access of Hair Transplant Cost page
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*pricing\.html\s [NC]
+  RewriteRule ^pricing\.html$ hair-transplant-cost [R=301,L]
+
   # Redirect direct HTML file access of Sapphire hair transplant landing page
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*sapphire-hair-transplant\.html\s [NC]
   RewriteRule ^sapphire-hair-transplant\.html$ sapphire-hair-transplant [R=301,L]
   RewriteRule ^best-sapphire-hair-transplant-in-bangladesh\.html$ sapphire-hair-transplant [NC,R=301,L]
 
   # Rewrite clean URL internally to its file
+  RewriteRule ^hair-transplant-cost$ pricing.html [NC,L]
   RewriteRule ^hair-loss-treatment-for-saudi-arabia-nrbs$ hair-loss-treatment-for-saudi-arabia-nrbs.html [NC,L]
   RewriteRule ^sapphire-hair-transplant$ sapphire-hair-transplant.html [NC,L]
 </IfModule>

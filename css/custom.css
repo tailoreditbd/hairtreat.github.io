@@ -12277,3 +12277,179 @@ header.main-header .header-sticky.active{
 		margin-right: 5px;
 	}
 }
+
+/* Hair transplant cost page table alignment */
+.cost-estimate-table,
+.package-summary-table,
+.graft-price-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cost-estimate-table th,
+.cost-estimate-table td,
+.package-summary-table th,
+.package-summary-table td,
+.graft-price-table th,
+.graft-price-table td {
+  vertical-align: middle !important;
+  text-align: left;
+  line-height: 1.45em;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.cost-estimate-table th,
+.cost-estimate-table td,
+.package-summary-table th,
+.package-summary-table td {
+  width: auto !important;
+}
+
+.cost-estimate-table th:nth-child(1),
+.cost-estimate-table td:nth-child(1) {
+  width: 22% !important;
+  font-weight: 700;
+}
+
+.cost-estimate-table th:nth-child(2),
+.cost-estimate-table td:nth-child(2) {
+  width: 28% !important;
+  white-space: nowrap;
+}
+
+.cost-estimate-table th:nth-child(3),
+.cost-estimate-table td:nth-child(3) {
+  width: 50% !important;
+}
+
+.package-summary-table th:nth-child(1),
+.package-summary-table td:nth-child(1) {
+  width: 24% !important;
+}
+
+.package-summary-table th:nth-child(2),
+.package-summary-table td:nth-child(2) {
+  width: 22% !important;
+}
+
+.package-summary-table th:nth-child(3),
+.package-summary-table td:nth-child(3),
+.package-summary-table th:nth-child(4),
+.package-summary-table td:nth-child(4) {
+  width: 15% !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.package-summary-table th:nth-child(5),
+.package-summary-table td:nth-child(5) {
+  width: 24% !important;
+}
+
+.graft-price-table th,
+.graft-price-table td {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.graft-price-table th:first-child,
+.graft-price-table td:first-child {
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .cost-estimate-table,
+  .package-summary-table,
+  .graft-price-table {
+    table-layout: auto;
+    min-width: 760px;
+  }
+
+  .cost-estimate-table th,
+  .cost-estimate-table td,
+  .package-summary-table th,
+  .package-summary-table td,
+  .graft-price-table th,
+  .graft-price-table td {
+    white-space: normal;
+  }
+
+  .graft-price-table th,
+  .graft-price-table td,
+  .cost-estimate-table th:nth-child(2),
+  .cost-estimate-table td:nth-child(2),
+  .package-summary-table th:nth-child(3),
+  .package-summary-table td:nth-child(3),
+  .package-summary-table th:nth-child(4),
+  .package-summary-table td:nth-child(4) {
+    white-space: nowrap;
+  }
+}
+
+.cost-estimate-table thead th,
+.package-summary-table thead th {
+  font-size: 17px;
+  line-height: 1.35em;
+}
+
+.cost-estimate-table tbody td,
+.package-summary-table tbody td {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Full-width responsive pricing tables */
+.pricing-table-section .cost-estimate-table,
+.pricing-table-section .package-summary-table,
+.pricing-table-section .graft-price-table {
+  width: 100% !important;
+  min-width: 100%;
+}
+
+.pricing-table-section .cost-estimate-table thead th,
+.pricing-table-section .cost-estimate-table tbody td,
+.pricing-table-section .package-summary-table thead th,
+.pricing-table-section .package-summary-table tbody td,
+.pricing-table-section .graft-price-table thead th,
+.pricing-table-section .graft-price-table tbody td {
+  font-size: 16px !important;
+  line-height: 1.45em;
+}
+
+.pricing-table-section .pricing-table-wrap,
+.pricing-table-section .pricing-table-card,
+.pricing-table-section .table-responsive {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .pricing-table-section .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-table-section .cost-estimate-table,
+  .pricing-table-section .package-summary-table,
+  .pricing-table-section .graft-price-table {
+    min-width: 760px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing-table-section .cost-estimate-table,
+  .pricing-table-section .package-summary-table,
+  .pricing-table-section .graft-price-table {
+    min-width: 720px;
+  }
+
+  .pricing-table-section .cost-estimate-table thead th,
+  .pricing-table-section .cost-estimate-table tbody td,
+  .pricing-table-section .package-summary-table thead th,
+  .pricing-table-section .package-summary-table tbody td,
+  .pricing-table-section .graft-price-table thead th,
+  .pricing-table-section .graft-price-table tbody td {
+    font-size: 14px !important;
+    padding: 14px 12px;
+  }
+}
