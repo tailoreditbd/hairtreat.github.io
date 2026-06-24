@@ -20,23 +20,23 @@
     $('.footer-social-links .fa-facebook-f').closest('a').attr('href', 'https://www.facebook.com/hairtreat');
 
     $('.footer-links.quick-links ul').html(
-        '<li><a href="index.html">Home</a></li>' +
-        '<li><a href="treatments.html">Treatments</a></li>' +
-        '<li><a href="contact.html">Hours &amp; Locations</a></li>' +
-        '<li><a href="case-study.html">Case studies</a></li>' +
-        '<li><a href="blog.html">Happenings</a></li>' +
-        '<li><a href="about.html">About us</a></li>'
+        '<li><a href="./">Home</a></li>' +
+        '<li><a href="treatments">Treatments</a></li>' +
+        '<li><a href="contact">Hours &amp; Locations</a></li>' +
+        '<li><a href="case-study">Case studies</a></li>' +
+        '<li><a href="blog">Happenings</a></li>' +
+        '<li><a href="about">About us</a></li>'
     );
 
     $('.footer-links-box .footer-links').not('.quick-links').first().html(
         '<h3>Useful Treatments</h3>' +
         '<ul>' +
-        '<li><a href="service-single.html">Hair Transplant</a></li>' +
-        '<li><a href="service-single.html">Hair Treatment</a></li>' +
-        '<li><a href="service-single.html">Hair PRP</a></li>' +
-        '<li><a href="service-single.html">Female Hair Transplant</a></li>' +
-        '<li><a href="service-single.html">GFC PRP</a></li>' +
-        '<li><a href="service-single.html">P Shot</a></li>' +
+        '<li><a href="service-single">Hair Transplant</a></li>' +
+        '<li><a href="service-single">Hair Treatment</a></li>' +
+        '<li><a href="service-single">Hair PRP</a></li>' +
+        '<li><a href="service-single">Female Hair Transplant</a></li>' +
+        '<li><a href="service-single">GFC PRP</a></li>' +
+        '<li><a href="service-single">P Shot</a></li>' +
         '</ul>'
     );
 

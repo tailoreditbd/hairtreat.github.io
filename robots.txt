@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://tailoreditbd.com/hairtreat.github.io/sitemap.xml
