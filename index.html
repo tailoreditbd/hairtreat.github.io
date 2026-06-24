@@ -5,6 +5,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<script data-clean-url-script>
+		(function () {
+			var cleanPath = '';
+			if (window.location.pathname.endsWith('/index.html')) {
+				var target = window.location.pathname.replace(/index\.html$/, cleanPath);
+				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
 	<meta name="description" content="Get the best hair transplant in Bangladesh with Hairtreat. Expert FUE, Sapphire FUE, PRP therapy, graft planning, NRB support, and consultation in Dhaka.">
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
@@ -77,33 +86,33 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav ms-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments.html">Treatments</a>
+                                <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments">Treatments</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="hair-prp.html">Hair PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover.html">Laser Hair Remover</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gfc-prp.html">GFC PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="p-shot.html">P Shot</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-treatment.html">Laser Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment.html">Hair Transplant Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant.html">Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="beard-transplant.html">Beard Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant.html">Moustache Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant.html">Eyebrow Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant.html">Female Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique.html">Hair Transplant Technique</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction.html">Hair Line Correction</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fue.html">FUE</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant.html">FUT Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-prp">Hair PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover">Laser Hair Remover</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gfc-prp">GFC PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p-shot">P Shot</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant">Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="beard-transplant">Beard Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant">Eyebrow Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant">Female Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction">Hair Line Correction</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fue">FUE</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant">FUT Hair Transplant</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="hours-and-location.html">Hours &amp; Locations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="hours-and-location">Hours &amp; Locations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
                                 <li class="nav-item submenu about-menu">
-                                    <a class="nav-link" href="about.html">About us</a>
+                                    <a class="nav-link" href="about">About us</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="contact">Contact us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -112,7 +121,7 @@
                         <!-- Header Contact Btn Start -->
                         <div class="header-contact-btn">
                             <a href="tel:123456789" class="header-contact-now"><i class="fa-solid fa-phone"></i>(+22) 123 456 789</a>
-                            <a href="book-appointment.html" class="btn-default">Make an Appointment</a>
+                            <a href="book-appointment" class="btn-default">Make an Appointment</a>
                         </div>
                         <!-- Header Contact Btn End -->
 					</div>
@@ -146,7 +155,7 @@
 
                                         <div class="hero-body wow fadeInUp" data-wow-delay="0.4s">
                                             <div class="hero-btn">
-                                                <a href="book-appointment.html" class="btn-default btn-highlighted">
+                                                <a href="book-appointment" class="btn-default btn-highlighted">
                                                     <span class="hero-btn-text hero-btn-text-desktop">Talk With Our Consultant</span>
                                                     <span class="hero-btn-text hero-btn-text-mobile">Make Appointment</span>
                                                 </a>
@@ -203,7 +212,7 @@
 
                                         <div class="hero-body wow fadeInUp" data-wow-delay="0.4s">
                                             <div class="hero-btn">
-                                                <a href="book-appointment.html" class="btn-default btn-highlighted">
+                                                <a href="book-appointment" class="btn-default btn-highlighted">
                                                     <span class="hero-btn-text hero-btn-text-desktop"> Book A Meeting</span>
                                                     <span class="hero-btn-text hero-btn-text-mobile">Make Appointment</span>
                                                 </a>
@@ -260,7 +269,7 @@
 
                                         <div class="hero-body wow fadeInUp" data-wow-delay="0.4s">
                                             <div class="hero-btn">
-                                                <a href="book-appointment.html" class="btn-default btn-highlighted">
+                                                <a href="book-appointment" class="btn-default btn-highlighted">
                                                     <span class="hero-btn-text hero-btn-text-desktop">Schedule A Meeting</span>
                                                     <span class="hero-btn-text hero-btn-text-mobile">Make Appointment</span>
                                                 </a>
@@ -373,7 +382,7 @@
                         </div>
 
                         <div class="hair-transplant-service-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="book-appointment.html" class="btn-default">Call for Appointment</a>
+                            <a href="book-appointment" class="btn-default">Call for Appointment</a>
                         </div>
                     </div>
                     <!-- Our Approach Content End -->
@@ -420,7 +429,7 @@
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
                                 <span class="post-result-procedure">Sapphire FUE Hair Transplant</span>
-                                <h2><a href="blog-single.html">4200 Grafts - Ahsan Habib</a></h2>
+                                <h2><a href="blog-single">4200 Grafts - Ahsan Habib</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -450,7 +459,7 @@
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
                                 <span class="post-result-procedure">Hair Line Correction</span>
-                                <h2><a href="blog-single.html">3000 Grafts - Dr Mehedi</a></h2>
+                                <h2><a href="blog-single">3000 Grafts - Dr Mehedi</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -480,7 +489,7 @@
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
                                 <span class="post-result-procedure">Sapphire FUE Hair Transplant</span>
-                                <h2><a href="blog-single.html">4500 Graft - Dr Rakib</a></h2>
+                                <h2><a href="blog-single">4500 Graft - Dr Rakib</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -510,7 +519,7 @@
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
                                 <span class="post-result-procedure">Sapphire FUE Hair Transplant</span>
-                                <h2><a href="blog-single.html">3000 Graft - Faiyaj Ahmed</a></h2>
+                                <h2><a href="blog-single">3000 Graft - Faiyaj Ahmed</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -619,7 +628,7 @@
 
                             <!-- About Contact Button Start -->
                             <div class="about-us-btn">
-                                <a href="book-appointment.html" class="btn-default">Make an Appointment</a>
+                                <a href="book-appointment" class="btn-default">Make an Appointment</a>
                             </div>
                             <!-- About Contact Button End -->
                         </div>
@@ -652,12 +661,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Hair PRP</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View Hair PRP treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View Hair PRP treatment"></a> -->
                             </div>
                             <p>PRP therapy for hair growth that helps strengthen weak hair follicles.</p>
                         </div>
                         <div class="service-image">
-                            <a href="hair-prp.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="hair-prp" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/hair-prp.jpg.jpeg" alt="Hair PRP treatment">
                                 </figure>
@@ -671,12 +680,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Hair Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View hair transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View hair transplant treatment"></a> -->
                             </div>
                             <p>Advanced follicle transplant method for natural and permanent hair restoration.</p>
                         </div>
                         <div class="service-image">
-                            <a href="hair-transplant.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="hair-transplant" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/hair-transplant.jpg.jpeg" alt="Hair transplant treatment">
                                 </figure>
@@ -690,12 +699,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Eyebrow Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View eyebrow transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View eyebrow transplant treatment"></a> -->
                             </div>
                             <p>Precision eyebrow restoration for fuller and natural-looking brows.</p>
                         </div>
                         <div class="service-image">
-                            <a href="eyebrow-transplant.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="eyebrow-transplant" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/eyebrow-transplant.jpg.jpeg" alt="Eyebrow transplant treatment">
                                 </figure>
@@ -709,12 +718,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Female Hair Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View female hair transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View female hair transplant treatment"></a> -->
                             </div>
                             <p>Designed for female hair loss to improve density naturally.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="service-single" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/female-hair-transplant.jpg.jpeg" alt="Female hair transplant treatment">
                                 </figure>
@@ -728,12 +737,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Hair Line Correction</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View hair line correction treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View hair line correction treatment"></a> -->
                             </div>
                             <p>Reshapes and restores the hairline for a balanced, natural appearance</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="service-single" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/hair-line-correction.jpg.jpeg" alt="Hair line correction treatment">
                                 </figure>
@@ -747,12 +756,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Beard Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View beard transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View beard transplant treatment"></a> -->
                             </div>
                             <p>Restores beard hair density and supports natural beard growth.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="service-single" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/beard-transplant.jpg.jpeg" alt="Beard transplant treatment">
                                 </figure>
@@ -766,12 +775,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>FUE</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View FUE hair transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View FUE hair transplant treatment"></a> -->
                             </div>
                             <p>Minimally invasive hair transplant method for natural-looking results.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="service-single" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/FUE.jpg.jpeg" alt="FUE hair transplant treatment">
                                 </figure>
@@ -785,12 +794,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>FUT Hair Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View FUT hair transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View FUT hair transplant treatment"></a> -->
                             </div>
                             <p>High graft-yield technique, effective for larger bald areas.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="service-single" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/fut-hair-transplant.jpg.jpeg" alt="FUT hair transplant treatment">
                                 </figure>
@@ -804,12 +813,12 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Laser Hair Removal</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View laser hair removal treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View laser hair removal treatment"></a> -->
                             </div>
                             <p>Advanced laser treatment for smooth and long-lasting hair reduction. </p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" class="service-image-frame" data-cursor-text="View">
+                            <a href="service-single" class="service-image-frame" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/laser-hair-removal.jpg.jpeg" alt="Laser hair removal treatment">
                                 </figure>
@@ -823,7 +832,7 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>Sapphire Hair Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View sapphire hair transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View sapphire hair transplant treatment"></a> -->
                             </div>
                             <p>Sapphire blade transplant technique for precise graft placement.</p>
                         </div>
@@ -842,7 +851,7 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>DHI Hair Transplant</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View DHI hair transplant treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View DHI hair transplant treatment"></a> -->
                             </div>
                             <p>Direct hair implantation method for higher density results.</p>
                         </div>
@@ -861,7 +870,7 @@
                         <div class="service-content">
                             <div class="service-content-title">
                                 <h3>P-Shot</h3>
-                                <!-- <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt="View P-Shot treatment"></a> -->
+                                <!-- <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt="View P-Shot treatment"></a> -->
                             </div>
                             <p>PRP-based regenerative treatment that helps improve blood circulation.</p>
                         </div>
@@ -896,7 +905,7 @@
                 <div class="col-lg-12">
                     <div class="section-footer-text wow fadeInUp" data-wow-delay="1.2s" style="text-align: center; padding: 10px 0 20px;">
                         <div>
-                            <a href="book-appointment.html" class="btn-default" data-cursor="-pointer">Book Free Consultation</a>
+                            <a href="book-appointment" class="btn-default" data-cursor="-pointer">Book Free Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -979,7 +988,7 @@
 
                         <!-- How Work Button Start -->
                         <div class="how-work-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="contact.html" class="btn-default">Contact Us</a>
+                            <a href="contact" class="btn-default">Contact Us</a>
                         </div>
                         <!-- How Work Button End -->
                     </div>
@@ -1232,7 +1241,7 @@
 
                         <!-- Button Start -->
                         <div class="what-we-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="book-appointment.html" class="btn-default">Make An Appointment</a>
+                            <a href="book-appointment" class="btn-default">Make An Appointment</a>
                         </div>
                         <!-- Button End -->
                     </div>
@@ -1283,7 +1292,7 @@
 
                         <!-- [comment] Case Study Button Start [comment] -- >
                         <div class="case-study-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="case-study.html" class="btn-default">All Case Study's</a>
+                            <a href="case-study" class="btn-default">All Case Study's</a>
                         </div>
                         <!-- [comment] Case Study Button End [comment] -- >
                     </div>
@@ -1295,7 +1304,7 @@
                         <div class="col-md-6">
                             <div class="case-study-item treatment-case-card wow fadeInUp">
                                 <div class="case-study-image">
-                                    <a href="service-single.html" data-cursor-text="View">
+                                    <a href="service-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/treatment-services/hair-transplant.jpeg" alt="Hair Transplant">
                                         </figure>
@@ -1303,11 +1312,11 @@
                                 </div>
                                 <div class="case-study-body">
                                     <div class="case-study-item-content">
-                                        <h3><a href="service-single.html">Hair Transplant</a></h3>
+                                        <h3><a href="service-single">Hair Transplant</a></h3>
                                         <p>Restore your hair, restore your confidence! Book your hair transplant consultation today and take the latest treatment with Bangladesh Hair Transplant.</p>
                                     </div>
                                     <div class="case-study-readmore-btn">
-                                        <a href="service-single.html" class="btn-default">Explore Treatments</a>
+                                        <a href="service-single" class="btn-default">Explore Treatments</a>
                                     </div>
                                 </div>
                             </div>
@@ -1316,7 +1325,7 @@
                         <div class="col-md-6">
                             <div class="case-study-item treatment-case-card wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="case-study-image">
-                                    <a href="service-single.html#hair-transplant-treatment" data-cursor-text="View">
+                                    <a href="service-single#hair-transplant-treatment" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/treatment-services/hair-treatment.jpeg" alt="Hair Treatment">
                                         </figure>
@@ -1324,11 +1333,11 @@
                                 </div>
                                 <div class="case-study-body">
                                     <div class="case-study-item-content">
-                                        <h3><a href="service-single.html#hair-transplant-treatment">Hair Treatment</a></h3>
+                                        <h3><a href="service-single#hair-transplant-treatment">Hair Treatment</a></h3>
                                         <p>Get healthy and strong hair with our expert hair treatment services of Bangladesh Hair Transplant Centre.</p>
                                     </div>
                                     <div class="case-study-readmore-btn">
-                                        <a href="service-single.html#hair-transplant-treatment" class="btn-default">Explore Treatments</a>
+                                        <a href="service-single#hair-transplant-treatment" class="btn-default">Explore Treatments</a>
                                     </div>
                                 </div>
                             </div>
@@ -1337,7 +1346,7 @@
                         <div class="col-md-6">
                             <div class="case-study-item treatment-case-card wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="case-study-image">
-                                    <a href="service-single.html" data-cursor-text="View">
+                                    <a href="service-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/treatment-services/hair-prp.jpeg" alt="Hair PRP">
                                         </figure>
@@ -1345,11 +1354,11 @@
                                 </div>
                                 <div class="case-study-body">
                                     <div class="case-study-item-content">
-                                        <h3><a href="service-single.html">Hair PRP</a></h3>
+                                        <h3><a href="service-single">Hair PRP</a></h3>
                                         <p>Boost your hair growth with effective PRP therapy from our expert hair PRP specialist doctor!</p>
                                     </div>
                                     <div class="case-study-readmore-btn">
-                                        <a href="service-single.html" class="btn-default">Explore Treatments</a>
+                                        <a href="service-single" class="btn-default">Explore Treatments</a>
                                     </div>
                                 </div>
                             </div>
@@ -1358,7 +1367,7 @@
                         <div class="col-md-6">
                             <div class="case-study-item treatment-case-card wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="case-study-image">
-                                    <a href="service-single.html" data-cursor-text="View">
+                                    <a href="service-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/treatment-services/laser-hair-removal.jpeg" alt="Laser Hair Removal Treatment">
                                         </figure>
@@ -1366,11 +1375,11 @@
                                 </div>
                                 <div class="case-study-body">
                                     <div class="case-study-item-content">
-                                        <h3><a href="service-single.html">Laser Hair Removal Treatment</a></h3>
+                                        <h3><a href="service-single">Laser Hair Removal Treatment</a></h3>
                                         <p>Make your skin brighter and smooth with modern HydraFacial treatment and laser treatment with us. We also do Permanent Hair Removal Laser Treatment.</p>
                                     </div>
                                     <div class="case-study-readmore-btn">
-                                        <a href="service-single.html" class="btn-default">Explore Treatments</a>
+                                        <a href="service-single" class="btn-default">Explore Treatments</a>
                                     </div>
                                 </div>
                             </div>
@@ -1379,7 +1388,7 @@
                         <div class="col-md-6">
                             <div class="case-study-item treatment-case-card wow fadeInUp" data-wow-delay="0.8s">
                                 <div class="case-study-image">
-                                    <a href="service-single.html#hair-line-correction" data-cursor-text="View">
+                                    <a href="service-single#hair-line-correction" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/treatment-services/hair-loss-treatment.jpeg" alt="Hair Loss Treatment">
                                         </figure>
@@ -1387,11 +1396,11 @@
                                 </div>
                                 <div class="case-study-body">
                                     <div class="case-study-item-content">
-                                        <h3><a href="service-single.html#hair-line-correction">Hair Loss Treatment</a></h3>
+                                        <h3><a href="service-single#hair-line-correction">Hair Loss Treatment</a></h3>
                                         <p>Take the best treatment for your hair loss. Restore your hair with the effective treatment of Bangladesh Hair Transplant.</p>
                                     </div>
                                     <div class="case-study-readmore-btn">
-                                        <a href="service-single.html#hair-line-correction" class="btn-default">Explore Treatments</a>
+                                        <a href="service-single#hair-line-correction" class="btn-default">Explore Treatments</a>
                                     </div>
                                 </div>
                             </div>
@@ -1400,7 +1409,7 @@
                         <div class="col-md-6">
                             <div class="case-study-item treatment-case-card wow fadeInUp" data-wow-delay="1s">
                                 <div class="case-study-image">
-                                    <a href="service-single.html" data-cursor-text="View">
+                                    <a href="service-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/treatment-services/p-shot-treatment.jpeg" alt="Sexual Disease Treatment P Shot">
                                         </figure>
@@ -1408,11 +1417,11 @@
                                 </div>
                                 <div class="case-study-body">
                                     <div class="case-study-item-content">
-                                        <h3><a href="service-single.html">Sexual Disease Treatment P Shot</a></h3>
+                                        <h3><a href="service-single">Sexual Disease Treatment P Shot</a></h3>
                                         <p>Restore your hair, restore your confidence! Book your hair transplant consultation today and take the latest treatment with Bangladesh Hair Transplant.</p>
                                     </div>
                                     <div class="case-study-readmore-btn">
-                                        <a href="service-single.html" class="btn-default">Explore Treatments</a>
+                                        <a href="service-single" class="btn-default">Explore Treatments</a>
                                     </div>
                                 </div>
                             </div>
@@ -1467,7 +1476,7 @@
                         <div class="why-choose-contact-box">
                             <h3 class="wow fadeInUp" data-wow-delay="0.4s">Our facility comprises advanced technological machines and equipment that help us find an adequate solution for your hair loss problem with a successful minimally invasive surgical process.</h3>
                             <div class="why-choose-contact-item wow fadeInUp" data-wow-delay="0.6s">
-                                <a href="image-gallery.html" class="btn-default">See More Photos</a>
+                                <a href="image-gallery" class="btn-default">See More Photos</a>
                             </div>
                         </div>
                         <!-- [comment] Our Clinic Button Box End [comment] -- >
@@ -1710,7 +1719,7 @@
                                             <li>Fellowship in Trichology (INDIA)</li>
                                             <li>Deputy Medical Director</li>
                                         </ul>
-                                        <a href="contact.html" class="btn-default">Consult with Doctor</a>
+                                        <a href="contact" class="btn-default">Consult with Doctor</a>
                                     </div>
                                 </div>
                             </div>
@@ -1736,7 +1745,7 @@
                                             <li>(Laser, PRP &amp; Hair Transplant)</li>
                                             <li>Medical Officer</li>
                                         </ul>
-                                        <a href="contact.html" class="btn-default">Consult with Doctor</a>
+                                        <a href="contact" class="btn-default">Consult with Doctor</a>
                                     </div>
                                 </div>
                             </div>
@@ -1762,7 +1771,7 @@
                                             <li>Special Training (Hair Transplant)</li>
                                             <li>Medical Officer HairTreat</li>
                                         </ul>
-                                        <a href="contact.html" class="btn-default">Consult with Doctor</a>
+                                        <a href="contact" class="btn-default">Consult with Doctor</a>
                                     </div>
                                 </div>
                             </div>
@@ -1805,7 +1814,7 @@
                                 <span style="font-size: 20px; font-weight: 600; color: #ff4a3b;">Sapphire FUE Hair Transplant</span>
                             </h4>
 
-                            <a href="book-appointment.html" class="btn-default" style="display: block; width: 100%; text-align: center; border-radius: 8px; padding: 15px 20px;">Book Free Consultation <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+                            <a href="book-appointment" class="btn-default" style="display: block; width: 100%; text-align: center; border-radius: 8px; padding: 15px 20px;">Book Free Consultation <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
                         </div>
                         </div>
                 </div>
@@ -1827,7 +1836,7 @@
                                 <span style="font-size: 20px; font-weight: 600; color: #ff4a3b;">Sapphire FUE Hair Transplant</span>
                             </h4>
 
-                            <a href="book-appointment.html" class="btn-default" style="display: block; width: 100%; text-align: center; border-radius: 8px; padding: 15px 20px;">Book Free Consultation <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
+                            <a href="book-appointment" class="btn-default" style="display: block; width: 100%; text-align: center; border-radius: 8px; padding: 15px 20px;">Book Free Consultation <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></a>
                         </div>
                         </div>
                 </div>
@@ -1970,7 +1979,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 text-lg-end text-md-end">
                         <!-- Right side: red button -->
-                        <a href="book-appointment.html" class="btn-appointment-red">Make An Appointment</a>
+                        <a href="book-appointment" class="btn-appointment-red">Make An Appointment</a>
                     </div>
                 </div>
             </div>
@@ -2135,13 +2144,13 @@
                         <div class="footer-links quick-links">
                             <h3>quick link</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="treatments.html">Treatments</a></li>
-                                <li><a href="hours-and-location.html">Hours &amp; Locations</a></li>
-                                <li><a href="service-area.html">Service Areas</a></li>
-                                <li><a href="case-study.html">Case studies</a></li>
-                                <li><a href="blog.html">Happenings</a></li>
-                                <li><a href="about.html">About us</a></li>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="treatments">Treatments</a></li>
+                                <li><a href="hours-and-location">Hours &amp; Locations</a></li>
+                                <li><a href="service-area">Service Areas</a></li>
+                                <li><a href="case-study">Case studies</a></li>
+                                <li><a href="blog">Happenings</a></li>
+                                <li><a href="about">About us</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
@@ -2150,12 +2159,12 @@
                         <div class="footer-links">
                             <h3>Useful Treatments</h3>
                             <ul>
-                                <li><a href="service-single.html">Hair Transplant</a></li>
-                                <li><a href="service-single.html">Hair Treatment</a></li>
-                                <li><a href="service-single.html">Hair PRP</a></li>
-                                <li><a href="service-single.html">Female Hair Transplant</a></li>
-                                <li><a href="service-single.html">GFC PRP</a></li>
-                                <li><a href="service-single.html">P Shot</a></li>
+                                <li><a href="service-single">Hair Transplant</a></li>
+                                <li><a href="service-single">Hair Treatment</a></li>
+                                <li><a href="service-single">Hair PRP</a></li>
+                                <li><a href="service-single">Female Hair Transplant</a></li>
+                                <li><a href="service-single">GFC PRP</a></li>
+                                <li><a href="service-single">P Shot</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

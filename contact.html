@@ -5,6 +5,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<script data-clean-url-script>
+		(function () {
+			var cleanPath = 'contact';
+			if (window.location.pathname.endsWith('/contact.html')) {
+				var target = window.location.pathname.replace(/contact\.html$/, cleanPath);
+				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
@@ -68,33 +77,33 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav ms-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments.html">Treatments</a>
+                                <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments">Treatments</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="hair-prp.html">Hair PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover.html">Laser Hair Remover</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gfc-prp.html">GFC PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="p-shot.html">P Shot</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-treatment.html">Laser Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment.html">Hair Transplant Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant.html">Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="beard-transplant.html">Beard Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant.html">Moustache Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant.html">Eyebrow Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant.html">Female Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique.html">Hair Transplant Technique</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction.html">Hair Line Correction</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fue.html">FUE</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant.html">FUT Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-prp">Hair PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover">Laser Hair Remover</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gfc-prp">GFC PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p-shot">P Shot</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant">Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="beard-transplant">Beard Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant">Eyebrow Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant">Female Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction">Hair Line Correction</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fue">FUE</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant">FUT Hair Transplant</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="hours-and-location.html">Hours &amp; Locations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="hours-and-location">Hours &amp; Locations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
                                 <li class="nav-item submenu about-menu">
-                                    <a class="nav-link" href="about.html">About us</a>
+                                    <a class="nav-link" href="about">About us</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact us</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="contact">Contact us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -103,7 +112,7 @@
                         <!-- Header Contact Btn Start -->
                         <div class="header-contact-btn">
                             <a href="tel:123456789" class="header-contact-now"><i class="fa-solid fa-phone"></i>(+22) 123 456 789</a>
-                            <a href="book-appointment.html" class="btn-default">Make an Appointment</a>
+                            <a href="book-appointment" class="btn-default">Make an Appointment</a>
                         </div>
                         <!-- Header Contact Btn End -->
 					</div>
@@ -447,7 +456,7 @@ Consult with us now — book your personalized appointment and get expert advice
 
                         <!-- How Work Button Start -->
                         <!-- <div class="how-work-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="contact.html" class="btn-default">contact us</a>
+                            <a href="contact" class="btn-default">contact us</a>
                         </div> -->
                         <!-- How Work Button End -->
                     </div>
@@ -543,11 +552,11 @@ Consult with us now — book your personalized appointment and get expert advice
                         <div class="footer-links quick-links">
                             <h3>quick link</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="treatments.html">Treatments</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="service-area.html">Service Areas</a></li>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="about">About us</a></li>
+                                <li><a href="treatments">Treatments</a></li>
+                                <li><a href="contact">Contact us</a></li>
+                                <li><a href="service-area">Service Areas</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

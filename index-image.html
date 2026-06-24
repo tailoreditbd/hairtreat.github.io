@@ -5,6 +5,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<script data-clean-url-script>
+		(function () {
+			var cleanPath = 'index-image';
+			if (window.location.pathname.endsWith('/index-image.html')) {
+				var target = window.location.pathname.replace(/index-image\.html$/, cleanPath);
+				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
@@ -68,37 +77,37 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav ms-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments.html">Treatments</a>
+                                <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments">Treatments</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="hair-prp.html">Hair PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover.html">Laser Hair Remover</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gfc-prp.html">GFC PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="p-shot.html">P Shot</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-treatment.html">Laser Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment.html">Hair Transplant Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant.html">Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="beard-transplant.html">Beard Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant.html">Moustache Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant.html">Eyebrow Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant.html">Female Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique.html">Hair Transplant Technique</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction.html">Hair Line Correction</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fue.html">FUE</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant.html">FUT Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-prp">Hair PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover">Laser Hair Remover</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gfc-prp">GFC PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p-shot">P Shot</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant">Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="beard-transplant">Beard Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant">Eyebrow Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant">Female Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction">Hair Line Correction</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fue">FUE</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant">FUT Hair Transplant</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Hours &amp; Locations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact">Hours &amp; Locations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about">About us</a></li>
                             </ul>
                         </div>
-                        
+
                         <!-- Header Contact Btn Start -->
                         <div class="header-contact-btn">
                             <a href="tel:123456789" class="header-contact-now"><i class="fa-solid fa-phone"></i>(+22) 123 456 789</a>
-                            <a href="book-appointment.html" class="btn-default">Make an Appointment</a>
+                            <a href="book-appointment" class="btn-default">Make an Appointment</a>
                         </div>
                         <!-- Header Contact Btn End -->
 					</div>
@@ -130,7 +139,7 @@
                         <div class="hero-body wow fadeInUp" data-wow-delay="0.4s">
                             <!-- Hero Button Start -->
                             <div class="hero-btn">
-                                <a href="book-appointment.html" class="btn-default btn-highlighted">Get Started</a>                                
+                                <a href="book-appointment" class="btn-default btn-highlighted">Get Started</a>
                             </div>
                             <!-- Hero Button End -->
 
@@ -169,7 +178,7 @@
                             <div class="company-experience-circle">
                                 <img src="images/experience-circle.svg" alt="">
                             </div>
-                            <!-- Experience Circle End -->      
+                            <!-- Experience Circle End -->
                         </div>
                         <!-- About Image 1 End -->
 
@@ -179,7 +188,7 @@
                                 <img src="images/about-img-2.jpg" alt="">
                             </figure>
                         </div>
-                        <!-- About Image 2 End -->                  
+                        <!-- About Image 2 End -->
                     </div>
                     <!-- About Us Images End -->
                 </div>
@@ -196,7 +205,7 @@
                         <!-- Section Title End -->
 
                         <!-- About Experience Box Start -->
-                        <div class="about-experience-box">                           
+                        <div class="about-experience-box">
                             <!-- About Experience List Start -->
                             <div class="about-experience-list wow fadeInUp" data-wow-delay="0.4s">
                                 <ul>
@@ -233,7 +242,7 @@
 
                             <!-- About Contact Button Start -->
                             <div class="about-us-btn">
-                                <a href="about.html" class="btn-default">more about</a>
+                                <a href="about" class="btn-default">more about</a>
                             </div>
                             <!-- About Contact Button End -->
                         </div>
@@ -259,24 +268,24 @@
                     <!-- Section Title End -->
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp">
                         <div class="service-content">
                             <div class="service-content-title">
-                                <h2><a href="service-single.html">Botox and Dermal Fillers</a></h2>
-                                <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <h2><a href="service-single">Botox and Dermal Fillers</a></h2>
+                                <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
-                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>                            
+                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
+                            <a href="service-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-image-1.jpg" alt="">
                                 </figure>
-                            </a>                            
+                            </a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -287,17 +296,17 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-content">
                             <div class="service-content-title">
-                                <h2><a href="service-single.html">Laser Skin or Treatments</a></h2>
-                                <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <h2><a href="service-single">Laser Skin or Treatments</a></h2>
+                                <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
-                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>                            
+                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
+                            <a href="service-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-image-2.jpg" alt="">
                                 </figure>
-                            </a>                            
+                            </a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -308,17 +317,17 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="service-content">
                             <div class="service-content-title">
-                                <h2><a href="service-single.html">Male Aesthetic Procedures</a></h2>
-                                <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <h2><a href="service-single">Male Aesthetic Procedures</a></h2>
+                                <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
-                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>                            
+                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
+                            <a href="service-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-image-3.jpg" alt="">
                                 </figure>
-                            </a>                            
+                            </a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -329,17 +338,17 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
                         <div class="service-content">
                             <div class="service-content-title">
-                                <h2><a href="service-single.html">Post-Weight Loss Surgery</a></h2>
-                                <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <h2><a href="service-single">Post-Weight Loss Surgery</a></h2>
+                                <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
-                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>                            
+                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
+                            <a href="service-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-image-4.jpg" alt="">
                                 </figure>
-                            </a>                            
+                            </a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -350,17 +359,17 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
                         <div class="service-content">
                             <div class="service-content-title">
-                                <h2><a href="service-single.html">Medical Spa & Treatments</a></h2>
-                                <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <h2><a href="service-single">Medical Spa & Treatments</a></h2>
+                                <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
-                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>                            
+                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
+                            <a href="service-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-image-5.jpg" alt="">
                                 </figure>
-                            </a>                            
+                            </a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -371,17 +380,17 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="1s">
                         <div class="service-content">
                             <div class="service-content-title">
-                                <h2><a href="service-single.html">Tighten & Define Neck Contours</a></h2>
-                                <a href="service-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <h2><a href="service-single">Tighten & Define Neck Contours</a></h2>
+                                <a href="service-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
-                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>                            
+                            <p>Achieve a smoother, appearance with a Botox and dermal fillers.</p>
                         </div>
                         <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
+                            <a href="service-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-image-6.jpg" alt="">
                                 </figure>
-                            </a>                            
+                            </a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -390,7 +399,7 @@
                 <div class="col-lg-12">
                     <!-- Section Footer Text Start -->
                     <div class="section-footer-text wow fadeInUp" data-wow-delay="1.2s">
-                        <p><span>Free</span>Let's make something great work together. <a href="contact.html">Get Free Quote</a></p>
+                        <p><span>Free</span>Let's make something great work together. <a href="contact">Get Free Quote</a></p>
                     </div>
                     <!-- Section Footer Text End -->
                 </div>
@@ -434,7 +443,7 @@
 
                         <!-- What We Button Start -->
                         <div class="what-we-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">learn more</a>
+                            <a href="contact" class="btn-default">learn more</a>
                         </div>
                         <!-- What We Button End -->
                     </div>
@@ -454,7 +463,7 @@
                         </div>
                         <!-- Experirnce Box End -->
                     </div>
-                    <!-- What We Image Start -->                   
+                    <!-- What We Image Start -->
                 </div>
             </div>
         </div>
@@ -510,7 +519,7 @@
 
                         <!-- Case Study Button Start -->
                         <div class="case-study-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="case-study.html" class="btn-default">All Case Study's</a>
+                            <a href="case-study" class="btn-default">All Case Study's</a>
                         </div>
                         <!-- Case Study Button End -->
                     </div>
@@ -524,29 +533,29 @@
                             <div class="case-study-item wow fadeInUp">
                                 <!-- Case Study Image Start -->
                                 <div class="case-study-image">
-                                    <a href="case-study-single.html" data-cursor-text="View">
+                                    <a href="case-study-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/case-study-image-1.jpg" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <!-- Case Study Image End -->
-                        
+
                                 <!-- Case Study Body Start -->
                                 <div class="case-study-body">
                                     <!-- Case Study Content Start -->
                                     <div class="case-study-item-content">
-                                        <h3><a href="case-study-single.html">Restoring Youthful Radiance</a></h3>
+                                        <h3><a href="case-study-single">Restoring Youthful Radiance</a></h3>
                                     </div>
                                     <!-- Case Study Content End -->
-                        
+
                                     <!-- Case Study Button Start -->
                                     <div class="case-study-readmore-btn">
-                                        <a href="case-study-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                        <a href="case-study-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                                     </div>
                                     <!-- Case Study Button End -->
                                 </div>
-                                <!-- Case Study Body End -->                 
+                                <!-- Case Study Body End -->
                             </div>
                             <!-- Case Study Item End -->
                         </div>
@@ -556,29 +565,29 @@
                             <div class="case-study-item wow fadeInUp" data-wow-delay="0.2s">
                                 <!-- Case Study Image Start -->
                                 <div class="case-study-image">
-                                    <a href="case-study-single.html" data-cursor-text="View">
+                                    <a href="case-study-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/case-study-image-2.jpg" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <!-- Case Study Image End -->
-                        
+
                                 <!-- Case Study Body Start -->
                                 <div class="case-study-body">
                                     <!-- Case Study Content Start -->
                                     <div class="case-study-item-content">
-                                        <h3><a href="case-study-single.html">Natural & Beautiful Results</a></h3>
+                                        <h3><a href="case-study-single">Natural & Beautiful Results</a></h3>
                                     </div>
                                     <!-- Case Study Content End -->
-                        
+
                                     <!-- Case Study Button Start -->
                                     <div class="case-study-readmore-btn">
-                                        <a href="case-study-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                        <a href="case-study-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                                     </div>
                                     <!-- Case Study Button End -->
                                 </div>
-                                <!-- Case Study Body End -->                 
+                                <!-- Case Study Body End -->
                             </div>
                             <!-- Case Study Item End -->
                         </div>
@@ -588,29 +597,29 @@
                             <div class="case-study-item wow fadeInUp" data-wow-delay="0.4s">
                                 <!-- Case Study Image Start -->
                                 <div class="case-study-image">
-                                    <a href="case-study-single.html" data-cursor-text="View">
+                                    <a href="case-study-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/case-study-image-3.jpg" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <!-- Case Study Image End -->
-                        
+
                                 <!-- Case Study Body Start -->
                                 <div class="case-study-body">
                                     <!-- Case Study Content Start -->
                                     <div class="case-study-item-content">
-                                        <h3><a href="case-study-single.html">Restoring Post-Pregnancy Beauty</a></h3>
+                                        <h3><a href="case-study-single">Restoring Post-Pregnancy Beauty</a></h3>
                                     </div>
                                     <!-- Case Study Content End -->
-                        
+
                                     <!-- Case Study Button Start -->
                                     <div class="case-study-readmore-btn">
-                                        <a href="case-study-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                        <a href="case-study-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                                     </div>
                                     <!-- Case Study Button End -->
                                 </div>
-                                <!-- Case Study Body End -->                 
+                                <!-- Case Study Body End -->
                             </div>
                             <!-- Case Study Item End -->
                         </div>
@@ -620,29 +629,29 @@
                             <div class="case-study-item wow fadeInUp" data-wow-delay="0.6s">
                                 <!-- Case Study Image Start -->
                                 <div class="case-study-image">
-                                    <a href="case-study-single.html" data-cursor-text="View">
+                                    <a href="case-study-single" data-cursor-text="View">
                                         <figure class="image-anime">
                                             <img src="images/case-study-image-4.jpg" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <!-- Case Study Image End -->
-                        
+
                                 <!-- Case Study Body Start -->
                                 <div class="case-study-body">
                                     <!-- Case Study Content Start -->
                                     <div class="case-study-item-content">
-                                        <h3><a href="case-study-single.html">A Smoother, Glowing Complexion</a></h3>
+                                        <h3><a href="case-study-single">A Smoother, Glowing Complexion</a></h3>
                                     </div>
                                     <!-- Case Study Content End -->
-                        
+
                                     <!-- Case Study Button Start -->
                                     <div class="case-study-readmore-btn">
-                                        <a href="case-study-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                        <a href="case-study-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                                     </div>
                                     <!-- Case Study Button End -->
                                 </div>
-                                <!-- Case Study Body End -->                 
+                                <!-- Case Study Body End -->
                             </div>
                             <!-- Case Study Item End -->
                         </div>
@@ -708,7 +717,7 @@
                         <!-- Why Choose Contact Box End -->
                     </div>
                     <!-- Why Choose Content End -->
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -731,7 +740,7 @@
 
                         <!-- How Work Button Start -->
                         <div class="how-work-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="contact.html" class="btn-default">contact us</a>
+                            <a href="contact" class="btn-default">contact us</a>
                         </div>
                         <!-- How Work Button End -->
                     </div>
@@ -845,12 +854,12 @@
                                                 <figure class="image-anime">
                                                     <img src="images/author-1.jpg" alt="">
                                                 </figure>
-                                            </div>            
+                                            </div>
                                             <div class="author-content">
                                                 <h3>Kristin Watson</h3>
                                                 <p>Co. founder</p>
                                             </div>
-                                        </div>                                    
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Testimonial Slide End -->
@@ -866,12 +875,12 @@
                                                 <figure class="image-anime">
                                                     <img src="images/author-2.jpg" alt="">
                                                 </figure>
-                                            </div>            
+                                            </div>
                                             <div class="author-content">
                                                 <h3>Brooklyn Simmons</h3>
                                                 <p>Skin Experts</p>
                                             </div>
-                                        </div>                                    
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Testimonial Slide End -->
@@ -887,12 +896,12 @@
                                                 <figure class="image-anime">
                                                     <img src="images/author-3.jpg" alt="">
                                                 </figure>
-                                            </div>            
+                                            </div>
                                             <div class="author-content">
                                                 <h3>Darlene Robertson</h3>
                                                 <p>Co. founder</p>
                                             </div>
-                                        </div>                                    
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Testimonial Slide End -->
@@ -908,12 +917,12 @@
                                                 <figure class="image-anime">
                                                     <img src="images/author-4.jpg" alt="">
                                                 </figure>
-                                            </div>            
+                                            </div>
                                             <div class="author-content">
                                                 <h3>Arlene McCoy</h3>
                                                 <p>Co. founder</p>
                                             </div>
-                                        </div>                                    
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Testimonial Slide End -->
@@ -942,9 +951,9 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">					
+                <div class="col-md-6">
                     <!-- Transformation Image Start -->
-                    <div class="transformation-image wow fadeInUp" data-wow-delay="0.2s">					
+                    <div class="transformation-image wow fadeInUp" data-wow-delay="0.2s">
                         <figure class="transform-img-1">
                             <img src="images/transformation-img-1.jpg" alt="">
                         </figure>
@@ -955,9 +964,9 @@
                     <!-- Transformation Image End -->
                 </div>
 
-                <div class="col-md-6">					
+                <div class="col-md-6">
                     <!-- Transformation Image Start -->
-                    <div class="transformation-image wow fadeInUp" data-wow-delay="0.4s">					
+                    <div class="transformation-image wow fadeInUp" data-wow-delay="0.4s">
                         <figure class="transform-img-1">
                             <img src="images/transformation-img-3.jpg" alt="">
                         </figure>
@@ -967,7 +976,7 @@
                     </div>
                     <!-- Transformation Image End -->
                 </div>
-                
+
                 <div class="col-lg-12">
                     <!-- Facts Counter Box Start -->
                     <div class="facts-counter-box">
@@ -1067,7 +1076,7 @@
                                     <input type="email" name ="email" class="form-control" id="email" placeholder="Email Address" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                
+
                                 <div class="form-group col-md-6 mb-4">
                                     <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
                                     <div class="help-block with-errors"></div>
@@ -1091,7 +1100,7 @@
                                         <option value="personalized_yoga_sessions">Dr. Emily Verma</option>
                                     </select>
                                     <div class="help-block with-errors"></div>
-                                </div>                               
+                                </div>
 
                                 <div class="col-lg-12">
                                     <div class="contact-form-btn">
@@ -1104,7 +1113,7 @@
                         <!-- Contact Us Form End -->
                     </div>
                     <!-- Appointment Form Start -->
-                </div>               
+                </div>
             </div>
         </div>
     </div>
@@ -1123,14 +1132,14 @@
                     <!-- Section Title End -->
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="blog-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/post-1.jpg" alt="">
                                 </figure>
@@ -1142,13 +1151,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Top Tips for Preparing for Plastic Surgery</a></h2>
+                                <h2><a href="blog-single">Top Tips for Preparing for Plastic Surgery</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -1162,7 +1171,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
                        <!-- Post Featured Image Start-->
                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="blog-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/post-2.jpg" alt="">
                                 </figure>
@@ -1174,13 +1183,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Myths and Facts About Plastic Surgery</a></h2>
+                                <h2><a href="blog-single">Myths and Facts About Plastic Surgery</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -1194,7 +1203,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.6s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="blog-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/post-3.jpg" alt="">
                                 </figure>
@@ -1206,13 +1215,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">What to Expect During Your First Consultation</a></h2>
+                                <h2><a href="blog-single">What to Expect During Your First Consultation</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -1254,11 +1263,11 @@
                         <div class="footer-links quick-links">
                             <h3>quick link</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="treatments.html">Treatments</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="service-area.html">Service Areas</a></li>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="about">About us</a></li>
+                                <li><a href="treatments">Treatments</a></li>
+                                <li><a href="contact">Contact us</a></li>
+                                <li><a href="service-area">Service Areas</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
@@ -1273,7 +1282,7 @@
                         </div>
                         <!-- Footer Links End -->
                     </div>
-                    
+
                     <!-- Footer Contact Box Start -->
                     <div class="footer-contact-box">
                         <!-- Footer Contact Item Start -->

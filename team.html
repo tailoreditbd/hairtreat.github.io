@@ -5,6 +5,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<script data-clean-url-script>
+		(function () {
+			var cleanPath = 'team';
+			if (window.location.pathname.endsWith('/team.html')) {
+				var target = window.location.pathname.replace(/team\.html$/, cleanPath);
+				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
@@ -68,33 +77,33 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav ms-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments.html">Treatments</a>
+                                <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments">Treatments</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="hair-prp.html">Hair PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover.html">Laser Hair Remover</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gfc-prp.html">GFC PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="p-shot.html">P Shot</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-treatment.html">Laser Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment.html">Hair Transplant Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant.html">Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="beard-transplant.html">Beard Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant.html">Moustache Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant.html">Eyebrow Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant.html">Female Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique.html">Hair Transplant Technique</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction.html">Hair Line Correction</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fue.html">FUE</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant.html">FUT Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-prp">Hair PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover">Laser Hair Remover</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gfc-prp">GFC PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p-shot">P Shot</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant">Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="beard-transplant">Beard Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant">Eyebrow Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant">Female Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction">Hair Line Correction</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fue">FUE</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant">FUT Hair Transplant</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="hours-and-location.html">Hours &amp; Locations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="hours-and-location">Hours &amp; Locations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
                                 <li class="nav-item submenu about-menu">
-                                    <a class="nav-link" href="about.html">About us</a>
+                                    <a class="nav-link" href="about">About us</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="contact">Contact us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -103,7 +112,7 @@
                         <!-- Header Contact Btn Start -->
                         <div class="header-contact-btn">
                             <a href="tel:123456789" class="header-contact-now"><i class="fa-solid fa-phone"></i>(+22) 123 456 789</a>
-                            <a href="book-appointment.html" class="btn-default">Make an Appointment</a>
+                            <a href="book-appointment" class="btn-default">Make an Appointment</a>
                         </div>
                         <!-- Header Contact Btn End -->
 					</div>
@@ -147,7 +156,7 @@
                     <div class="team-item wow fadeInUp">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-1.jpg" alt="">
                                 </figure>
@@ -159,7 +168,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. neha verma</a></h3>
+                                <h3><a href="team-single">Dr. neha verma</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -183,7 +192,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-2.jpg" alt="">
                                 </figure>
@@ -195,7 +204,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Cameron williamson</a></h3>
+                                <h3><a href="team-single">Cameron williamson</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -219,7 +228,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-3.jpg" alt="">
                                 </figure>
@@ -231,7 +240,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. ayesha kapoor</a></h3>
+                                <h3><a href="team-single">Dr. ayesha kapoor</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -255,7 +264,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-4.jpg" alt="">
                                 </figure>
@@ -267,7 +276,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. rahul mehta</a></h3>
+                                <h3><a href="team-single">Dr. rahul mehta</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -291,7 +300,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-5.jpg" alt="">
                                 </figure>
@@ -303,7 +312,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. Aryan malhotra</a></h3>
+                                <h3><a href="team-single">Dr. Aryan malhotra</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -327,7 +336,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="1s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-6.jpg" alt="">
                                 </figure>
@@ -339,7 +348,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. Aisha kapoor</a></h3>
+                                <h3><a href="team-single">Dr. Aisha kapoor</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -363,7 +372,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-7.jpg" alt="">
                                 </figure>
@@ -375,7 +384,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. Karan gohel</a></h3>
+                                <h3><a href="team-single">Dr. Karan gohel</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -399,7 +408,7 @@
                     <div class="team-item wow fadeInUp" data-wow-delay="1.4s">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
+                            <a href="team-single" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/team-8.jpg" alt="">
                                 </figure>
@@ -411,7 +420,7 @@
                         <div class="team-body">
                             <!-- Team Content Start -->
                             <div class="team-content">
-                                <h3><a href="team-single.html">Dr. Emily verma</a></h3>
+                                <h3><a href="team-single">Dr. Emily verma</a></h3>
                             </div>
                             <!-- Team Content End -->
                             
@@ -463,13 +472,13 @@
                         <div class="footer-links quick-links">
                             <h3>quick link</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="treatments.html">Treatments</a></li>
-                                <li><a href="hours-and-location.html">Hours &amp; Locations</a></li>
-                                <li><a href="service-area.html">Service Areas</a></li>
-                                <li><a href="case-study.html">Case studies</a></li>
-                                <li><a href="blog.html">Happenings</a></li>
-                                <li><a href="about.html">About us</a></li>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="treatments">Treatments</a></li>
+                                <li><a href="hours-and-location">Hours &amp; Locations</a></li>
+                                <li><a href="service-area">Service Areas</a></li>
+                                <li><a href="case-study">Case studies</a></li>
+                                <li><a href="blog">Happenings</a></li>
+                                <li><a href="about">About us</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
@@ -478,12 +487,12 @@
                         <div class="footer-links">
                             <h3>Useful Treatments</h3>
                             <ul>
-                                <li><a href="service-single.html">Hair Transplant</a></li>
-                                <li><a href="service-single.html">Hair Treatment</a></li>
-                                <li><a href="service-single.html">Hair PRP</a></li>
-                                <li><a href="service-single.html">Female Hair Transplant</a></li>
-                                <li><a href="service-single.html">GFC PRP</a></li>
-                                <li><a href="service-single.html">P Shot</a></li>
+                                <li><a href="service-single">Hair Transplant</a></li>
+                                <li><a href="service-single">Hair Treatment</a></li>
+                                <li><a href="service-single">Hair PRP</a></li>
+                                <li><a href="service-single">Female Hair Transplant</a></li>
+                                <li><a href="service-single">GFC PRP</a></li>
+                                <li><a href="service-single">P Shot</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

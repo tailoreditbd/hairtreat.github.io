@@ -4,6 +4,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<script data-clean-url-script>
+		(function () {
+			var cleanPath = 'laser-treatment';
+			if (window.location.pathname.endsWith('/laser-treatment.html')) {
+				var target = window.location.pathname.replace(/laser-treatment\.html$/, cleanPath);
+				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
 	<title>Laser Treatment - HairTreat Clinic</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,35 +51,35 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav ms-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments.html">Treatments</a>
+                                <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="treatments">Treatments</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="hair-prp.html">Hair PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover.html">Laser Hair Remover</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gfc-prp.html">GFC PRP</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="p-shot.html">P Shot</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="laser-treatment.html">Laser Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment.html">Hair Transplant Treatment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant.html">Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="beard-transplant.html">Beard Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant.html">Moustache Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant.html">Eyebrow Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant.html">Female Hair Transplant</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique.html">Hair Transplant Technique</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction.html">Hair Line Correction</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fue.html">FUE</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant.html">FUT Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-prp">Hair PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-hair-remover">Laser Hair Remover</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gfc-prp">GFC PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p-shot">P Shot</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant">Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="beard-transplant">Beard Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="eyebrow-transplant">Eyebrow Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="female-hair-transplant">Female Hair Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="hair-line-correction">Hair Line Correction</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fue">FUE</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="fut-hair-transplant">FUT Hair Transplant</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="hours-and-location.html">Hours &amp; Locations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="hours-and-location">Hours &amp; Locations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about">About us</a></li>
                             </ul>
                         </div>
                         <div class="header-contact-btn">
                             <a href="tel:123456789" class="header-contact-now"><i class="fa-solid fa-phone"></i>(+22) 123 456 789</a>
-                            <a href="book-appointment.html" class="btn-default">Make an Appointment</a>
+                            <a href="book-appointment" class="btn-default">Make an Appointment</a>
                         </div>
 					</div>
 					<div class="navbar-toggle"></div>
@@ -88,7 +97,7 @@
 						<nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="./">home</a></li>
-								<li class="breadcrumb-item"><a href="treatments.html">Treatments</a></li>
+								<li class="breadcrumb-item"><a href="treatments">Treatments</a></li>
 								<li class="breadcrumb-item active" aria-current="page">Laser Treatment</li>
 							</ol>
 						</nav>
@@ -108,11 +117,11 @@
                         <div class="page-single-category-list wow fadeInUp">
                             <h3>Professional Services</h3>
                             <ul>
-                                <li><a href="hair-prp.html">Hair PRP</a></li>
-                                <li><a href="laser-hair-remover.html">Laser Hair Remover</a></li>
-                                <li><a href="gfc-prp.html">GFC PRP</a></li>
-                                <li><a href="p-shot.html">P Shot</a></li>
-                                <li><a href="laser-treatment.html">Laser Treatment</a></li>
+                                <li><a href="hair-prp">Hair PRP</a></li>
+                                <li><a href="laser-hair-remover">Laser Hair Remover</a></li>
+                                <li><a href="gfc-prp">GFC PRP</a></li>
+                                <li><a href="p-shot">P Shot</a></li>
+                                <li><a href="laser-treatment">Laser Treatment</a></li>
                             </ul>
                         </div>
                         <!-- Page Single Category List End -->
@@ -286,7 +295,7 @@
                                                     <li>Post-Care Consultation</li>
                                                 </ul>
 
-                                                <a href="contact.html" class="btn pricing-card-btn">Book Single Session</a>
+                                                <a href="contact" class="btn pricing-card-btn">Book Single Session</a>
                                             </div>
                                         </div>
                                     </div>
@@ -306,7 +315,7 @@
                                                     <!-- <li>Hair Nutrition Guide</li> -->
                                                 </ul>
 
-                                                <a href="contact.html" class="btn pricing-card-btn pricing-card-btn-featured">Book 4 Session Bundle</a>
+                                                <a href="contact" class="btn pricing-card-btn pricing-card-btn-featured">Book 4 Session Bundle</a>
                                             </div>
                                         </div>
                                     </div>
@@ -365,7 +374,7 @@
                         <div class="post-entry laser-assessment-entry">
                             <blockquote class="no-quote-icon laser-assessment-quote wow fadeInUp" data-wow-delay="0.4s">
                                 <p>Need more information? Speak with our clinic director for a free personalized assessment.</p>
-                                <a href="contact.html" class="laser-assessment-link">Get Free Assessment &rarr;</a>
+                                <a href="contact" class="laser-assessment-link">Get Free Assessment &rarr;</a>
                             </blockquote>
                         </div>
 
@@ -468,11 +477,11 @@
                         <div class="footer-links quick-links">
                             <h3>quick link</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="treatments.html">Treatments</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="service-area.html">Service Areas</a></li>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="about">About us</a></li>
+                                <li><a href="treatments">Treatments</a></li>
+                                <li><a href="contact">Contact us</a></li>
+                                <li><a href="service-area">Service Areas</a></li>
                             </ul>
                         </div>
                         <div class="footer-links">
