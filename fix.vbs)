@@ -1,0 +1,4 @@
+Set fso = CreateObject(\"Scripting.FileSystemObject\"
+Set ts = fso.OpenTextFile(path, 1
+t = Replace(t, \"<div class=\"\" why-choose-us doctor-specialist-section\>\", \"<div class=\"\"why-choose-us doctor-specialist-section\"\">\"
+Set ts = fso.OpenTextFile(path, 2, True
