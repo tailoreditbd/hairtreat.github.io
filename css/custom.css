@@ -3721,6 +3721,7 @@ header.main-header .header-sticky.active{
 }
 
 .page-header-box h1,
+.page-header-box .page-header-title,
 .page-header-box > p{
 	display: inline-block;
 	color: var(--white-color);
@@ -6910,6 +6911,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.page-header-box h1,
+	.page-header-box .page-header-title,
 	.page-header-box > p{
 		font-size: 45px;
 	}
@@ -7938,6 +7940,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.page-header-box h1,
+	.page-header-box .page-header-title,
 	.page-header-box > p{
 		font-size: 30px;
 	}
