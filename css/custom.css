@@ -2490,10 +2490,10 @@ header.main-header .header-sticky.active{
 }
 
 .doctor-specialist-list li{
-	color: var(--primary-color);
-	font-size: 18px;
-	line-height: 1.45em;
-	margin-bottom: 10px;
+	color: #555;
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 12px;
 }
 
 .doctor-specialist-list li:last-child{
