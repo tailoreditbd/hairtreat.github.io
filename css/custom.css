@@ -337,6 +337,10 @@ body{
 	transform: rotate(45deg);
 }
 
+.readmore-btn-disabled{
+	pointer-events: none;
+}
+
 .cb-cursor:before{
 	background: var(--accent-color);
 }
@@ -1792,6 +1796,10 @@ header.main-header .header-sticky.active{
 	font-size: 22px;
 	text-transform: capitalize;
 	line-height: 1.4em;
+}
+
+.our-services .service-content-title h3:has(+ .readmore-btn){
+	width: calc(100% - 90px);
 }
 
 .our-services .service-image{
