@@ -1745,6 +1745,15 @@ header.main-header .header-sticky.active{
 	color: inherit;
 }
 
+.our-services .service-content-title h3 a{
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+
+.our-services .service-content-title h3 a:hover{
+	color: var(--accent-color);
+}
+
 .service-content p{
 	margin: 0;
 }
