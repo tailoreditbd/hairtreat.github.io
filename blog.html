@@ -41,6 +41,20 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css?v=20260628-branchfix" rel="stylesheet" media="screen">
+	<style>
+		/* Hide breadcrumb background image and set template color */
+		.page-header.page-header-blog-image {
+			background-image: none !important;
+			background-color: var(--primary-color) !important;
+		}
+		/* Hide/disable all links inside blog posts (arrow remains visible but is not clickable) */
+		.page-blog .post-item a {
+			pointer-events: none !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+	</style>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5SDWQWJSN2"></script>
 	<script>
