@@ -12827,3 +12827,97 @@ header.main-header .header-sticky.active{
     grid-column: 2;
   }
 }
+/* Case study page layout */
+.case-study-page-section{
+	padding: 80px 0;
+}
+
+.case-study-page-section .case-study-content{
+	position: static;
+	top: auto;
+	max-width: 760px;
+	margin: 0 auto 50px;
+	text-align: center;
+}
+
+.case-study-page-section .section-title.section-title-center{
+	width: 100%;
+	max-width: 760px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.case-study-page-section .section-title.section-title-center p{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.case-study-page-grid{
+	row-gap: 30px;
+}
+
+.case-study-page-grid > [class*="col-"]{
+	display: flex;
+}
+
+.case-study-page-section .treatment-case-card{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	border-radius: 8px;
+	box-shadow: 0 8px 28px rgba(72, 30, 11, 0.08);
+}
+
+.case-study-page-section .treatment-case-card .case-study-image img{
+	aspect-ratio: 406 / 269 !important;
+	border-radius: 8px 8px 0 0;
+}
+
+.case-study-page-section .treatment-case-card .case-study-body{
+	padding: 24px 26px 26px;
+	gap: 18px;
+}
+
+.case-study-page-section .treatment-case-card .case-study-item-content h3{
+	font-size: 24px;
+	line-height: 1.3em;
+	font-weight: 400;
+	margin-bottom: 14px;
+}
+
+.case-study-page-section .treatment-case-card .case-study-item-content p,
+.case-study-page-section .treatment-case-card .case-study-item-content li{
+	font-size: 16px;
+	line-height: 1.65em;
+	color: var(--text-color);
+}
+
+.case-study-page-section .treatment-case-card .case-study-item-content ul{
+	margin-top: 6px;
+}
+
+@media only screen and (max-width: 767px){
+	.case-study-page-section{
+		padding: 60px 0;
+	}
+
+	.case-study-page-section .case-study-content{
+		margin-bottom: 35px;
+	}
+
+	.case-study-page-section .treatment-case-card .case-study-body{
+		padding: 20px;
+	}
+
+	.case-study-page-section .treatment-case-card .case-study-item-content h3{
+		font-size: 22px;
+	}
+}
+/* Balanced spacing for Why Visit section */
+.contact-transformative-beauty{
+	padding: 30px 0;
+}
+
+.contact-transformative-beauty .transformative-beauty-box{
+	margin: 40px 0;
+}
