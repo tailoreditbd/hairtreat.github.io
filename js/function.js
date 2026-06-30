@@ -48,7 +48,7 @@
     );
     $('.footer-contact-box .footer-contact-item').eq(2).find('h3').text('Contact Address:');
     $('.footer-contact-box .footer-contact-item').eq(2).find('ul').html(
-        '<li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/search/?api=1&query=HairTreat%2C%20Lift%3A4%201%2FB%2C%20Garib%20E%20Newaz%20Avenue%2C%20Sector%3A11%20Uttara%2C%20Dhaka%2C%20Bangladesh" target="_blank" rel="noopener noreferrer">HairTreat, Lift:4 1/B, Garib E Newaz Avenue, Sector:11 Uttara, Dhaka, Bangladesh</a></li>'
+        '<li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/search/?api=1&query=Lift%3A4%2CHouse%3A1%2FB%2C%20Garib%20E%20Newaz%20Avenue%2CSector11%20%2CUttara.%2C%20Dhaka%2C%20Bangladesh%2C%201230" target="_blank" rel="noopener noreferrer">Lift:4,House:1/B, Garib E Newaz Avenue,Sector11 ,Uttara., Dhaka, Bangladesh, 1230</a></li>'
     );
 
     /* Preloader Effect */
