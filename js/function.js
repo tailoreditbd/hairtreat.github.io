@@ -41,7 +41,7 @@
     );
 
     $('.footer-contact-box .footer-contact-item').eq(0).find('ul').html(
-        '<li><i class="fa-solid fa-phone"></i><a href="tel:+8801805002681">+8801805002681</a>, <a href="tel:+8801805002682">01805002682</a></li>'
+        '<li><i class="fa-solid fa-phone"></i><a href="tel:+8801805002681">+8801805002681</a> / <a href="tel:+8801805002682">01805002682</a></li>'
     );
     $('.footer-contact-box .footer-contact-item').eq(1).find('ul').html(
         '<li><i class="fa-solid fa-envelope"></i><a href="mailto:hairtreatclinic@gmail.com">hairtreatclinic@gmail.com</a></li>'
