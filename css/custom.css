@@ -3050,12 +3050,22 @@ header.main-header .header-sticky.active{
 }
 
 .clinic-trust-counter{
+	justify-content: center;
 	margin-top: 12px !important;
 	padding-top: 24px;
 }
 
 .clinic-trust-counter .facts-counter-item{
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 140px;
+}
+
+.clinic-trust-counter .facts-counter-item .icon-box{
+	margin: 0 0 16px 0;
 }
 
 .clinic-trust-counter .facts-counter-item.fadeInUp{
