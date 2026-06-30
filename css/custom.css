@@ -12868,9 +12868,22 @@ header.main-header .header-sticky.active{
 	box-shadow: 0 8px 28px rgba(72, 30, 11, 0.08);
 }
 
-.case-study-page-section .treatment-case-card .case-study-image img{
-	aspect-ratio: 406 / 269 !important;
+.case-study-page-section .treatment-case-card .case-study-image {
+	background-color: var(--primary-color);
+	aspect-ratio: 406 / 269;
 	border-radius: 8px 8px 0 0;
+	overflow: hidden;
+}
+
+.case-study-page-section .treatment-case-card .case-study-image a,
+.case-study-page-section .treatment-case-card .case-study-image figure {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.case-study-page-section .treatment-case-card .case-study-image img {
+	display: none !important;
 }
 
 .case-study-page-section .treatment-case-card .case-study-body{
