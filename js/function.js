@@ -540,6 +540,36 @@
     }
     /* Appointment form validation end */
 
+
+    window.redirectTreatmentWhatsapp = function(button){
+        var form = button ? button.closest("form") : null;
+        if (!form) {
+            return false;
+        }
+
+        var whatsappNumber = (form.getAttribute("data-whatsapp-number") || "8801805002681").replace(/[^0-9]/g, "");
+        var serviceName = form.getAttribute("data-service-name") || "Appointment";
+        var fullNameInput = form.querySelector('[name="full_name"]');
+        var phoneInput = form.querySelector('[name="phone"]');
+        var addressInput = form.querySelector('[name="address"]');
+        var fullName = fullNameInput ? fullNameInput.value.trim() : "";
+        var phone = phoneInput ? phoneInput.value.trim() : "";
+        var address = addressInput ? addressInput.value.trim() : "";
+
+        if (!fullName || !phone || !address) {
+            form.reportValidity();
+            return false;
+        }
+
+        var message = "Hello, I want to book a " + serviceName + ".\n"
+            + "Full Name: " + fullName + "\n"
+            + "Phone Number: " + phone + "\n"
+            + "Address: " + address;
+
+        window.location.href = "https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + encodeURIComponent(message);
+        return false;
+    };
+
     /* Animated Wow Js */
     new WOW().init();
 
