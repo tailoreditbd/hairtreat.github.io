@@ -12934,3 +12934,30 @@ header.main-header .header-sticky.active{
 .contact-transformative-beauty .transformative-beauty-box{
 	margin: 40px 0;
 }
+
+@media only screen and (min-width: 992px){
+	.page-service-single .page-single-category-list h3{
+		font-size: 18px;
+		padding: 12px 18px;
+	}
+
+	.page-service-single .page-single-category-list ul{
+		padding: 16px 18px;
+	}
+
+	.page-service-single .page-single-category-list ul li{
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+	}
+
+	.page-service-single .page-single-category-list ul li a{
+		font-size: 14px;
+		line-height: 1.25em;
+		padding-right: 26px;
+	}
+
+	.page-service-single .page-single-category-list ul li a::before{
+		width: 18px;
+		height: 18px;
+	}
+}
