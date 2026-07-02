@@ -3557,12 +3557,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-treatment-links ul{
-	gap: 7px;
-}
-
-.footer-treatment-links ul li{
-	font-size: 15px;
-	line-height: 1.35em;
+	gap: 12px;
 }
 .footer-chamber-links ul{
 	gap: 18px;
@@ -6992,12 +6987,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.footer-treatment-links ul{
-		gap: 6px;
-	}
-
-	.footer-treatment-links ul li{
-		font-size: 14px;
-		line-height: 1.3em;
+		gap: 10px;
 	}
 
 	.footer-contact-box{
@@ -8050,7 +8040,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.footer-treatment-links ul{
-		gap: 5px;
+		gap: 8px;
 	}
 
 	.footer-links ul li{
