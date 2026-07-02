@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://tailoreditbd.com/hairtreat.github.io/sitemap.xml
+Sitemap: https://hairtreat.com.bd/sitemap.xml
