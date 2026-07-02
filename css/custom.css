@@ -3533,10 +3533,23 @@ header.main-header .header-sticky.active{
 }
 
 .footer-links h3{
+    position: relative;
+    display: inline-block;
     font-size: 24px;
     color: var(--white-color);
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+    padding-bottom: 10px;
+}
+
+.footer-links h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.65);
 }
 
 .footer-links ul{
@@ -3580,6 +3593,22 @@ header.main-header .header-sticky.active{
 .footer-links ul li a{
 	color: inherit;
 	transition: all 0.3s ease-in-out;
+}
+
+.footer-links:not(.footer-chamber-links) ul li a{
+	display: inline-flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.footer-links:not(.footer-chamber-links) ul li a::before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-top: 3px solid currentColor;
+	border-right: 3px solid currentColor;
+	transform: rotate(45deg);
+	flex: 0 0 auto;
 }
 
 .footer-links ul li a:hover{
