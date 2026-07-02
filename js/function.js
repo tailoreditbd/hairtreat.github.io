@@ -24,7 +24,6 @@
         '<li><a href="treatments">Treatments</a></li>' +
         '<li><a href="contact-us">Hours &amp; Locations</a></li>' +
         '<li><a href="case-study">Case studies</a></li>' +
-        '<li><a href="blog">Happenings</a></li>' +
         '<li><a href="about">About us</a></li>'
     );
 
