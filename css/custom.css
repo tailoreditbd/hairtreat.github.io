@@ -901,47 +901,25 @@ header.main-header .header-sticky.active{
 	padding: 8px 20px 8px 23px !important;
 }
 
-.main-menu ul li.treatments-menu{
-	position: static;
-}
-
-.main-menu ul li.treatments-menu > ul{
-	width: min(1040px, calc(100vw - 40px));
-	left: 50%;
-	column-count: 3;
-	column-gap: 55px;
-	padding: 35px 55px;
-	background-color: rgba(255, 255, 255, 0.9);
-	background-image: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url('../images/hero-bg.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	border-radius: 28px;
-	box-shadow: 0 16px 50px rgba(72, 30, 11, 0.12);
-	transform: translateX(-50%) scaleY(0.8);
-}
-
-.main-menu ul li.treatments-menu:hover > ul{
-	padding: 35px 55px;
-	transform: translateX(-50%) scaleY(1);
+.main-menu ul li.treatments-menu > ul,
+.main-menu ul li.transplant-menu > ul{
+	width: auto;
+	min-width: 270px;
 }
 
 .main-menu ul li.treatments-menu > ul li a,
+.main-menu ul li.transplant-menu > ul li a{
+	white-space: nowrap;
+}
+
 .main-menu ul li.about-menu > ul li a{
 	color: var(--primary-color);
 }
 
-.main-menu ul li.treatments-menu > ul li{
-	break-inside: avoid;
-}
-
-.main-menu ul li.treatments-menu > ul li a:hover,
-.main-menu ul li.treatments-menu > ul li a:focus,
 .main-menu ul li.about-menu > ul li a:hover,
 .main-menu ul li.about-menu > ul li a:focus{
 	color: var(--accent-color);
 }
-
 .header-contact-btn{
 	display: flex;
 	align-items: center;
