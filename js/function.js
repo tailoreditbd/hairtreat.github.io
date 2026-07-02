@@ -51,7 +51,8 @@
         '<h3>Chamber Address</h3>' +
         '<ul>' +
         '<li><strong><a href="https://hairtreat.com.bd/" target="_blank" rel="noopener">HairTreat</a></strong>' +
-        '<a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Lift:4, House:1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka, Bangladesh, 1230</a></li>' +
+        '<a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Lift:4, House:1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka, Bangladesh, 1230</a>' +
+        '<a href="tel:+8801805002681">(+88) 01805 002681</a></li>' +
         '<li><strong><a href="https://talukderclinicandnursinghome.com/" target="_blank" rel="noopener">Tangail Chamber:</a></strong>' +
         '<a href="https://www.google.com/maps/search/?api=1&query=Talukder%20Clinic%20and%20Nursing%20Home%20Puraton%20Bus%20stand%20Tangail%20Sodor" target="_blank" rel="noopener noreferrer">Talukder Clinic and Nursing Home, Puraton Bus stand, Tangail Sodor.</a>' +
         '<a href="tel:+8801805002688">01805002688</a></li>' +
