@@ -3748,7 +3748,10 @@ header.main-header .header-sticky.active{
 	background-size: cover;
 	background-position: center center;
 }
-
+.transplant-empty-content{
+	min-height: 120px;
+	background: var(--white-color);
+}
 .page-header.page-header-service-area-image{
 	background-image: url('../images/service-areas.png');
 	background-size: cover;
@@ -13005,4 +13008,89 @@ header.main-header .header-sticky.active{
 		width: 18px;
 		height: 18px;
 	}
+}
+.page-header.gallery-custom-banner{
+	background-image: linear-gradient(rgba(72, 30, 11, 0.45), rgba(72, 30, 11, 0.45)), url('../images/image-gallery.png') !important;
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+@media only screen and (max-width: 767px){
+	.page-header.gallery-custom-banner{
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		height: auto !important;
+		min-height: 180px !important;
+		padding: 40px 0 !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		border-radius: 20px !important;
+		overflow: hidden !important;
+	}
+
+	.page-header.gallery-custom-banner .page-header-box{
+		padding: 0 15px !important;
+		text-align: center !important;
+		background: transparent !important;
+	}
+
+	.page-header.gallery-custom-banner .page-header-box h1{
+		font-size: 28px !important;
+		line-height: 1.2em !important;
+		display: block !important;
+		color: var(--white-color) !important;
+		margin-bottom: 8px !important;
+		font-weight: 500 !important;
+		font-family: var(--accent-font) !important;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+	}
+
+	.page-header.gallery-custom-banner .page-header-box ol.breadcrumb{
+		justify-content: center !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		display: flex !important;
+	}
+
+	.page-header.gallery-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item{
+		font-size: 14px !important;
+		color: var(--white-color) !important;
+		text-transform: uppercase !important;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+	}
+
+	.page-header.gallery-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item a{
+		color: #ff9f75 !important;
+	}
+}
+.page-header.transplant-placeholder-banner{
+	background-image: none !important;
+	background-color: #4b1909;
+	background-size: cover;
+	background-position: center center;
+	min-height: 450px;
+	border-radius: 28px;
+	overflow: hidden;
+}
+
+.page-header.transplant-placeholder-banner::before{
+	content: '1200 x 800';
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(255, 255, 255, 0.08);
+	font-size: clamp(72px, 11vw, 150px);
+	font-weight: 700;
+	line-height: 1;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.page-header.transplant-placeholder-banner .container{
+	position: relative;
+	z-index: 1;
 }
