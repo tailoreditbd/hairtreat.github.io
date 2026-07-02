@@ -5875,6 +5875,51 @@ header.main-header .header-sticky.active{
 	letter-spacing: 1px;
 }
 
+.testimonials-intro + .page-testimonials .testimonial-author{
+	gap: 20px;
+}
+
+.testimonials-intro + .page-testimonials .testimonial-author .author-image{
+	flex: 0 0 88px;
+	margin-right: 0;
+}
+
+.testimonials-intro + .page-testimonials .testimonial-author .author-image figure{
+	width: 88px;
+	height: 88px;
+}
+
+.testimonials-intro + .page-testimonials .testimonial-author .author-image img{
+	width: 88px;
+	height: 88px;
+	max-width: none;
+	object-fit: cover;
+	object-position: center;
+}
+
+.testimonials-intro + .page-testimonials .testimonial-author .author-content{
+	width: calc(100% - 108px);
+}
+
+@media (max-width: 575px){
+	.testimonials-intro + .page-testimonials .testimonial-author{
+		gap: 14px;
+	}
+
+	.testimonials-intro + .page-testimonials .testimonial-author .author-image{
+		flex-basis: 74px;
+	}
+
+	.testimonials-intro + .page-testimonials .testimonial-author .author-image figure,
+	.testimonials-intro + .page-testimonials .testimonial-author .author-image img{
+		width: 74px;
+		height: 74px;
+	}
+
+	.testimonials-intro + .page-testimonials .testimonial-author .author-content{
+		width: calc(100% - 88px);
+	}
+}
 /************************************/
 /***    27.  Image Gallery css    ***/
 /************************************/
