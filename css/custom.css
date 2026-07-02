@@ -3613,12 +3613,12 @@ header.main-header .header-sticky.active{
 .footer-copyright{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 20px;
 	border-top: 1px solid var(--dark-divider-color);
 	margin-top: 50px;
-	padding: 50px 0;
-	text-align: center;
+	padding: 22px 0;
+	text-align: left;
 }
 
 .footer-copyright-text p,
@@ -3627,14 +3627,9 @@ header.main-header .header-sticky.active{
 	margin-bottom: 0;
 }
 
-.footer-copyright.footer-copyright-split{
-	justify-content: space-between;
-	text-align: left;
-}
-
 .footer-credit-text{
 	text-align: right;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .footer-privacy-policy ul{
@@ -8025,11 +8020,8 @@ header.main-header .header-sticky.active{
         flex-direction: column;
         gap: 15px;
         padding: 20px 0;
-    }
-
-	.footer-copyright.footer-copyright-split{
 		text-align: center;
-	}
+    }
 
 	.footer-credit-text{
 		text-align: center;
