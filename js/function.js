@@ -18,36 +18,44 @@
 
     $('.about-footer-content p').text('Our facility comprises advanced technological machines and equipment that help us find an adequate solution for your hair loss problem with a successful minimally invasive surgical process.');
     $('.footer-social-links .fa-facebook-f').closest('a').attr('href', 'https://www.facebook.com/hairtreat');
-
     $('.footer-links.quick-links ul').html(
         '<li><a href="./">Home</a></li>' +
         '<li><a href="treatments">Treatments</a></li>' +
-        '<li><a href="contact-us">Hours &amp; Locations</a></li>' +
-        '<li><a href="case-study">Case studies</a></li>' +
-        '<li><a href="about">About us</a></li>'
+        '<li><a href="transplant">Transplant</a></li>' +
+        '<li><a href="hours-and-location">Hours &amp; Locations</a></li>' +
+        '<li><a href="hair-transplant-cost">Pricing</a></li>' +
+        '<li><a href="reviews">Reviews</a></li>' +
+        '<li><a href="about">About us</a></li>' +
+        '<li><a href="contact-us">Contact us</a></li>'
     );
 
-    $('.footer-links-box .footer-links').not('.quick-links').first().html(
-        '<h3>Useful Treatments</h3>' +
+    $('.footer-treatment-links').html(
+        '<h3>Treatments</h3>' +
         '<ul>' +
-        '<li><a href="hair-transplant">Hair Transplant</a></li>' +
-        '<li><a href="hair-transplant-treatment">Hair Treatment</a></li>' +
         '<li><a href="hair-prp">Hair PRP</a></li>' +
-        '<li><a href="female-hair-transplant">Female Hair Transplant</a></li>' +
+        '<li><a href="hair-line-correction">Hair Line Correction</a></li>' +
+        '<li><a href="fue">FUE</a></li>' +
+        '<li><a href="laser-hair-remover">Laser Hair Removal</a></li>' +
+        '<li><a href="p-shot">P-Shot</a></li>' +
         '<li><a href="gfc-prp">GFC PRP</a></li>' +
-        '<li><a href="p-shot">P Shot</a></li>' +
+        '<li><a href="hair-transplant">Hair Transplant</a></li>' +
+        '<li><a href="eyebrow-transplant">Eyebrow Transplant</a></li>' +
+        '<li><a href="female-hair-transplant">Female Hair Transplant</a></li>' +
+        '<li><a href="beard-transplant">Beard Transplant</a></li>' +
+        '<li><a href="fut-hair-transplant">FUT Hair Transplant</a></li>' +
+        '<li><a href="sapphire-hair-transplant">Sapphire Hair Transplant</a></li>' +
         '</ul>'
     );
 
-    $('.footer-contact-box .footer-contact-item').eq(0).find('ul').html(
-        '<li><i class="fa-solid fa-phone"></i><a href="tel:+8801805002681">+8801805002681</a> / <a href="tel:+8801805002682">01805002682</a></li>'
-    );
-    $('.footer-contact-box .footer-contact-item').eq(1).find('ul').html(
-        '<li><i class="fa-solid fa-envelope"></i><a href="mailto:hairtreatclinic@gmail.com">hairtreatclinic@gmail.com</a></li>'
-    );
-    $('.footer-contact-box .footer-contact-item').eq(2).find('h3').text('Contact Address:');
-    $('.footer-contact-box .footer-contact-item').eq(2).find('ul').html(
-        '<li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Lift:4,House:1/B, Garib E Newaz Avenue,Sector11 ,Uttara., Dhaka, Bangladesh, 1230</a></li>'
+    $('.footer-chamber-links').html(
+        '<h3>Chamber Address</h3>' +
+        '<ul>' +
+        '<li><strong><a href="https://hairtreat.com.bd/" target="_blank" rel="noopener">HairTreat</a></strong>' +
+        '<a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Lift:4, House:1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka, Bangladesh, 1230</a></li>' +
+        '<li><strong><a href="https://talukderclinicandnursinghome.com/" target="_blank" rel="noopener">Tangail Chamber:</a></strong>' +
+        '<a href="https://www.google.com/maps/search/?api=1&query=Talukder%20Clinic%20and%20Nursing%20Home%20Puraton%20Bus%20stand%20Tangail%20Sodor" target="_blank" rel="noopener noreferrer">Talukder Clinic and Nursing Home, Puraton Bus stand, Tangail Sodor.</a>' +
+        '<a href="tel:+8801805002688">01805002688</a></li>' +
+        '</ul>'
     );
 
     /* Preloader Effect */
