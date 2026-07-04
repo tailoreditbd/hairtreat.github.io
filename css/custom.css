@@ -162,7 +162,7 @@ a:focus{
 html,
 body{
 	width: 100%;
-	overflow-x: clip;
+	overflow-x: hidden;
 }
 
 .container{
@@ -10754,7 +10754,8 @@ header.main-header .header-sticky.active{
 
 @media (min-width: 768px){
 	.hero.hero-home-banner{
-		min-height: clamp(620px, calc(100vh - 92px), 780px);
+		height: clamp(620px, calc(100vh - 92px), 780px);
+		min-height: 0;
 		margin: 24px;
 		padding: 0;
 		border-radius: 30px;
@@ -10762,9 +10763,15 @@ header.main-header .header-sticky.active{
 		overflow: hidden;
 	}
 
+	.hero.hero-home-banner .swiper,
+	.hero.hero-home-banner .swiper-wrapper{
+		height: 100%;
+	}
+
 	.hero.hero-home-banner .swiper-slide,
 	.hero.hero-home-banner .hero-slide{
-		min-height: clamp(620px, calc(100vh - 92px), 780px);
+		height: 100%;
+		min-height: 100%;
 	}
 
 	.hero.hero-home-banner .hero-slide::before{
