@@ -10901,8 +10901,22 @@ header.main-header .header-sticky.active{
 
 @media (max-width: 767px){
 	.hero.hero-home-banner.hero-slider-layout .hero-slide{
-		padding: 60px 0 10px !important;
-		min-height: 760px !important;
+		padding: 60px 0 82px !important;
+		min-height: 780px !important;
+	}
+
+	.hero.hero-home-banner.hide-on-desktop .hero-body{
+		margin-bottom: 34px;
+	}
+
+	.hero.hero-home-banner.hide-on-desktop .hero-btn .btn-default{
+		margin-right: 0;
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+
+	.hero.hero-home-banner.hide-on-desktop .hero-btn .btn-default::before{
+		display: none;
 	}
 
 	.hero.hero-home-banner .hero-slide{
@@ -10918,7 +10932,7 @@ header.main-header .header-sticky.active{
 	.hero.hero-home-banner .hero-pagination{
 		position: absolute;
 		right: 0;
-		bottom: 3px;
+		bottom: 24px;
 		left: 0;
 		z-index: 5;
 		text-align: center;
