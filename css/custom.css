@@ -3331,6 +3331,7 @@ header.main-header .header-sticky.active{
 
 .post-featured-image .post-result-images{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: stretch;
 	gap: 10px;
 	width: 100%;
@@ -13198,4 +13199,21 @@ header.main-header .header-sticky.active{
 	.hide-on-desktop {
 		display: none !important;
 	}
+}
+
+.image-caption{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.result-comparison-caption{
+    flex: 0 0 100%;
+    margin-top: 0;
+    padding: 8px 4px 0;
+    color: var(--white-color);
 }
