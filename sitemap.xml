@@ -25,12 +25,6 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/blog-single</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
     <loc>https://hairtreat.com.bd/book-appointment</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,12 +32,6 @@
   </url>
   <url>
     <loc>https://hairtreat.com.bd/case-study</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://hairtreat.com.bd/case-study-single</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
@@ -62,12 +50,6 @@
   </url>
   <url>
     <loc>https://hairtreat.com.bd/eyebrow-transplant</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://hairtreat.com.bd/faqs</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
@@ -163,12 +145,6 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/index-slider</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
     <loc>https://hairtreat.com.bd/laser-hair-remover</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,12 +185,6 @@
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://hairtreat.com.bd/service-single</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://hairtreat.com.bd/transplant</loc>
