@@ -13242,3 +13242,40 @@ header.main-header .header-sticky.active{
         object-fit: contain;
     }
 }
+/* single-result-image-fit */
+.post-featured-image .post-result-images.single-result-image{
+	padding: 0;
+	background: transparent;
+}
+
+.post-featured-image .post-result-images a:only-of-type{
+	flex: 0 0 100%;
+	width: 100% !important;
+	max-width: 100%;
+	background: var(--white-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.post-featured-image .post-result-images a:only-of-type img{
+	height: 360px;
+	object-fit: contain;
+	background: var(--white-color);
+}
+
+.post-featured-image .post-result-images a:only-of-type + .result-comparison-caption{
+	color: var(--primary-color);
+}
+
+@media only screen and (max-width: 991px){
+	.post-featured-image .post-result-images a:only-of-type img{
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.post-featured-image .post-result-images a:only-of-type img{
+		height: 240px;
+	}
+}
