@@ -13217,3 +13217,28 @@ header.main-header .header-sticky.active{
     padding: 8px 4px 0;
     color: var(--white-color);
 }
+/* mobile-slider-square-image-size */
+@media (max-width: 767px){
+    .hero.hero-home-banner.hide-on-desktop .hero-image{
+        max-width: min(86vw, 330px);
+        width: min(86vw, 330px);
+        height: min(86vw, 330px);
+        margin: 58px auto 14px;
+    }
+
+    .hero.hero-home-banner.hide-on-desktop .hero-image::before{
+        display: block !important;
+        width: min(86vw, 330px);
+        height: min(86vw, 330px);
+        animation: heroCircleRotate 18s linear infinite;
+    }
+
+    .hero.hero-home-banner.hide-on-desktop .hero-image picture,
+    .hero.hero-home-banner.hide-on-desktop .hero-image .hairtreat-hero-banner{
+        width: min(76vw, 290px);
+        max-width: min(76vw, 290px);
+        height: min(76vw, 290px);
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+    }
+}
