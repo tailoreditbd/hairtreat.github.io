@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'case-study': 'case-study.html',
 				'codex-server-check': 'codex-server-check.html',
 				'contact': 'contact.html',
-				'dhaka': 'dhaka.html',
+				'dhaka': 'service-area/dhaka',
 				'eyebrow-transplant': 'eyebrow-transplant.html',
 				'faqs': 'faqs.html',
 				'female-hair-transplant': 'female-hair-transplant.html',
@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'fue': 'fue.html',
 				'fut-hair-transplant': 'fut-hair-transplant.html',
 				'gfc-prp': 'gfc-prp.html',
-				'gulshan': 'gulshan.html',
+				'gulshan': 'service-area/gulshan',
 				'hair-line-correction': 'hair-line-correction.html',
 				'hair-loss-treatment-for-saudi-arabia-nrbs': 'hair-loss-treatment-for-saudi-arabia-nrbs.html',
 				'hair-prp': 'hair-prp.html',
@@ -63,14 +63,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'team': 'team.html',
 				'transplant': 'transplant.html',
 				'treatments': 'treatments.html',
-				'uttara': 'uttara.html',
+				'uttara': 'service-area/uttara',
 				'video-gallery': 'video-gallery.html'
 			};
 
 			var match = path.match(/\/service-area\.html\/(uttara|uttura|gulshan|dhaka)$/i);
 			if (match) {
 				var city = match[1].toLowerCase() === 'uttura' ? 'uttara' : match[1].toLowerCase();
-				window.location.replace(path.replace(/\/service-area\.html\/[^/]+$/i, '/' + city + '.html') + window.location.search + window.location.hash);
+				window.location.replace(path.replace(/\/service-area\.html\/[^/]+$/i, '/service-area/' + city) + window.location.search + window.location.hash);
+				return;
+			}
+
+			var areaMatch = path.match(/\/service-area\/(uttara|uttura|gulshan|dhaka)$/i);
+			if (areaMatch) {
+				var areaCity = areaMatch[1].toLowerCase() === 'uttura' ? 'uttara' : areaMatch[1].toLowerCase();
+				window.location.replace(path.replace(/\/service-area\/[^/]+$/i, '/' + areaCity + '.html') + window.location.search + window.location.hash);
 				return;
 			}
 
