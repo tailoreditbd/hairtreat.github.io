@@ -162,7 +162,7 @@ a:focus{
 html,
 body{
 	width: 100%;
-	overflow-x: hidden;
+	overflow-x: clip;
 }
 
 .container{
@@ -4541,6 +4541,7 @@ header.main-header .header-sticky.active{
 	position: sticky;
 	top: 20px;
 	margin-right: 20px;
+	align-self: flex-start;
 }
 
 .treatment-info-box{
@@ -4549,17 +4550,15 @@ header.main-header .header-sticky.active{
 }
 @media only screen and (min-width: 992px){
 	.page-service-single > .container > .row{
-		align-items: flex-start;
+		align-items: stretch;
 	}
 
 	.page-service-single > .container > .row > .col-lg-4:first-child{
-		position: sticky;
-		top: 20px;
-		align-self: flex-start;
+		align-self: stretch;
 	}
 
-	.page-service-single > .container > .row > .col-lg-4:first-child .page-single-sidebar{
-		position: static;
+	.page-single-sidebar{
+		top: 110px;
 	}
 }
 
@@ -6504,7 +6503,8 @@ header.main-header .header-sticky.active{
 		margin-top: 45px;
 	}
 
-	$122px;
+	.available-treatment-card-content h3{
+		font-size: 22px;
 	}
 
 	.available-treatment-card-content p,
@@ -7253,7 +7253,8 @@ header.main-header .header-sticky.active{
 		margin-top: 35px;
 	}
 
-	$122px;
+	.available-treatment-card-content h3{
+		font-size: 22px;
 		margin-bottom: 14px;
 	}
 
