@@ -4550,15 +4550,17 @@ header.main-header .header-sticky.active{
 }
 @media only screen and (min-width: 992px){
 	.page-service-single > .container > .row{
-		align-items: stretch;
+		align-items: flex-start;
 	}
 
 	.page-service-single > .container > .row > .col-lg-4:first-child{
-		align-self: stretch;
+		position: sticky;
+		top: 20px;
+		align-self: flex-start;
 	}
 
-	.page-single-sidebar{
-		top: 110px;
+	.page-service-single > .container > .row > .col-lg-4:first-child .page-single-sidebar{
+		position: static;
 	}
 }
 
