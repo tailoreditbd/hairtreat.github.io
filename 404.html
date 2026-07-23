@@ -28,6 +28,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<script>
 		(function () {
 			var path = window.location.pathname.replace(/\/+$/, '');
+			if (/\/laser-hair-remover(?:\.html)?$/i.test(path)) {
+				window.location.replace(path.replace(/\/laser-hair-remover(?:\.html)?$/i, '/laser-hair-removal.html') + window.location.search + window.location.hash);
+				return;
+			}
 			var routes = {
 				'about': 'about.html',
 				'beard-transplant': 'beard-transplant.html',
@@ -58,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'index-image': 'index-image.html',
 				'index-slider': 'index-slider.html',
 				'index-video': 'index-video.html',
-				'laser-hair-remover': 'laser-hair-remover.html',
+				'laser-hair-removal': 'laser-hair-removal.html',
 				'laser-treatment': 'laser-treatment.html',
 				'moustache-transplant': 'moustache-transplant.html',
 				'p-shot': 'p-shot.html',
@@ -162,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li class="nav-item"><a class="nav-link" href="hair-prp">Hair PRP</a></li>
 <li class="nav-item"><a class="nav-link" href="hair-line-correction">Hair Line Correction</a></li>
 <li class="nav-item"><a class="nav-link" href="fue">FUE</a></li>
-<li class="nav-item"><a class="nav-link" href="laser-hair-remover">Laser Hair Removal</a></li>
+<li class="nav-item"><a class="nav-link" href="laser-hair-removal">Laser Hair Removal</a></li>
 <li class="nav-item"><a class="nav-link" href="p-shot">P-Shot</a></li>
 <li class="nav-item"><a class="nav-link" href="gfc-prp">GFC PRP</a></li>
 <!-- Hidden until page is ready: <li class="nav-item"><a class="nav-link" href="dhi-hair-transplant">DHI Hair Transplant</a></li> -->
@@ -304,7 +308,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li><a href="hair-prp">Hair PRP</a></li>
                                 <li><a href="hair-line-correction">Hair Line Correction</a></li>
                                 <li><a href="fue">FUE</a></li>
-                                <li><a href="laser-hair-remover">Laser Hair Removal</a></li>
+                                <li><a href="laser-hair-removal">Laser Hair Removal</a></li>
                                 <li><a href="p-shot">P-Shot</a></li>
                                 <li><a href="gfc-prp">GFC PRP</a></li>
                                 <li><a href="hair-transplant">Hair Transplant</a></li>

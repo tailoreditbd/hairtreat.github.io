@@ -35,7 +35,7 @@
         '<li><a href="hair-prp">Hair PRP</a></li>' +
         '<li><a href="hair-line-correction">Hair Line Correction</a></li>' +
         '<li><a href="fue">FUE</a></li>' +
-        '<li><a href="laser-hair-remover">Laser Hair Removal</a></li>' +
+        '<li><a href="laser-hair-removal">Laser Hair Removal</a></li>' +
         '<li><a href="p-shot">P-Shot</a></li>' +
         '<li><a href="gfc-prp">GFC PRP</a></li>' +
         '<li><a href="hair-transplant">Hair Transplant</a></li>' +
