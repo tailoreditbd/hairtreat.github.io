@@ -4850,15 +4850,25 @@ header.main-header .header-sticky.active{
 	background-image: none;
 }
 
-.service-entry .female-hair-transplant-why-choose-section .female-why-choose-points{
+.female-hair-transplant-why-choose-section .female-why-choose-points{
 	list-style: none;
 	padding-left: 0;
 	margin-bottom: 30px;
 }
 
 .female-hair-transplant-why-choose-section .female-why-choose-points li{
+	position: relative;
+	list-style: none !important;
 	margin-bottom: 8px;
-	padding-left: 0;
+	padding-left: 24px;
+}
+
+.female-hair-transplant-why-choose-section .female-why-choose-points li::before{
+	content: '\2022';
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: inherit;
 }
 
 .female-hair-transplant-why-choose-section .female-why-choose-action{
@@ -5057,6 +5067,7 @@ header.main-header .header-sticky.active{
 	margin-bottom: 0;
 }
 
+.female-pricing-section .female-pricing-heading,
 .female-process-section .female-process-heading{
 	font-family: var(--accent-font);
 	font-size: 32px;
@@ -5069,8 +5080,57 @@ header.main-header .header-sticky.active{
 	padding: 0;
 }
 
+.female-pricing-section .female-pricing-heading::before,
 .female-process-section .female-process-heading::before{
 	display: none;
+}
+
+.female-pricing-section .female-pricing-intro{
+	margin-bottom: 0;
+}
+
+.female-pricing-section .female-pricing-intro p,
+.female-hair-transplant-why-choose-section .why-choose-content > p{
+	color: var(--text-color);
+	margin-bottom: 15px;
+}
+
+.female-pricing-section .female-pricing-intro p:last-child{
+	margin-bottom: 0;
+}
+
+.female-pricing-section .female-package-price-table{
+	table-layout: fixed;
+}
+
+.female-pricing-section .female-package-price-table th:nth-child(1),
+.female-pricing-section .female-package-price-table td:nth-child(1){
+	width: 18%;
+}
+
+.female-pricing-section .female-package-price-table th:nth-child(2),
+.female-pricing-section .female-package-price-table td:nth-child(2){
+	width: 15%;
+}
+
+.female-pricing-section .female-package-price-table th:nth-child(3),
+.female-pricing-section .female-package-price-table td:nth-child(3){
+	width: 26%;
+}
+
+.female-pricing-section .female-package-price-table th:nth-child(4),
+.female-pricing-section .female-package-price-table td:nth-child(4){
+	width: 41%;
+}
+
+.female-pricing-section .female-package-price-table thead th,
+.female-pricing-section .female-package-price-table tbody td{
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+
+.female-pricing-action{
+	margin-top: 30px;
 }
 
 .female-process-section .female-process-intro p{
@@ -5153,8 +5213,18 @@ header.main-header .header-sticky.active{
 }
 
 @media only screen and (max-width: 767px){
+	.female-pricing-section .female-pricing-heading,
 	.female-process-section .female-process-heading{
 		font-size: 24px;
+	}
+
+	.female-pricing-section .female-package-price-table tbody tr + tr{
+		margin-top: 20px !important;
+	}
+
+	.female-pricing-section .female-package-price-table tbody tr{
+		border: 0 !important;
+		box-shadow: inset 0 0 0 2px rgba(72, 30, 11, 0.28), 0 10px 28px rgba(72, 30, 11, 0.08) !important;
 	}
 
 	.female-process-table-header{
