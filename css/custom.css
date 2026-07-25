@@ -4837,6 +4837,10 @@ header.main-header .header-sticky.active{
 	margin: 0 0 60px;
 }
 
+.female-hair-transplant-content .female-hair-transplant-faq-section + .female-hair-transplant-assessment-section{
+	margin-top: 40px;
+}
+
 .post-entry blockquote.laser-assessment-quote{
 	display: flex;
 	align-items: center;
