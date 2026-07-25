@@ -4856,9 +4856,14 @@ header.main-header .header-sticky.active{
 	margin-bottom: 0;
 }
 
+.service-entry h1,
 .service-entry h2{
 	font-size: 32px;
     margin-bottom: 20px;
+}
+
+.service-entry-btn{
+	margin-top: 30px;
 }
 
 .service-entry ul{
@@ -7329,6 +7334,7 @@ header.main-header .header-sticky.active{
 		margin-bottom: 15px;
 	}
 
+	.service-entry h1,
 	.service-entry h2{
 		font-size: 38px;
 		margin-bottom: 15px;
@@ -8352,6 +8358,7 @@ header.main-header .header-sticky.active{
 		aspect-ratio: 1 / 0.7;
 	}
 
+	.service-entry h1,
 	.service-entry h2{
         font-size: 24px;
     }
