@@ -5063,8 +5063,28 @@ header.main-header .header-sticky.active{
 	align-items: center;
 }
 
+.female-key-points-list .female-key-point-item:last-child{
+	margin-bottom: 0;
+}
+
 .female-process-section .female-process-intro{
 	margin-bottom: 0;
+}
+
+.female-process-section{
+	padding-top: 20px !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.female-pricing-section{
+	padding-top: 30px !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.female-hair-transplant-content .female-hair-transplant-why-choose-section{
+	padding-top: 40px;
 }
 
 .female-pricing-section .female-pricing-heading,
