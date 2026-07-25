@@ -4837,11 +4837,19 @@ header.main-header .header-sticky.active{
 	margin: 0 0 60px;
 }
 
+.female-hair-transplant-content .laser-assessment-entry{
+	margin-bottom: 0;
+}
+
+.female-hair-transplant-content .treatment-skin-analysis-section{
+	padding-top: 30px;
+}
+
 .female-hair-transplant-content .female-hair-transplant-faq-section + .female-hair-transplant-assessment-section{
 	margin-top: 40px;
 }
 .female-hair-transplant-why-choose-section .female-why-choose-heading{
-	font-size: 32px;
+	font-size: 28px;
 	margin-bottom: 20px;
 }
 
@@ -5087,10 +5095,30 @@ header.main-header .header-sticky.active{
 	padding-top: 40px;
 }
 
+.female-hair-transplant-content .service-enhance-box > h1{
+	font-size: 36px;
+}
+
+.female-hair-transplant-content .service-entry h2{
+	font-size: 32px;
+}
+
+@media only screen and (max-width: 991px){
+	.female-hair-transplant-content .service-enhance-box > h1{
+		font-size: 38px;
+	}
+
+	.female-pricing-section .female-pricing-heading,
+	.female-process-section .female-process-heading,
+	.female-hair-transplant-why-choose-section .female-why-choose-heading{
+		font-size: 26px !important;
+	}
+}
+
 .female-pricing-section .female-pricing-heading,
 .female-process-section .female-process-heading{
 	font-family: var(--accent-font);
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 400;
 	line-height: 1.2em;
 	text-transform: none;
@@ -5233,9 +5261,18 @@ header.main-header .header-sticky.active{
 }
 
 @media only screen and (max-width: 767px){
-	.female-pricing-section .female-pricing-heading,
-	.female-process-section .female-process-heading{
+	.female-hair-transplant-content .service-enhance-box > h1{
+		font-size: 28px;
+	}
+
+	.female-hair-transplant-content .service-entry h2{
 		font-size: 24px;
+	}
+
+	.female-pricing-section .female-pricing-heading,
+	.female-process-section .female-process-heading,
+	.female-hair-transplant-why-choose-section .female-why-choose-heading{
+		font-size: 20px !important;
 	}
 
 	.female-pricing-section .female-package-price-table tbody tr + tr{
@@ -6607,6 +6644,15 @@ header.main-header .header-sticky.active{
 
 .appointment-item-content p{
 	margin: 0;
+}
+
+.female-appointment-hours{
+	align-items: center;
+}
+
+.female-appointment-hours .icon-box{
+	display: flex;
+	align-items: center;
 }
 
 .appointment-item-content p a{
