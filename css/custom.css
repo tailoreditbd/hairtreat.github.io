@@ -5001,6 +5001,10 @@ header.main-header .header-sticky.active{
 	filter: brightness(0) invert(1);
 }
 
+.female-key-points-list .female-key-point-item{
+	align-items: center;
+}
+
 /************************************/
 /***     20. Blog Archive css     ***/
 /************************************/
