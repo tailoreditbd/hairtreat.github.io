@@ -4840,6 +4840,50 @@ header.main-header .header-sticky.active{
 .female-hair-transplant-content .female-hair-transplant-faq-section + .female-hair-transplant-assessment-section{
 	margin-top: 40px;
 }
+.female-hair-transplant-why-choose-section .female-why-choose-heading{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.female-hair-transplant-why-choose-section{
+	background-color: #fff;
+	background-image: none;
+}
+
+.service-entry .female-hair-transplant-why-choose-section .female-why-choose-points{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 30px;
+}
+
+.female-hair-transplant-why-choose-section .female-why-choose-points li{
+	margin-bottom: 8px;
+	padding-left: 0;
+}
+
+.female-hair-transplant-why-choose-section .female-why-choose-action{
+	margin-top: 50px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 992px){
+	.female-hair-transplant-why-choose-section .row > .col-lg-6{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.female-hair-transplant-why-choose-section .why-choose-images{
+		box-sizing: border-box;
+		width: 608px;
+		max-width: 100%;
+		margin: 0 auto 50px;
+	}
+
+	.female-hair-transplant-why-choose-section .why-choose-image{
+		flex: 0 0 264px;
+		width: 264px;
+	}
+}
 
 .post-entry blockquote.laser-assessment-quote{
 	display: flex;
