@@ -14075,3 +14075,22 @@ header.main-header .header-sticky.active{
 .gfc-prp-faq-section + .gfc-prp-appointment-section{
     padding-top: 50px;
 }
+/* Clear treatment point icons */
+.female-key-points-list .icon-box img,
+.hair-prp-cost-list .icon-box img,
+.gfc-need-list .icon-box img{
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 767px){
+    .female-key-points-list .icon-box img,
+    .hair-prp-cost-list .icon-box img,
+    .gfc-need-list .icon-box img{
+        width: 36px;
+        height: 36px;
+        max-width: 36px;
+    }
+}
