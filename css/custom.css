@@ -13795,3 +13795,32 @@ header.main-header .header-sticky.active{
         color: var(--white-color);
     }
 }
+/* Female hair transplant process table hover */
+.female-hair-transplant-content .female-process-section .female-process-row,
+.female-hair-transplant-content .female-process-section .female-process-row > *,
+.female-hair-transplant-content .female-process-section .female-process-step span{
+    transition: all 0.3s ease-in-out;
+}
+
+.female-hair-transplant-content .female-process-section .female-process-row > p{
+    margin: 0 !important;
+}
+
+@media (hover: hover) and (pointer: fine){
+    .female-hair-transplant-content .female-process-section .female-process-row:hover{
+        position: relative;
+        z-index: 1;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(72, 30, 11, 0.12);
+    }
+
+    .female-hair-transplant-content .female-process-section .female-process-row:hover > *{
+        background: var(--accent-color);
+        color: var(--white-color);
+        border-color: var(--accent-color);
+    }
+
+    .female-hair-transplant-content .female-process-section .female-process-row:hover .female-process-step span{
+        color: var(--white-color);
+    }
+}
