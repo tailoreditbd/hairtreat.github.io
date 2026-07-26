@@ -13756,3 +13756,13 @@ header.main-header .header-sticky.active{
 .hair-prp-process-section{
     margin-top: 16px;
 }
+/* Hair PRP step process */
+.hair-prp-step-process-section .female-process-action{
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+    .hair-prp-step-process-section .female-process-name::before{
+        content: 'Treatment Stage';
+    }
+}
