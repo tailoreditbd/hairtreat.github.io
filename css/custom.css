@@ -14225,3 +14225,13 @@ header.main-header .header-sticky.active{
 		padding-top: 35px;
 	}
 }
+/* Hair transplant appointment hours alignment */
+.hair-transplant-appointment-hours{
+	align-items: center;
+}
+
+.hair-transplant-appointment-hours .icon-box,
+.hair-transplant-appointment-hours .appointment-item-content{
+	display: flex;
+	align-items: center;
+}
