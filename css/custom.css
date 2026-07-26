@@ -5851,7 +5851,7 @@ header.main-header .header-sticky.active{
 
 .hair-prp-glow-up-section{
 	width: 100%;
-	padding: 0 0 30px;
+	padding: 0;
 }
 
 .hair-prp-glow-up-section .glow-up-box{
@@ -5872,7 +5872,7 @@ header.main-header .header-sticky.active{
 .hair-prp-glow-up-section .glow-up-content ul li{
 	position: relative;
 	margin-bottom: 10px;
-	padding-left: 46px;
+	padding-left: 40px;
 	min-height: 28px;
 	display: flex;
 	align-items: center;
@@ -5887,8 +5887,8 @@ header.main-header .header-sticky.active{
 	position: absolute;
 	top: 50%;
 	left: 0;
-	width: 28px;
-	height: 28px;
+	width: 24px;
+	height: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -5896,7 +5896,7 @@ header.main-header .header-sticky.active{
 	border-radius: 5px;
 	color: var(--white-color);
 	font-family: "Font Awesome 6 Free";
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 900;
 	line-height: 1;
 	transform: translateY(-50%);
@@ -13646,7 +13646,7 @@ header.main-header .header-sticky.active{
 }
 /* Hair PRP balanced feature layout */
 .hair-prp-glow-up-section .hair-prp-glow-up-intro{
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .hair-prp-glow-up-section .hair-prp-glow-up-intro p{
@@ -13662,12 +13662,12 @@ header.main-header .header-sticky.active{
 
 .hair-prp-glow-up-section .glow-up-image{
     width: calc(45% - 15px);
-    align-self: center;
+    align-self: flex-start;
 }
 
 @media only screen and (min-width: 992px){
     .hair-prp-glow-up-section .glow-up-image img{
-        aspect-ratio: 1 / 1.4;
+        aspect-ratio: 1 / 1.55;
     }
 }
 
@@ -13699,10 +13699,60 @@ header.main-header .header-sticky.active{
 
 @media only screen and (max-width: 575px){
     .hair-prp-glow-up-section .hair-prp-glow-up-intro{
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     .hair-prp-glow-up-section .glow-up-content ul{
         grid-template-columns: 1fr;
     }
+}
+/* Hair PRP highlight checklist */
+.hair-prp-glow-up-section .hair-prp-highlight-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hair-prp-glow-up-section .hair-prp-highlight-list li{
+    position: relative;
+    min-height: 60px;
+    padding: 12px 0 12px 40px;
+    border-bottom: 1px solid var(--divider-color);
+    color: var(--text-color);
+    line-height: 1.7em;
+}
+
+.hair-prp-glow-up-section .hair-prp-highlight-list li::before{
+    content: "\f00c";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 991px){
+    .hair-prp-glow-up-section .hair-prp-highlight-list{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+/* Hair PRP next-section spacing */
+.hair-prp-process-section{
+    margin-top: 16px;
 }
