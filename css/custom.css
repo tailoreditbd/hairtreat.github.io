@@ -14199,7 +14199,12 @@ header.main-header .header-sticky.active{
     }
 }
 /* Hair transplant FAQ and appointment spacing */
+.hair-transplant-cost-entry{
+	margin-bottom: 30px;
+}
+
 .hair-transplant-why-choose-section{
+	padding-top: 50px;
 	padding-bottom: 30px;
 }
 
