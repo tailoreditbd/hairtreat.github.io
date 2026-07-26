@@ -4850,16 +4850,31 @@ header.main-header .header-sticky.active{
 .female-hair-transplant-why-choose-section .female-why-choose-points li{
 	position: relative;
 	list-style: none !important;
-	margin-bottom: 8px;
-	padding-left: 24px;
+	display: flex;
+	align-items: center;
+	min-height: 24px;
+	margin-bottom: 10px;
+	padding-left: 40px;
 }
 
 .female-hair-transplant-why-choose-section .female-why-choose-points li::before{
-	content: '\2022';
+	content: '\f00c';
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
-	line-height: inherit;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--accent-color);
+	border-radius: 5px;
+	color: var(--white-color);
+	font-family: "Font Awesome 6 Free";
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 1;
+	transform: translateY(-50%);
 }
 
 .female-hair-transplant-why-choose-section .female-why-choose-action{
