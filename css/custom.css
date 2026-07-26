@@ -14094,3 +14094,107 @@ header.main-header .header-sticky.active{
         max-width: 36px;
     }
 }
+/* Hair transplant service features */
+.hair-transplant-features-section{
+    margin-top: 50px;
+}
+
+.hair-transplant-features-section > p{
+    margin-bottom: 0;
+}
+
+.hair-transplant-features-action{
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+    .hair-transplant-features-section{
+        margin-top: 35px;
+    }
+
+    .hair-transplant-features-action{
+        margin-top: 30px;
+    }
+}
+/* Hair transplant cost points */
+.hair-transplant-cost-section .hair-transplant-cost-points{
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+}
+
+.hair-transplant-cost-section .hair-transplant-cost-points li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 68px;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.hair-transplant-cost-section .hair-transplant-cost-points li:last-child{
+    border-bottom: 0;
+}
+
+.hair-transplant-cost-point-icon{
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hair-transplant-cost-section .hair-transplant-cost-points li:hover .hair-transplant-cost-point-icon{
+    background: var(--accent-color);
+}
+
+.hair-transplant-cost-point-icon img{
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    object-fit: contain;
+}
+
+.hair-transplant-cost-section .hair-transplant-cost-points li > span:last-child{
+    flex: 1;
+    min-width: 0;
+}
+
+.hair-transplant-cost-action{
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+    .hair-transplant-cost-section .hair-transplant-cost-points{
+        margin-top: 24px;
+    }
+
+    .hair-transplant-cost-section .hair-transplant-cost-points li{
+        gap: 12px;
+        min-height: 62px;
+        padding: 9px 0;
+    }
+
+    .hair-transplant-cost-point-icon{
+        flex-basis: 46px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .hair-transplant-cost-point-icon img{
+        width: 28px;
+        height: 28px;
+        max-width: 28px;
+    }
+
+    .hair-transplant-cost-action{
+        margin-top: 30px;
+    }
+}
