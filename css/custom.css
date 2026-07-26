@@ -13824,3 +13824,46 @@ header.main-header .header-sticky.active{
         color: var(--white-color);
     }
 }
+/* Hair PRP cost section */
+.hair-prp-cost-section .hair-prp-cost-heading{
+    font-family: var(--accent-font);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--primary-color);
+    margin: 0 0 20px;
+}
+
+.hair-prp-cost-section .hair-prp-cost-list{
+    margin-top: 30px;
+}
+
+.hair-prp-cost-section .hair-prp-cost-list .how-work-step-item{
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.hair-prp-cost-section .hair-prp-cost-list .icon-box{
+    flex: 0 0 60px;
+}
+
+.hair-prp-cost-section .hair-prp-cost-action{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+    .hair-prp-cost-section .hair-prp-cost-heading{
+        font-size: 24px;
+    }
+
+    .hair-prp-cost-section .hair-prp-cost-list .how-work-step-item{
+        margin-bottom: 20px;
+    }
+}
+/* Hair PRP why choose section */
+.hair-prp-why-choose-section{
+    padding-top: 40px;
+}
