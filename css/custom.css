@@ -13766,3 +13766,32 @@ header.main-header .header-sticky.active{
         content: 'Treatment Stage';
     }
 }
+/* Hair PRP process table hover */
+.hair-prp-step-process-section .female-process-row,
+.hair-prp-step-process-section .female-process-row > *,
+.hair-prp-step-process-section .female-process-step span{
+    transition: all 0.3s ease-in-out;
+}
+
+.hair-prp-step-process-section .female-process-row > p{
+    margin: 0 !important;
+}
+
+@media (hover: hover) and (pointer: fine){
+    .hair-prp-step-process-section .female-process-row:hover{
+        position: relative;
+        z-index: 1;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(72, 30, 11, 0.12);
+    }
+
+    .hair-prp-step-process-section .female-process-row:hover > *{
+        background: var(--accent-color);
+        color: var(--white-color);
+        border-color: var(--accent-color);
+    }
+
+    .hair-prp-step-process-section .female-process-row:hover .female-process-step span{
+        color: var(--white-color);
+    }
+}
