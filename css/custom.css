@@ -14198,3 +14198,30 @@ header.main-header .header-sticky.active{
         margin-top: 30px;
     }
 }
+/* Hair transplant FAQ and appointment spacing */
+.hair-transplant-why-choose-section{
+	padding-bottom: 30px;
+}
+
+.hair-transplant-faq-section .hair-transplant-treatment-faqs{
+	margin-top: 35px;
+	margin-bottom: 0;
+}
+
+.hair-transplant-faq-section + .hair-transplant-appointment-section{
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 767px){
+	.hair-transplant-why-choose-section{
+		padding-bottom: 20px;
+	}
+
+	.hair-transplant-faq-section .hair-transplant-treatment-faqs{
+		margin-top: 30px;
+	}
+
+	.hair-transplant-faq-section + .hair-transplant-appointment-section{
+		padding-top: 35px;
+	}
+}
