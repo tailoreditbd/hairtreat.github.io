@@ -13881,4 +13881,84 @@ header.main-header .header-sticky.active{
 /* Hair PRP why choose section */
 .hair-prp-why-choose-section{
     padding-top: 40px;
+    padding-bottom: 40px;
+}
+/* Hair PRP FAQ appointment spacing */
+.hair-prp-faq-section .page-single-faqs{
+    margin-bottom: 30px;
+}
+
+.hair-prp-faq-section + .treatment-skin-analysis-section{
+    padding-top: 50px;
+}
+/* Hair PRP typography mirrors the Female Hair page */
+.hair-prp-content .service-enhance-box > h1{
+    font-size: 36px;
+}
+
+.hair-prp-content h2,
+.hair-prp-content .section-title h2{
+    font-size: 32px;
+}
+
+.hair-prp-content h3{
+    font-size: 28px;
+}
+
+.hair-prp-content .female-process-heading{
+    font-size: 28px !important;
+}
+
+.hair-prp-content .faq-accordion h3.accordion-header,
+.hair-prp-content .faq-accordion h3.accordion-header .accordion-button{
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 991px){
+    .hair-prp-content .service-enhance-box > h1{
+        font-size: 38px;
+    }
+
+    .hair-prp-content h2,
+    .hair-prp-content .section-title h2{
+        font-size: 32px !important;
+    }
+
+    .hair-prp-content h3,
+    .hair-prp-content .female-process-heading{
+        font-size: 26px !important;
+    }
+
+    .hair-prp-content .faq-accordion h3.accordion-header,
+    .hair-prp-content .faq-accordion h3.accordion-header .accordion-button{
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .hair-prp-content .service-enhance-box > h1{
+        font-size: 28px;
+    }
+
+    .hair-prp-content h2,
+    .hair-prp-content .section-title h2{
+        font-size: 24px !important;
+    }
+
+    .hair-prp-content h3,
+    .hair-prp-content .female-process-heading{
+        font-size: 20px !important;
+    }
+
+    .hair-prp-content .faq-accordion h3.accordion-header,
+    .hair-prp-content .faq-accordion h3.accordion-header .accordion-button{
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .hair-prp-content .faq-accordion h3.accordion-header,
+    .hair-prp-content .faq-accordion h3.accordion-header .accordion-button{
+        font-size: 16px !important;
+    }
 }
