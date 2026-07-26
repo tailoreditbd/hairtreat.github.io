@@ -14007,3 +14007,63 @@ header.main-header .header-sticky.active{
         font-size: 28px;
     }
 }
+/* GFC PRP treatment signs */
+.gfc-need-section .gfc-need-heading{
+    font-family: var(--accent-font);
+    font-size: 28px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.gfc-need-section > p{
+    color: var(--text-color);
+}
+
+.gfc-need-section .gfc-need-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 30px;
+    margin-top: 30px;
+}
+
+.gfc-need-list .how-work-step-item{
+    min-height: 92px;
+    margin: 0 !important;
+    padding: 16px 0;
+    align-items: center;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.gfc-need-list .how-work-step-item::before{
+    display: none;
+}
+
+.gfc-need-list .icon-box{
+    flex: 0 0 60px;
+    margin-right: 18px;
+}
+
+.gfc-need-list .icon-box img{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.gfc-need-list .how-work-step-content{
+    width: calc(100% - 78px);
+}
+
+.gfc-need-list .how-work-step-content p{
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 767px){
+    .gfc-need-section .gfc-need-heading{
+        font-size: 20px;
+    }
+
+    .gfc-need-section .gfc-need-list{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
