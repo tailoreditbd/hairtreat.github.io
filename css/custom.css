@@ -5850,6 +5850,7 @@ header.main-header .header-sticky.active{
 }
 
 .hair-prp-glow-up-section{
+	width: 100%;
 	padding: 0 0 30px;
 }
 
@@ -13660,11 +13661,18 @@ header.main-header .header-sticky.active{
 }
 
 .hair-prp-glow-up-section .glow-up-image{
-    width: calc(40% - 15px);
+    width: calc(45% - 15px);
+    align-self: center;
+}
+
+@media only screen and (min-width: 992px){
+    .hair-prp-glow-up-section .glow-up-image img{
+        aspect-ratio: 1 / 1.4;
+    }
 }
 
 .hair-prp-glow-up-section .glow-up-content{
-    width: calc(60% - 15px);
+    width: calc(55% - 15px);
 }
 
 .hair-prp-glow-up-section .glow-up-content ul{
