@@ -14067,3 +14067,11 @@ header.main-header .header-sticky.active{
         gap: 0;
     }
 }
+/* GFC FAQ and appointment spacing */
+.gfc-prp-page-service .gfc-prp-faq-section{
+    margin-bottom: 0;
+}
+
+.gfc-prp-faq-section + .gfc-prp-appointment-section{
+    padding-top: 50px;
+}
