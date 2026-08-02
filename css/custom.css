@@ -14278,3 +14278,20 @@ header.main-header .header-sticky.active{
         margin-bottom: 18px;
     }
 }
+/* Laser pricing mobile card borders */
+@media only screen and (max-width: 767px){
+    .laser-pricing-section .female-package-price-table tbody tr{
+        border: 2px solid rgba(72, 30, 11, 0.28) !important;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 22px rgba(72, 30, 11, 0.08) !important;
+    }
+
+    .laser-pricing-section .female-package-price-table tbody td{
+        border-bottom: 1px solid rgba(72, 30, 11, 0.12) !important;
+    }
+
+    .laser-pricing-section .female-package-price-table tbody td:last-child{
+        border-bottom: 0 !important;
+    }
+}
