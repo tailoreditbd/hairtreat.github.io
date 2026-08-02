@@ -14324,3 +14324,44 @@ header.main-header .header-sticky.active{
         color: var(--white-color);
     }
 }
+/* Laser FAQ and appointment spacing */
+.laser-hair-removal-why-choose-section{
+    padding-bottom: 40px;
+}
+
+.laser-hair-removal-faq-section{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.laser-hair-removal-appointment-section{
+    padding-top: 40px;
+}
+
+.laser-hair-removal-appointment-section .laser-appointment-hours{
+    align-items: center;
+}
+
+.laser-hair-removal-appointment-section .laser-appointment-hours .icon-box,
+.laser-hair-removal-appointment-section .laser-appointment-hours .appointment-item-content{
+    display: flex;
+    align-items: center;
+}
+
+.laser-hair-removal-appointment-section .laser-appointment-hours .appointment-item-content p{
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px){
+    .laser-hair-removal-why-choose-section{
+        padding-bottom: 25px;
+    }
+
+    .laser-hair-removal-faq-section{
+        margin-top: 20px;
+    }
+
+    .laser-hair-removal-appointment-section{
+        padding-top: 30px;
+    }
+}
