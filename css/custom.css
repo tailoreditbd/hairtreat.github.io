@@ -14268,3 +14268,13 @@ header.main-header .header-sticky.active{
 		margin-bottom: 0;
 	}
 }
+/* Laser side-effects heading spacing */
+.laser-side-effects-section > h3{
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px){
+    .laser-side-effects-section > h3{
+        margin-bottom: 18px;
+    }
+}
