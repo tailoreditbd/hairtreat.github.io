@@ -14240,3 +14240,31 @@ header.main-header .header-sticky.active{
 	display: flex;
 	align-items: center;
 }
+/* Laser Hair Removal need section spacing and mobile stacking */
+.laser-hair-removal-need-section{
+	padding-top: 20px;
+}
+
+.laser-hair-removal-need-section .real-transformation-box{
+	margin-top: 0;
+}
+
+.laser-hair-removal-need-section .real-transformation-box > h3{
+	margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px){
+	.laser-hair-removal-need-section{
+		padding-top: 15px;
+	}
+
+	.laser-hair-removal-need-section .real-transformation-box ul{
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.laser-hair-removal-need-section .real-transformation-box ul li{
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
