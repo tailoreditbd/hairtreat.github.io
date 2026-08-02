@@ -14365,3 +14365,82 @@ header.main-header .header-sticky.active{
         padding-top: 30px;
     }
 }
+/* Laser Hair Removal typography mirrors the Female Hair page */
+.laser-hair-removal-content .service-entry > h1{
+    font-size: 36px;
+}
+
+.laser-hair-removal-content h2,
+.laser-hair-removal-content .section-title h2{
+    font-size: 32px;
+}
+
+.laser-hair-removal-content h3{
+    font-size: 28px;
+}
+
+.laser-hair-removal-content .laser-pricing-section .female-pricing-heading{
+    font-size: 32px !important;
+}
+
+.laser-hair-removal-content .faq-accordion h3.accordion-header,
+.laser-hair-removal-content .faq-accordion h3.accordion-header .accordion-button{
+    font-size: 22px;
+}
+
+.laser-hair-removal-content .text-anime-style-3{
+    letter-spacing: 0;
+}
+
+@media only screen and (max-width: 991px){
+    .laser-hair-removal-content .service-entry > h1{
+        font-size: 38px;
+    }
+
+    .laser-hair-removal-content h2,
+    .laser-hair-removal-content .section-title h2,
+    .laser-hair-removal-content .laser-pricing-section .female-pricing-heading{
+        font-size: 32px !important;
+    }
+
+    .laser-hair-removal-content h3,
+    .laser-hair-removal-content .female-process-heading,
+    .laser-hair-removal-content .female-why-choose-heading{
+        font-size: 26px !important;
+    }
+
+    .laser-hair-removal-content .faq-accordion h3.accordion-header,
+    .laser-hair-removal-content .faq-accordion h3.accordion-header .accordion-button{
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .laser-hair-removal-content .service-entry > h1{
+        font-size: 28px;
+    }
+
+    .laser-hair-removal-content h2,
+    .laser-hair-removal-content .section-title h2,
+    .laser-hair-removal-content .laser-pricing-section .female-pricing-heading{
+        font-size: 24px !important;
+    }
+
+    .laser-hair-removal-content h3,
+    .laser-hair-removal-content .female-process-heading,
+    .laser-hair-removal-content .female-why-choose-heading{
+        font-size: 20px !important;
+    }
+
+    .laser-hair-removal-content .faq-accordion h3.accordion-header,
+    .laser-hair-removal-content .faq-accordion h3.accordion-header .accordion-button{
+        font-size: 18px !important;
+    }
+}
+/* Laser FAQ smallest mobile typography */
+@media only screen and (max-width: 575px){
+    .laser-hair-removal-content .faq-accordion h3.accordion-header,
+    .laser-hair-removal-content .faq-accordion h3.accordion-header .accordion-button{
+        font-size: 16px !important;
+    }
+}
