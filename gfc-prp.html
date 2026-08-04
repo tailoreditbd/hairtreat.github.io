@@ -18,6 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="robots" content="index, follow">
 
+	<meta http-equiv='refresh' content='0; url=treatments/gfc-prp/'>
 	<script data-clean-url-script>
 
 		(function () {
@@ -28,7 +29,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				var target = window.location.pathname.replace(/(?:treatments\/)?gfc-prp\.html$/, cleanPath);
 
-				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+				window.location.replace(target + window.location.search + window.location.hash);
+				return;
 
 			}
 
@@ -36,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			if (window.location.pathname.endsWith(nestedPath + '/') || window.location.pathname.endsWith(nestedPath + '/index.html')) {
 
-				var cleanTarget = window.location.pathname.replace(//(?:index.html)?$/, '');
+				var cleanTarget = window.location.pathname.replace(/\/(?:index\.html)?$/, '');
 
 				window.history.replaceState(null, '', cleanTarget + window.location.search + window.location.hash);
 
