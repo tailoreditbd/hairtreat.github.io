@@ -13659,6 +13659,95 @@ header.main-header .header-sticky.active{
 		height: 240px;
 	}
 }
+/* Hair PRP intro: full-width split layout */
+.hair-prp-intro-layout{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.hair-prp-intro-layout .page-single-image{
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.hair-prp-intro-layout .page-single-image figure{
+    height: 100%;
+}
+
+.hair-prp-intro-layout .page-single-image img{
+    height: 100%;
+    min-height: 520px;
+    aspect-ratio: auto;
+}
+
+.hair-prp-intro-content h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hair-prp-intro-content p{
+    margin-bottom: 20px;
+}
+
+.hair-prp-intro-content p:last-of-type{
+    margin-bottom: 0;
+}
+
+.hair-prp-intro-content .service-entry-btn{
+    margin-top: 30px;
+}
+
+.hair-prp-page-service .hair-prp-content > .service-entry .service-enhance-box,
+.hair-prp-page-service .hair-prp-content > .service-entry .service-enhance-item-list{
+    margin-top: 0;
+}
+@media only screen and (min-width: 992px){
+    .hair-prp-intro-layout{
+        grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+    }
+
+    .hair-prp-intro-layout .page-single-image{
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        justify-self: start;
+    }
+
+    .hair-prp-intro-layout .page-single-image figure{
+        height: auto;
+    }
+
+    .hair-prp-intro-layout .page-single-image img{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1 / 0.84;
+    }
+}
+@media only screen and (max-width: 991px){
+    .hair-prp-intro-layout{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .hair-prp-intro-layout .page-single-image img{
+        min-height: 0;
+        aspect-ratio: 1 / 0.65;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .hair-prp-intro-layout{
+        margin-bottom: 40px;
+    }
+
+    .hair-prp-intro-content h1{
+        font-size: 28px;
+    }
+}
 /* Hair PRP balanced feature layout */
 .hair-prp-glow-up-section .hair-prp-glow-up-intro{
     margin-bottom: 16px;
@@ -13680,14 +13769,35 @@ header.main-header .header-sticky.active{
     align-self: flex-start;
 }
 
-@media only screen and (min-width: 992px){
-    .hair-prp-glow-up-section .glow-up-image img{
-        aspect-ratio: 1 / 1.55;
-    }
-}
-
 .hair-prp-glow-up-section .glow-up-content{
     width: calc(55% - 15px);
+}
+
+@media only screen and (min-width: 992px){
+    .hair-prp-glow-up-section .hair-prp-glow-up-intro h2{
+        text-align: center;
+    }
+
+    .hair-prp-glow-up-section .glow-up-box{
+        flex-direction: row-reverse;
+    }
+
+    .hair-prp-glow-up-section .glow-up-content{
+        text-align: left;
+    }
+
+    .hair-prp-glow-up-section .glow-up-image{
+        width: calc(34% - 15px);
+        max-width: 360px;
+    }
+
+    .hair-prp-glow-up-section .glow-up-image img{
+        aspect-ratio: 1 / 1.18;
+    }
+
+    .hair-prp-glow-up-section .glow-up-content{
+        width: calc(66% - 15px);
+    }
 }
 
 .hair-prp-glow-up-section .glow-up-content ul{
@@ -13764,6 +13874,73 @@ header.main-header .header-sticky.active{
     .hair-prp-glow-up-section .hair-prp-highlight-list{
         grid-template-columns: 1fr;
         gap: 0;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .hair-prp-glow-up-section > .container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) 360px;
+        grid-auto-flow: row;
+        column-gap: 24px;
+        row-gap: 0;
+        align-items: start;
+    }
+
+    .hair-prp-glow-up-section .hair-prp-glow-up-intro,
+    .hair-prp-glow-up-section .glow-up-box,
+    .hair-prp-glow-up-section .hair-prp-highlight-list,
+    .hair-prp-glow-up-section .glow-up-content,
+    .hair-prp-glow-up-section .glow-up-content ul{
+        display: contents;
+    }
+
+    .hair-prp-glow-up-section .hair-prp-glow-up-intro h2{
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hair-prp-glow-up-section .hair-prp-glow-up-intro p{
+        grid-column: 1 / -1;
+        grid-row: 2;
+        margin: 0 0 24px;
+        text-align: left;
+    }
+
+    .hair-prp-glow-up-section .hair-prp-highlight-list li:nth-child(odd){
+        grid-column: 1;
+    }
+
+    .hair-prp-glow-up-section .hair-prp-highlight-list li:nth-child(even){
+        grid-column: 2;
+    }
+
+    .hair-prp-glow-up-section .glow-up-content ul li:nth-child(odd){
+        grid-column: 2;
+    }
+
+    .hair-prp-glow-up-section .glow-up-content ul li:nth-child(even){
+        grid-column: 1;
+    }
+
+    .hair-prp-glow-up-section .hair-prp-highlight-list li,
+    .hair-prp-glow-up-section .glow-up-content ul li{
+        min-height: 72px;
+        margin: 0;
+        padding: 12px 0 12px 40px;
+        border-bottom: 1px solid var(--divider-color);
+        align-items: center;
+    }
+
+    .hair-prp-glow-up-section .glow-up-image{
+        grid-column: 3;
+        grid-row: 3 / span 5;
+        width: 100%;
+        max-width: 360px;
+        margin-left: auto;
+        align-self: start;
     }
 }
 
@@ -13882,6 +14059,40 @@ header.main-header .header-sticky.active{
 .hair-prp-why-choose-section{
     padding-top: 40px;
     padding-bottom: 40px;
+}
+@media only screen and (min-width: 992px){
+    .hair-prp-why-choose-section .row > .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .hair-prp-why-choose-section .why-choose-images{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hair-prp-why-choose-section .why-choose-image{
+        flex: 0 0 calc(50% - 15px);
+        width: calc(50% - 15px);
+    }
+
+    .hair-prp-why-choose-section .why-choose-content{
+        padding-left: 20px;
+    }
+
+    .hair-prp-why-choose-section .female-why-choose-action{
+        margin-top: 30px;
+        text-align: left;
+    }
+}
+/* Hair PRP final assessment-to-footer spacing */
+.hair-prp-page-service{
+    padding-bottom: 40px;
+}
+
+.hair-prp-page-service .laser-assessment-entry{
+    margin-bottom: 0;
 }
 /* Hair PRP FAQ appointment spacing */
 .hair-prp-faq-section .page-single-faqs{
