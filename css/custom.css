@@ -14572,6 +14572,230 @@ header.main-header .header-sticky.active{
 	display: flex;
 	align-items: center;
 }
+/* Hair transplant full-width matched desktop layout */
+@media only screen and (min-width: 992px){
+    .hair-transplant-page-service{
+        padding-bottom: 40px;
+    }
+
+    .hair-transplant-intro-layout{
+        display: grid;
+        grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .hair-transplant-intro-layout .page-single-image{
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        margin: 0;
+        justify-self: start;
+    }
+
+    .hair-transplant-intro-layout .page-single-image figure{
+        height: auto;
+    }
+
+    .hair-transplant-intro-layout .page-single-image img{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1 / 0.84;
+        object-fit: cover;
+    }
+
+    .hair-transplant-intro-content h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .hair-transplant-intro-content p{
+        margin-bottom: 20px;
+    }
+
+    .hair-transplant-intro-content p:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .hair-transplant-intro-content .service-entry-btn{
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .hair-transplant-content > .service-entry .service-enhance-box{
+        margin-top: 0;
+    }
+
+    .hair-transplant-specialist-section > h2,
+    .hair-transplant-features-section > h2{
+        text-align: center;
+    }
+
+    .hair-transplant-specialist-section > p,
+    .hair-transplant-features-section > p{
+        width: 100%;
+    }
+
+    .hair-transplant-specialist-list,
+    .hair-transplant-features-section .service-enhance-item-list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 30px;
+        margin-top: 30px;
+    }
+
+    .hair-transplant-specialist-list .how-work-step-item,
+    .hair-transplant-features-section .service-enhance-item{
+        width: 100%;
+        min-height: 110px;
+        margin: 0 !important;
+        padding: 16px 0;
+        align-items: center;
+        border-bottom: 1px solid var(--divider-color);
+    }
+
+    .hair-transplant-specialist-list .how-work-step-item::before{
+        display: none;
+    }
+
+    .hair-transplant-specialist-list .icon-box,
+    .hair-transplant-features-section .service-enhance-item .icon-box{
+        flex: 0 0 60px;
+        width: 60px;
+        margin-right: 18px;
+    }
+
+    .hair-transplant-specialist-list .icon-box img,
+    .hair-transplant-features-section .service-enhance-item .icon-box img{
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        object-fit: contain;
+    }
+
+    .hair-transplant-specialist-list .how-work-step-content,
+    .hair-transplant-features-section .service-enhance-item-content{
+        width: calc(100% - 78px);
+    }
+
+    .hair-transplant-specialist-list p,
+    .hair-transplant-features-section .service-enhance-item-content p{
+        margin: 0;
+        line-height: 1.5em;
+    }
+
+    .hair-transplant-features-section{
+        margin-top: 50px;
+    }
+
+    .hair-transplant-features-action{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .hair-transplant-cost-layout{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) 360px;
+        column-gap: 24px;
+        align-items: start;
+        margin-top: 50px;
+    }
+
+    .hair-transplant-cost-layout > .service-entry,
+    .hair-transplant-cost-layout > .service-entry > .service-enhance-box,
+    .hair-transplant-cost-layout .hair-transplant-cost-section,
+    .hair-transplant-cost-layout .hair-transplant-cost-points{
+        display: contents;
+    }
+
+    .hair-transplant-cost-layout > .page-single-image{
+        grid-column: 3;
+        grid-row: 3 / span 4;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 0 0 auto;
+        align-self: start;
+    }
+
+    .hair-transplant-cost-layout > .page-single-image figure{
+        height: auto;
+    }
+
+    .hair-transplant-cost-layout > .page-single-image img{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1 / 1.18;
+        object-fit: cover;
+    }
+
+    .hair-transplant-cost-section h3{
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hair-transplant-cost-section > p{
+        grid-column: 1 / -1;
+        grid-row: 2;
+        margin: 0 0 24px;
+    }
+
+    .hair-transplant-cost-points li{
+        min-height: 84px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .hair-transplant-cost-points li:nth-child(1),
+    .hair-transplant-cost-points li:nth-child(2){ grid-row: 3; }
+    .hair-transplant-cost-points li:nth-child(3),
+    .hair-transplant-cost-points li:nth-child(4){ grid-row: 4; }
+    .hair-transplant-cost-points li:nth-child(5),
+    .hair-transplant-cost-points li:nth-child(6){ grid-row: 5; }
+    .hair-transplant-cost-points li:nth-child(7),
+    .hair-transplant-cost-points li:nth-child(8){ grid-row: 6; }
+
+    .hair-transplant-cost-points li:nth-child(odd){ grid-column: 1; }
+    .hair-transplant-cost-points li:nth-child(even){ grid-column: 2; }
+
+    .hair-transplant-cost-action{
+        grid-column: 1 / -1;
+        grid-row: 7;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .hair-transplant-why-choose-section .row > .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .hair-transplant-why-choose-section .why-choose-images{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hair-transplant-why-choose-section .why-choose-image{
+        flex: 0 0 calc(50% - 15px);
+        width: calc(50% - 15px);
+    }
+
+    .hair-transplant-why-choose-section .why-choose-content{
+        padding-left: 20px;
+    }
+
+    .hair-transplant-why-choose-section .female-why-choose-action{
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .hair-transplant-page-service .hair-transplant-assessment-section .laser-assessment-entry{
+        margin-bottom: 0;
+    }
+}
 /* Laser Hair Removal need section spacing and mobile stacking */
 .laser-hair-removal-need-section{
 	padding-top: 20px;
