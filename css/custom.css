@@ -14174,6 +14174,127 @@ header.main-header .header-sticky.active{
     }
 }
 
+/* GFC PRP full-width matched page layout */
+.gfc-prp-intro-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.gfc-prp-intro-layout .page-single-image{
+    margin-bottom: 0;
+}
+
+.gfc-prp-intro-content h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gfc-prp-intro-content p{
+    margin-bottom: 20px;
+}
+
+.gfc-prp-intro-content p:last-of-type{
+    margin-bottom: 0;
+}
+
+.gfc-prp-intro-content .service-entry-btn{
+    margin-top: 30px;
+}
+
+.gfc-prp-page-service{
+    padding-bottom: 40px;
+}
+
+.gfc-prp-page-service .laser-assessment-entry{
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 992px){
+    .gfc-prp-intro-layout{
+        grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+
+    .gfc-prp-intro-layout .page-single-image{
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        justify-self: start;
+    }
+
+    .gfc-prp-intro-layout .page-single-image figure{
+        height: auto;
+    }
+
+    .gfc-prp-intro-layout .page-single-image img{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1 / 0.84;
+    }
+
+    .gfc-prp-content > .service-entry .service-enhance-box{
+        margin-top: 0;
+    }
+
+    .gfc-prp-overview-section{
+        margin-top: 50px !important;
+    }
+
+    .gfc-prp-overview-section .hair-prp-glow-up-intro p:nth-of-type(1){
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .gfc-prp-overview-section .hair-prp-glow-up-intro p:nth-of-type(2){
+        grid-column: 1 / -1;
+        grid-row: 3;
+        margin-bottom: 24px;
+    }
+
+    .gfc-prp-overview-section .glow-up-image{
+        grid-column: 3;
+        grid-row: 4 / span 5;
+        width: 100%;
+        max-width: 360px;
+        margin-left: auto;
+        align-self: start;
+    }
+
+    .gfc-prp-why-choose-section .row > .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .gfc-prp-why-choose-section .why-choose-images{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .gfc-prp-why-choose-section .why-choose-image{
+        flex: 0 0 calc(50% - 15px);
+        width: calc(50% - 15px);
+    }
+
+    .gfc-prp-why-choose-section .why-choose-content{
+        padding-left: 20px;
+    }
+
+    .gfc-prp-why-choose-section .female-why-choose-action{
+        margin-top: 30px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .gfc-prp-intro-content h1{
+        font-size: 28px;
+    }
+}
 /* GFC PRP overview spacing and image placeholder */
 .gfc-prp-overview-section{
     margin-top: 60px;
