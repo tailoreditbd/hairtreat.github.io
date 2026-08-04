@@ -14535,6 +14535,122 @@ header.main-header .header-sticky.active{
         color: var(--white-color);
     }
 }
+/* Laser treatment cards: homepage sizing with the original blank frames */
+.laser-hair-removal-treatment-cards-section .service-image-frame .image-anime::before{
+    content: "1200 \00D7 800";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(205, 95, 55, 0.2);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1;
+    z-index: 2;
+}
+/* Laser Hair Removal PRP-matched page layout */
+.laser-hair-removal-intro-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.laser-hair-removal-intro-layout .page-single-image{
+    margin-bottom: 0;
+}
+
+.laser-hair-removal-intro-content h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.laser-hair-removal-intro-content p{
+    margin-bottom: 20px;
+}
+
+.laser-hair-removal-intro-content p:last-of-type{
+    margin-bottom: 0;
+}
+
+.laser-hair-removal-intro-content .service-entry-btn{
+    margin-top: 30px;
+}
+
+.laser-hair-removal-page-service{
+    padding-bottom: 40px;
+}
+
+.laser-hair-removal-page-service .laser-assessment-entry{
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 992px){
+    .laser-hair-removal-intro-layout{
+        grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+
+    .laser-hair-removal-treatment-cards-section{
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+
+    .laser-hair-removal-need-section{
+        padding-top: 10px;
+    }
+
+    .laser-hair-removal-intro-layout .page-single-image{
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        justify-self: start;
+    }
+
+    .laser-hair-removal-intro-layout .page-single-image figure{
+        height: auto;
+    }
+
+    .laser-hair-removal-intro-layout .page-single-image img{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1 / 0.84;
+    }
+
+    .laser-hair-removal-why-choose-section .row > .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .laser-hair-removal-why-choose-section .why-choose-images{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .laser-hair-removal-why-choose-section .why-choose-image{
+        flex: 0 0 calc(50% - 15px);
+        width: calc(50% - 15px);
+    }
+
+    .laser-hair-removal-why-choose-section .why-choose-content{
+        padding-left: 20px;
+    }
+
+    .laser-hair-removal-why-choose-section .female-why-choose-action{
+        margin-top: 30px;
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .laser-hair-removal-intro-content h1{
+        font-size: 28px;
+    }
+}
 /* Laser FAQ and appointment spacing */
 .laser-hair-removal-why-choose-section{
     padding-bottom: 40px;
