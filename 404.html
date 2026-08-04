@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<base href='/'>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -31,6 +32,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			if (/\/laser-hair-remover(?:\.html)?$/i.test(path)) {
 				window.location.replace(path.replace(/\/laser-hair-remover(?:\.html)?$/i, '/laser-hair-removal.html') + window.location.search + window.location.hash);
 				return;
+			}
+			var nestedRoutes = {
+				'treatments': ['hair-prp', 'hair-line-correction', 'fue', 'laser-hair-removal', 'p-shot', 'gfc-prp'],
+				'transplant': ['hair-transplant', 'eyebrow-transplant', 'female-hair-transplant', 'beard-transplant', 'fut-hair-transplant', 'sapphire-hair-transplant']
+			};
+
+			var nestedMatch = path.match(/\/(treatments|transplant)\/([^/.]+)(?:\.html)?$/i);
+			if (nestedMatch) {
+				var branch = nestedMatch[1].toLowerCase();
+				var nestedSlug = nestedMatch[2].toLowerCase();
+
+				if (nestedRoutes[branch].indexOf(nestedSlug) !== -1) {
+					var nestedTarget = path.replace(/\/(?:treatments|transplant)\/[^/]+$/i, '/' + branch + '/' + nestedSlug + '/');
+					window.location.replace(nestedTarget + window.location.search + window.location.hash);
+					return;
+				}
 			}
 			var routes = {
 				'about': 'about.html',

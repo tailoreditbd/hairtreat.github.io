@@ -17,8 +17,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		(function () {
 			var cleanPath = 'treatments/fue';
 			if (window.location.pathname.endsWith('/fue.html')) {
-				var target = window.location.pathname.replace(/fue\.html$/, cleanPath);
+				var target = window.location.pathname.replace(/(?:treatments\/)?fue\.html$/, cleanPath);
 				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+
+			}
+
+			var nestedPath = '/' + cleanPath;
+
+			if (window.location.pathname.endsWith(nestedPath + '/') || window.location.pathname.endsWith(nestedPath + '/index.html')) {
+
+				var cleanTarget = window.location.pathname.replace(//(?:index.html)?$/, '');
+
+				window.history.replaceState(null, '', cleanTarget + window.location.search + window.location.hash);
 			}
 		})();
 	</script>
