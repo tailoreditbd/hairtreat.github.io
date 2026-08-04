@@ -1,3 +1,8 @@
+# Keep clean no-trailing-slash routes from being redirected to physical directories.
+<IfModule mod_dir.c>
+  DirectorySlash Off
+</IfModule>
+
 # URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
