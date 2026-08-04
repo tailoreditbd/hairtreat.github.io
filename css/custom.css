@@ -14796,6 +14796,186 @@ header.main-header .header-sticky.active{
         margin-bottom: 0;
     }
 }
+/* Female hair transplant full-width matched desktop layout */
+@media only screen and (min-width: 992px){
+    .female-hair-transplant-page-service{
+        padding-bottom: 0;
+    }
+
+    .female-hair-transplant-intro-layout{
+        display: grid;
+        grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .female-hair-transplant-intro-layout .page-single-image{
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        margin: 0;
+        justify-self: start;
+    }
+
+    .female-hair-transplant-intro-layout .page-single-image figure{
+        height: auto;
+    }
+
+    .female-hair-transplant-intro-layout .page-single-image img{
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1 / 0.84;
+        object-fit: cover;
+    }
+
+    .female-hair-transplant-intro-content h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .female-hair-transplant-intro-content p{
+        margin-bottom: 20px;
+    }
+
+    .female-hair-transplant-intro-content p:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .female-hair-transplant-intro-content .service-entry-btn{
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .female-hair-transplant-content > .service-entry .service-enhance-box{
+        margin-top: 0;
+    }
+
+    .female-hair-transplant-content .female-treatment-cards-section{
+        background-image: url(../images/service-bg-shape.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% auto;
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+
+    .female-hair-transplant-content .service-achieve-box{
+        margin-top: 30px;
+    }
+
+    .female-hair-transplant-content .service-achieve-box > h2{
+        text-align: left;
+    }
+
+    .female-hair-transplant-content .service-achieve-box > p{
+        width: 100%;
+    }
+
+    .female-key-points-list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 30px;
+        margin-top: 30px;
+    }
+
+    .female-key-points-list .female-key-point-item{
+        width: 100%;
+        min-height: 92px;
+        margin: 0 !important;
+        padding: 16px 0;
+        align-items: center;
+        border-bottom: 1px solid var(--divider-color);
+    }
+
+    .female-key-points-list .icon-box{
+        flex: 0 0 60px;
+        width: 60px;
+        margin-right: 18px;
+    }
+
+    .female-key-points-list .icon-box img{
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        object-fit: contain;
+    }
+
+    .female-key-points-list .how-work-step-content{
+        width: calc(100% - 78px);
+    }
+
+    .female-key-points-list .how-work-step-content p{
+        margin: 0;
+        line-height: 1.5em;
+    }
+
+    .female-hair-transplant-content .section-footer-text,
+    .female-hair-transplant-content .female-process-action,
+    .female-hair-transplant-content .female-pricing-action{
+        text-align: center;
+    }
+
+    .female-hair-transplant-why-choose-section .row > .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .female-hair-transplant-why-choose-section .why-choose-images{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .female-hair-transplant-why-choose-section .why-choose-image{
+        flex: 0 0 calc(50% - 15px);
+        width: calc(50% - 15px);
+    }
+
+    .female-hair-transplant-why-choose-section .why-choose-content{
+        padding-left: 20px;
+    }
+
+    .female-hair-transplant-why-choose-section .female-why-choose-action{
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .female-hair-transplant-page-service .female-hair-transplant-assessment-section .laser-assessment-entry{
+        margin-bottom: 0;
+    }
+
+    .female-hair-transplant-content .treatment-skin-analysis-section{
+        padding-bottom: 40px;
+    }
+
+    .female-hair-transplant-assessment-section{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 991px){
+    .female-treatment-cards-section{
+        background-color: transparent;
+    }
+
+    .female-treatment-cards-section > .container{
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .female-treatment-cards-section .section-title-center{
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .female-treatment-cards-section .section-subtitle{
+        display: none;
+    }
+}
 /* Laser Hair Removal need section spacing and mobile stacking */
 .laser-hair-removal-need-section{
 	padding-top: 20px;
