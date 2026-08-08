@@ -1751,7 +1751,7 @@ header.main-header .header-sticky.active{
 	background-image: none;
 	padding: 60px 0 30px;
 }
-.our-services.female-treatment-cards-section .service-image-frame .image-anime::before{
+.our-services.female-treatment-cards-section .service-image-frame .image-anime:empty::before{
 	content: "1200 \00D7  800";
 	position: absolute;
 	inset: 0;
