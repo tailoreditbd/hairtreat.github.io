@@ -15398,3 +15398,74 @@ header.main-header .header-sticky.active{
 		padding: 30px 0;
 	}
 }
+/* Home About Us single-image layout */
+.home-page .home-about-section .about-us-images{
+	position: relative;
+	display: block;
+	max-width: 500px;
+	margin: 0 55px 0 0;
+	background: none;
+}
+
+.home-page .home-about-section .about-us-images::before{
+	content: '';
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	width: 76px;
+	aspect-ratio: 1;
+	transform: translateX(-50%);
+	background: url('../images/about-us-image-bg-shape.svg') center / contain no-repeat;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.home-page .home-about-section .about-img-1{
+	width: 100%;
+	padding-left: 0;
+}
+
+.home-page .home-about-section .company-experience-circle{
+	right: -45px;
+	bottom: 35px;
+	transform: none;
+}
+
+.home-page .home-about-section .about-experience-list{
+	width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+	.home-page .home-about-section .about-us-images{
+		margin: 0 auto 55px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.home-page .home-about-section .about-us-images{
+		margin-bottom: 60px;
+	}
+
+	.home-page .home-about-section .about-us-images::before{
+		top: -78px;
+		left: 50%;
+		width: 60px;
+		transform: translateX(-50%);
+	}
+
+	.home-page .home-about-section .company-experience-circle{
+		right: 15px !important;
+		bottom: -35px !important;
+		transform: none !important;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.home-page .home-about-section .about-img-1{
+		padding-left: 0 !important;
+	}
+
+	.home-page .home-about-section .company-experience-circle img{
+		max-width: 90px;
+	}
+}
