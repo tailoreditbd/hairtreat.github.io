@@ -15443,11 +15443,12 @@ header.main-header .header-sticky.active{
 
 @media only screen and (max-width: 767px){
 	.home-page .home-about-section .about-us-images{
+		padding-top: 82px;
 		margin-bottom: 60px;
 	}
 
 	.home-page .home-about-section .about-us-images::before{
-		top: -78px;
+		top: 8px;
 		left: 50%;
 		width: 60px;
 		transform: translateX(-50%);
