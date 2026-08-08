@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		(function () {
 			var path = window.location.pathname.replace(/\/+$/, '');
 			if (/\/laser-hair-remover(?:\.html)?$/i.test(path)) {
-				window.location.replace(path.replace(/\/laser-hair-remover(?:\.html)?$/i, '/laser-hair-removal.html') + window.location.search + window.location.hash);
+				window.location.replace(path.replace(/\/laser-hair-remover(?:\.html)?$/i, '/treatments/laser-hair-removal') + window.location.search + window.location.hash);
 				return;
 			}
 			var nestedRoutes = {
@@ -44,8 +44,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				var nestedSlug = nestedMatch[2].toLowerCase();
 
 				if (nestedRoutes[branch].indexOf(nestedSlug) !== -1) {
-					var nestedTarget = path.replace(/\/(?:treatments|transplant)\/[^/]+$/i, '/' + branch + '/' + nestedSlug + '/');
-					window.location.replace(nestedTarget + window.location.search + window.location.hash);
+					var nestedTarget = path.replace(/\/(?:treatments|transplant)\/[^/]+$/i, '/' + branch + '/' + nestedSlug);
+					if (nestedTarget !== path) {
+						window.location.replace(nestedTarget + window.location.search + window.location.hash);
+					}
 					return;
 				}
 			}
@@ -62,30 +64,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'dhaka': 'service-area/dhaka',
 				'eyebrow-transplant': 'eyebrow-transplant.html',
 				'faqs': 'faqs.html',
-				'female-hair-transplant': 'female-hair-transplant.html',
+				'female-hair-transplant': 'transplant/female-hair-transplant',
 				'form': 'form.html',
 				'fue': 'fue.html',
 				'fut-hair-transplant': 'fut-hair-transplant.html',
-				'gfc-prp': 'gfc-prp.html',
+				'gfc-prp': 'treatments/gfc-prp',
 				'gulshan': 'service-area/gulshan',
 				'hair-line-correction': 'hair-line-correction.html',
 				'hair-loss-treatment-for-saudi-arabia-nrbs': 'hair-loss-treatment-for-saudi-arabia-nrbs.html',
-				'hair-prp': 'hair-prp.html',
+				'hair-prp': 'treatments/hair-prp',
 				'hair-transplant-technique': 'hair-transplant-technique.html',
 				'hair-transplant-treatment': 'hair-transplant-treatment.html',
-				'hair-transplant': 'hair-transplant.html',
+				'hair-transplant': 'transplant/hair-transplant',
 				'hours-and-location': 'hours-and-location.html',
 				'image-gallery': 'image-gallery.html',
 				'index-image': 'index-image.html',
 				'index-slider': 'index-slider.html',
 				'index-video': 'index-video.html',
-				'laser-hair-removal': 'laser-hair-removal.html',
+				'laser-hair-removal': 'treatments/laser-hair-removal',
 				'laser-treatment': 'laser-treatment.html',
 				'moustache-transplant': 'moustache-transplant.html',
 				'p-shot': 'p-shot.html',
 				'hair-transplant-cost': 'pricing.html',
 				'reviews': 'reviews.html',
-				'sapphire-hair-transplant': 'sapphire-hair-transplant.html',
+				'sapphire-hair-transplant': 'transplant/sapphire-hair-transplant',
 				'service-area': 'service-area.html',
 				'service-single': 'service-single.html',
 				'team-single': 'team-single.html',
@@ -110,7 +112,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				return;
 			}
 
-			var slug = path.substring(path.lastIndexOf('/') + 1).toLowerCase();
+			var slug = path.substring(path.lastIndexOf('/') + 1).replace(/\.html$/i, '').toLowerCase();
 			if (routes[slug]) {
 				window.location.replace(path.replace(/[^/]+$/, routes[slug]) + window.location.search + window.location.hash);
 			}
