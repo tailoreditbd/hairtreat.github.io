@@ -8,8 +8,8 @@
   RewriteEngine On
   RewriteBase /hairtreat/
 
-  # Fix accidentally duplicated treatment path
-  RewriteRule ^treatments/treatments/laser-hair-removal/?$ treatments/laser-hair-removal [NC,R=301,L]
+  # Permanently remove the accidentally duplicated treatment path
+  RewriteRule ^treatments/treatments/laser-hair-removal/?$ - [G,L]
 
   # Redirect old branch subpaths to direct static pages so assets load correctly
   RewriteRule ^service-area(-)?\.html/(uttara|uttura)$ service-area/uttara [NC,R=301,L]
