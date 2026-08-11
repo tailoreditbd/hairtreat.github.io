@@ -15060,8 +15060,8 @@ header.main-header .header-sticky.active{
         color: var(--white-color);
     }
 }
-/* Laser treatment cards: homepage sizing with the original blank frames */
-.laser-hair-removal-treatment-cards-section .service-image-frame .image-anime::before{
+/* Laser treatment cards: show the size guide only while a frame is empty */
+.laser-hair-removal-treatment-cards-section .service-image-frame .image-anime:empty::before{
     content: "1200 \00D7 800";
     position: absolute;
     inset: 0;
