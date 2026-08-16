@@ -1460,6 +1460,11 @@ header.main-header .header-sticky.active{
 	.uttara-cost-section .about-us-content{
 		margin-left: -85px;
 	}
+
+	/* Keep pricing copy inside its own column instead of overlapping the images. */
+	.pricing-cost-factors-section .about-us-content{
+		margin-left: 0;
+	}
 }
 
 @media only screen and (max-width: 575px){
