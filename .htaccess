@@ -148,6 +148,8 @@
   RewriteRule ^moustache-transplant\.html$ moustache-transplant [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*p-shot\.html[?\s] [NC]
   RewriteRule ^p-shot\.html$ treatments/p-shot [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*hair-transplant-cost\.html[?\s] [NC]
+  RewriteRule ^hair-transplant-cost\.html$ hair-transplant-cost [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*pricing\.html[?\s] [NC]
   RewriteRule ^pricing\.html$ hair-transplant-cost [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*reviews\.html[?\s] [NC]
