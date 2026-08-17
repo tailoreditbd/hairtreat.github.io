@@ -171,49 +171,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			color: var(--white-color);
 		}
 
-		.top-clinics-review {
+		.top-clinics-sidebar-quick-links {
 			display: grid;
-			grid-template-columns: 70px minmax(0, 1fr);
-			gap: 16px;
+			grid-template-columns: 1fr;
+			gap: 12px;
+		}
+
+		.top-clinics-sidebar-quick-link {
+			display: flex;
+			flex-direction: column;
 			align-items: center;
-			padding: 18px;
+			justify-content: center;
+			gap: 8px;
+			min-height: 145px;
+			padding: 16px 10px;
 			border: 1px solid #ccd8e8;
 			border-radius: 12px;
 			background: rgba(255, 255, 255, 0.45);
 			color: var(--primary-color);
+			text-align: center;
 		}
 
-		.top-clinics-review:hover,
-		.top-clinics-review:focus {
+		.top-clinics-sidebar-quick-link:hover,
+		.top-clinics-sidebar-quick-link:focus {
 			border-color: var(--accent-color);
 			color: var(--primary-color);
 		}
 
-		.top-clinics-review img {
-			width: 64px;
-			height: 64px;
+		.top-clinics-sidebar-quick-link img {
+			width: 44px;
+			height: 44px;
 			object-fit: contain;
 		}
 
-		.top-clinics-review-label {
-			display: block;
-			font-size: 15px;
-			font-weight: 700;
-			line-height: 1.3em;
-			text-transform: uppercase;
-			margin-bottom: 5px;
+		.top-clinics-sidebar-quick-link > i {
+			font-size: 40px;
+			color: var(--accent-color);
 		}
 
-		.top-clinics-review-count {
-			display: block;
-			font-size: 28px;
-			font-weight: 700;
-			line-height: 1.2em;
-		}
-
-		.top-clinics-review-copy {
+		.top-clinics-quick-link-label {
 			display: block;
 			font-size: 14px;
+			font-weight: 700;
+			line-height: 1.3em;
+		}
+
+		.top-clinics-quick-link-copy {
+			display: block;
+			font-size: 12px;
 			font-weight: 400;
 			line-height: 1.4em;
 			color: var(--text-color);
@@ -687,14 +692,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <a class="top-clinics-sidebar-phone" href="tel:+8801805002681" aria-label="Call HairTreat at 01805 002681"><i class="fa-solid fa-phone" aria-hidden="true"></i> 01805 002681</a>
                                 <a class="top-clinics-sidebar-contact" href="contact-us">Contact Us</a>
                             </div>
-                            <a class="top-clinics-review" href="reviews" aria-label="Read more than 1000 HairTreat patient reviews">
-                                <img src="images/icon-google.svg" alt="" aria-hidden="true">
-                                <span>
-                                    <span class="top-clinics-review-label">Patient Reviews</span>
-                                    <span class="top-clinics-review-count">1000+</span>
-                                    <span class="top-clinics-review-copy">Read patient experiences</span>
-                                </span>
-                            </a>
+                            <div class="top-clinics-sidebar-quick-links">
+                                <a class="top-clinics-sidebar-quick-link" href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!4m8!3m7!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!9m1!1b1!16s%2Fg%2F11xlztc2gv" target="_blank" rel="noopener noreferrer" aria-label="Read HairTreat reviews on Google">
+                                    <img src="images/icon-google.svg" alt="" aria-hidden="true">
+                                    <span class="top-clinics-quick-link-label">Google Reviews</span>
+                                    <span class="top-clinics-quick-link-copy">Read Reviews</span>
+                                </a>
+                            </div>
                         </div>
                     </aside>
                 </div>
