@@ -79,6 +79,145 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			color: var(--text-color);
 		}
 
+
+		.top-clinics-layout {
+			align-items: stretch;
+		}
+
+		.top-clinics-main .post-content {
+			max-width: none;
+		}
+
+		.top-clinics-sidebar {
+			position: sticky;
+			top: 120px;
+		}
+
+		.top-clinics-sidebar-card {
+			background: #eef5ff;
+			border-radius: 20px;
+			padding: 30px;
+		}
+
+		.top-clinics-sidebar-heading {
+			display: grid;
+			grid-template-columns: 96px minmax(0, 1fr);
+			gap: 20px;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		.top-clinics-sidebar-doctor {
+			width: 96px;
+			height: 96px;
+			padding: 5px;
+			border: 2px solid var(--accent-color);
+			border-radius: 50%;
+			background: var(--white-color);
+			object-fit: cover;
+			object-position: top center;
+		}
+
+		.top-clinics-sidebar-heading h2 {
+			font-size: 28px;
+			line-height: 1.25em;
+			color: var(--accent-color);
+			margin: 0;
+		}
+
+		.top-clinics-sidebar-card > p {
+			font-size: 16px;
+			line-height: 1.6em;
+			color: var(--text-color);
+			margin: 0 0 24px;
+		}
+
+		.top-clinics-sidebar-actions {
+			display: grid;
+			gap: 14px;
+			margin-bottom: 16px;
+		}
+
+		.top-clinics-sidebar-actions a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			min-height: 58px;
+			padding: 12px 18px;
+			border-radius: 12px;
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.3em;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.top-clinics-sidebar-phone,
+		.top-clinics-sidebar-phone:hover,
+		.top-clinics-sidebar-phone:focus {
+			background: #111111;
+			color: var(--white-color);
+		}
+
+		.top-clinics-sidebar-contact,
+		.top-clinics-sidebar-contact:focus {
+			border: 1px solid var(--accent-color);
+			color: var(--accent-color);
+		}
+
+		.top-clinics-sidebar-contact:hover {
+			background: var(--accent-color);
+			color: var(--white-color);
+		}
+
+		.top-clinics-review {
+			display: grid;
+			grid-template-columns: 70px minmax(0, 1fr);
+			gap: 16px;
+			align-items: center;
+			padding: 18px;
+			border: 1px solid #ccd8e8;
+			border-radius: 12px;
+			background: rgba(255, 255, 255, 0.45);
+			color: var(--primary-color);
+		}
+
+		.top-clinics-review:hover,
+		.top-clinics-review:focus {
+			border-color: var(--accent-color);
+			color: var(--primary-color);
+		}
+
+		.top-clinics-review img {
+			width: 64px;
+			height: 64px;
+			object-fit: contain;
+		}
+
+		.top-clinics-review-label {
+			display: block;
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 1.3em;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+
+		.top-clinics-review-count {
+			display: block;
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 1.2em;
+		}
+
+		.top-clinics-review-copy {
+			display: block;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.4em;
+			color: var(--text-color);
+		}
 		.page-blog .post-item-content h2 {
 			font-size: 22px;
 		}
@@ -86,6 +225,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		@media only screen and (max-width: 991px) {
 			.page-blog .post-item-content h2 {
 				font-size: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 991px) {
+			.top-clinics-sidebar {
+				position: static;
+				margin-top: 40px;
+			}
+
+			.top-clinics-sidebar-card {
+				max-width: 640px;
+				margin: 0 auto;
+			}
+		}
+
+		@media only screen and (max-width: 575px) {
+			.top-clinics-sidebar-card {
+				padding: 24px 20px;
+			}
+
+			.top-clinics-sidebar-heading {
+				grid-template-columns: 1fr;
+				text-align: center;
+			}
+
+			.top-clinics-sidebar-doctor {
+				margin: 0 auto;
+			}
+
+			.top-clinics-sidebar-heading h2 {
+				font-size: 24px;
+			}
+
+			.top-clinics-sidebar-card > p {
+				text-align: center;
 			}
 		}
 	</style>
@@ -186,8 +360,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Page Single Post Start -->
     <div class="page-single-post">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row top-clinics-layout">
+                <div class="col-lg-8 top-clinics-main">
 <!-- Post Single Content Start -->
                     <div class="post-content">
                         <!-- Post Entry Start -->
@@ -500,6 +674,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- Post Tag Links End -->
                     </div>
                     <!-- Post Single Content End -->
+                </div>
+                <div class="col-lg-4">
+                    <aside class="top-clinics-sidebar" aria-label="HairTreat consultation">
+                        <div class="top-clinics-sidebar-card">
+                            <div class="top-clinics-sidebar-heading">
+                                <img class="top-clinics-sidebar-doctor" src="images/expert-doctors/dr-sm-jakaria-hairtreat.jpg" alt="Dr. S.M. Jakaria Hridoy of HairTreat">
+                                <h2>Get Expert Hair Transplant Care Today!</h2>
+                            </div>
+                            <p>Get expert guidance for the right hair restoration treatment.</p>
+                            <div class="top-clinics-sidebar-actions">
+                                <a class="top-clinics-sidebar-phone" href="tel:+8801805002681" aria-label="Call HairTreat at 01805 002681"><i class="fa-solid fa-phone" aria-hidden="true"></i> 01805 002681</a>
+                                <a class="top-clinics-sidebar-contact" href="contact-us">Contact Us</a>
+                            </div>
+                            <a class="top-clinics-review" href="reviews" aria-label="Read more than 1000 HairTreat patient reviews">
+                                <img src="images/icon-google.svg" alt="" aria-hidden="true">
+                                <span>
+                                    <span class="top-clinics-review-label">Patient Reviews</span>
+                                    <span class="top-clinics-review-count">1000+</span>
+                                    <span class="top-clinics-review-copy">Read patient experiences</span>
+                                </span>
+                            </a>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
