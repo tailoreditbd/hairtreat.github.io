@@ -12,27 +12,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="index, follow">
 	<script data-clean-url-script>
 		(function () {
 			var cleanPath = 'blog';
-			if (window.location.pathname.endsWith('/blog.html')) {
-				var target = window.location.pathname.replace(/blog\.html$/, cleanPath);
+			if (window.location.pathname.endsWith('/blog/index.html')) {
+				var target = window.location.pathname.replace(/blog\/index\.html$/, cleanPath);
 				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
 			}
 		})();
 	</script>
 	<!-- Page Title -->
-    <title>Glowix - Plastic Surgery & Beauty Clinic HTML Template</title>
-	<meta name="description" content="">
-	<meta property="og:title" content="">
-	<meta property="og:description" content="">
+    <title>Hair Transplant Blog | HairTreat Bangladesh</title>
+	<meta name="description" content="Read HairTreat&#39;s latest articles on hair transplant, FUE, Sapphire FUE, hair loss treatments, graft planning, recovery, and patient care in Bangladesh.">
+	<meta property="og:title" content="Hair Transplant Blog | HairTreat Bangladesh">
+	<meta property="og:description" content="Read HairTreat&#39;s latest articles on hair transplant, FUE, Sapphire FUE, hair loss treatments, graft planning, recovery, and patient care in Bangladesh.">
 	<meta property="og:image" content="">
-	<meta property="og:url" content="">
+	<meta property="og:url" content="https://hairtreat.com.bd/blog">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="Hair Transplant Blog | HairTreat Bangladesh">
+	<meta name="twitter:description" content="Read HairTreat&#39;s latest articles on hair transplant, FUE, Sapphire FUE, hair loss treatments, graft planning, recovery, and patient care in Bangladesh.">
 	<meta name="twitter:image" content="">
+	<link rel="canonical" href="https://hairtreat.com.bd/blog">
 	<meta name="author" content="hairtreat.com.bd/">
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/svg+xml" href="images/favicon/hairtreat-favicon.svg">
@@ -57,17 +58,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<!-- Main Custom Css -->
 	<link href="css/custom.css?v=footerfix-20260702-3" rel="stylesheet" media="screen">
 	<style>
-		/* Hide breadcrumb background image and set template color */
 		.page-header.page-header-blog-image {
 			background-image: none !important;
 			background-color: var(--primary-color) !important;
 		}
-		/* Hide/disable all links inside blog posts (arrow remains visible but is not clickable) */
-		.page-blog .post-item a {
-			pointer-events: none !important;
-			cursor: default !important;
-			color: inherit !important;
-			text-decoration: none !important;
+
+		.page-blog .post-item-content h2 {
+			font-size: 22px;
+		}
+
+		@media only screen and (max-width: 991px) {
+			.page-blog .post-item-content h2 {
+				font-size: 20px;
+			}
 		}
 	</style>
 	<!-- Google tag (gtag.js) -->
@@ -174,14 +177,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="page-blog">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6" data-blog-page="1">
+                <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" data-cursor-text="View">
+                            <a href="blog/top-10-hair-transplant-clinics-in-bangladesh" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
+                                    <img src="images/post-1.jpg" alt="Top 10 hair transplant clinics in Bangladesh">
                                 </figure>
                             </a>
                         </div>
@@ -191,13 +194,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
+                                <h2><a href="blog/top-10-hair-transplant-clinics-in-bangladesh">Top 10 Hair Transplant Clinics in Bangladesh 2026</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog/top-10-hair-transplant-clinics-in-bangladesh" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -206,14 +209,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-blog-page="1">
+                <!-- Remaining five blog cards are temporarily disabled. -->
+                <template id="disabled-blog-cards">
+                <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                        <!-- Post Featured Image Start-->
                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" data-cursor-text="View">
+                            <a href="blog-single.html" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
+                                    <img src="images/post-2.jpg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -223,13 +228,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
+                                <h2><a href="blog-single.html">Myths and Facts About Plastic Surgery</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -238,14 +243,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-blog-page="1">
+                <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" data-cursor-text="View">
+                            <a href="blog-single.html" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
+                                    <img src="images/post-3.jpg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -255,13 +260,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
+                                <h2><a href="blog-single.html">What to Expect During Your First Consultation</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -270,14 +275,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-blog-page="1">
+                <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.6s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" data-cursor-text="View">
+                            <a href="blog-single.html" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
+                                    <img src="images/post-4.jpg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -287,13 +292,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
+                                <h2><a href="blog-single.html">Choose a qualified surgeon for safe.</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -302,14 +307,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-blog-page="1">
+                <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.8s">
                        <!-- Post Featured Image Start-->
                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" data-cursor-text="View">
+                            <a href="blog-single.html" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
+                                    <img src="images/post-5.jpg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -319,14 +324,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                                <p>Treatment: 4 sessions of PRP (Platelet-Rich Plasma) therapy over 4 months.</p>
+                                <h2><a href="blog-single.html">Follow pre-surgery guidelines to ensure a smooth.</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -335,14 +339,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-blog-page="1">
+                <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" data-cursor-text="View">
+                            <a href="blog-single.html" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
+                                    <img src="images/post-6.jpg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -352,14 +356,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                                <p>Treatment: 4 sessions of PRP (Platelet-Rich Plasma) therapy over 4 months.</p>
+                                <h2><a href="blog-single.html">Maintain a healthy lifestyle for better healing.</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="blog-single.html" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -368,240 +371,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-blog-page="2">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="1.2s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95772.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                                <p>Treatment: 4 sessions of PRP (Platelet-Rich Plasma) therapy over 4 months.</p>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-blog-page="2">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="1.4s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95686.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-blog-page="2">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="1.6s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95687.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-blog-page="2">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="1.8s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95688.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-blog-page="2">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="2s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95686.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-3/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-blog-page="2">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="2.2s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95687.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness-2/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-blog-page="3">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="2.4s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/hairtreat-blog-frame-95688.png" alt="Significant hair thinning and excessive fall">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/">Concern: Significant hair thinning and excessive fall (early male pattern baldness).</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="https://hairtreat.com.bd/concern-significant-hair-thinning-and-excessive-fall-early-male-pattern-baldness/" class="readmore-btn"><img src="images/arrow-white.svg" alt=""></a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
+                                </template>
 
                 <div class="col-lg-12">
                     <!-- Page Pagination Start -->
                     <div class="page-pagination wow fadeInUp" data-wow-delay="1.2s">
                         <ul class="pagination">
-                            <li><a href="blog"><i class="fa-solid fa-arrow-left-long"></i></a></li>
-                            <li class="active"><a href="blog" data-blog-pagination="1">1</a></li>
-                            <li><a href="blog?page=2" data-blog-pagination="2">2</a></li>
-                            <li><a href="blog?page=3" data-blog-pagination="3">3</a></li>
-                            <li><a href="blog?page=2"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-left-long"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></li>
                         </ul>
                     </div>
                     <!-- Page Pagination End -->
@@ -751,41 +531,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const params = new URLSearchParams(window.location.search);
-            const requestedPage = params.get('page');
-            const currentPage = ['2', '3'].includes(requestedPage) ? requestedPage : '1';
-            const blogCards = document.querySelectorAll('[data-blog-page]');
-            const paginationItems = document.querySelectorAll('.page-pagination .pagination li');
-            const previousPage = currentPage === '1' ? '1' : String(Number(currentPage) - 1);
-            const nextPage = currentPage === '3' ? '3' : String(Number(currentPage) + 1);
-            const pageUrl = function (page) {
-                return page === '1' ? 'blog.html' : 'blog.html?page=' + page;
-            };
-
-            blogCards.forEach(function (card) {
-                card.style.display = card.dataset.blogPage === currentPage ? '' : 'none';
-            });
-
-            paginationItems.forEach(function (item) {
-                item.classList.remove('active');
-            });
-
-            const activeItem = document.querySelector('.page-pagination .pagination a[data-blog-pagination="' + currentPage + '"]');
-            if (activeItem) {
-                activeItem.parentElement.classList.add('active');
-            }
-
-            const paginationLinks = document.querySelectorAll('.page-pagination .pagination li');
-            if (paginationLinks[0]) {
-                paginationLinks[0].querySelector('a').href = pageUrl(previousPage);
-            }
-            if (paginationLinks[paginationLinks.length - 1]) {
-                paginationLinks[paginationLinks.length - 1].querySelector('a').href = pageUrl(nextPage);
-            }
-        });
-    </script>
     <!-- Main Custom js file -->
     <script src="js/function.js?v=footerfix-20260702-2"></script>
 </body>

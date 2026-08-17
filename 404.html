@@ -55,7 +55,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'about': 'about.html',
 				'beard-transplant': 'beard-transplant.html',
 				'blog-single': 'blog-single.html',
-				'blog': 'blog.html',
+				'blog': 'blog/index.html',
+				'top-10-hair-transplant-clinics-in-bangladesh': 'blog/top-10-hair-transplant-clinics-in-bangladesh.html',
 				'book-appointment': 'book-appointment.html',
 				'case-study-single': 'case-study-single.html',
 				'case-study': 'case-study.html',
@@ -109,6 +110,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			if (areaMatch) {
 				var areaCity = areaMatch[1].toLowerCase() === 'uttura' ? 'uttara' : areaMatch[1].toLowerCase();
 				window.location.replace(path.replace(/\/service-area\/[^/]+$/i, '/' + areaCity + '.html') + window.location.search + window.location.hash);
+				return;
+			}
+
+			var blogArticleMatch = path.match(/\/blog\/top-10-hair-transplant-clinics-in-bangladesh$/i);
+			if (blogArticleMatch) {
+				window.location.replace(path + '.html' + window.location.search + window.location.hash);
 				return;
 			}
 
