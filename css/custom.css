@@ -912,13 +912,14 @@ header.main-header .header-sticky.active{
 	white-space: nowrap;
 }
 
-.main-menu ul li.about-menu > ul li a{
-	color: var(--white-color);
+.main-menu ul li.about-menu > ul li a,
+.main-menu ul li.about-menu > ul li a.active{
+	color: var(--white-color) !important;
 }
 
 .main-menu ul li.about-menu > ul li a:hover,
 .main-menu ul li.about-menu > ul li a:focus{
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 }
 .header-contact-btn{
 	display: flex;
