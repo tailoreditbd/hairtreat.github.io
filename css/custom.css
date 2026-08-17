@@ -913,12 +913,12 @@ header.main-header .header-sticky.active{
 }
 
 .main-menu ul li.about-menu > ul li a{
-	color: var(--primary-color);
+	color: var(--white-color);
 }
 
 .main-menu ul li.about-menu > ul li a:hover,
 .main-menu ul li.about-menu > ul li a:focus{
-	color: var(--accent-color);
+	color: var(--primary-color);
 }
 .header-contact-btn{
 	display: flex;
