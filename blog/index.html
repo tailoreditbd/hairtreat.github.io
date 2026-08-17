@@ -10,7 +10,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <!-- Meta -->
 	<meta charset="utf-8">
-	<base href="../">
+	<base id="blog-base" href="../">
+	<script>
+		if (window.location.pathname.endsWith('/blog')) {
+			document.getElementById('blog-base').setAttribute('href', './');
+		}
+	</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="robots" content="index, follow">
@@ -19,6 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			var cleanPath = 'blog';
 			if (window.location.pathname.endsWith('/blog/index.html')) {
 				var target = window.location.pathname.replace(/blog\/index\.html$/, cleanPath);
+			document.getElementById('blog-base').setAttribute('href', './');
 				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
 			}
 		})();
