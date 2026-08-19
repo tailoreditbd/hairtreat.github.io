@@ -15481,3 +15481,12 @@ header.main-header .header-sticky.active{
 .hero.hero-home-banner .section-title .hero-title .hero-heading-line {
     text-transform: none !important;
 }
+.top-clinics-faq-section .section-title h2,
+.top-clinics-faq-section .section-title h2 *,
+.top-clinics-faq-section .faq-accordion .accordion-button,
+.top-clinics-faq-section .faq-accordion .accordion-button * {
+    font-family: "Noto Sans Bengali", "Nirmala UI", sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+}
