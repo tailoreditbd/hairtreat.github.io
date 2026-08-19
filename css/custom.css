@@ -15476,3 +15476,8 @@ header.main-header .header-sticky.active{
 		max-width: 90px;
 	}
 }
+.hero.hero-home-banner .section-title .hero-title,
+.hero.hero-home-banner .section-title .hero-title span,
+.hero.hero-home-banner .section-title .hero-title .hero-heading-line {
+    text-transform: none !important;
+}
