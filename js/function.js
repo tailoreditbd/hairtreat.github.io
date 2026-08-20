@@ -383,6 +383,12 @@
         let	animatedTextElements = document.querySelectorAll('.text-anime-style-3, .section-title h1, .section-title h2, .section-title h3, .section-title-h3-override');
  
          animatedTextElements.forEach((element) => {
+             // SplitText separates Bengali vowel signs and conjuncts from their
+             // base characters, so keep Bengali headings as a single text run.
+             if (/[\u0980-\u09FF]/.test(element.textContent)) {
+                 return;
+             }
+
              // Remove WOW.js conflicts to let GSAP animate characters cleanly
              element.classList.remove('wow', 'fadeInUp');
              element.removeAttribute('data-wow-delay');
