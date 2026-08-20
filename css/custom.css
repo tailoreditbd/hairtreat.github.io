@@ -3319,7 +3319,10 @@ header.main-header .header-sticky.active{
 	font-weight: 600;
 	line-height: 1.35em;
 	color: var(--primary-color);
-	margin-bottom: 12px;
+	margin-bottom: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .our-blog-posts .post-item-horizontal .post-title a{
@@ -3329,36 +3332,6 @@ header.main-header .header-sticky.active{
 
 .our-blog-posts .post-item-horizontal .post-title a:hover{
 	color: var(--accent-color);
-}
-
-.our-blog-posts .post-item-horizontal .post-excerpt{
-	font-family: var(--default-font);
-	font-size: 16px;
-	line-height: 1.6em;
-	color: var(--text-color);
-	margin-bottom: 18px;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
-
-.our-blog-posts .post-item-horizontal .post-read-more{
-	font-family: var(--default-font);
-	font-size: 16px;
-	font-weight: 600;
-	color: var(--accent-color);
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-}
-
-.our-blog-posts .post-item-horizontal .post-read-more:hover{
-	color: #9a5c08;
-}
-
-.our-blog-posts .post-item-horizontal .post-read-more i{
-	margin-left: 6px;
-	font-size: 14px;
 }
 
 .our-blog-posts .btn-blog-all{
@@ -3419,11 +3392,9 @@ header.main-header .header-sticky.active{
 
 	.our-blog-posts .post-item-horizontal .post-title{
 		font-size: 18px;
-	}
-
-	.our-blog-posts .post-item-horizontal .post-excerpt{
-		font-size: 15px;
-		-webkit-line-clamp: 2;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.our-blog-posts .btn-blog-all{
@@ -7545,8 +7516,9 @@ header.main-header .header-sticky.active{
 	}
 
 	.post-item-horizontal .post-featured-image{
-		width: 100%;
-		max-width: 100%;
+		width: 25%;
+		max-width: 120px;
+		flex-shrink: 0;
 		position: relative;
 	}
 
@@ -7566,11 +7538,14 @@ header.main-header .header-sticky.active{
 	}
 
 	.post-item-horizontal .post-item-body{
-		padding: 25px 20px;
+		padding: 20px 16px;
 	}
 
 	.post-item-horizontal .post-title{
-		font-size: 20px;
+		font-size: 17px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.post-featured-image .post-result-images img{
@@ -15596,8 +15571,21 @@ header.main-header .header-sticky.active{
 	}
 
 	.home-page .post-item-horizontal .post-featured-image{
-		width: 100%;
-		max-width: 100%;
+		width: 25%;
+		max-width: 120px;
+		flex-shrink: 0;
+		position: relative;
+	}
+
+	.home-page .post-item-horizontal .post-featured-image::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 25%;
+		background: linear-gradient(to top, rgba(69, 26, 3, 0.85), transparent);
+		pointer-events: none;
 	}
 
 	.home-page .post-item-horizontal .post-featured-image figure{
@@ -15605,11 +15593,14 @@ header.main-header .header-sticky.active{
 	}
 
 	.home-page .post-item-horizontal .post-item-body{
-		padding: 25px 20px;
+		padding: 20px 16px;
 	}
 
 	.home-page .post-item-horizontal .post-title{
-		font-size: 20px;
+		font-size: 17px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.home-page .intro-video{
@@ -15683,6 +15674,9 @@ header.main-header .header-sticky.active{
 
 	.home-page .post-item-horizontal .post-title{
 		font-size: 18px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.home-page .home-clinic-focus-section{
