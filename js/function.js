@@ -16,7 +16,7 @@
         alt: 'HairTreat'
     });
 
-    $('.about-footer-content p').text('Our facility comprises advanced technological machines and equipment that help us find an adequate solution for your hair loss problem with a successful minimally invasive surgical process.');
+    $('.about-footer-content p').text('HairTreat provides consultation-based hair restoration and hair-loss treatment using modern equipment, personalized treatment planning and professional aftercare support.');
     $('.footer-social-links .fa-facebook-f').closest('a').attr('href', 'https://www.facebook.com/hairtreat');
     $('.footer-links.quick-links ul').html(
         '<li><a href="./">Home</a></li>' +
