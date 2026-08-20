@@ -3242,6 +3242,196 @@ header.main-header .header-sticky.active{
 	padding: 50px 0 30px;
 }
 
+.our-blog-posts{
+	padding: 30px 0;
+}
+
+.our-blog-posts .post-item{
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.our-blog-posts .post-item-horizontal{
+	background: var(--white-color);
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+	border: 1px solid #f2f2f2;
+}
+
+.our-blog-posts .post-item-card{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	flex-wrap: wrap;
+}
+
+.our-blog-posts .post-item-horizontal .post-featured-image{
+	position: relative;
+	width: 15%;
+	max-width: 160px;
+	flex-shrink: 0;
+}
+
+.our-blog-posts .post-item-horizontal .post-featured-image::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 25%;
+	background: linear-gradient(to top, rgba(69, 26, 3, 0.85), transparent);
+	pointer-events: none;
+}
+
+.our-blog-posts .post-item-horizontal .post-featured-image figure{
+	margin: 0;
+	height: 100%;
+	min-height: 35px;
+}
+
+.our-blog-posts .post-item-horizontal .post-featured-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.our-blog-posts .post-item-horizontal:hover .post-featured-image img{
+	transform: scale(1.05);
+}
+
+.our-blog-posts .post-item-horizontal .post-item-body{
+	flex: 1;
+	padding: 30px 35px;
+	display: block;
+}
+
+.our-blog-posts .post-item-horizontal .post-item-content{
+	width: 100%;
+}
+
+.our-blog-posts .post-item-horizontal .post-title{
+	font-family: var(--default-font);
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.35em;
+	color: var(--primary-color);
+	margin-bottom: 12px;
+}
+
+.our-blog-posts .post-item-horizontal .post-title a{
+	color: inherit;
+	transition: all 0.3s ease-in-out;
+}
+
+.our-blog-posts .post-item-horizontal .post-title a:hover{
+	color: var(--accent-color);
+}
+
+.our-blog-posts .post-item-horizontal .post-excerpt{
+	font-family: var(--default-font);
+	font-size: 16px;
+	line-height: 1.6em;
+	color: var(--text-color);
+	margin-bottom: 18px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.our-blog-posts .post-item-horizontal .post-read-more{
+	font-family: var(--default-font);
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--accent-color);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.our-blog-posts .post-item-horizontal .post-read-more:hover{
+	color: #9a5c08;
+}
+
+.our-blog-posts .post-item-horizontal .post-read-more i{
+	margin-left: 6px;
+	font-size: 14px;
+}
+
+.our-blog-posts .btn-blog-all{
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background: var(--accent-color);
+	color: var(--white-color);
+	font-family: var(--default-font);
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 100px;
+	padding: 17px 25px;
+	transition: all 0.3s ease-in-out;
+}
+
+.our-blog-posts .btn-blog-all:hover{
+	background: #9a5c08;
+	color: var(--white-color);
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(180, 83, 9, 0.3);
+}
+
+.our-blog-posts .btn-blog-all i{
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 575px){
+	.our-blog-posts .post-item-horizontal .post-item-card{
+		flex-wrap: wrap;
+	}
+
+	.our-blog-posts .post-item-horizontal .post-featured-image{
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+	}
+
+	.our-blog-posts .post-item-horizontal .post-featured-image::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 25%;
+		background: linear-gradient(to top, rgba(69, 26, 3, 0.85), transparent);
+		pointer-events: none;
+	}
+
+	.our-blog-posts .post-item-horizontal .post-featured-image figure{
+		min-height: 25px;
+	}
+
+	.our-blog-posts .post-item-horizontal .post-item-body{
+		padding: 20px 16px;
+	}
+
+	.our-blog-posts .post-item-horizontal .post-title{
+		font-size: 18px;
+	}
+
+	.our-blog-posts .post-item-horizontal .post-excerpt{
+		font-size: 15px;
+		-webkit-line-clamp: 2;
+	}
+
+	.our-blog-posts .btn-blog-all{
+		padding: 12px 24px;
+		font-size: 15px;
+	}
+}
+
 .our-blog-title{
 	max-width: 840px;
 	margin: 0 auto 18px;
@@ -7324,6 +7514,10 @@ header.main-header .header-sticky.active{
 		padding: 50px 0 20px;
 	}
 
+	.our-blog-posts{
+		padding: 30px 0 20px;
+	}
+
 	.our-blog-title{
 		max-width: 100%;
 		text-align: center;
@@ -7344,6 +7538,39 @@ header.main-header .header-sticky.active{
 
 	.post-featured-image a{
 		border-radius: 20px;
+	}
+
+	.post-item-horizontal .post-item-card{
+		flex-wrap: wrap;
+	}
+
+	.post-item-horizontal .post-featured-image{
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+	}
+
+	.post-item-horizontal .post-featured-image::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 25%;
+		background: linear-gradient(to top, rgba(69, 26, 3, 0.85), transparent);
+		pointer-events: none;
+	}
+
+	.post-item-horizontal .post-featured-image figure{
+		min-height: 30px;
+	}
+
+	.post-item-horizontal .post-item-body{
+		padding: 25px 20px;
+	}
+
+	.post-item-horizontal .post-title{
+		font-size: 20px;
 	}
 
 	.post-featured-image .post-result-images img{
@@ -15313,12 +15540,16 @@ header.main-header .header-sticky.active{
 	padding: 36px 0 20px;
 }
 
+.home-page .our-blog-posts{
+	padding: 30px 0 20px;
+}
+
 .home-page .home-about-section,
 .home-page .our-services,
 .home-page .why-choose-hairtreat-section,
 .home-page .our-faqs{
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 }
 
 .home-page .intro-video{
@@ -15349,11 +15580,36 @@ header.main-header .header-sticky.active{
 	.home-page .why-choose-hairtreat-section,
 	.home-page .our-faqs{
 		padding-top: 44px !important;
-		padding-bottom: 44px !important;
+		padding-bottom: 24px !important;
 	}
 
 	.home-page .our-blog{
 		padding: 40px 0 16px;
+	}
+
+	.home-page .our-blog-posts{
+		padding: 30px 0 20px;
+	}
+
+	.home-page .post-item-horizontal .post-item-card{
+		flex-wrap: wrap;
+	}
+
+	.home-page .post-item-horizontal .post-featured-image{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.home-page .post-item-horizontal .post-featured-image figure{
+		min-height: 30px;
+	}
+
+	.home-page .post-item-horizontal .post-item-body{
+		padding: 25px 20px;
+	}
+
+	.home-page .post-item-horizontal .post-title{
+		font-size: 20px;
 	}
 
 	.home-page .intro-video{
@@ -15385,11 +15641,48 @@ header.main-header .header-sticky.active{
 	.home-page .why-choose-hairtreat-section,
 	.home-page .our-faqs{
 		padding-top: 36px !important;
-		padding-bottom: 36px !important;
+		padding-bottom: 20px !important;
 	}
 
 	.home-page .our-blog{
 		padding-top: 32px;
+	}
+
+	.home-page .our-blog-posts{
+		padding-top: 30px;
+	}
+
+	.home-page .post-item-horizontal .post-item-card{
+		flex-wrap: wrap;
+	}
+
+	.home-page .post-item-horizontal .post-featured-image{
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+	}
+
+	.home-page .post-item-horizontal .post-featured-image::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 25%;
+		background: linear-gradient(to top, rgba(69, 26, 3, 0.85), transparent);
+		pointer-events: none;
+	}
+
+	.home-page .post-item-horizontal .post-featured-image figure{
+		min-height: 25px;
+	}
+
+	.home-page .post-item-horizontal .post-item-body{
+		padding: 20px 16px;
+	}
+
+	.home-page .post-item-horizontal .post-title{
+		font-size: 18px;
 	}
 
 	.home-page .home-clinic-focus-section{
