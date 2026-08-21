@@ -6,7 +6,9 @@
 # URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
+  # RewriteBase /hairtreat/  # Local XAMPP base
+  # RewriteBase /             # Live server base - change before uploading
+  RewriteBase /hairtreat/
 
   # Permanently remove the accidentally duplicated treatment path
   RewriteRule ^treatments/treatments/laser-hair-removal/?$ - [G,L]
