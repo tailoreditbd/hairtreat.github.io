@@ -912,6 +912,24 @@ header.main-header .header-sticky.active{
 	white-space: nowrap;
 }
 
+.main-menu ul li.hair-transplant-menu > ul{
+	width: auto;
+	min-width: 300px;
+}
+
+.main-menu ul li.treatments-menu > ul{
+	width: 170px;
+	min-width: 170px;
+	max-width: 170px;
+}
+
+.main-menu ul li.treatments-menu > ul > li.hair-transplant-menu > a{
+	padding-left: 14px !important;
+	padding-right: 14px !important;
+}
+
+
+
 .main-menu ul li.about-menu > ul li a,
 .main-menu ul li.about-menu > ul li a.active{
 	color: var(--white-color) !important;
@@ -1059,6 +1077,11 @@ header.main-header .header-sticky.active{
 .slicknav_menu ul ul li a{
     padding: 8px 20px 8px 30px;
 }
+
+.slicknav_menu ul ul ul li a{
+    padding-left: 40px;
+}
+
 
 .slicknav_arrow{
 	font-size: 0 !important;
