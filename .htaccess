@@ -6,7 +6,7 @@
 # URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /hairtreat/
+  RewriteBase /
 
   # Permanently remove the accidentally duplicated treatment path
   RewriteRule ^treatments/treatments/laser-hair-removal/?$ - [G,L]
