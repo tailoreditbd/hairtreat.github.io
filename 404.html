@@ -33,14 +33,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				window.location.replace(path.replace(/\/(?:transplant|treatments)\/hair-transplant(?:\/index\.html|\/)?$/i, '/hair-treatments/hair-transplant') + window.location.search + window.location.hash);
 				return;
 			}
-			var oldHairMatch = path.match(/\/treatments\/(hair-prp|hair-line-correction|fue|laser-hair-removal|p-shot|gfc-prp)(?:\/index\.html|\/)?$/i);
-			if (oldHairMatch) {
-				window.location.replace(path.replace(/\/treatments\/[^/]+(?:\/index\.html|\/)?$/i, '/hair-treatments/' + oldHairMatch[1].toLowerCase()) + window.location.search + window.location.hash);
+			var legacyHairMatch = path.match(/\/treatments\/(hair-prp|hair-line-correction|fue|gfc-prp)(?:\/index\.html|\/)?$/i);
+			if (legacyHairMatch) {
+				window.location.replace(path.replace(/\/treatments\/[^/]+(?:\/index\.html|\/)?$/i, '/hair-treatments/' + legacyHairMatch[1].toLowerCase()) + window.location.search + window.location.hash);
 				return;
 			}
-			var oldOtherMatch = path.match(/\/transplant\/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant|sapphire-hair-transplant)(?:\/index\.html|\/)?$/i);
-			if (oldOtherMatch) {
-				window.location.replace(path.replace(/\/transplant\/[^/]+(?:\/index\.html|\/)?$/i, '/other-treatments/' + oldOtherMatch[1].toLowerCase()) + window.location.search + window.location.hash);
+			var legacyOtherMatch = path.match(/\/treatments\/(laser-hair-removal|p-shot)(?:\/index\.html|\/)?$/i);
+			if (legacyOtherMatch) {
+				window.location.replace(path.replace(/\/treatments\/[^/]+(?:\/index\.html|\/)?$/i, '/other-treatments/' + legacyOtherMatch[1].toLowerCase()) + window.location.search + window.location.hash);
+				return;
+			}
+			var legacyTransplantMatch = path.match(/\/transplant\/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant|sapphire-hair-transplant)(?:\/index\.html|\/)?$/i);
+			if (legacyTransplantMatch) {
+				window.location.replace(path.replace(/\/transplant\/[^/]+(?:\/index\.html|\/)?$/i, '/hair-treatments/' + legacyTransplantMatch[1].toLowerCase()) + window.location.search + window.location.hash);
+				return;
+			}
+			var previousHairMatch = path.match(/\/hair-treatments\/(laser-hair-removal|p-shot)(?:\/index\.html|\/)?$/i);
+			if (previousHairMatch) {
+				window.location.replace(path.replace(/\/hair-treatments\/[^/]+(?:\/index\.html|\/)?$/i, '/other-treatments/' + previousHairMatch[1].toLowerCase()) + window.location.search + window.location.hash);
+				return;
+			}
+			var previousOtherMatch = path.match(/\/other-treatments\/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant|sapphire-hair-transplant)(?:\/index\.html|\/)?$/i);
+			if (previousOtherMatch) {
+				window.location.replace(path.replace(/\/other-treatments\/[^/]+(?:\/index\.html|\/)?$/i, '/hair-treatments/' + previousOtherMatch[1].toLowerCase()) + window.location.search + window.location.hash);
 				return;
 			}
 			if (/\/transplant(?:\.html)?$/i.test(path)) {
@@ -52,12 +67,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				return;
 			}
 			if (/\/laser-hair-remover(?:\.html)?$/i.test(path)) {
-				window.location.replace(path.replace(/\/laser-hair-remover(?:\.html)?$/i, '/hair-treatments/laser-hair-removal') + window.location.search + window.location.hash);
+				window.location.replace(path.replace(/\/laser-hair-remover(?:\.html)?$/i, '/other-treatments/laser-hair-removal') + window.location.search + window.location.hash);
 				return;
 			}
 			var nestedRoutes = {
-				'hair-treatments': ['hair-transplant', 'hair-prp', 'hair-line-correction', 'fue', 'laser-hair-removal', 'p-shot', 'gfc-prp'],
-				'other-treatments': ['eyebrow-transplant', 'female-hair-transplant', 'beard-transplant', 'fut-hair-transplant', 'sapphire-hair-transplant']
+				'hair-treatments': ['hair-transplant', 'hair-prp', 'hair-line-correction', 'fue', 'gfc-prp', 'eyebrow-transplant', 'female-hair-transplant', 'beard-transplant', 'fut-hair-transplant', 'sapphire-hair-transplant'],
+				'other-treatments': ['laser-hair-removal', 'p-shot']
 			};
 
 			var nestedMatch = path.match(/\/(hair-treatments|other-treatments)\/([^/.]+)(?:\.html)?$/i);
@@ -87,15 +102,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'dhaka': 'service-area/dhaka',
 				'eyebrow-transplant': 'eyebrow-transplant.html',
 				'faqs': 'faqs.html',
-				'female-hair-transplant': 'transplant/female-hair-transplant',
+				'female-hair-transplant': 'hair-treatments/female-hair-transplant/index.html',
 				'form': 'form.html',
 				'fue': 'fue.html',
 				'fut-hair-transplant': 'fut-hair-transplant.html',
-				'gfc-prp': 'treatments/gfc-prp',
+				'gfc-prp': 'hair-treatments/gfc-prp/index.html',
 				'gulshan': 'service-area/gulshan',
 				'hair-line-correction': 'hair-line-correction.html',
 				'hair-loss-treatment-for-saudi-arabia-nrbs': 'hair-loss-treatment-for-saudi-arabia-nrbs.html',
-				'hair-prp': 'treatments/hair-prp',
+				'hair-prp': 'hair-treatments/hair-prp/index.html',
 				'hair-transplant-technique': 'hair-transplant-technique.html',
 				'hair-transplant-treatment': 'hair-transplant-treatment.html',
 				'hair-transplant': 'transplant/hair-transplant',
@@ -104,13 +119,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'index-image': 'index-image.html',
 				'index-slider': 'index-slider.html',
 				'index-video': 'index-video.html',
-				'laser-hair-removal': 'treatments/laser-hair-removal',
+				'laser-hair-removal': 'other-treatments/laser-hair-removal/index.html',
 				'laser-treatment': 'laser-treatment.html',
 				'moustache-transplant': 'moustache-transplant.html',
 				'p-shot': 'p-shot.html',
 				'hair-transplant-cost': 'pricing.html',
 				'reviews': 'reviews.html',
-				'sapphire-hair-transplant': 'transplant/sapphire-hair-transplant',
+				'sapphire-hair-transplant': 'hair-treatments/sapphire-hair-transplant/index.html',
 				'service-area': 'service-area.html',
 				'service-single': 'service-single.html',
 				'team-single': 'team-single.html',
@@ -215,16 +230,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li class="nav-item"><a class="nav-link" href="hair-treatments/hair-prp">Hair PRP</a></li>
 <li class="nav-item"><a class="nav-link" href="hair-treatments/hair-line-correction">Hair Line Correction</a></li>
 <li class="nav-item"><a class="nav-link" href="hair-treatments/fue">FUE</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-treatments/laser-hair-removal">Laser Hair Removal</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-treatments/p-shot">P-Shot</a></li>
+
+
 <li class="nav-item"><a class="nav-link" href="hair-treatments/gfc-prp">GFC PRP</a></li>
+<li class="nav-item"><a class="nav-link" href="hair-treatments/eyebrow-transplant">Eyebrow Transplant</a></li>
+<li class="nav-item"><a class="nav-link" href="hair-treatments/female-hair-transplant">Female Hair Transplant</a></li>
+<li class="nav-item"><a class="nav-link" href="hair-treatments/beard-transplant">Beard Transplant</a></li>
+<li class="nav-item"><a class="nav-link" href="hair-treatments/fut-hair-transplant">FUT Hair Transplant</a></li>
+<li class="nav-item"><a class="nav-link" href="hair-treatments/sapphire-hair-transplant">Sapphire Hair Transplant</a></li>
 <!-- Hidden until page is ready: <li class="nav-item"><a class="nav-link" href="dhi-hair-transplant">DHI Hair Transplant</a></li> -->
 <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li> -->
 <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li> -->
 <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li> -->
 <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li> --></ul>
                                 </li>
-                                <li class="nav-item submenu transplant-menu"><a class="nav-link" href="other-treatments">Other Treatments</a><ul><li class="nav-item"><a class="nav-link" href="other-treatments/eyebrow-transplant">Eyebrow Transplant</a></li><li class="nav-item"><a class="nav-link" href="other-treatments/female-hair-transplant">Female Hair Transplant</a></li><li class="nav-item"><a class="nav-link" href="other-treatments/beard-transplant">Beard Transplant</a></li><li class="nav-item"><a class="nav-link" href="other-treatments/fut-hair-transplant">FUT Hair Transplant</a></li><li class="nav-item"><a class="nav-link" href="other-treatments/sapphire-hair-transplant">Sapphire Hair Transplant</a></li></ul></li>
+                                <li class="nav-item submenu transplant-menu"><a class="nav-link" href="other-treatments">Other Treatments</a><ul>
+<li class="nav-item"><a class="nav-link" href="other-treatments/laser-hair-removal">Laser Hair Removal</a></li>
+<li class="nav-item"><a class="nav-link" href="other-treatments/p-shot">P-Shot</a></li>
+</ul></li>
                                 <li class="nav-item"><a class="nav-link" href="contact-us">Hours &amp; Locations</a></li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
                                 <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
@@ -357,15 +380,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li><a href="hair-treatments/hair-prp">Hair PRP</a></li>
                                 <li><a href="hair-treatments/hair-line-correction">Hair Line Correction</a></li>
                                 <li><a href="hair-treatments/fue">FUE</a></li>
-                                <li><a href="hair-treatments/laser-hair-removal">Laser Hair Removal</a></li>
-                                <li><a href="hair-treatments/p-shot">P-Shot</a></li>
+                                <li><a href="other-treatments/laser-hair-removal">Laser Hair Removal</a></li>
+                                <li><a href="other-treatments/p-shot">P-Shot</a></li>
                                 <li><a href="hair-treatments/gfc-prp">GFC PRP</a></li>
                                 <li><a href="hair-treatments/hair-transplant">Hair Transplant</a></li>
-                                <li><a href="other-treatments/eyebrow-transplant">Eyebrow Transplant</a></li>
-                                <li><a href="other-treatments/female-hair-transplant">Female Hair Transplant</a></li>
-                                <li><a href="other-treatments/beard-transplant">Beard Transplant</a></li>
-                                <li><a href="other-treatments/fut-hair-transplant">FUT Hair Transplant</a></li>
-                                <li><a href="other-treatments/sapphire-hair-transplant">Sapphire Hair Transplant</a></li>
+                                <li><a href="hair-treatments/eyebrow-transplant">Eyebrow Transplant</a></li>
+                                <li><a href="hair-treatments/female-hair-transplant">Female Hair Transplant</a></li>
+                                <li><a href="hair-treatments/beard-transplant">Beard Transplant</a></li>
+                                <li><a href="hair-treatments/fut-hair-transplant">FUT Hair Transplant</a></li>
+                                <li><a href="hair-treatments/sapphire-hair-transplant">Sapphire Hair Transplant</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
