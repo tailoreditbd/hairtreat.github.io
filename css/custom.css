@@ -923,6 +923,12 @@ header.main-header .header-sticky.active{
 	max-width: 170px;
 }
 
+.main-menu ul li.transplant-menu > ul{
+	width: 170px;
+	min-width: 170px;
+	max-width: 170px;
+}
+
 .main-menu ul li.treatments-menu > ul > li.hair-transplant-menu > a{
 	padding-left: 14px !important;
 	padding-right: 14px !important;
