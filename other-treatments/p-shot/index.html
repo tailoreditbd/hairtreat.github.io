@@ -979,14 +979,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="appointment-form">
-                                            <form action="#" method="POST" data-toggle="validator" data-whatsapp-number="8801805002681" data-service-name="P-Shot" class="wow fadeInUp" onsubmit="return false;">
+                                            <form id="pShotWhatsappForm" action="https://api.whatsapp.com/send" method="GET" class="wow fadeInUp" onsubmit="return redirectPShotWhatsapp(this);">
+                                                <input type="hidden" name="phone" value="8801805002681">
                                                 <div class="row">
                                                     <div class="form-group col-md-12 mb-4">
                                                         <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                     <div class="form-group col-md-12 mb-4">
-                                                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                                                        <input type="text" name="customer_phone" class="form-control" placeholder="Phone Number" required>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                     <div class="form-group col-md-12 mb-5">
@@ -995,7 +996,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="contact-form-btn">
-                                                            <button type="button" class="btn-default" onclick="return redirectTreatmentWhatsapp(this);">submit</button>
+                                                            <button type="submit" class="btn-default">submit</button>
                                                             <div class="h3 hidden"></div>
                                                         </div>
                                                     </div>
@@ -1130,6 +1131,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </footer>
+
+    <script>
+        function redirectPShotWhatsapp(form) {
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return false;
+            }
+
+            var whatsappNumber = form.querySelector('[name="phone"]').value.replace(/[^0-9]/g, "");
+            var fullName = form.querySelector('[name="full_name"]').value.trim();
+            var customerPhone = form.querySelector('[name="customer_phone"]').value.trim();
+            var address = form.querySelector('[name="address"]').value.trim();
+            var message = "Hello, I want to book a P-Shot.\n"
+                + "Full Name: " + fullName + "\n"
+                + "Phone Number: " + customerPhone + "\n"
+                + "Address: " + address;
+
+            window.location.href = "https://api.whatsapp.com/send?phone=" + whatsappNumber
+                + "&text=" + encodeURIComponent(message);
+            return false;
+        }
+    </script>
 
     <script src="js/magiccursor.js"></script>
 
