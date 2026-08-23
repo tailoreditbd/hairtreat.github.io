@@ -609,6 +609,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 var whatsappNumber = '8801805002681';
                 var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message);
 
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'lead_form_success',
+                    lead_type: 'appointment'
+                });
                 window.location.href = whatsappUrl;
             });
         })();

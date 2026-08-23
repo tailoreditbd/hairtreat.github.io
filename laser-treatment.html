@@ -1137,6 +1137,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+			    event: 'lead_form_success',
+			    lead_type: 'appointment'
+			});
 			window.location.href = "https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + encodeURIComponent(message);
 
 			return false;

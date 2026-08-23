@@ -526,6 +526,11 @@
                 + "Phone Number: " + phone + "\n"
                 + "Address: " + address;
 
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'lead_form_success',
+                lead_type: 'appointment'
+            });
             window.location.href = "https://api.whatsapp.com/send?phone=" + cleanWhatsappNumber + "&text=" + encodeURIComponent(message);
             return;
         }
@@ -585,6 +590,11 @@
             + "Phone Number: " + phone + "\n"
             + "Address: " + address;
 
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'lead_form_success',
+            lead_type: 'appointment'
+        });
         window.location.href = "https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + encodeURIComponent(message);
         return false;
     };

@@ -751,6 +751,11 @@ Consult with us now - book your personalized appointment and get expert advice t
                 var whatsappNumber = '8801805002681';
                 var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message);
 
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'lead_form_success',
+                    lead_type: 'appointment'
+                });
                 window.location.href = whatsappUrl;
             });
         })();
