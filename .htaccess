@@ -40,6 +40,8 @@
   RewriteRule ^other-treatments/(laser-hair-removal|p-shot)/$ other-treatments/$1 [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*other-treatments/[^/\s?]+/index\.html(?:[?\s]) [NC]
   RewriteRule ^other-treatments/(laser-hair-removal|p-shot)/index\.html$ other-treatments/$1 [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+(.*/)?other-treatments/laser-hair-removal/facial-hair/(?:index\.html)?[?\s] [NC]
+  RewriteRule ^other-treatments/laser-hair-removal/facial-hair/(?:index\.html)?$ other-treatments/laser-hair-removal/facial-hair [NC,R=301,L]
 
   # Redirect old branch subpaths to direct static pages so assets load correctly
   RewriteRule ^service-area(-)?\.html/(uttara|uttura)$ service-area/uttara [NC,R=301,L]
@@ -216,6 +218,7 @@
   RewriteRule ^hair-treatments/(hair-prp|hair-line-correction|gfc-prp)$ hair-treatments/$1/index.html [NC,L]
   RewriteRule ^hair-treatments/hair-transplant/(fue|eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant|sapphire-hair-transplant)$ hair-treatments/hair-transplant/$1/index.html [NC,L]
   RewriteRule ^other-treatments/(laser-hair-removal|p-shot)$ other-treatments/$1/index.html [NC,L]
+  RewriteRule ^other-treatments/laser-hair-removal/facial-hair$ other-treatments/laser-hair-removal/facial-hair/index.html [NC,L]
   RewriteRule ^about$ about.html [NC,L]
   RewriteRule ^blog-single$ blog-single.html [NC,L]
   RewriteRule ^blog$ blog/index.html [NC,L]
