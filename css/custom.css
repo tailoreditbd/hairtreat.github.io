@@ -4486,6 +4486,15 @@ header.main-header .header-sticky.active{
 	padding: 100px 0;
 }
 
+/* Reduce the gap between the Why Choose and FAQ sections on the Gulshan page only */
+.gulshan-why-choose-section{
+	padding-bottom: 40px !important;
+}
+
+.gulshan-faq-section{
+	padding-top: 40px !important;
+}
+
 .our-faqs .section-title.section-title-center{
 	width: 100%;
 	max-width: 700px;
