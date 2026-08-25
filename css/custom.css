@@ -3834,9 +3834,31 @@ header.main-header .header-sticky.active{
 }
 
 .page-header.page-header-blog-image{
-	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-blog-header.png');
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/breadcrumb img/bangladeshe-shera-hair-transplant-breadcrum.webp');
 	background-size: cover;
 	background-position: center center;
+	height: 225px !important;
+	padding: 0 !important;
+	max-width: 100% !important;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+}
+
+.page-header.page-header-blog-image .page-header-box{
+	height: 225px !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-header.laser-hair-removal-breadcrumb-banner .page-header-box{
+	height: 225px !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .page-header.page-header-about-image{
