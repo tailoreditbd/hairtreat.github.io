@@ -15605,3 +15605,6 @@ header.main-header .header-sticky.active{
     letter-spacing: 0 !important;
     text-transform: none !important;
 }
+.gulshan-intro-section .section-title h1 {
+    text-transform: none;
+}
