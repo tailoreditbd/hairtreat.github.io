@@ -1488,7 +1488,7 @@ header.main-header .header-sticky.active{
 
 @media only screen and (min-width: 992px){
 	.uttara-cost-section .about-us-content{
-		margin-left: -85px;
+		margin-left: 0;
 	}
 
 	/* Keep pricing copy inside its own column instead of overlapping the images. */
