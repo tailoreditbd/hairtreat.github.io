@@ -245,7 +245,7 @@
   RewriteRule ^index-video$ index-video.html [NC,L]
   RewriteRule ^laser-treatment$ laser-treatment.html [NC,L]
   RewriteRule ^moustache-transplant$ moustache-transplant.html [NC,L]
-  RewriteRule ^hair-transplant-cost$ pricing.html [NC,L]
+  RewriteRule ^hair-transplant-cost$ hair-transplant-cost.html [NC,L]
   RewriteRule ^reviews$ reviews.html [NC,L]
   RewriteRule ^service-area/dhaka$ dhaka.html [NC,L]
   RewriteRule ^service-area/gulshan$ gulshan.html [NC,L]
