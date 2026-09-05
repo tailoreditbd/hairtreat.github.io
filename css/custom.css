@@ -912,7 +912,8 @@ header.main-header .header-sticky.active{
 	white-space: nowrap;
 }
 
-.main-menu ul li.hair-transplant-menu > ul{
+.main-menu ul li.hair-transplant-menu > ul,
+.main-menu ul li.laser-hair-removal-menu > ul{
 	width: auto;
 	min-width: 300px;
 }
