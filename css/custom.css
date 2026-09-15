@@ -15615,3 +15615,14 @@ header.main-header .header-sticky.active{
 .gulshan-intro-section .section-title h1 {
     text-transform: none;
 }
+
+/* Lead form status message */
+.lead-status {
+    margin: 10px 0 0;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+}

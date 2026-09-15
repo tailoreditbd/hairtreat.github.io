@@ -621,3 +621,194 @@
 
 
 
+
+/* Google Sheet first, WhatsApp second (site-wide) */
+(function () {
+    "use strict";
+
+    var scriptBase = new URL("../", document.currentScript.src);
+    var LEAD_ENDPOINT = new URL("lead-submit.php", scriptBase).href;
+    var DEFAULT_WHATSAPP_NUMBER = "8801805002681";
+    var busy = false;
+
+    function valueFrom(form, names) {
+        for (var i = 0; i < names.length; i++) {
+            var field = form.querySelector('[name="' + names[i] + '"]');
+            if (field && field.value) return field.value.trim();
+        }
+        return "";
+    }
+
+    function buttonLabel(element) {
+        return ((element && (element.innerText || element.getAttribute("aria-label"))) || "WhatsApp")
+            .replace(/\s+/g, " ").trim().slice(0, 120);
+    }
+
+    function setBusy(element, isBusy) {
+        if (!element) return;
+        if (isBusy) {
+            element.dataset.hairtreatOriginalText = element.innerHTML;
+            if (element.tagName === "BUTTON") element.innerHTML = "Saving...";
+            element.setAttribute("aria-disabled", "true");
+            if ("disabled" in element) element.disabled = true;
+        } else {
+            if (element.dataset.hairtreatOriginalText) {
+                element.innerHTML = element.dataset.hairtreatOriginalText;
+                delete element.dataset.hairtreatOriginalText;
+            }
+            element.removeAttribute("aria-disabled");
+            if ("disabled" in element) element.disabled = false;
+        }
+    }
+
+    function formMessageElement(form) {
+        if (!form) return null;
+        var output = form.querySelector("#msgSubmit, .lead-status, .h3.hidden");
+        if (!output) {
+            output = document.createElement("div");
+            output.className = "lead-status";
+            form.appendChild(output);
+        }
+        return output;
+    }
+
+    function showSuccess(form) {
+        var output = formMessageElement(form);
+        if (!output) return;
+        output.className = "text-success lead-status";
+        output.textContent = "Submitted successfully! Redirecting to WhatsApp...";
+    }
+
+    function showError(form) {
+        var message = "Your information could not be saved. Please try again or call us.";
+        var output = formMessageElement(form);
+        if (output) {
+            output.className = "text-danger lead-status";
+            output.textContent = message;
+        } else {
+            window.alert(message);
+        }
+    }
+
+    function formLead(form, button) {
+        var name = valueFrom(form, ["full_name", "fullname", "name"]);
+        var phone = valueFrom(form, ["phone", "mobile", "telephone"]);
+        var email = valueFrom(form, ["email"]);
+        var address = valueFrom(form, ["address"]);
+        var visitorMessage = valueFrom(form, ["message", "comments", "comment"]);
+        var service = form.dataset.serviceName || valueFrom(form, ["service", "treatment"]) || document.title;
+        var lines = [];
+        if (address) lines.push("Address: " + address);
+        if (visitorMessage) lines.push(visitorMessage);
+
+        return {
+            name: name,
+            phone: phone,
+            email: email,
+            service: service,
+            message: lines.join("\n"),
+            page: window.location.href,
+            button: buttonLabel(button)
+        };
+    }
+
+    function whatsappUrlForForm(form, lead) {
+        var number = (form.dataset.whatsappNumber || DEFAULT_WHATSAPP_NUMBER).replace(/[^0-9]/g, "");
+        var message = "Hello, I want to book a " + lead.service + ".\n"
+            + "Full Name: " + (lead.name || "-") + "\n"
+            + "Phone Number: " + (lead.phone || "-");
+        if (lead.email) message += "\nEmail: " + lead.email;
+        if (lead.message) message += "\n" + lead.message;
+        return "https://api.whatsapp.com/send?phone=" + number + "&text=" + encodeURIComponent(message);
+    }
+
+    function saveLead(lead) {
+        return fetch(LEAD_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify(lead),
+            credentials: "same-origin"
+        }).then(function (response) {
+            if (!response.ok) throw new Error("Lead endpoint returned " + response.status);
+            return response.json();
+        }).then(function (result) {
+            if (!result || result.success !== true) throw new Error("Lead was not saved");
+            return result;
+        });
+    }
+
+    function completeLead(lead, whatsappUrl, button, form) {
+        if (busy) return;
+        busy = true;
+        setBusy(button, true);
+
+        saveLead(lead).then(function () {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: "lead_form_success", lead_type: form ? "form" : "whatsapp_click" });
+            if (form) {
+                showSuccess(form);
+                window.setTimeout(function () {
+                    window.location.href = whatsappUrl;
+                }, 1500);
+            } else {
+                window.location.href = whatsappUrl;
+            }
+        }).catch(function () {
+            busy = false;
+            setBusy(button, false);
+            showError(form);
+        });
+    }
+
+    function isTrackedForm(form) {
+        if (!form) return false;
+        return form.hasAttribute("data-whatsapp-number") ||
+            /^(appointmentForm|contactForm|pShotWhatsappForm|laserWhatsappForm)$/.test(form.id || "");
+    }
+
+    document.addEventListener("click", function (event) {
+        var link = event.target.closest('a[href*="wa.me/"], a[href*="api.whatsapp.com/"]');
+        if (link) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            completeLead({
+                name: "",
+                phone: "",
+                email: "",
+                service: document.title,
+                message: "Direct WhatsApp button click",
+                page: window.location.href,
+                button: buttonLabel(link)
+            }, link.href, link, null);
+            return;
+        }
+
+        var button = event.target.closest("button, input[type=submit]");
+        var form = button && button.closest("form");
+        if (!isTrackedForm(form)) return;
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+        var lead = formLead(form, button);
+        completeLead(lead, whatsappUrlForForm(form, lead), button, form);
+    }, true);
+
+    document.addEventListener("submit", function (event) {
+        var form = event.target;
+        if (!isTrackedForm(form)) return;
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+        var button = form.querySelector('button[type="submit"], input[type="submit"], button');
+        var lead = formLead(form, button);
+        completeLead(lead, whatsappUrlForForm(form, lead), button, form);
+    }, true);
+})();
