@@ -626,8 +626,7 @@
 (function () {
     "use strict";
 
-    var scriptBase = new URL("../", document.currentScript.src);
-    var LEAD_ENDPOINT = new URL("lead-submit.php", scriptBase).href;
+    var SHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx0XFezYJ2ApTlUUPqUnKYD-fe0pGMbG8UqU-C7jHc8s9TUCnRO-vsHgtmmJTmXPbgy/exec";
     var DEFAULT_WHATSAPP_NUMBER = "8801805002681";
     var busy = false;
 
@@ -723,20 +722,59 @@
     }
 
     function saveLead(lead) {
-        return fetch(LEAD_ENDPOINT, {
-            method: "POST",
-            headers: { "Content-Type": "application/json", "Accept": "application/json" },
-            body: JSON.stringify(lead),
-            credentials: "same-origin"
-        }).then(function (response) {
-            if (!response.ok) throw new Error("Lead endpoint returned " + response.status);
-            return response.json();
-        }).then(function (result) {
-            if (!result || result.success !== true) throw new Error("Lead was not saved");
-            return result;
+        return new Promise(function (resolve, reject) {
+            var token = "lead_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+            var frame = document.createElement("iframe");
+            var postForm = document.createElement("form");
+            var payloadInput = document.createElement("input");
+            var tokenInput = document.createElement("input");
+            var timeout;
+
+            frame.name = token;
+            frame.style.display = "none";
+            frame.setAttribute("aria-hidden", "true");
+            postForm.method = "POST";
+            postForm.action = SHEET_WEB_APP_URL;
+            postForm.target = token;
+            postForm.style.display = "none";
+            payloadInput.type = "hidden";
+            payloadInput.name = "payload";
+            payloadInput.value = JSON.stringify(lead);
+            tokenInput.type = "hidden";
+            tokenInput.name = "token";
+            tokenInput.value = token;
+            postForm.appendChild(payloadInput);
+            postForm.appendChild(tokenInput);
+
+            function cleanup() {
+                window.clearTimeout(timeout);
+                window.removeEventListener("message", receiveResult);
+                postForm.remove();
+                window.setTimeout(function () { frame.remove(); }, 100);
+            }
+
+            function receiveResult(event) {
+                var result = event.data;
+                if (!result || result.type !== "hairtreat-sheet-result" ||
+                    result.token !== token) return;
+                cleanup();
+                if (result.success === true) {
+                    resolve(result);
+                } else {
+                    reject(new Error(result.message || "Lead was not saved"));
+                }
+            }
+
+            window.addEventListener("message", receiveResult);
+            document.body.appendChild(frame);
+            document.body.appendChild(postForm);
+            timeout = window.setTimeout(function () {
+                cleanup();
+                reject(new Error("Google Sheet confirmation timed out"));
+            }, 20000);
+            postForm.submit();
         });
     }
-
     function completeLead(lead, whatsappUrl, button, form) {
         if (busy) return;
         busy = true;
