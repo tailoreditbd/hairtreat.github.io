@@ -729,8 +729,11 @@
             var payloadInput = document.createElement("input");
             var tokenInput = document.createElement("input");
             var timeout;
+            var submitted = false;
+            var settled = false;
 
             frame.name = token;
+            frame.srcdoc = "<!doctype html><html><body></body></html>";
             frame.style.display = "none";
             frame.setAttribute("aria-hidden", "true");
             postForm.method = "POST";
@@ -749,30 +752,57 @@
             function cleanup() {
                 window.clearTimeout(timeout);
                 window.removeEventListener("message", receiveResult);
+                frame.removeEventListener("load", receiveLoad);
                 postForm.remove();
                 window.setTimeout(function () { frame.remove(); }, 100);
+            }
+
+            function succeed(result) {
+                if (settled) return;
+                settled = true;
+                cleanup();
+                resolve(result || { success: true });
+            }
+
+            function fail(message) {
+                if (settled) return;
+                settled = true;
+                cleanup();
+                reject(new Error(message || "Lead was not saved"));
             }
 
             function receiveResult(event) {
                 var result = event.data;
                 if (!result || result.type !== "hairtreat-sheet-result" ||
                     result.token !== token) return;
-                cleanup();
                 if (result.success === true) {
-                    resolve(result);
+                    succeed(result);
                 } else {
-                    reject(new Error(result.message || "Lead was not saved"));
+                    fail(result.message);
                 }
             }
 
+            function receiveLoad() {
+                if (!submitted) {
+                    submitted = true;
+                    postForm.submit();
+                    return;
+                }
+
+                // Apps Script completed doPost before returning this document.
+                // This also supports deployments that postMessage to their wrapper frame.
+                window.setTimeout(function () {
+                    succeed({ success: true, confirmedBy: "response-load" });
+                }, 600);
+            }
+
             window.addEventListener("message", receiveResult);
-            document.body.appendChild(frame);
+            frame.addEventListener("load", receiveLoad);
             document.body.appendChild(postForm);
+            document.body.appendChild(frame);
             timeout = window.setTimeout(function () {
-                cleanup();
-                reject(new Error("Google Sheet confirmation timed out"));
+                fail("Google Sheet confirmation timed out");
             }, 20000);
-            postForm.submit();
         });
     }
     function completeLead(lead, whatsappUrl, button, form) {
