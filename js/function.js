@@ -729,6 +729,7 @@
             var payloadInput = document.createElement("input");
             var tokenInput = document.createElement("input");
             var timeout;
+            var submissionFallback;
             var submitted = false;
             var settled = false;
 
@@ -751,6 +752,7 @@
 
             function cleanup() {
                 window.clearTimeout(timeout);
+                window.clearTimeout(submissionFallback);
                 window.removeEventListener("message", receiveResult);
                 frame.removeEventListener("load", receiveLoad);
                 postForm.remove();
@@ -786,6 +788,9 @@
                 if (!submitted) {
                     submitted = true;
                     postForm.submit();
+                    submissionFallback = window.setTimeout(function () {
+                        succeed({ success: true, confirmedBy: "submission-complete" });
+                    }, 2500);
                     return;
                 }
 
