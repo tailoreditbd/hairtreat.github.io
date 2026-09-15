@@ -6,6 +6,24 @@
 # URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Move About child pages to their canonical nested URLs
+  RewriteRule ^(?:contact-us|contact)(?:\.html|/)?$ about/contact-us [NC,R=301,L]
+  RewriteRule ^hours-and-location(?:\.html|/)?$ about/hours-and-location [NC,R=301,L]
+  RewriteRule ^blog(?:/index\.html|/)?$ about/blog [NC,R=301,L]
+  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)(?:\.html|/)?$ about/blog/$1 [NC,R=301,L]
+  RewriteRule ^about/(contact-us|hours-and-location|blog)/$ about/$1 [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/(contact-us|hours-and-location)\.html(?:[?\s]) [NC]
+  RewriteRule ^about/(contact-us|hours-and-location)\.html$ about/$1 [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/blog/index\.html(?:[?\s]) [NC]
+  RewriteRule ^about/blog/index\.html$ about/blog [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/blog/[^/\s?]+\.html(?:[?\s]) [NC]
+  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)\.html$ about/blog/$1 [NC,R=301,L]
+
+  # Serve the new clean About URLs from their index files
+  RewriteRule ^about/(contact-us|hours-and-location)$ about/$1/index.html [NC,L]
+  RewriteRule ^about/blog$ about/blog/index.html [NC,L]
+  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)$ about/blog/$1/index.html [NC,L]
   # RewriteBase /hairtreat/  # Local XAMPP base
   # RewriteBase /             # Live server base - change before uploading
   RewriteBase /hairtreat/

@@ -13,25 +13,25 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/blog</loc>
+    <loc>https://hairtreat.com.bd/about/blog</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/blog/top-10-hair-transplant-clinics-in-bangladesh</loc>
+    <loc>https://hairtreat.com.bd/about/blog/top-10-hair-transplant-clinics-in-bangladesh</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/blog/top-10-hair-transplant-surgeons-in-bangladesh</loc>
+    <loc>https://hairtreat.com.bd/about/blog/top-10-hair-transplant-surgeons-in-bangladesh</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/blog/best-hair-transplant-service-bangladesh</loc>
+    <loc>https://hairtreat.com.bd/about/blog/best-hair-transplant-service-bangladesh</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
@@ -49,7 +49,7 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/contact-us</loc>
+    <loc>https://hairtreat.com.bd/about/contact-us</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -121,7 +121,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hours-and-location</loc>
+    <loc>https://hairtreat.com.bd/about/hours-and-location</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>

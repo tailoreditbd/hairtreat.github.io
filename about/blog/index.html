@@ -10,10 +10,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <!-- Meta -->
 	<meta charset="utf-8">
-	<base id="blog-base" href="../">
+	<base href="/">
 	<script>
-		if (window.location.pathname.endsWith('/blog')) {
-			document.getElementById('blog-base').setAttribute('href', './');
+		if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+			document.querySelector("base").href = "/hairtreat/";
 		}
 	</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			var cleanPath = 'blog';
 			if (window.location.pathname.endsWith('/blog/index.html')) {
 				var target = window.location.pathname.replace(/blog\/index\.html$/, cleanPath);
-			document.getElementById('blog-base').setAttribute('href', './');
 				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
 			}
 		})();

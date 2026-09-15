@@ -10,30 +10,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <!-- Meta -->
 	<meta charset="utf-8">
+	<base href="/">
+	<script>
+		if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+			document.querySelector("base").href = "/hairtreat/";
+		}
+	</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="index, follow">
 	<script data-clean-url-script>
 		(function () {
-			var cleanPath = 'hours-and-location';
-			if (window.location.pathname.endsWith('/hours-and-location.html')) {
-				var target = window.location.pathname.replace(/hours-and-location\.html$/, cleanPath);
+			var cleanPath = 'contact';
+			if (window.location.pathname.endsWith('/contact.html')) {
+				var target = window.location.pathname.replace(/contact\.html$/, cleanPath);
 				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
 			}
 		})();
 	</script>
 	<!-- Page Title -->
-    <title>HairTreat Clinic Hours &amp; Locations | Uttara &amp; Tangail</title>
-	<meta name="description" content="Find HairTreat clinic addresses, phone numbers and opening hours in Uttara, Dhaka and Tangail. Contact our team to book your hair or laser consultation.">
-	<meta property="og:title" content="HairTreat Clinic Hours &amp; Locations | Uttara &amp; Tangail">
-	<meta property="og:description" content="Find HairTreat clinic addresses, phone numbers and opening hours in Uttara, Dhaka and Tangail. Contact our team to book your hair or laser consultation.">
+    <title>Contact HairTreat | Hair Transplant Clinic in Dhaka</title>
+	<meta name="description" content="Contact HairTreat in Dhaka to book a consultation with Dr. SM Jakaria for hair transplant, hair loss treatment, PRP, and personalized hair restoration advice.">
+	<link rel="canonical" href="https://hairtreat.com.bd/about/contact-us">
+	<meta property="og:title" content="Contact HairTreat | Hair Transplant Clinic in Dhaka">
+	<meta property="og:description" content="Contact HairTreat in Dhaka to book a consultation with Dr. SM Jakaria for hair transplant, hair loss treatment, PRP, and personalized hair restoration advice.">
 	<meta property="og:image" content="">
-	<meta property="og:url" content="https://hairtreat.com.bd/about/hours-and-location">
+	<meta property="og:url" content="https://hairtreat.com.bd/about/contact-us">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="HairTreat Clinic Hours &amp; Locations | Uttara &amp; Tangail">
-	<meta name="twitter:description" content="Find HairTreat clinic addresses, phone numbers and opening hours in Uttara, Dhaka and Tangail. Contact our team to book your hair or laser consultation.">
+	<meta name="twitter:title" content="Contact HairTreat | Hair Transplant Clinic in Dhaka">
+	<meta name="twitter:description" content="Contact HairTreat in Dhaka to book a consultation with Dr. SM Jakaria for hair transplant, hair loss treatment, PRP, and personalized hair restoration advice.">
 	<meta name="twitter:image" content="">
-	<link rel="canonical" href="https://hairtreat.com.bd/about/hours-and-location">
 	<meta name="author" content="hairtreat.com.bd/">
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/svg+xml" href="images/favicon/hairtreat-favicon.svg">
@@ -137,9 +143,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
                                 <li class="nav-item submenu about-menu">
                                     <a class="nav-link" href="about">About us</a>
-                                    <ul><li class="nav-item"><a class="nav-link active" href="about/hours-and-location">Hours &amp; Locations</a></li>
+                                    <ul><li class="nav-item"><a class="nav-link" href="about/hours-and-location">Hours &amp; Locations</a></li>
                                         <li class="nav-item"><a class="nav-link" href="about/blog">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="about/contact-us">Contact us</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="about/contact-us">Contact us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -162,17 +168,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- Header End -->
 
     <!-- Page Header Start -->
-	<div class="page-header page-header-hours-location-image bg-section dark-section">
+	<div class="page-header page-header-contact-image bg-section dark-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-3" data-cursor="-opaque">Hours & Locations</h1>
+						<h1 class="text-anime-style-3" data-cursor="-opaque">Contact us</h1>
 						<nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="./">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Hours & Locations</li>
+								<li class="breadcrumb-item active" aria-current="page">Contact us</li>
 							</ol>
 						</nav>
 					</div>
@@ -183,7 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 	<!-- Page Header End -->
     <!-- Clinic Visit Section Start -->
-    <div class="contact-clinic-visit">
+    <div class="contact-clinic-visit" style="display:none;">
         <div class="container">
             <!-- Team Member About Start -->
             <div class="team-member-about">
@@ -245,12 +251,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <img src="images/icon-open-hour.svg" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>hours</h3>
                                 <p>11 AM to 8 PM</p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
-                         
+
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item wow fadeInUp" data-wow-delay="0.6s">
                             <div class="icon-box">
@@ -360,28 +365,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- Contact Form Start -->
                         <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
                             <div class="row">
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
+                                <div class="form-group col-md-12 mb-4">
+                                    <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone No." required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Email Address" required>
+                                <div class="form-group col-md-12 mb-4">
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-12 mb-5">
-                                    <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message..."></textarea>
+                                    <textarea name="address" class="form-control" id="address" rows="4" placeholder="Address" required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
@@ -411,9 +406,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
     <!-- Contact Form End -->
-
     <!-- Transformative Beauty Box Start -->
-    <div class="contact-transformative-beauty">
+    <div class="contact-transformative-beauty" style="display:none;">
         <div class="container">
             <div class="case-study-entry">
                 <div class="transformative-beauty-box">
@@ -465,7 +459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Transformative Beauty Box End -->
 
     <!-- Real Transformation Box Start -->
-    <div class="contact-real-transformation">
+    <div class="contact-real-transformation" style="display:none;">
         <div class="container">
             <div class="case-study-entry">
                 <div class="real-transformation-box">
@@ -486,26 +480,25 @@ Consult with us now - book your personalized appointment and get expert advice t
         </div>
     </div>
     <!-- Real Transformation Box End -->
-
       <!-- How It Work Section Start -->
-    <div class="how-it-work">
+    <!-- <div class="how-it-work">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6"> -->
                     <!-- How Work Content Start -->
-                    <div class="how-work-content">
+                    <!-- <div class="how-work-content"> -->
                         <!-- Section Title Start -->
-                        <div class="section-title">
+                        <!-- <div class="section-title">
 
                             <h2 class="text-anime-style-3" data-cursor="-opaque">Book Your Free Consultation Today</h2>
                            <p>Not sure how many grafts you need? Send us your photos via WhatsApp for a FREE graft assessment and cost estimate.</p>
-                        </div>
+                        </div> -->
                         <!-- Section Title End -->
 
                         <!-- How Work Button Start -->
-                        <div class="how-work-btn wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- <div class="how-work-btn wow fadeInUp" data-wow-delay="0.4s">
                             <a href="about/contact-us" class="btn-default">contact us</a>
-                        </div>
+                        </div> -->
                         <!-- How Work Button End -->
                     </div>
                     <!-- How Work Content End -->
@@ -513,9 +506,9 @@ Consult with us now - book your personalized appointment and get expert advice t
 
                 <div class="col-lg-6">
                     <!-- How Work Steps Start -->
-                    <div class="how-work-steps">
+                    <!-- <div class="how-work-steps"> -->
                         <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp">
+                        <!-- <div class="how-work-step-item wow fadeInUp">
                             <div class="icon-box">
                                 <img src="images/icon-how-work-step-1.svg" alt="">
                             </div>
@@ -524,11 +517,11 @@ Consult with us now - book your personalized appointment and get expert advice t
                                 <p><a href="tel:+8801805002681">+8801805002681</a></p>
                                 <p>Appointment Scheduling Time: 11 AM to 8 PM</p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- How Work Step Item End -->
 
                         <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon-box">
                                 <img src="images/icon-how-work-step-2.svg" alt="">
                             </div>
@@ -536,11 +529,11 @@ Consult with us now - book your personalized appointment and get expert advice t
                                 <h3>02. Address</h3>
                                 <p><a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Lift:4,House:1/B, Garib E Newaz Avenue,Sector11 ,Uttara., Dhaka, Bangladesh, 1230</a></p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- How Work Step Item End -->
 
                         <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.4s">
                             <div class="icon-box">
                                 <img src="images/icon-how-work-step-3.svg" alt="">
                             </div>
@@ -548,11 +541,11 @@ Consult with us now - book your personalized appointment and get expert advice t
                                 <h3>03. Email Us</h3>
                                 <p><a href="mailto:hairtreatclinic@gmail.com">hairtreatclinic@gmail.com</a></p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- How Work Step Item End -->
 
                         <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.6s">
                             <div class="icon-box">
                                 <img src="images/icon-how-work-step-4.svg" alt="">
                             </div>
@@ -560,7 +553,7 @@ Consult with us now - book your personalized appointment and get expert advice t
                                 <h3>04. Call Us</h3>
                                 <p><a href="tel:+8801805002681">+8801805002681</a></p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- How Work Step Item End -->
                     </div>
                     <!-- How Work Steps End -->
@@ -739,7 +732,42 @@ Consult with us now - book your personalized appointment and get expert advice t
                 iframe.src = "https://www.google.com/maps?q=Sirajganj%2C%20Bangladesh&output=embed";
             }
         }
+
+        (function () {
+            var form = document.getElementById('contactForm');
+            if (!form) return;
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var fullName = document.getElementById('fullname').value.trim();
+                var phone = document.getElementById('phone').value.trim();
+                var address = document.getElementById('address').value.trim();
+
+                if (!fullName || !phone || !address) {
+                    return;
+                }
+
+                var message = [
+                    'New Contact Request from HairTreat Website',
+                    'Full Name: ' + fullName,
+                    'Phone Number: ' + phone,
+                    'Address: ' + address
+                ].join('\n');
+
+                var whatsappNumber = '8801805002681';
+                var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message);
+
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'lead_form_success',
+                    lead_type: 'appointment'
+                });
+                window.location.href = whatsappUrl;
+            });
+        })();
     </script>
 </body>
 </html>
+
 
