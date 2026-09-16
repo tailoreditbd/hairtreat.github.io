@@ -15626,3 +15626,15 @@ header.main-header .header-sticky.active{
     letter-spacing: normal;
     text-transform: none;
 }
+/* Method submenu sizing */
+.main-menu ul li.method-menu > ul {
+    width: 180px;
+    min-width: 180px;
+}
+
+/* Flattened Hair Treatments menu sizing */
+.main-menu ul li.treatments-menu > ul {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
