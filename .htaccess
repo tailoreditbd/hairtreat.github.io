@@ -87,7 +87,7 @@
 
   # Redirect legacy and trailing-slash URLs to canonical clean URLs
   RewriteRule ^about/$ about [NC,R=301,L]
-  RewriteRule ^beard-transplant/?$ hair-treatments/hair-transplant/beard-transplant [NC,R=301,L]
+  RewriteRule ^beard-transplant/?$ hair-treatments/beard-transplant [NC,R=301,L]
   RewriteRule ^blog-single/$ blog-single [NC,R=301,L]
   RewriteRule ^blog/$ blog [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/index\.html(?:[?\s]) [NC]
