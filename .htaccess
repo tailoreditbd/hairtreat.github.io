@@ -8,16 +8,17 @@
   RewriteEngine On
 
   # Migrate Hair Transplant method URLs and nested services
-  RewriteRule ^(?:fue|hair-treatments/fue|transplant/fue|hair-treatments/hair-transplant/fue)(?:\.html|/index\.html|/)?$ hair-treatments/hair-transplant/method/fue [NC,R=301,L]
-  RewriteRule ^(?:sapphire-hair-transplant|hair-treatments/sapphire-hair-transplant|transplant/sapphire-hair-transplant|hair-treatments/hair-transplant/sapphire-hair-transplant)(?:\.html|/index\.html|/)?$ hair-treatments/hair-transplant/method/sapphire [NC,R=301,L]
+  RewriteRule ^(?:fue|hair-treatments/fue|transplant/fue|hair-treatments/hair-transplant/fue)(?:\.html|/index\.html|/)?$ hair-treatments/method/fue [NC,R=301,L]
+  RewriteRule ^(?:sapphire-hair-transplant|hair-treatments/sapphire-hair-transplant|transplant/sapphire-hair-transplant|hair-treatments/hair-transplant/sapphire-hair-transplant)(?:\.html|/index\.html|/)?$ hair-treatments/method/sapphire [NC,R=301,L]
   RewriteRule ^(?:hair-prp|hair-treatments/hair-prp)(?:\.html|/index\.html|/)?$ hair-treatments/hair-transplant/hair-prp [NC,R=301,L]
   RewriteRule ^(?:hair-line-correction|hair-treatments/hair-line-correction)(?:\.html|/index\.html|/)?$ hair-treatments/hair-transplant/hair-line-correction [NC,R=301,L]
   RewriteRule ^(?:gfc-prp|hair-treatments/gfc-prp)(?:\.html|/index\.html|/)?$ hair-treatments/hair-transplant/gfc-prp [NC,R=301,L]
-  RewriteRule ^hair-treatments/hair-transplant/method/(fue|sapphire|bio-sapphire|dhi)/$ hair-treatments/hair-transplant/method/$1 [NC,R=301,L]
+  RewriteRule ^hair-treatments/hair-transplant/method/(fue|sapphire|bio-sapphire|dhi)/$ hair-treatments/method/$1 [NC,R=301,L]
   RewriteRule ^hair-treatments/hair-transplant/(hair-prp|hair-line-correction|gfc-prp)/$ hair-treatments/hair-transplant/$1 [NC,R=301,L]
-  RewriteRule ^hair-treatments/hair-transplant/method$ hair-treatments/hair-transplant/method/index.html [NC,L]
-  RewriteRule ^hair-treatments/hair-transplant/method/(fue|sapphire|bio-sapphire|dhi)$ hair-treatments/hair-transplant/method/$1/index.html [NC,L]
-  RewriteRule ^hair-treatments/hair-transplant/(hair-prp|hair-line-correction|gfc-prp)$ hair-treatments/hair-transplant/$1/index.html [NC,L]
+  RewriteRule ^hair-treatments/hair-transplant/method$ hair-treatments/method [NC,R=301,L]
+  RewriteRule ^hair-treatments/hair-transplant/method/(fue|sapphire|bio-sapphire|dhi)$ hair-treatments/method/$1 [NC,R=301,L]
+  RewriteRule ^hair-treatments/method/(fue|sapphire|bio-sapphire|dhi)$ hair-treatments/method/$1/index.html [NC,L]
+  RewriteRule ^hair-treatments/method$ hair-treatments/method/index.html [NC,L]
   # Move About child pages to their canonical nested URLs
   RewriteRule ^(?:contact-us|contact)(?:\.html|/)?$ about/contact-us [NC,R=301,L]
   RewriteRule ^hours-and-location(?:\.html|/)?$ about/hours-and-location [NC,R=301,L]
