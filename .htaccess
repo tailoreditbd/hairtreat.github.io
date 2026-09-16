@@ -51,13 +51,13 @@
   RewriteRule ^transplant/hair-transplant(?:/index\.html|/)?$ hair-treatments/hair-transplant [NC,R=301,L]
   RewriteRule ^transplant/(hair-prp|hair-line-correction|gfc-prp)(?:/index\.html|/)?$ hair-treatments/$1 [NC,R=301,L]
   RewriteRule ^transplant/(fue|sapphire-hair-transplant)(?:/index\.html|/)?$ hair-treatments/method/$1 [NC,R=301,L]
-  RewriteRule ^transplant/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant)(?:/index\.html|/)?$ hair-treatments/$1 [NC,R=301,L]
+  RewriteRule ^transplant/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant)(?:/index\.html|/)$ hair-treatments/$1 [NC,R=301,L]
   RewriteRule ^hair-treatments/(fue|sapphire-hair-transplant)(?:/index\.html|/)?$ hair-treatments/method/$1 [NC,R=301,L]
-  RewriteRule ^hair-treatments/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant)(?:/index\.html|/)?$ hair-treatments/$1 [NC,R=301,L]
+  RewriteRule ^hair-treatments/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant)(?:/index\.html|/)$ hair-treatments/$1 [NC,R=301,L]
   RewriteRule ^hair-treatments/(laser-hair-removal|p-shot)(?:/index\.html|/)?$ other-treatments/$1 [NC,R=301,L]
   RewriteRule ^other-treatments/(hair-prp|hair-line-correction|gfc-prp)(?:/index\.html|/)?$ hair-treatments/$1 [NC,R=301,L]
   RewriteRule ^other-treatments/(fue|sapphire-hair-transplant)(?:/index\.html|/)?$ hair-treatments/method/$1 [NC,R=301,L]
-  RewriteRule ^other-treatments/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant)(?:/index\.html|/)?$ hair-treatments/$1 [NC,R=301,L]
+  RewriteRule ^other-treatments/(eyebrow-transplant|female-hair-transplant|beard-transplant|fut-hair-transplant)(?:/index\.html|/)$ hair-treatments/$1 [NC,R=301,L]
 
   # Canonicalize Hair Transplant and its nested services
   RewriteRule ^hair-treatments/hair-transplant/$ hair-treatments/hair-transplant [NC,R=301,L]
