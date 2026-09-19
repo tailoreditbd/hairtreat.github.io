@@ -43,21 +43,30 @@
     });
     $('a[href^="hair-treatments"]').each(function() {
         var href = $(this).attr('href');
-        if (href === 'hair-treatments') {
-            $(this).attr('href', 'hair-transplant');
-        } else if (href === 'hair-treatments/hair-prp' || href === 'hair-treatments/gfc-prp') {
-            $(this).attr('href', href.replace('hair-treatments', 'other-treatments'));
+        var routeMap = {
+            'hair-treatments': 'hair-transplant',
+            'hair-treatments/hair-transplant': 'hair-transplant',
+            'hair-treatments/hair-transplant/hair-prp': 'other-treatments/hair-prp',
+            'hair-treatments/hair-transplant/gfc-prp': 'other-treatments/gfc-prp',
+            'hair-treatments/hair-prp': 'other-treatments/hair-prp',
+            'hair-treatments/gfc-prp': 'other-treatments/gfc-prp',
+            'hair-treatments/method': 'hair-transplant/method'
+        };
+        if (routeMap[href]) {
+            $(this).attr('href', routeMap[href]);
         } else if (href.indexOf('hair-treatments/hair-transplant/') === 0) {
             $(this).attr('href', href.replace('hair-treatments/hair-transplant', 'hair-transplant'));
         } else if (href.indexOf('hair-treatments/method/') === 0) {
             $(this).attr('href', href.replace('hair-treatments/method', 'hair-transplant/method'));
+        } else if (href.indexOf('hair-treatments/') === 0) {
+            $(this).attr('href', href.replace('hair-treatments/', 'hair-transplant/'));
         }
     });
 
     $('.footer-links.quick-links ul').html(
         '<li><a href="./">Home</a></li>' +
-        '<li><a href="treatments">Treatments</a></li>' +
-        '<li><a href="transplant">Transplant</a></li>' +
+        '<li><a href="hair-transplant">Hair Transplant</a></li>' +
+        '<li><a href="other-treatments">Other Treatments</a></li>' +
         '<li><a href="hours-and-location">Hours &amp; Locations</a></li>' +
         '<li><a href="hair-transplant-cost">Pricing</a></li>' +
         '<li><a href="reviews">Reviews</a></li>' +
@@ -68,18 +77,18 @@
     $('.footer-treatment-links').html(
         '<h3>Treatments</h3>' +
         '<ul>' +
-        '<li><a href="hair-prp">Hair PRP</a></li>' +
-        '<li><a href="hair-line-correction">Hair Line Correction</a></li>' +
-        '<li><a href="fue">FUE</a></li>' +
-        '<li><a href="laser-hair-removal">Laser Hair Removal</a></li>' +
-        '<li><a href="p-shot">P-Shot</a></li>' +
-        '<li><a href="gfc-prp">GFC PRP</a></li>' +
+        '<li><a href="other-treatments/hair-prp">Hair PRP</a></li>' +
+        '<li><a href="hair-transplant/hair-line-correction">Hair Line Correction</a></li>' +
+        '<li><a href="hair-transplant/method/fue">FUE</a></li>' +
+        '<li><a href="other-treatments/laser-hair-removal">Laser Hair Removal</a></li>' +
+        '<li><a href="other-treatments/p-shot">P-Shot</a></li>' +
+        '<li><a href="other-treatments/gfc-prp">GFC PRP</a></li>' +
         '<li><a href="hair-transplant">Hair Transplant</a></li>' +
-        '<li><a href="eyebrow-transplant">Eyebrow Transplant</a></li>' +
-        '<li><a href="female-hair-transplant">Female Hair Transplant</a></li>' +
-        '<li><a href="beard-transplant">Beard Transplant</a></li>' +
-        '<li><a href="fut-hair-transplant">FUT Hair Transplant</a></li>' +
-        '<li><a href="sapphire-hair-transplant">Sapphire Hair Transplant</a></li>' +
+        '<li><a href="hair-transplant/eyebrow-transplant">Eyebrow Transplant</a></li>' +
+        '<li><a href="hair-transplant/female-hair-transplant">Female Hair Transplant</a></li>' +
+        '<li><a href="hair-transplant/beard-transplant">Beard Transplant</a></li>' +
+        '<li><a href="hair-transplant/method/fut-hair-transplant">FUT Hair Transplant</a></li>' +
+        '<li><a href="hair-transplant/method/sapphire">Sapphire</a></li>' +
         '</ul>'
     );
 

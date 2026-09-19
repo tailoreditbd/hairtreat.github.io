@@ -61,7 +61,7 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/hair-transplant/female-hair-transplant</loc>
+    <loc>https://hairtreat.com.bd/hair-transplant/female-hair-transplant</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
@@ -73,7 +73,7 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/hair-transplant/gfc-prp</loc>
+    <loc>https://hairtreat.com.bd/other-treatments/gfc-prp</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
@@ -91,13 +91,13 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/hair-transplant/hair-prp</loc>
+    <loc>https://hairtreat.com.bd/other-treatments/hair-prp</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/hair-transplant</loc>
+    <loc>https://hairtreat.com.bd/hair-transplant</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -163,10 +163,40 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/method/sapphire</loc>
+    <loc>https://hairtreat.com.bd/hair-transplant/method/sapphire</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hairtreat.com.bd/hair-transplant/method/bio-sapphire</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hairtreat.com.bd/hair-transplant/method/dhi</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hairtreat.com.bd/hair-transplant/method/fut-hair-transplant</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hairtreat.com.bd/hair-transplant/beard-transplant</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://hairtreat.com.bd/hair-transplant/eyebrow-transplant</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://hairtreat.com.bd/service-area</loc>
@@ -181,7 +211,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments</loc>
+    <loc>https://hairtreat.com.bd/hair-transplant</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -193,13 +223,13 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/method/fue</loc>
+    <loc>https://hairtreat.com.bd/hair-transplant/method/fue</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://hairtreat.com.bd/hair-treatments/hair-transplant/hair-line-correction</loc>
+    <loc>https://hairtreat.com.bd/hair-transplant/hair-line-correction</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
