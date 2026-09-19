@@ -37,7 +37,10 @@
         return label === 'Hair PRP' || label === 'GFC PRP' || label === 'Hair Transplant';
     }).remove();
 
-    var futMenuItem = $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-transplant/fut-hair-transplant"], a[href="hair-transplant/method/fut-hair-transplant"], a[href="hair-transplant/fut-hair-transplant"]');
+    var futMenuItem = $('.treatments-menu > ul > li').filter(function() {
+        var link = $(this).children('a').first().attr('href') || '';
+        return link === 'hair-treatments/hair-transplant/fut-hair-transplant' || link === 'hair-transplant/method/fut-hair-transplant' || link === 'hair-transplant/fut-hair-transplant';
+    });
     futMenuItem.find('a').attr('href', 'hair-transplant/method/fut-hair-transplant');
     $('.method-menu > ul').append(futMenuItem);
     $('a[href="hair-treatments/hair-transplant/fut-hair-transplant"], a[href="hair-treatments/method/fut-hair-transplant"], a[href="method/fut-hair-transplant"]').attr('href', 'hair-transplant/method/fut-hair-transplant');
