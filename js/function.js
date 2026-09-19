@@ -31,7 +31,7 @@
             otherTreatmentsMenu.append('<li class="nav-item"><a class="nav-link" href="other-treatments/gfc-prp">GFC PRP</a></li>');
         }
     }
-    $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-prp"], a[href="hair-treatments/gfc-prp"], a[href="hair-treatments/hair-transplant/hair-prp"], a[href="hair-treatments/hair-transplant/gfc-prp"]').remove();
+    $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-prp"], a[href="hair-treatments/gfc-prp"], a[href="hair-treatments/hair-transplant/hair-prp"], a[href="hair-treatments/hair-transplant/gfc-prp"], a[href="other-treatments/hair-prp"], a[href="other-treatments/gfc-prp"]').remove();
     $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-transplant"], a[href="hair-transplant/hair-transplant"]').remove();
 
     var futMenuItem = $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-transplant/fut-hair-transplant"]');
