@@ -18,6 +18,42 @@
 
     $('.about-footer-content p').text('HairTreat provides consultation-based hair restoration and hair-loss treatment using modern equipment, personalized treatment planning and professional aftercare support.');
     $('.footer-social-links .fa-facebook-f').closest('a').attr('href', 'https://www.facebook.com/hairtreat');
+
+    $('.treatments-menu > a').attr('href', 'hair-transplant').text('Hair Transplant');
+    $('.transplant-menu > a').attr('href', 'other-treatments').text('Other Treatments');
+    $('.method-menu > a').attr('href', 'hair-transplant/method');
+    var otherTreatmentsMenu = $('.transplant-menu > ul');
+    if (otherTreatmentsMenu.length) {
+        if (!otherTreatmentsMenu.find('a[href="other-treatments/hair-prp"]').length) {
+            otherTreatmentsMenu.append('<li class="nav-item"><a class="nav-link" href="other-treatments/hair-prp">Hair PRP</a></li>');
+        }
+        if (!otherTreatmentsMenu.find('a[href="other-treatments/gfc-prp"]').length) {
+            otherTreatmentsMenu.append('<li class="nav-item"><a class="nav-link" href="other-treatments/gfc-prp">GFC PRP</a></li>');
+        }
+    }
+    $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-prp"], a[href="hair-treatments/gfc-prp"], a[href="hair-treatments/hair-transplant/hair-prp"], a[href="hair-treatments/hair-transplant/gfc-prp"]').remove();
+    $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-transplant"], a[href="hair-transplant/hair-transplant"]').remove();
+
+    var futMenuItem = $('.treatments-menu > ul > li').has('a[href="hair-treatments/hair-transplant/fut-hair-transplant"]');
+    futMenuItem.find('a').attr('href', 'hair-transplant/method/fut-hair-transplant');
+    $('.method-menu > ul').append(futMenuItem);
+    $('a[href="hair-treatments/hair-transplant/fut-hair-transplant"], a[href="hair-treatments/method/fut-hair-transplant"], a[href="method/fut-hair-transplant"]').attr('href', 'hair-transplant/method/fut-hair-transplant');
+    $('a[href="hair-treatments/method/fue"], a[href="hair-treatments/method/sapphire"], a[href="hair-treatments/method/bio-sapphire"], a[href="hair-treatments/method/dhi"]').each(function() {
+        $(this).attr('href', 'hair-transplant/method/' + $(this).attr('href').split('/').pop());
+    });
+    $('a[href^="hair-treatments"]').each(function() {
+        var href = $(this).attr('href');
+        if (href === 'hair-treatments') {
+            $(this).attr('href', 'hair-transplant');
+        } else if (href === 'hair-treatments/hair-prp' || href === 'hair-treatments/gfc-prp') {
+            $(this).attr('href', href.replace('hair-treatments', 'other-treatments'));
+        } else if (href.indexOf('hair-treatments/hair-transplant/') === 0) {
+            $(this).attr('href', href.replace('hair-treatments/hair-transplant', 'hair-transplant'));
+        } else if (href.indexOf('hair-treatments/method/') === 0) {
+            $(this).attr('href', href.replace('hair-treatments/method', 'hair-transplant/method'));
+        }
+    });
+
     $('.footer-links.quick-links ul').html(
         '<li><a href="./">Home</a></li>' +
         '<li><a href="treatments">Treatments</a></li>' +
