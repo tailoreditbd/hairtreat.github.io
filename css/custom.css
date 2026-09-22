@@ -2503,6 +2503,10 @@ header.main-header .header-sticky.active{
 	max-width: 100%;
 }
 
+.doctor-specialist-section .why-choose-content .section-btn{
+	text-align: left;
+}
+
 .doctor-specialist-section .why-choose-contact-box h3{
 	margin-bottom: 28px;
 }
@@ -3872,6 +3876,20 @@ header.main-header .header-sticky.active{
 	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-about-header.png');
 	background-size: cover;
 	background-position: center center;
+}
+
+.page-header.page-header-about-image.about-breadcrumb-banner{
+	height: 225px;
+	min-height: 225px;
+	padding: 0;
+}
+
+.page-header.page-header-about-image.about-breadcrumb-banner .page-header-box{
+	height: 225px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .page-header.page-header-testimonials-image{
@@ -15637,4 +15655,223 @@ header.main-header .header-sticky.active{
     width: 300px;
     min-width: 300px;
     max-width: 300px;
+}
+
+/* About page compact section spacing and content cards */
+.about-treatments-section{
+	padding: 35px 0 25px;
+}
+
+.about-treatments-section .section-row{
+	margin-bottom: 20px;
+}
+
+.about-treatment-groups{
+	display: grid;
+	gap: 16px;
+}
+
+.about-treatment-group{
+	background: var(--white-color);
+	border: 1px solid var(--divider-color);
+	border-radius: 18px;
+	padding: 24px 28px;
+	box-shadow: 0 8px 28px rgba(57, 27, 13, 0.05);
+}
+
+.about-treatment-group-title{
+	font-size: 26px;
+	line-height: 1.3em;
+	margin-bottom: 14px;
+}
+
+.about-treatment-group ul{
+	margin: 0;
+	padding-left: 22px;
+}
+
+.about-treatment-group ul li{
+	line-height: 1.55em;
+	margin-bottom: 7px;
+}
+
+.about-treatment-group ul li:last-child{
+	margin-bottom: 0;
+}
+
+.about-treatment-group a{
+	color: var(--primary-color);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.about-treatment-group a:hover{
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+.about-why-choose-section{
+	padding: 18px 0 0;
+}
+
+.about-why-choose-section .real-transformation-box{
+	margin-top: 0;
+}
+
+.about-visit-section{
+	padding: 30px 0 25px;
+}
+
+.about-appointment-section{
+	padding-top: 40px !important;
+	padding-bottom: 45px;
+}
+
+.about-appointment-section .appointment-content-body{
+	margin-top: 24px;
+}
+
+.about-appointment-section .appointment-item{
+	align-items: center;
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+}
+
+.about-appointment-section .appointment-item-content p{
+	margin-bottom: 0;
+	font-size: 24px;
+}
+
+.about-appointment-section .appointment-item-content p a{
+	color: var(--primary-color);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	transition: color 0.3s ease;
+}
+
+.about-appointment-section .appointment-item-content p a:hover{
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px){
+	.about-treatments-section{
+		padding: 28px 0 20px;
+	}
+
+	.about-treatment-group{
+		padding: 20px;
+		border-radius: 14px;
+	}
+
+	.about-treatment-group-title{
+		font-size: 22px;
+	}
+
+	.about-why-choose-section{
+		padding: 12px 0 0;
+	}
+
+	.about-visit-section{
+		padding: 25px 0 20px;
+	}
+
+	.about-appointment-section{
+		padding-top: 30px !important;
+		padding-bottom: 35px;
+	}
+}
+/* About page empty media slots and final link styles */
+.about-treatment-group a{
+	color: var(--primary-color);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.about-treatment-group a:hover{
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+.about-appointment-section .appointment-item-content p{
+	margin: 0;
+	font-size: 20px;
+}
+
+.about-appointment-section .about-appointment-link{
+	color: var(--primary-color);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	transition: color 0.3s ease;
+}
+
+.about-appointment-section .about-appointment-link:hover{
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+.about-content-section figure:empty{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 320px;
+	background: var(--secondary-color);
+	border: 1px dashed rgba(205, 95, 55, 0.42);
+	border-radius: 24px;
+}
+
+.about-content-section figure:empty::before{
+	content: "1200 × 800";
+	color: rgba(72, 30, 11, 0.35);
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.about-content-section .testimonial-doctor-image figure:empty{
+	min-height: 430px;
+}
+
+.about-content-section .testimonial-doctor-image figure:empty::before{
+	content: "600 × 700";
+}
+
+.about-content-section .icon-box:empty,
+.about-appointment-section .icon-box:empty{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 60px;
+	width: 60px;
+	height: 60px;
+	background: var(--secondary-color);
+	border: 1px dashed rgba(205, 95, 55, 0.42);
+	border-radius: 50%;
+}
+
+.about-content-section .icon-box:empty::after,
+.about-appointment-section .icon-box:empty::after{
+	content: "60 × 60";
+	position: relative;
+	color: rgba(72, 30, 11, 0.45);
+	font-size: 8px;
+	font-weight: 700;
+	line-height: 1;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 767px){
+	.about-content-section figure:empty{
+		min-height: 240px;
+		border-radius: 18px;
+	}
+
+	.about-content-section .testimonial-doctor-image figure:empty{
+		min-height: 360px;
+	}
+
+	.about-appointment-section .appointment-item-content p{
+		font-size: 18px;
+	}
 }
