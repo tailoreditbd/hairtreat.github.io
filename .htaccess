@@ -7,6 +7,13 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Keep legacy treatment links pointed at the existing project directories.
+  RewriteRule ^hair-treatments(?:/hair-transplant)?(?:/index\.html|/)?$ hair-transplant [NC,R=301,L]
+  RewriteRule ^hair-treatments/(?:hair-transplant/)?(?:method/)?(fue|sapphire|bio-sapphire|dhi|fut-hair-transplant)(?:\.html|/index\.html|/)?$ hair-transplant/method/$1 [NC,R=301,L]
+  RewriteRule ^hair-treatments/(?:hair-transplant/)?(beard-transplant|eyebrow-transplant|female-hair-transplant|hair-line-correction)(?:\.html|/index\.html|/)?$ hair-transplant/$1 [NC,R=301,L]
+  RewriteRule ^hair-treatments/(?:hair-transplant/)?(hair-prp|gfc-prp)(?:\.html|/index\.html|/)?$ other-treatments/$1 [NC,R=301,L]
+  RewriteRule ^hair-treatments/(?:hair-transplant/)?sapphire-hair-transplant(?:\.html|/index\.html|/)?$ hair-transplant/method/sapphire [NC,R=301,L]
+
   # Serve the flattened Hair Transplant project folder.
   RewriteRule ^hair-transplant$ hair-transplant/index.html [NC,L]
   RewriteRule ^hair-transplant/method$ hair-transplant/method/index.html [NC,L]
@@ -53,12 +60,20 @@
   RewriteRule ^about/(contact-us|hours-and-location)$ about/$1/index.html [NC,L]
   RewriteRule ^about/blog$ about/blog/index.html [NC,L]
   RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)$ about/blog/$1/index.html [NC,L]
-  # RewriteBase /hairtreat/  # Local XAMPP base
-  # RewriteBase /             # Live server base - change before uploading
-  RewriteBase /hairtreat/
+  # Local XAMPP project path. Use / when deploying at the domain root.
+  RewriteBase /hairtreat.github.io/
 
   # Permanently remove the accidentally duplicated treatment path
   RewriteRule ^treatments/treatments/laser-hair-removal/?$ - [G,L]
+
+# Canonical URL
+RewriteRule ^about/awards-achievement/$ about/awards-achievement [NC,R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/awards-achievement/index\.html(?:[?\s]) [NC]
+RewriteRule ^about/awards-achievement/index\.html$ about/awards-achievement [NC,R=301,L]
+
+# Internally serve index.html
+RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L]
 
   # Migrate legacy, flat, and previously classified service URLs
   RewriteRule ^treatments/(hair-prp|hair-line-correction|gfc-prp)(?:/index\.html|/)?$ hair-treatments/$1 [NC,R=301,L]
@@ -134,6 +149,7 @@
   RewriteRule ^hair-transplant-treatment/$ hair-transplant-treatment [NC,R=301,L]
   RewriteRule ^hair-transplant/?$ hair-treatments/hair-transplant [NC,R=301,L]
   RewriteRule ^hours-and-location/$ hours-and-location [NC,R=301,L]
+
   RewriteRule ^image-gallery/$ image-gallery [NC,R=301,L]
   RewriteRule ^index-image/$ index-image [NC,R=301,L]
   RewriteRule ^index-slider/$ index-slider [NC,R=301,L]
