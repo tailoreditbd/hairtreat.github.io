@@ -1,209 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<script data-site-base>
-    (function () {
-        var base = document.createElement('base');
-        var localRoot = location.pathname.match(/^(.*\/(?:hairtreat\.github\.io|hairtreat))(?:\/|$)/);
-        base.href = location.protocol === 'file:'
-            ? new URL('./', location.href).href
-            : (localRoot ? localRoot[1] + '/' : '/');
-        document.write(base.outerHTML);
-    })();
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T8DQC2XQ');</script>
-<!-- End Google Tag Manager -->
-<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="robots" content="index,follow">
-	<script data-clean-url-script>
-		(function () {
-			var cleanPath = 'image-gallery';
-			if (window.location.pathname.endsWith('/image-gallery.html')) {
-				var target = window.location.pathname.replace(/image-gallery\.html$/, cleanPath);
-				window.history.replaceState(null, '', target + window.location.search + window.location.hash);
-			}
-		})();
-	</script>
-	<!-- Page Title -->
-    <title>HairTreat Gallery | Hair Transplant Clinic Bangladesh</title>
-	<meta name="description" content="Explore HairTreat's gallery featuring our modern clinic, expert team, hair transplant procedures and patient care facilities in Bangladesh.">
-	<meta property="og:title" content="HairTreat Gallery | Hair Transplant Clinic Bangladesh">
-	<meta property="og:description" content="Explore HairTreat's gallery featuring our modern clinic, expert team, hair transplant procedures and patient care facilities in Bangladesh.">
-	<meta property="og:image" content="">
-	<meta property="og:url" content="">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="HairTreat Gallery | Hair Transplant Clinic Bangladesh">
-	<meta name="twitter:description" content="Explore HairTreat's gallery featuring our modern clinic, expert team, hair transplant procedures and patient care facilities in Bangladesh.">
-	<meta name="twitter:image" content="">
-	<meta name="author" content="hairtreat.com.bd/">
-	<!-- Favicon Icon -->
-	<link rel="icon" type="image/svg+xml" href="images/favicon/hairtreat-favicon.svg">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css?v=navnested-20260821-3" rel="stylesheet" media="screen">
-	<!-- Page Specific CSS for Responsive Banner -->
-	<style>
-		.gallery-custom-banner {
-			background-image: linear-gradient(rgba(72, 30, 11, 0.45), rgba(72, 30, 11, 0.45)), url('images/image-gallery.png') !important;
-			background-size: cover !important;
-			background-position: center center !important;
-		}
-		@media only screen and (max-width: 767px) {
-			.gallery-custom-banner {
-				background-size: cover !important;
-				background-repeat: no-repeat !important;
-				background-position: center center !important;
-				height: auto !important;
-				min-height: 180px !important;
-				padding: 40px 0 !important;
-				display: flex !important;
-				align-items: center !important;
-				justify-content: center !important;
-				border-radius: 20px !important;
-				overflow: hidden !important;
-			}
-			.gallery-custom-banner .page-header-box {
-				padding: 0 15px !important;
-				text-align: center !important;
-				background: transparent !important;
-			}
-			.gallery-custom-banner .page-header-box h1 {
-				font-size: 28px !important;
-				line-height: 1.2em !important;
-				display: block !important;
-				color: var(--white-color) !important;
-				margin-bottom: 8px !important;
-				font-weight: 500 !important;
-				font-family: var(--accent-font) !important;
-				text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
-			}
-			.gallery-custom-banner .page-header-box ol.breadcrumb {
-				justify-content: center !important;
-				margin: 0 !important;
-				padding: 0 !important;
-				display: flex !important;
-			}
-			.gallery-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item {
-				font-size: 14px !important;
-				color: var(--white-color) !important;
-				text-transform: uppercase !important;
-				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
-			}
-			.gallery-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item a {
-				color: #ff9f75 !important;
-			}
-		}
-	</style>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5SDWQWJSN2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'G-5SDWQWJSN2');
-	</script>
+<head>
+    <script data-site-base>
+        (function () {
+            var base = document.createElement('base');
+            var localRoot = location.pathname.match(/^(.*\/(?:hairtreat\.github\.io|hairtreat))(?:\/|$)/);
+            base.href = location.protocol === 'file:'
+                ? new URL('./', location.href).href
+                : (localRoot ? localRoot[1] + '/' : '/');
+            document.write(base.outerHTML);
+        })();
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T8DQC2XQ');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="index,follow">
+    <script data-clean-url-script>
+        (function () {
+            var cleanPath = 'image-gallery';
+            if (window.location.pathname.endsWith('/image-gallery.html')) {
+                var target = window.location.pathname.replace(/image-gallery\.html$/, cleanPath);
+                window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
+    <!-- Page Title -->
+    <title>HairTreat Gallery | Hair Transplant Clinic Bangladesh</title>
+    <meta name="description"
+        content="Explore HairTreat's gallery featuring our modern clinic, expert team, hair transplant procedures and patient care facilities in Bangladesh.">
+    <meta property="og:title" content="HairTreat Gallery | Hair Transplant Clinic Bangladesh">
+    <meta property="og:description"
+        content="Explore HairTreat's gallery featuring our modern clinic, expert team, hair transplant procedures and patient care facilities in Bangladesh.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HairTreat Gallery | Hair Transplant Clinic Bangladesh">
+    <meta name="twitter:description"
+        content="Explore HairTreat's gallery featuring our modern clinic, expert team, hair transplant procedures and patient care facilities in Bangladesh.">
+    <meta name="twitter:image" content="">
+    <meta name="author" content="hairtreat.com.bd/">
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon/hairtreat-favicon.svg">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css?v=navnested-20260821-3" rel="stylesheet" media="screen">
+    <!-- Page Specific CSS for Responsive Banner -->
+    <style>
+        .gallery-custom-banner {
+            background-image: linear-gradient(rgba(72, 30, 11, 0.45), rgba(72, 30, 11, 0.45)), url('images/image-gallery.png') !important;
+            background-size: cover !important;
+            background-position: center center !important;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .gallery-custom-banner {
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-position: center center !important;
+                height: auto !important;
+                min-height: 180px !important;
+                padding: 40px 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                border-radius: 20px !important;
+                overflow: hidden !important;
+            }
+
+            .gallery-custom-banner .page-header-box {
+                padding: 0 15px !important;
+                text-align: center !important;
+                background: transparent !important;
+            }
+
+            .gallery-custom-banner .page-header-box h1 {
+                font-size: 28px !important;
+                line-height: 1.2em !important;
+                display: block !important;
+                color: var(--white-color) !important;
+                margin-bottom: 8px !important;
+                font-weight: 500 !important;
+                font-family: var(--accent-font) !important;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+            }
+
+            .gallery-custom-banner .page-header-box ol.breadcrumb {
+                justify-content: center !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+            }
+
+            .gallery-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item {
+                font-size: 14px !important;
+                color: var(--white-color) !important;
+                text-transform: uppercase !important;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+            }
+
+            .gallery-custom-banner .page-header-box ol.breadcrumb li.breadcrumb-item a {
+                color: #ff9f75 !important;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SDWQWJSN2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5SDWQWJSN2');
+    </script>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8DQC2XQ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8DQC2XQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
 
     <!-- Header Start -->
-	<header class="main-header active-sticky-header">
-<div class="header-sticky bg-section">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-					<!-- Logo Start -->
-					<a class="navbar-brand" href="./">
-						<img src="images/hairtreat-logo.png" alt="HairTreat">
-					</a>
-					<!-- Logo End -->
+    <header class="main-header active-sticky-header">
+        <div class="header-sticky bg-section">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="./">
+                        <img src="images/hairtreat-logo.png" alt="HairTreat">
+                    </a>
+                    <!-- Logo End -->
 
-					<!-- Main Menu Start -->
-					<div class="collapse navbar-collapse main-menu">
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav ms-auto" id="menu">
                                 <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
-                                <li class="nav-item submenu treatments-menu"><a class="nav-link" href="hair-transplant">Hair Transplant</a>
+                                <li class="nav-item submenu treatments-menu"><a class="nav-link"
+                                        href="hair-transplant">Hair Transplant</a>
                                     <ul>
-<li class="nav-item submenu method-menu"><a class="nav-link" href="hair-transplant/method">Method</a><ul>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/method/fue">FUE</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/method/sapphire">Sapphire</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/method/bio-sapphire">Bio-Sapphire</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/method/dhi">DHI</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/method/fut-hair-transplant">FUT Hair Transplant</a></li></ul></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/eyebrow-transplant">Eyebrow Transplant</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/female-hair-transplant">Female Hair Transplant</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/beard-transplant">Beard Transplant</a></li>
-<li class="nav-item"><a class="nav-link" href="hair-transplant/hair-line-correction">Hair Line Correction</a></li>
-<!-- Hidden until page is ready: <li class="nav-item"><a class="nav-link" href="dhi-hair-transplant">DHI Hair Transplant</a></li> -->
-<!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li> -->
-<!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li> -->
-<!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li> -->
-<!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li> --></ul>
+                                        <li class="nav-item submenu method-menu"><a class="nav-link"
+                                                href="hair-transplant/method">Method</a>
+                                            <ul>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="hair-transplant/method/fue">FUE</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="hair-transplant/method/sapphire">Sapphire</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="hair-transplant/method/bio-sapphire">Bio-Sapphire</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="hair-transplant/method/dhi">DHI</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="hair-transplant/method/fut-hair-transplant">FUT Hair
+                                                        Transplant</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="hair-transplant/eyebrow-transplant">Eyebrow Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="hair-transplant/female-hair-transplant">Female Hair Transplant</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="hair-transplant/beard-transplant">Beard Transplant</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="hair-transplant/hair-line-correction">Hair Line Correction</a>
+                                        </li>
+                                        <!-- Hidden until page is ready: <li class="nav-item"><a class="nav-link" href="dhi-hair-transplant">DHI Hair Transplant</a></li> -->
+                                        <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="laser-treatment">Laser Treatment</a></li> -->
+                                        <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="hair-transplant-treatment">Hair Transplant Treatment</a></li> -->
+                                        <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="moustache-transplant">Moustache Transplant</a></li> -->
+                                        <!-- Hidden old nav item: <li class="nav-item"><a class="nav-link" href="hair-transplant-technique">Hair Transplant Technique</a></li> -->
+                                    </ul>
                                 </li>
-                                <li class="nav-item submenu transplant-menu"><a class="nav-link" href="other-treatments">Other Treatments</a><ul>
-<li class="nav-item submenu laser-hair-removal-menu"><a class="nav-link" href="other-treatments/laser-hair-removal">Laser Hair Removal</a><ul>
-<li class="nav-item"><a class="nav-link" href="other-treatments/laser-hair-removal/facial-hair">Facial Hair</a></li>
-</ul></li>
-<li class="nav-item"><a class="nav-link" href="other-treatments/p-shot">P-Shot</a></li><li class="nav-item"><a class="nav-link" href="other-treatments/hair-prp">Hair PRP</a></li><li class="nav-item"><a class="nav-link" href="other-treatments/gfc-prp">GFC PRP</a></li>
-</ul></li>
+                                <li class="nav-item submenu transplant-menu"><a class="nav-link"
+                                        href="other-treatments">Other Treatments</a>
+                                    <ul>
+                                        <li class="nav-item submenu laser-hair-removal-menu"><a class="nav-link"
+                                                href="other-treatments/laser-hair-removal">Laser Hair Removal</a>
+                                            <ul>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="other-treatments/laser-hair-removal/facial-hair">Facial
+                                                        Hair</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="other-treatments/p-shot">P-Shot</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="other-treatments/hair-prp">Hair
+                                                PRP</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="other-treatments/gfc-prp">GFC
+                                                PRP</a></li>
+                                    </ul>
+                                </li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
                                 <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
-                                <li class="nav-item submenu about-menu"><a class="nav-link" href="about">About us</a><ul><li class="nav-item"><a class="nav-link" href="about/hours-and-location">Hours &amp; Locations</a></li><li class="nav-item"><a class="nav-link" href="about/blog">Blog</a></li><li class="nav-item"><a class="nav-link" href="about/contact-us">Contact us</a></li></ul></li>
+                                <li class="nav-item submenu about-menu">
+                                    <a class="nav-link" href="about">
+                                        About us
+                                    </a>
+                                    <ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about/hours-and-location">
+                                                Hours &amp; Locations
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about/blog">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about/awards-achievement">Awards & Achievement
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about/contact-us">
+                                                Contact us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
-                        
+
                         <!-- Header Contact Btn Start -->
                         <div class="header-contact-btn">
-                            <a href="tel:+8801805002681" class="header-contact-now"><i class="fa-solid fa-phone"></i>(+88) 01805 002681</a>
+                            <a href="tel:+8801805002681" class="header-contact-now"><i
+                                    class="fa-solid fa-phone"></i>(+88) 01805 002681</a>
                             <a href="book-appointment" class="btn-default">Get Free Appointment</a>
                         </div>
                         <!-- Header Contact Btn End -->
-					</div>
-					<!-- Main Menu End -->
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
-		</div>
-	</header>
-	<!-- Header End -->
+                    </div>
+                    <!-- Main Menu End -->
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
     <!-- Page Header Section Start -->
     <div class="page-header bg-section dark-section gallery-custom-banner">
@@ -236,7 +308,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp">
                         <a href="images/photo-gallery/hairtreat-gallery-01.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-01.jpeg" alt="HairTreat clinic treatment room">
+                                <img src="images/photo-gallery/hairtreat-gallery-01.jpeg"
+                                    alt="HairTreat clinic treatment room">
                             </figure>
                         </a>
                     </div>
@@ -245,7 +318,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s">
                         <a href="images/photo-gallery/hairtreat-gallery-02.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-02.jpeg" alt="HairTreat specialist performing hair restoration treatment">
+                                <img src="images/photo-gallery/hairtreat-gallery-02.jpeg"
+                                    alt="HairTreat specialist performing hair restoration treatment">
                             </figure>
                         </a>
                     </div>
@@ -254,7 +328,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.4s">
                         <a href="images/photo-gallery/hairtreat-gallery-03.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-03.jpeg" alt="HairTreat hair transplant procedure room">
+                                <img src="images/photo-gallery/hairtreat-gallery-03.jpeg"
+                                    alt="HairTreat hair transplant procedure room">
                             </figure>
                         </a>
                     </div>
@@ -263,7 +338,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.6s">
                         <a href="images/photo-gallery/hairtreat-gallery-04.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-04.jpeg" alt="HairTreat doctor providing patient care">
+                                <img src="images/photo-gallery/hairtreat-gallery-04.jpeg"
+                                    alt="HairTreat doctor providing patient care">
                             </figure>
                         </a>
                     </div>
@@ -272,7 +348,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.8s">
                         <a href="images/photo-gallery/hairtreat-gallery-05.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-05.jpeg" alt="HairTreat clinical hair treatment session">
+                                <img src="images/photo-gallery/hairtreat-gallery-05.jpeg"
+                                    alt="HairTreat clinical hair treatment session">
                             </figure>
                         </a>
                     </div>
@@ -281,7 +358,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1s">
                         <a href="images/photo-gallery/hairtreat-gallery-06.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-06.jpeg" alt="HairTreat patient receiving hair restoration care">
+                                <img src="images/photo-gallery/hairtreat-gallery-06.jpeg"
+                                    alt="HairTreat patient receiving hair restoration care">
                             </figure>
                         </a>
                     </div>
@@ -290,7 +368,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.2s">
                         <a href="images/photo-gallery/hairtreat-gallery-07.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-07.jpeg" alt="HairTreat modern treatment facility">
+                                <img src="images/photo-gallery/hairtreat-gallery-07.jpeg"
+                                    alt="HairTreat modern treatment facility">
                             </figure>
                         </a>
                     </div>
@@ -299,7 +378,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.4s">
                         <a href="images/photo-gallery/hairtreat-gallery-08.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-08.jpeg" alt="HairTreat hair restoration specialist at work">
+                                <img src="images/photo-gallery/hairtreat-gallery-08.jpeg"
+                                    alt="HairTreat hair restoration specialist at work">
                             </figure>
                         </a>
                     </div>
@@ -308,7 +388,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.6s">
                         <a href="images/photo-gallery/hairtreat-gallery-09.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-09.jpeg" alt="HairTreat clinic patient treatment">
+                                <img src="images/photo-gallery/hairtreat-gallery-09.jpeg"
+                                    alt="HairTreat clinic patient treatment">
                             </figure>
                         </a>
                     </div>
@@ -317,7 +398,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp">
                         <a href="images/photo-gallery/hairtreat-gallery-10.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-10.jpeg" alt="HairTreat treatment room equipment">
+                                <img src="images/photo-gallery/hairtreat-gallery-10.jpeg"
+                                    alt="HairTreat treatment room equipment">
                             </figure>
                         </a>
                     </div>
@@ -326,7 +408,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s">
                         <a href="images/photo-gallery/hairtreat-gallery-11.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-11.jpeg" alt="HairTreat doctor conducting a treatment procedure">
+                                <img src="images/photo-gallery/hairtreat-gallery-11.jpeg"
+                                    alt="HairTreat doctor conducting a treatment procedure">
                             </figure>
                         </a>
                     </div>
@@ -335,7 +418,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.4s">
                         <a href="images/photo-gallery/hairtreat-gallery-12.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-12.jpeg" alt="HairTreat advanced patient care facility">
+                                <img src="images/photo-gallery/hairtreat-gallery-12.jpeg"
+                                    alt="HairTreat advanced patient care facility">
                             </figure>
                         </a>
                     </div>
@@ -344,7 +428,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.6s">
                         <a href="images/photo-gallery/hairtreat-gallery-13.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-13.jpeg" alt="HairTreat clinic consultation setting">
+                                <img src="images/photo-gallery/hairtreat-gallery-13.jpeg"
+                                    alt="HairTreat clinic consultation setting">
                             </figure>
                         </a>
                     </div>
@@ -353,7 +438,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.8s">
                         <a href="images/photo-gallery/hairtreat-gallery-14.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-14.jpeg" alt="HairTreat clinical procedure in progress">
+                                <img src="images/photo-gallery/hairtreat-gallery-14.jpeg"
+                                    alt="HairTreat clinical procedure in progress">
                             </figure>
                         </a>
                     </div>
@@ -362,7 +448,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1s">
                         <a href="images/photo-gallery/hairtreat-gallery-15.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-15.jpeg" alt="HairTreat patient comfort and care area">
+                                <img src="images/photo-gallery/hairtreat-gallery-15.jpeg"
+                                    alt="HairTreat patient comfort and care area">
                             </figure>
                         </a>
                     </div>
@@ -371,7 +458,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.2s">
                         <a href="images/photo-gallery/hairtreat-gallery-16.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-16.jpeg" alt="HairTreat specialist treatment service">
+                                <img src="images/photo-gallery/hairtreat-gallery-16.jpeg"
+                                    alt="HairTreat specialist treatment service">
                             </figure>
                         </a>
                     </div>
@@ -380,7 +468,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.4s">
                         <a href="images/photo-gallery/hairtreat-gallery-17.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-17.jpeg" alt="HairTreat clinic hair procedure environment">
+                                <img src="images/photo-gallery/hairtreat-gallery-17.jpeg"
+                                    alt="HairTreat clinic hair procedure environment">
                             </figure>
                         </a>
                     </div>
@@ -389,7 +478,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.6s">
                         <a href="images/photo-gallery/hairtreat-gallery-18.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-18.jpeg" alt="HairTreat patient receiving expert treatment">
+                                <img src="images/photo-gallery/hairtreat-gallery-18.jpeg"
+                                    alt="HairTreat patient receiving expert treatment">
                             </figure>
                         </a>
                     </div>
@@ -398,7 +488,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp">
                         <a href="images/photo-gallery/hairtreat-gallery-19.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-19.jpeg" alt="HairTreat treatment procedure gallery photo">
+                                <img src="images/photo-gallery/hairtreat-gallery-19.jpeg"
+                                    alt="HairTreat treatment procedure gallery photo">
                             </figure>
                         </a>
                     </div>
@@ -407,7 +498,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s">
                         <a href="images/photo-gallery/hairtreat-gallery-20.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-20.jpeg" alt="HairTreat clinic surgical care setting">
+                                <img src="images/photo-gallery/hairtreat-gallery-20.jpeg"
+                                    alt="HairTreat clinic surgical care setting">
                             </figure>
                         </a>
                     </div>
@@ -416,7 +508,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.4s">
                         <a href="images/photo-gallery/hairtreat-gallery-21.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-21.jpeg" alt="HairTreat modern clinic gallery view">
+                                <img src="images/photo-gallery/hairtreat-gallery-21.jpeg"
+                                    alt="HairTreat modern clinic gallery view">
                             </figure>
                         </a>
                     </div>
@@ -425,7 +518,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.6s">
                         <a href="images/photo-gallery/hairtreat-gallery-22.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-22.jpeg" alt="HairTreat doctor delivering clinical treatment">
+                                <img src="images/photo-gallery/hairtreat-gallery-22.jpeg"
+                                    alt="HairTreat doctor delivering clinical treatment">
                             </figure>
                         </a>
                     </div>
@@ -434,7 +528,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="0.8s">
                         <a href="images/photo-gallery/hairtreat-gallery-23.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-23.jpeg" alt="HairTreat treatment facility interior">
+                                <img src="images/photo-gallery/hairtreat-gallery-23.jpeg"
+                                    alt="HairTreat treatment facility interior">
                             </figure>
                         </a>
                     </div>
@@ -443,7 +538,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1s">
                         <a href="images/photo-gallery/hairtreat-gallery-24.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-24.jpeg" alt="HairTreat clinical team providing care">
+                                <img src="images/photo-gallery/hairtreat-gallery-24.jpeg"
+                                    alt="HairTreat clinical team providing care">
                             </figure>
                         </a>
                     </div>
@@ -452,7 +548,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.2s">
                         <a href="images/photo-gallery/hairtreat-gallery-25.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-25.jpeg" alt="HairTreat patient treatment room scene">
+                                <img src="images/photo-gallery/hairtreat-gallery-25.jpeg"
+                                    alt="HairTreat patient treatment room scene">
                             </figure>
                         </a>
                     </div>
@@ -461,7 +558,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.4s">
                         <a href="images/photo-gallery/hairtreat-gallery-26.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-26.jpeg" alt="HairTreat clinic restoration care session">
+                                <img src="images/photo-gallery/hairtreat-gallery-26.jpeg"
+                                    alt="HairTreat clinic restoration care session">
                             </figure>
                         </a>
                     </div>
@@ -470,7 +568,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp" data-wow-delay="1.6s">
                         <a href="images/photo-gallery/hairtreat-gallery-27.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-27.jpeg" alt="HairTreat patient procedure gallery image">
+                                <img src="images/photo-gallery/hairtreat-gallery-27.jpeg"
+                                    alt="HairTreat patient procedure gallery image">
                             </figure>
                         </a>
                     </div>
@@ -479,7 +578,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="photo-gallery wow fadeInUp">
                         <a href="images/photo-gallery/hairtreat-gallery-28.jpeg" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="images/photo-gallery/hairtreat-gallery-28.jpeg" alt="HairTreat clinic professional care environment">
+                                <img src="images/photo-gallery/hairtreat-gallery-28.jpeg"
+                                    alt="HairTreat clinic professional care environment">
                             </figure>
                         </a>
                     </div>
@@ -506,17 +606,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">
-                            <p>HairTreat provides consultation-based hair restoration and hair-loss treatment using modern equipment, personalized treatment planning and professional aftercare support.</p>
+                            <p>HairTreat provides consultation-based hair restoration and hair-loss treatment using
+                                modern equipment, personalized treatment planning and professional aftercare support.
+                            </p>
                         </div>
                         <!-- About Footer Content End -->
 
                         <!-- Footer Social Link Start -->
                         <div class="footer-social-links">
                             <ul>
-                                <li><a href="https://www.facebook.com/hairtreat" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.instagram.com/hairtreatclinic" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="https://youtube.com/@hairtreat" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/hairtreat-hair-transplant-clinic/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.facebook.com/hairtreat" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Facebook"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/hairtreatclinic" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Instagram"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://youtube.com/@hairtreat" target="_blank" rel="noopener noreferrer"
+                                        aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/hairtreat-hair-transplant-clinic/"
+                                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                            class="fa-brands fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                         <!-- Footer Social Link End -->
@@ -567,13 +676,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <h3>Chamber Address</h3>
                             <ul>
                                 <li>
-                                    <strong><a href="https://hairtreat.com.bd/" target="_blank" rel="noopener">HairTreat</a></strong>
-                                    <a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Lift:4, House:1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka, Bangladesh, 1230</a>
+                                    <strong><a href="https://hairtreat.com.bd/" target="_blank"
+                                            rel="noopener">HairTreat</a></strong>
+                                    <a href="https://www.google.com/maps/place/Hair+Treat/@23.8755355,90.3879628,17z/data=!3m1!4b1!4m6!3m5!1s0xaeab4d22846befc1:0x5bce4e019fd18f28!8m2!3d23.8755355!4d90.3905377!16s%2Fg%2F11xlztc2gv?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank" rel="noopener noreferrer">Lift:4, House:1/B, Garib E Newaz
+                                        Avenue, Sector 11, Uttara, Dhaka, Bangladesh, 1230</a>
                                     <a href="tel:+8801805002681">(+88) 01805 002681</a>
                                 </li>
                                 <li>
-                                    <strong><a href="https://talukderclinicandnursinghome.com/" target="_blank" rel="noopener">Tangail Chamber:</a></strong>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Talukder%20Clinic%20and%20Nursing%20Home%20Puraton%20Bus%20stand%20Tangail%20Sodor" target="_blank" rel="noopener noreferrer">Talukder Clinic and Nursing Home, Puraton Bus stand, Tangail Sodor.</a>
+                                    <strong><a href="https://talukderclinicandnursinghome.com/" target="_blank"
+                                            rel="noopener">Tangail Chamber:</a></strong>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Talukder%20Clinic%20and%20Nursing%20Home%20Puraton%20Bus%20stand%20Tangail%20Sodor"
+                                        target="_blank" rel="noopener noreferrer">Talukder Clinic and Nursing Home,
+                                        Puraton Bus stand, Tangail Sodor.</a>
                                     <a href="tel:+8801805002688">(+88) 01805 002688</a>
                                 </li>
                             </ul>
@@ -590,7 +705,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>Copyright &copy; 2026 All Rights Reserved.</p>
                         </div>
                         <div class="footer-credit-text">
-                            <p>Designed &amp; Developed by <a href="https://tailoreditbd.com/" target="_blank" rel="noopener">TailoredITBD</a></p>
+                            <p>Designed &amp; Developed by <a href="https://tailoreditbd.com/" target="_blank"
+                                    rel="noopener">TailoredITBD</a></p>
                         </div>
                         <!-- Footer Copyright Text End -->
                     </div>
@@ -622,7 +738,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/parallaxie.js"></script>
     <!-- MagicCursor js file -->
     <script src="js/gsap.min.js"></script>
-<script src="js/magiccursor.js"></script>
+    <script src="js/magiccursor.js"></script>
 
     <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
@@ -634,5 +750,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Main Custom js file -->
     <script src="js/function.js?v=nav-routing-20260919-2"></script>
 </body>
-</html>
 
+</html>
