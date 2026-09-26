@@ -492,66 +492,6 @@
     <!-- Main Custom js file -->
     <script src="js/function.js?v=nav-routing-20260919-2"></script>
     <!-- Map Switcher Custom Script -->
-    <script>
-        function changeMap(location, btnElement) {
-            // Get the iframe and all buttons
-            var iframe = document.getElementById("dynamic-map");
-            var buttons = document.querySelectorAll(".loc-btn");
-
-            // Remove 'active' class from all buttons to reset colors
-            buttons.forEach(function (btn) {
-                btn.classList.remove("active");
-            });
-
-            // Add 'active' class to the clicked button
-            btnElement.classList.add("active");
-
-            // Change the iframe source based on the clicked location
-            if (location === "dhaka") {
-                iframe.src = "https://www.google.com/maps?q=23.8755355,90.3905377&z=17&output=embed";
-            } else if (location === "tangail") {
-                // Showing Tangail map (You can replace this query with your exact Tangail clinic address later)
-                iframe.src = "https://www.google.com/maps?q=Tangail%2C%20Bangladesh&output=embed";
-            } else if (location === "sirajganj") {
-                // Showing Sirajganj map (You can replace this query with your exact Sirajganj clinic address later)
-                iframe.src = "https://www.google.com/maps?q=Sirajganj%2C%20Bangladesh&output=embed";
-            }
-        }
-
-        (function () {
-            var form = document.getElementById("contactForm");
-            if (!form) return;
-
-            form.addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                var fullName = document.getElementById("fullname").value.trim();
-                var phone = document.getElementById("phone").value.trim();
-                var address = document.getElementById("address").value.trim();
-
-                if (!fullName || !phone || !address) {
-                    return;
-                }
-
-                var message = [
-                    "New Contact Request from HairTreat Website",
-                    "Full Name: " + fullName,
-                    "Phone Number: " + phone,
-                    "Address: " + address,
-                ].join("\n");
-
-                var whatsappNumber = "8801805002681";
-                var whatsappUrl = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
-
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({
-                    event: "lead_form_success",
-                    lead_type: "appointment",
-                });
-                window.location.href = whatsappUrl;
-            });
-        })();
-    </script>
 </body>
 
 </html>
