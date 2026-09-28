@@ -61,7 +61,7 @@
   RewriteRule ^about/blog$ about/blog/index.html [NC,L]
   RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)$ about/blog/$1/index.html [NC,L]
   # Local XAMPP project path. Use / when deploying at the domain root.
-  RewriteBase /hairtreat.github.io/
+  RewriteBase /hairtreat/
 
   # Permanently remove the accidentally duplicated treatment path
   RewriteRule ^treatments/treatments/laser-hair-removal/?$ - [G,L]
