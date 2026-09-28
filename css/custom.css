@@ -683,7 +683,15 @@ body{
 	line-height: 1.3em;
 }
 
+.awards-achievement-page .our-achievements{
+	padding-top: 60px;
+}
+
 @media only screen and (max-width: 767px){
+	.awards-achievement-page .our-achievements{
+		padding-top: 40px;
+	}
+
 	.our-achievements .section-title h3.achievements-section-title{
 		font-size: 24px !important;
 	}
