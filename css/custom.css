@@ -3896,7 +3896,7 @@ header.main-header .header-sticky.active{
 }
 
 .page-header.page-header-about-image{
-	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/page-headers/hairtreat-about-header.png');
+	background-image: linear-gradient(rgba(72, 30, 11, 0.58), rgba(72, 30, 11, 0.58)), url('../images/breadcrumb img/about-hairtreat-breadcrum.webp');
 	background-size: cover;
 	background-position: center center;
 }
