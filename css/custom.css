@@ -3897,13 +3897,15 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 }
 
-.page-header.page-header-about-image.about-breadcrumb-banner{
+.page-header.page-header-about-image.about-breadcrumb-banner,
+.page-header.awards-breadcrumb-banner{
 	height: 225px;
 	min-height: 225px;
 	padding: 0;
 }
 
-.page-header.page-header-about-image.about-breadcrumb-banner .page-header-box{
+.page-header.page-header-about-image.about-breadcrumb-banner .page-header-box,
+.page-header.awards-breadcrumb-banner .page-header-box{
 	height: 225px;
 	display: flex;
 	flex-direction: column;
