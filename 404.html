@@ -121,6 +121,7 @@
 				'fut-hair-transplant': 'fut-hair-transplant.html',
 				'gfc-prp': 'hair-treatments/hair-transplant/gfc-prp/index.html',
 				'gulshan': 'service-area/gulshan',
+				'banani': 'service-area/banani',
 				'hair-line-correction': 'hair-line-correction.html',
 				'hair-loss-treatment-for-saudi-arabia-nrbs': 'hair-loss-treatment-for-saudi-arabia-nrbs.html',
 				'hair-prp': 'hair-treatments/hair-transplant/hair-prp/index.html',
@@ -149,14 +150,14 @@
 				'video-gallery': 'video-gallery.html'
 			};
 
-			var match = path.match(/\/service-area\.html\/(uttara|uttura|gulshan|dhaka)$/i);
+			var match = path.match(/\/service-area\.html\/(uttara|uttura|gulshan|banani|dhaka)$/i);
 			if (match) {
 				var city = match[1].toLowerCase() === 'uttura' ? 'uttara' : match[1].toLowerCase();
 				window.location.replace(path.replace(/\/service-area\.html\/[^/]+$/i, '/service-area/' + city) + window.location.search + window.location.hash);
 				return;
 			}
 
-			var areaMatch = path.match(/\/service-area\/(uttara|uttura|gulshan|dhaka)$/i);
+			var areaMatch = path.match(/\/service-area\/(uttara|uttura|gulshan|banani|dhaka)$/i);
 			if (areaMatch) {
 				var areaCity = areaMatch[1].toLowerCase() === 'uttura' ? 'uttara' : areaMatch[1].toLowerCase();
 				window.location.replace(path.replace(/\/service-area\/[^/]+$/i, '/' + areaCity + '.html') + window.location.search + window.location.hash);

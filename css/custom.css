@@ -2566,6 +2566,126 @@ header.main-header .header-sticky.active{
 	margin-bottom: 0;
 }
 
+/* Banani service-area page */
+.banani-doctor-profile{
+	padding: 80px 0;
+	background: #fff7f2;
+}
+
+.banani-doctor-profile__content{
+	max-width: 720px;
+	margin-bottom: 0;
+}
+
+.banani-doctor-profile__content h3.section-title-h3-override{
+	max-width: 680px;
+	margin-bottom: 22px;
+}
+
+.banani-doctor-profile__content > p:not(.section-subtitle){
+	color: #555;
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 24px;
+}
+
+.banani-doctor-profile__content .doctor-specialist-list{
+	margin: 0 0 30px;
+}
+
+.banani-doctor-profile__image{
+	position: relative;
+	min-height: 540px;
+	margin: 0;
+	border-radius: 30px;
+	overflow: hidden;
+	background: linear-gradient(145deg, #f4d9ca 0%, #cf6039 100%);
+}
+
+.banani-doctor-profile__image img{
+	display: block;
+	width: 100%;
+	height: 540px;
+	object-fit: contain;
+	object-position: center bottom;
+}
+
+.banani-treatment-list-section{
+	padding: 80px 0;
+	background: var(--white-color);
+}
+
+.banani-treatment-list-section.bg-section{
+	background: var(--secondary-color);
+}
+
+.banani-treatment-list-section .section-title{
+	margin-bottom: 24px;
+}
+
+.banani-treatment-list-section .section-title h2{
+	font-size: 32px;
+	line-height: 1.25em;
+}
+
+.banani-treatment-list{
+	margin: 0;
+	padding-left: 24px;
+}
+
+.banani-treatment-list li{
+	margin-bottom: 10px;
+	color: var(--text-color);
+	line-height: 1.65em;
+}
+
+.banani-treatment-list li:last-child{
+	margin-bottom: 0;
+}
+
+.banani-treatment-list a{
+	color: var(--accent-color);
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.banani-treatment-list a:hover{
+	color: var(--primary-color);
+}
+
+@media only screen and (max-width: 991px){
+	.banani-doctor-profile{
+		padding: 60px 0;
+	}
+
+	.banani-doctor-profile__image{
+		min-height: 460px;
+	}
+
+	.banani-doctor-profile__image img{
+		height: 460px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.banani-doctor-profile{
+		padding: 45px 0;
+	}
+
+	.banani-doctor-profile__image{
+		min-height: 380px;
+		border-radius: 22px;
+	}
+
+	.banani-doctor-profile__image img{
+		height: 380px;
+	}
+	.banani-treatment-list-section{
+		padding: 50px 0;
+	}
+}
+
 /************************************/
 /***     11. How It Wwork css	  ***/
 /************************************/
