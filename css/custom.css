@@ -16195,3 +16195,62 @@ header.main-header .header-sticky.active{
 		border-radius: 20px;
 	}
 }
+/* Beard why-choose single-image layout */
+.beard-why-choose-section .why-choose-images{
+	display: block;
+	width: 100%;
+	max-width: 430px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.beard-why-choose-section .why-choose-images::before{
+	display: none;
+}
+
+.beard-why-choose-section .why-choose-image.img-2{
+	width: 100%;
+	margin-top: 0;
+}
+
+.beard-why-choose-section .why-choose-image figure,
+.beard-why-choose-section .why-choose-image img{
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	border-radius: 30px;
+}
+
+.beard-why-choose-section .why-choose-image img{
+	display: block;
+	object-fit: cover;
+	object-position: center top;
+}
+
+@media only screen and (min-width: 992px){
+	.hair-transplant-why-choose-section.beard-why-choose-section .row > .col-lg-5{
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%;
+	}
+
+	.hair-transplant-why-choose-section.beard-why-choose-section .row > .col-lg-7{
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.beard-why-choose-section .why-choose-images{
+		margin-bottom: 35px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.beard-why-choose-section .why-choose-images{
+		max-width: 100%;
+	}
+
+	.beard-why-choose-section .why-choose-image figure,
+	.beard-why-choose-section .why-choose-image img{
+		border-radius: 20px;
+	}
+}
