@@ -16302,3 +16302,119 @@ header.main-header .header-sticky.active{
 		border-radius: 20px;
 	}
 }
+/* Banani specialist single-image and CTA layout */
+.banani-specialist-single-image .why-choose-images{
+	display: block;
+	width: 100%;
+	max-width: 430px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.banani-specialist-single-image .why-choose-images::before{
+	display: none;
+}
+
+.banani-specialist-single-image .why-choose-image.img-1{
+	width: 100%;
+}
+
+.banani-specialist-single-image .why-choose-image figure,
+.banani-specialist-single-image .why-choose-image img{
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	border-radius: 30px;
+}
+
+.banani-specialist-single-image .why-choose-image img{
+	display: block;
+	object-fit: cover;
+	object-position: center;
+}
+
+.banani-call-for-appointment-section{
+	padding: 30px 0;
+}
+
+@media only screen and (max-width: 991px){
+	.banani-specialist-single-image .why-choose-images{
+		margin-bottom: 35px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.banani-specialist-single-image .why-choose-images{
+		max-width: 100%;
+	}
+
+	.banani-specialist-single-image .why-choose-image figure,
+	.banani-specialist-single-image .why-choose-image img{
+		border-radius: 20px;
+	}
+
+	.banani-call-for-appointment-section{
+		padding: 20px 0;
+	}
+}
+/* Banani trust section: text left with one retained treatment image */
+.banani-trust-single-image .row{
+    --bs-gutter-x: 42px;
+}
+
+.banani-trust-single-image .what-we-content{
+    max-width: 720px;
+    margin: 0;
+    padding: 0;
+}
+
+.banani-trust-single-image .what-we-image-2{
+    width: 100%;
+    max-width: 430px;
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+
+.banani-trust-single-image .what-we-image-2 img{
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banani-trust-single-image .experirnce-box{
+    left: -52px;
+    bottom: 38px;
+}
+
+@media only screen and (max-width: 991px){
+    .banani-trust-single-image .row{
+        row-gap: 30px;
+    }
+
+    .banani-trust-single-image .what-we-content{
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .banani-trust-single-image .what-we-image-2{
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .banani-trust-single-image .experirnce-box{
+        left: -20px;
+        bottom: 28px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .banani-trust-single-image .what-we-image-2{
+        max-width: 300px;
+    }
+
+    .banani-trust-single-image .experirnce-box{
+        left: 0;
+        bottom: 20px;
+    }
+}
