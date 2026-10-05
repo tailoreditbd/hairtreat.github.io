@@ -16020,3 +16020,57 @@ header.main-header .header-sticky.active{
 		font-size: 18px;
 	}
 }
+
+/* About page homepage-matched image layout */
+.about-page .home-about-section .about-us-images{
+	position: relative;
+	display: block;
+	max-width: 500px;
+	margin: 0 55px 0 0;
+	background: none;
+}
+
+
+.about-page .home-about-section .about-img-1{
+	width: 100%;
+	padding-left: 0;
+}
+
+.about-page .home-about-section .company-experience-circle{
+	right: -45px;
+	bottom: 35px;
+	transform: none;
+}
+
+.about-page .home-about-section .about-experience-list{
+	width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+	.about-page .home-about-section .about-us-images{
+		margin: 0 auto 55px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.about-page .home-about-section .about-us-images{
+		margin-bottom: 60px;
+	}
+
+
+	.about-page .home-about-section .company-experience-circle{
+		right: 15px !important;
+		bottom: -35px !important;
+		transform: none !important;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.about-page .home-about-section .about-img-1{
+		padding-left: 0 !important;
+	}
+
+	.about-page .home-about-section .company-experience-circle img{
+		max-width: 90px;
+	}
+}
