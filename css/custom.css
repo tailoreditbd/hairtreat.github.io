@@ -16254,3 +16254,51 @@ header.main-header .header-sticky.active{
 		border-radius: 20px;
 	}
 }
+/* Banani intro single-image layout */
+.banani-intro-single-image .about-us-images{
+	display: block;
+	width: 100%;
+	max-width: 430px;
+	margin: 0 auto;
+	padding: 0;
+	background: none;
+}
+
+.banani-intro-single-image .about-img-1{
+	width: 100%;
+	padding-left: 0;
+}
+
+.banani-intro-single-image .about-img-1 figure,
+.banani-intro-single-image .about-img-1 img{
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	border-radius: 30px;
+}
+
+.banani-intro-single-image .about-img-1 img{
+	display: block;
+	object-fit: cover;
+	object-position: center top;
+}
+
+@media only screen and (max-width: 991px){
+	.banani-intro-single-image .about-us-images{
+		margin-bottom: 35px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.banani-intro-single-image .about-us-images{
+		max-width: 100%;
+	}
+
+	.banani-intro-single-image .about-img-1{
+		padding-left: 0 !important;
+	}
+
+	.banani-intro-single-image .about-img-1 figure,
+	.banani-intro-single-image .about-img-1 img{
+		border-radius: 20px;
+	}
+}
