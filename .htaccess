@@ -6,6 +6,11 @@
 # URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
+# Clean URLs for service-area pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/hairtreat/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
 
   # Keep legacy treatment links pointed at the existing project directories.
   RewriteRule ^hair-treatments(?:/hair-transplant)?(?:/index\.html|/)?$ hair-transplant [NC,R=301,L]
