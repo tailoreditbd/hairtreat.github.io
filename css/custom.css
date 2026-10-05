@@ -449,7 +449,7 @@ body{
 	font-size: 20px;
 	line-height: 1.45em;
 	color: var(--primary-color);
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 }
 
 .services-treatment-heading-content p:last-child{
@@ -541,7 +541,7 @@ body{
 	font-weight: 700;
 	line-height: 1.2em;
 	color: var(--primary-color);
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 }
 
 .available-treatment-card-content p{
@@ -574,7 +574,7 @@ body{
 	font-weight: 700;
 	line-height: 1.25em;
 	color: var(--primary-color);
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 	text-transform: none;
 	letter-spacing: 0;
 }
@@ -2579,7 +2579,7 @@ header.main-header .header-sticky.active{
 
 .banani-doctor-profile__content h3.section-title-h3-override{
 	max-width: 680px;
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 }
 
 .banani-doctor-profile__content > p:not(.section-subtitle){
@@ -2852,7 +2852,7 @@ header.main-header .header-sticky.active{
 
 	.clinic-focus-list{
 		padding-left: 18px;
-		margin-bottom: 22px;
+		margin-bottom: 16px;
 	}
 
 	.clinic-focus-list li{
@@ -4377,7 +4377,7 @@ header.main-header .header-sticky.active{
 .hair-transplant-service-intro h2{
 	font-size: 32px;
 	line-height: 1.3em;
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 }
 
 .hair-transplant-service-intro h3{
@@ -16072,5 +16072,77 @@ header.main-header .header-sticky.active{
 
 	.about-page .home-about-section .company-experience-circle img{
 		max-width: 90px;
+	}
+}
+/* Hair transplant related blog cards */
+.hair-transplant-page-service{
+	padding-bottom: 0;
+}
+
+.hair-transplant-page-service .hair-transplant-assessment-section,
+.hair-transplant-page-service .hair-transplant-assessment-section .laser-assessment-entry{
+	margin: 0 !important;
+	padding: 0 !important;
+	border-bottom: 0 !important;
+}
+
+.hair-transplant-link-bar{
+	padding: 25px 0 35px;
+	border-top: 1px solid var(--divider-color);
+	background: var(--white-color);
+}
+
+.related-blogs-bar{
+	position: relative;
+	margin-top: -85px;
+	z-index: 2;
+}
+
+.related-blogs-title{
+	font-size: 32px;
+	margin-bottom: 25px;
+}
+
+.related-blog-cards .post-item{
+	margin-bottom: 0;
+}
+
+.related-blog-cards .post-featured-image figure,
+.related-blog-cards .post-featured-image img{
+	height: 220px;
+}
+
+.related-blog-cards .post-featured-image img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.related-blog-cards .post-item-content h2{
+	font-size: 22px;
+}
+
+@media only screen and (max-width: 991px){
+	.related-blogs-bar{
+		margin-top: 0;
+	}
+
+	.related-blog-cards{
+		row-gap: 30px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.hair-transplant-link-bar{
+		padding: 25px 0 30px;
+	}
+
+	.related-blogs-title{
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+
+	.related-blog-cards .post-featured-image figure,
+	.related-blog-cards .post-featured-image img{
+		height: 190px;
 	}
 }
