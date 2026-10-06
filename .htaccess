@@ -6,6 +6,14 @@
 # URL Rewriting
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Tangail page: canonical root-level URL and legacy redirects
+  RewriteRule ^service-area/tangail(?:\.html|/)?$ hair-transplant-in-tangail [NC,R=301,L]
+  RewriteRule ^hair-transplant-in-tangail/$ hair-transplant-in-tangail [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*hair-transplant-in-tangail\.html(?:[?\s]) [NC]
+  RewriteRule ^hair-transplant-in-tangail\.html$ hair-transplant-in-tangail [NC,R=301,L]
+  RewriteRule ^hair-transplant-in-tangail$ hair-transplant-in-tangail.html [NC,L]
+
 # Clean URLs for service-area pages
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
