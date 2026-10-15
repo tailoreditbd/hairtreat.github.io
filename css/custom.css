@@ -16418,3 +16418,26 @@ header.main-header .header-sticky.active{
         bottom: 20px;
     }
 }
+
+/* Keep every inner-page breadcrumb banner consistent with the About Us page. */
+.page-header{
+    width: 100% !important;
+    height: 225px !important;
+    min-height: 225px !important;
+    max-height: 225px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.page-header .page-header-box{
+    height: 225px !important;
+    min-height: 225px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
