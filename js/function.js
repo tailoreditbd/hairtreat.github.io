@@ -19,6 +19,15 @@
     $('.about-footer-content p').text('HairTreat provides consultation-based hair restoration and hair-loss treatment using modern equipment, personalized treatment planning and professional aftercare support.');
     $('.footer-social-links .fa-facebook-f').closest('a').attr('href', 'https://www.facebook.com/hairtreat');
 
+    $('.header-contact-now').each(function() {
+        $(this).replaceWith(
+            '<div class="header-contact-locations">' +
+                '<div class="header-contact-location"><span>Uttara:</span><i class="fa-solid fa-phone"></i><a href="tel:+8801805002681">(+88) 01805 002681</a></div>' +
+                '<div class="header-contact-location"><span>Tangail:</span><i class="fa-solid fa-phone"></i><a href="tel:+8801805002688">(+88) 01805 002688</a></div>' +
+            '</div>'
+        );
+    });
+
     $('.treatments-menu > a').attr('href', 'hair-transplant').text('Hair Transplant');
     $('.transplant-menu > a').attr('href', 'other-treatments').text('Other Treatments');
     $('.method-menu > a').attr('href', 'hair-transplant/method');
