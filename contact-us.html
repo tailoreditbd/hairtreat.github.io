@@ -84,6 +84,7 @@
 
         gtag('config', 'G-5SDWQWJSN2');
     </script>
+
 </head>
 
 <body>
@@ -422,9 +423,6 @@
                 </button>
                 <button class="btn-default loc-btn" onclick="changeMap('tangail', this)">
                     <i class="fa-solid fa-location-dot"></i> Tangail
-                </button>
-                <button class="btn-default loc-btn" onclick="changeMap('sirajganj', this)">
-                    <i class="fa-solid fa-location-dot"></i> Sirajganj
                 </button>
             </div>
         </div>
@@ -853,9 +851,6 @@
             } else if (location === 'tangail') {
                 // Showing Tangail map (You can replace this query with your exact Tangail clinic address later)
                 iframe.src = "https://www.google.com/maps?q=Tangail%2C%20Bangladesh&output=embed";
-            } else if (location === 'sirajganj') {
-                // Showing Sirajganj map (You can replace this query with your exact Sirajganj clinic address later)
-                iframe.src = "https://www.google.com/maps?q=Sirajganj%2C%20Bangladesh&output=embed";
             }
         }
 
