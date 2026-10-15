@@ -7,7 +7,7 @@
             var base = document.createElement('base');
             var localRoot = location.pathname.match(/^(.*\/(?:hairtreat\.github\.io|hairtreat))(?:\/|$)/);
             base.href = location.protocol === 'file:'
-                ? new URL('./', location.href).href
+                ? new URL('../../', location.href).href
                 : (localRoot ? localRoot[1] + '/' : '/');
             document.write(base.outerHTML);
         })();
@@ -27,30 +27,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hairtreat.com.bd/results">
+    <link rel="canonical" href="https://hairtreat.com.bd/results/reviews">
     <script data-clean-url-script>
         (function () {
-            var cleanPath = 'results';
-            if (window.location.pathname.endsWith('/results.html')) {
-                var target = window.location.pathname.replace(/results\.html$/, cleanPath);
+            var pathname = window.location.pathname;
+            if (/\/results\/reviews\/index\.html$/.test(pathname)) {
+                var target = pathname.replace(/results\/reviews\/index\.html$/, 'results/reviews');
                 window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+            } else if (/\/reviews(?:\.html)?\/?$/.test(pathname) &&
+                !/\/results\/reviews(?:\.html)?\/?$/.test(pathname)) {
+                var target = pathname.replace(/reviews(?:\.html)?\/?$/, 'results/reviews');
+                window.location.replace(target + window.location.search + window.location.hash);
             }
         })();
     </script>
     <!-- Page Title -->
-    <title>HairTreat Results | Hair Transplant Clinic Bangladesh</title>
+    <title>HairTreat Reviews | Hair Transplant Clinic Bangladesh</title>
     <meta name="description"
         content="Read patient reviews of HairTreat hair transplant, PRP and laser treatments in Bangladesh. Learn about real experiences with our clinic and care team.">
-    <meta property="og:title" content="HairTreat Results | Hair Transplant Clinic Bangladesh">
+    <meta property="og:title" content="HairTreat Reviews | Hair Transplant Clinic Bangladesh">
     <meta property="og:description"
         content="Read patient reviews of HairTreat hair transplant, PRP and laser treatments in Bangladesh. Learn about real experiences with our clinic and care team.">
     <meta property="og:image" content="">
-    <meta property="og:url" content="https://hairtreat.com.bd/results">
+    <meta property="og:url" content="https://hairtreat.com.bd/results/reviews">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="HairTreat Results | Hair Transplant Clinic Bangladesh">
+    <meta name="twitter:title" content="HairTreat Reviews | Hair Transplant Clinic Bangladesh">
     <meta name="twitter:description"
         content="Read patient reviews of HairTreat hair transplant, PRP and laser treatments in Bangladesh. Learn about real experiences with our clinic and care team.">
-    <meta name="twitter:url" content="https://hairtreat.com.bd/results">
     <meta name="twitter:image" content="">
     <meta name="author" content="hairtreat.com.bd/">
     <!-- Favicon Icon -->
@@ -75,7 +78,7 @@
     <!-- Mouse Cursor Css File -->
     <link rel="stylesheet" href="css/mousecursor.css">
     <!-- Main Custom Css -->
-    <link href="css/custom.css?v=nav-contact-tight-20261015" rel="stylesheet" media="screen">
+    <link href="css/custom.css?v=results-dropdown-20261015" rel="stylesheet" media="screen">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SDWQWJSN2"></script>
     <script>
@@ -205,7 +208,12 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="results">Results</a></li>
+                                <li class="nav-item submenu results-menu">
+                                    <a class="nav-link active" href="results">Results</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link active" href="results/reviews">Reviews</a></li>
+                                    </ul>
+                                </li>
                                 <li class="nav-item submenu about-menu">
                                     <a class="nav-link" href="about">About us</a>
                                     <ul>
@@ -246,11 +254,12 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">Results</h1>
+                        <h1 class="text-anime-style-3" data-cursor="-opaque">Reviews</h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">results</li>
+                                <li class="breadcrumb-item"><a href="results">results</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">reviews</li>
                             </ol>
                         </nav>
                     </div>

@@ -12822,6 +12822,16 @@ header.main-header .header-sticky.active{
 	.header-contact-btn{
 		margin-left: 0;
 	}
+
+	/* Keep the single-item Results dropdown as compact as its label. */
+	.main-menu ul li.results-menu > ul{
+		width: max-content !important;
+		min-width: 120px;
+	}
+
+	.main-menu ul li.results-menu > ul > li > a{
+		white-space: nowrap;
+	}
 }
 
 /* Custom Step Table Text Styles */

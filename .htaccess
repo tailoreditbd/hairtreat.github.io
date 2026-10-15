@@ -7,11 +7,19 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Reviews was renamed to Results. Redirect the legacy URL before generic clean routing.
-  RewriteRule ^reviews(?:\.html)?/?$ results [NC,R=301,L]
+  # Reviews is a child page under Results. Redirect legacy URLs to the nested canonical URL.
+  RewriteRule ^reviews(?:\.html)?/?$ results/reviews [NC,R=301,L]
+  RewriteRule ^results/results/reviews(?:/index\.html|\.html|/)?$ results/reviews [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*results/reviews/index\.html(?:[?\s]) [NC]
+  RewriteRule ^results/reviews/index\.html$ results/reviews [NC,R=301,L]
+  RewriteRule ^results/reviews(?:\.html|/)$ results/reviews [NC,R=301,L]
+  RewriteRule ^results/reviews$ results/reviews/index.html [NC,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*results\.html(?:[?\s]) [NC]
   RewriteRule ^results\.html$ results [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*results/index\.html(?:[?\s]) [NC]
+  RewriteRule ^results/index\.html$ results [NC,R=301,L]
   RewriteRule ^results/$ results [NC,R=301,L]
+  RewriteRule ^results$ results/index.html [NC,L]
 
   # Pricing moved under About Us.
   RewriteRule ^(?:hair-transplant-cost|pricing)(?:\.html)?/?$ about/hair-transplant-cost [NC,R=301,L]
@@ -188,7 +196,7 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteRule ^moustache-transplant/$ moustache-transplant [NC,R=301,L]
   RewriteRule ^p-shot/?$ other-treatments/p-shot [NC,R=301,L]
   RewriteRule ^hair-transplant-cost/$ hair-transplant-cost [NC,R=301,L]
-  RewriteRule ^reviews/?$ results [NC,R=301,L]
+  RewriteRule ^reviews/?$ results/reviews [NC,R=301,L]
   RewriteRule ^results/$ results [NC,R=301,L]
   RewriteRule ^sapphire-hair-transplant/?$ hair-treatments/hair-transplant/sapphire-hair-transplant [NC,R=301,L]
   RewriteRule ^service-area/(banani|dhaka|gulshan|uttara)/$ service-area/$1 [NC,R=301,L]
@@ -289,7 +297,7 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*pricing\.html[?\s] [NC]
   RewriteRule ^pricing\.html$ hair-transplant-cost [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*reviews\.html[?\s] [NC]
-  RewriteRule ^reviews\.html$ results [NC,R=301,L]
+  RewriteRule ^reviews\.html$ results/reviews [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*results\.html[?\s] [NC]
   RewriteRule ^results\.html$ results [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*sapphire-hair-transplant\.html[?\s] [NC]
