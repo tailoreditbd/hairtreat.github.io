@@ -7,6 +7,12 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Reviews was renamed to Results. Redirect the legacy URL before generic clean routing.
+  RewriteRule ^reviews(?:\.html)?/?$ results [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*results\.html(?:[?\s]) [NC]
+  RewriteRule ^results\.html$ results [NC,R=301,L]
+  RewriteRule ^results/$ results [NC,R=301,L]
+
   # Tangail page: canonical root-level URL and legacy redirects
   RewriteRule ^service-area/tangail(?:\.html|/)?$ hair-transplant-in-tangail [NC,R=301,L]
   RewriteRule ^hair-transplant-in-tangail/$ hair-transplant-in-tangail [NC,R=301,L]
@@ -176,7 +182,8 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteRule ^moustache-transplant/$ moustache-transplant [NC,R=301,L]
   RewriteRule ^p-shot/?$ other-treatments/p-shot [NC,R=301,L]
   RewriteRule ^hair-transplant-cost/$ hair-transplant-cost [NC,R=301,L]
-  RewriteRule ^reviews/$ reviews [NC,R=301,L]
+  RewriteRule ^reviews/?$ results [NC,R=301,L]
+  RewriteRule ^results/$ results [NC,R=301,L]
   RewriteRule ^sapphire-hair-transplant/?$ hair-treatments/hair-transplant/sapphire-hair-transplant [NC,R=301,L]
   RewriteRule ^service-area/(banani|dhaka|gulshan|uttara)/$ service-area/$1 [NC,R=301,L]
   RewriteRule ^service-area/$ service-area [NC,R=301,L]
@@ -276,7 +283,9 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*pricing\.html[?\s] [NC]
   RewriteRule ^pricing\.html$ hair-transplant-cost [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*reviews\.html[?\s] [NC]
-  RewriteRule ^reviews\.html$ reviews [NC,R=301,L]
+  RewriteRule ^reviews\.html$ results [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/([^/]+/)*results\.html[?\s] [NC]
+  RewriteRule ^results\.html$ results [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*sapphire-hair-transplant\.html[?\s] [NC]
   RewriteRule ^sapphire-hair-transplant\.html$ hair-treatments/hair-transplant/sapphire-hair-transplant [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/([^/]+/)*service-area\.html[?\s] [NC]
@@ -329,7 +338,7 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteRule ^laser-treatment$ laser-treatment.html [NC,L]
   RewriteRule ^moustache-transplant$ moustache-transplant.html [NC,L]
   RewriteRule ^hair-transplant-cost$ hair-transplant-cost.html [NC,L]
-  RewriteRule ^reviews$ reviews.html [NC,L]
+  RewriteRule ^results$ results.html [NC,L]
   RewriteRule ^service-area/dhaka$ dhaka.html [NC,L]
   RewriteRule ^service-area/gulshan$ gulshan.html [NC,L]
   RewriteRule ^service-area/banani$ service-area/banani.html [NC,L]
