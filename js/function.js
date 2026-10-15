@@ -1,3 +1,17 @@
+/* Keep live and local canonical URLs consistent without relying on Cloudflare. */
+(function () {
+    var path = window.location.pathname;
+    var isProjectHomepage = /\/(?:hairtreat|hairtreat\.github\.io)\/$/i.test(path);
+
+    if (path.length > 1 && path.endsWith('/') && !isProjectHomepage) {
+        window.history.replaceState(
+            null,
+            '',
+            path.slice(0, -1) + window.location.search + window.location.hash
+        );
+    }
+})();
+
 (function ($) {
     "use strict";
     "use strict";
