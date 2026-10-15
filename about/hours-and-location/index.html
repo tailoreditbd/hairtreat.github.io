@@ -410,6 +410,21 @@
         .loc-btn::after {
             display: none !important;
         }
+
+        @media only screen and (max-width: 767px) {
+            .location-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .location-buttons .loc-btn {
+                display: block;
+                width: 100%;
+                max-width: 320px;
+                margin: 0;
+            }
+        }
     </style>
 
     <div class="location-tabs-section">
@@ -420,13 +435,13 @@
             </div>
 
             <div class="location-buttons wow fadeInUp" data-wow-delay="0.2s">
-                <button class="btn-default loc-btn active" onclick="changeMap('dhaka', this)">
+                <button type="button" class="btn-default loc-btn active" onclick="changeMap('dhaka', this)">
                     <i class="fa-solid fa-location-dot"></i> Dhaka
                 </button>
-                <button class="btn-default loc-btn" onclick="changeMap('tangail', this)">
+                <button type="button" class="btn-default loc-btn" onclick="changeMap('tangail', this)">
                     <i class="fa-solid fa-location-dot"></i> Tangail
                 </button>
-                <button class="btn-default loc-btn" onclick="changeMap('sirajganj', this)">
+                <button type="button" class="btn-default loc-btn" onclick="changeMap('sirajganj', this)">
                     <i class="fa-solid fa-location-dot"></i> Sirajganj
                 </button>
             </div>
@@ -499,7 +514,7 @@
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
                         <iframe id="dynamic-map"
-                            src="https://www.google.com/maps?q=23.8755355,90.3905377&amp;z=17&amp;output=embed"
+                            src="https://www.google.com/maps?q=23.8755355,90.3905377&amp;z=18&amp;output=embed"
                             title="HairTreat clinic location in Uttara, Dhaka" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -869,13 +884,15 @@
 
             // Change the iframe source based on the clicked location
             if (location === 'dhaka') {
-                iframe.src = "https://www.google.com/maps?q=23.8755355,90.3905377&z=17&output=embed";
+                iframe.src = "https://www.google.com/maps?q=23.8755355,90.3905377&z=18&output=embed";
+                iframe.title = "HairTreat clinic location in Uttara, Dhaka";
             } else if (location === 'tangail') {
-                // Showing Tangail map (You can replace this query with your exact Tangail clinic address later)
-                iframe.src = "https://www.google.com/maps?q=Tangail%2C%20Bangladesh&output=embed";
+                iframe.src = "https://www.google.com/maps?q=Talukder%20Clinic%20and%20Nursing%20Home%2C%20Puraton%20Bus%20Stand%2C%20Tangail%20Sadar%2C%20Bangladesh&z=17&output=embed";
+                iframe.title = "HairTreat chamber at Talukder Clinic and Nursing Home, Tangail";
             } else if (location === 'sirajganj') {
                 // Showing Sirajganj map (You can replace this query with your exact Sirajganj clinic address later)
                 iframe.src = "https://www.google.com/maps?q=Sirajganj%2C%20Bangladesh&output=embed";
+                iframe.title = "HairTreat location in Sirajganj";
             }
         }
     </script>
