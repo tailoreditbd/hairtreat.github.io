@@ -16454,14 +16454,18 @@ header.main-header .header-sticky.active{
     .header-contact-location{
         display: flex;
         align-items: center;
-        gap: 8px;
-        padding: 5px 8px;
+        gap: 4px;
+        padding: 3px 5px;
         border-bottom: 1px solid rgba(92, 38, 15, 0.45);
         border-radius: 3px;
         font-size: 15px;
         font-weight: 700;
         line-height: 1.25;
         transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .header-contact-location:last-child{
+        border-bottom: 0;
     }
 
     .header-contact-location:hover,
@@ -16487,6 +16491,16 @@ header.main-header .header-sticky.active{
 
     .header-contact-location > a:hover{
         color: var(--accent-color);
+    }
+
+    .header-contact-btn{
+        gap: 8px;
+    }
+
+    .header-contact-btn > .btn-default{
+        font-size: 13px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 
