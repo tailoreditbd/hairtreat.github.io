@@ -71,25 +71,20 @@ RewriteRule ^(.+?)/?$ $1.html [L]
   # Move About child pages to their canonical nested URLs
   RewriteRule ^(?:contact-us|contact)(?:\.html|/)?$ about/contact-us [NC,R=301,L]
   RewriteRule ^hours-and-location(?:\.html|/)?$ about/hours-and-location [NC,R=301,L]
-  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/blog(?:/index\.html|/)?(?:[?\s]) [NC]
   RewriteRule ^about/blog(?:/index\.html|/)?$ blog [NC,R=301,L]
+  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)(?:/index\.html|\.html|/)?$ blog/$1 [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/index\.html(?:[?\s]) [NC]
   RewriteRule ^blog/index\.html$ blog [NC,R=301,L]
   RewriteRule ^blog/$ blog [NC,R=301,L]
-  RewriteRule ^blog$ about/blog/index.html [NC,L]
-  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)(?:\.html|/)?$ about/blog/$1 [NC,R=301,L]
+  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)(?:\.html|/)$ blog/$1 [NC,R=301,L]
   RewriteRule ^about/(contact-us|hours-and-location|blog)/$ about/$1 [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/(contact-us|hours-and-location)\.html(?:[?\s]) [NC]
   RewriteRule ^about/(contact-us|hours-and-location)\.html$ about/$1 [NC,R=301,L]
-  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/blog/index\.html(?:[?\s]) [NC]
-  RewriteRule ^about/blog/index\.html$ about/blog [NC,R=301,L]
-  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/blog/[^/\s?]+\.html(?:[?\s]) [NC]
-  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)\.html$ about/blog/$1 [NC,R=301,L]
-
   # Serve the new clean About URLs from their index files
   RewriteRule ^about/(contact-us|hours-and-location)$ about/$1/index.html [NC,L]
   RewriteRule ^about/hair-transplant-cost$ about/hair-transplant-cost/index.html [NC,L]
-  RewriteRule ^about/blog$ about/blog/index.html [NC,L]
-  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)$ about/blog/$1/index.html [NC,L]
+  RewriteRule ^blog$ blog/index.html [NC,L]
+  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)$ blog/$1/index.html [NC,L]
   # Local XAMPP project path. Use / when deploying at the domain root.
   RewriteBase /hairtreat/
 
