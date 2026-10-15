@@ -16447,34 +16447,68 @@ header.main-header .header-sticky.active{
     .header-contact-locations{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 2px;
         white-space: nowrap;
     }
 
     .header-contact-location{
         display: flex;
         align-items: center;
-        gap: 6px;
-        font-size: 13px;
+        gap: 8px;
+        padding: 5px 8px;
+        border-bottom: 1px solid rgba(92, 38, 15, 0.45);
+        border-radius: 3px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 1.25;
+        transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .header-contact-location:hover,
+    .header-contact-location:focus-within{
+        transform: translateY(-3px);
+        background-color: rgba(197, 91, 54, 0.08);
+        box-shadow: 0 4px 10px rgba(92, 38, 15, 0.12);
+    }
+
+    .header-contact-location > span{
+        min-width: 66px;
+    }
+
+    .header-contact-location > i{
+        color: var(--accent-color);
+        font-size: 15px;
+    }
+
+    .header-contact-location > a{
+        color: var(--primary-color);
+        transition: color 0.25s ease-in-out;
+    }
+
+    .header-contact-location > a:hover{
+        color: var(--accent-color);
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1300px){
+    .header-contact-location{
+        gap: 5px;
+        padding: 4px 3px;
+        font-size: 13px;
     }
 
     .header-contact-location > span{
         min-width: 58px;
     }
+}
 
-    .header-contact-location > i{
-        color: var(--accent-color);
-        font-size: 12px;
+@media (prefers-reduced-motion: reduce){
+    .header-contact-location{
+        transition: none;
     }
 
-    .header-contact-location > a{
-        color: var(--primary-color);
-        transition: color 0.3s ease-in-out;
-    }
-
-    .header-contact-location > a:hover{
-        color: var(--accent-color);
+    .header-contact-location:hover,
+    .header-contact-location:focus-within{
+        transform: none;
     }
 }
