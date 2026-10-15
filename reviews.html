@@ -26,13 +26,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://hairtreat.com.bd/results">
     <script data-clean-url-script>
         (function () {
-            var cleanPath = 'reviews';
-            if (window.location.pathname.endsWith('/reviews.html')) {
-                var target = window.location.pathname.replace(/reviews\.html$/, cleanPath);
-                window.history.replaceState(null, '', target + window.location.search + window.location.hash);
+            var pathname = window.location.pathname;
+            if (/\/reviews(?:\.html)?\/?$/.test(pathname)) {
+                var target = pathname.replace(/reviews(?:\.html)?\/?$/, 'results');
+                window.location.replace(target + window.location.search + window.location.hash);
             }
         })();
     </script>
@@ -44,7 +45,7 @@
     <meta property="og:description"
         content="Read patient reviews of HairTreat hair transplant, PRP and laser treatments in Bangladesh. Learn about real experiences with our clinic and care team.">
     <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://hairtreat.com.bd/results">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HairTreat Reviews | Hair Transplant Clinic Bangladesh">
     <meta name="twitter:description"
@@ -203,7 +204,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="hair-transplant-cost">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="reviews">Reviews</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="results">Results</a></li>
                                 <li class="nav-item submenu about-menu">
                                     <a class="nav-link" href="about">About us</a>
                                     <ul>
@@ -739,7 +740,7 @@
                                 <li><a href="other-treatments">Transplant</a></li>
                                 <li><a href="about/hours-and-location">Hours &amp; Locations</a></li>
                                 <li><a href="hair-transplant-cost">Pricing</a></li>
-                                <li><a href="reviews">Reviews</a></li>
+                                <li><a href="results">Results</a></li>
                                 <li><a href="about">About us</a></li>
                                 <li><a href="about/contact-us">Contact us</a></li>
                             </ul>
