@@ -7,6 +7,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Use one canonical URL format everywhere: no trailing slash (except the homepage).
+  RewriteCond %{REQUEST_URI} !^/$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)/$ $1 [R=301,L]
+
   # Reviews is a child page under Results. Redirect legacy URLs to the nested canonical URL.
   RewriteRule ^reviews(?:\.html)?/?$ results/reviews [NC,R=301,L]
   RewriteRule ^results/results/reviews(?:/index\.html|\.html|/)?$ results/reviews [NC,R=301,L]
