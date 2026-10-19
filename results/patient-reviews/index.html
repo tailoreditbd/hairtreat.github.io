@@ -80,10 +80,22 @@
     <!-- Main Custom Css -->
     <link href="css/custom.css?v=nav-number-align-20261019" rel="stylesheet" media="screen">
     <style>
+        .page-testimonials {
+            padding-bottom: 10px;
+        }
         .page-testimonials .testimonial-item .testimonial-author .author-content h3 {
             font-size: 20px;
             line-height: 1.35;
         }
+        .patient-video-card { display: block; position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 16 / 9; background: #1a1a1a; }
+        .patient-video-card img { width: 100%; height: 100%; object-fit: cover; }
+        .patient-video-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 50%; background: var(--accent-color); color: #fff; }
+        .patient-video-card:focus-visible { outline: 3px solid var(--accent-color); outline-offset: -3px; }
+        .patient-video-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 24px; }
+        .patient-video-controls button { flex: 0 0 42px; height: 42px; border: 0; border-radius: 50%; background: var(--accent-color); color: #fff; }
+        .patient-video-controls button:disabled { opacity: .4; }
+        .patient-video-pagination { width: auto !important; text-align: center; }
+        .patient-video-pagination .swiper-pagination-bullet-active { background: var(--accent-color); }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SDWQWJSN2"></script>
@@ -499,6 +511,62 @@
 
     
 
+    <!-- Video Reviews Section Start -->
+    <section class="patient-video-reviews" aria-labelledby="video-reviews-title" style="padding: 20px 0 60px;">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h2 id="video-reviews-title" class="text-anime-style-3" data-cursor="-opaque"
+                    style="font-size: 32px; text-align: center; text-transform: none;">Video Reviews</h2>
+            </div>
+            <div class="swiper patient-video-slider" aria-label="Patient video reviews">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="patient-video-card popup-video" href="https://www.youtube.com/watch?v=ZgaMfqS87ns" aria-label="Play patient video review 1">
+                            <img src="https://i.ytimg.com/vi/ZgaMfqS87ns/hqdefault.jpg" alt="Patient video review 1" loading="lazy" width="480" height="360">
+                            <span class="patient-video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="patient-video-card popup-video" href="https://www.youtube.com/watch?v=q3sxXL_YtwU" aria-label="Play patient video review 2">
+                            <img src="https://i.ytimg.com/vi/q3sxXL_YtwU/hqdefault.jpg" alt="Patient video review 2" loading="lazy" width="480" height="360">
+                            <span class="patient-video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="patient-video-card popup-video" href="https://www.youtube.com/watch?v=ljaBLqFG-Is" aria-label="Play patient video review 3">
+                            <img src="https://i.ytimg.com/vi/ljaBLqFG-Is/hqdefault.jpg" alt="Patient video review 3" loading="lazy" width="480" height="360">
+                            <span class="patient-video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="patient-video-card popup-video" href="https://www.youtube.com/watch?v=P1MMzjtPex4" aria-label="Play patient video review 4">
+                            <img src="https://i.ytimg.com/vi/P1MMzjtPex4/hqdefault.jpg" alt="Patient video review 4" loading="lazy" width="480" height="360">
+                            <span class="patient-video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="patient-video-card popup-video" href="https://www.youtube.com/watch?v=GaP-eWcJ5Qg" aria-label="Play patient video review 5">
+                            <img src="https://i.ytimg.com/vi/GaP-eWcJ5Qg/hqdefault.jpg" alt="Patient video review 5" loading="lazy" width="480" height="360">
+                            <span class="patient-video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="patient-video-card popup-video" href="https://www.youtube.com/watch?v=fih0aF6vZcg" aria-label="Play patient video review 6">
+                            <img src="https://i.ytimg.com/vi/fih0aF6vZcg/hqdefault.jpg" alt="Patient video review 6" loading="lazy" width="480" height="360">
+                            <span class="patient-video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="patient-video-controls">
+                <button class="patient-video-prev" type="button" aria-label="Previous video reviews"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="patient-video-pagination"></div>
+                <button class="patient-video-next" type="button" aria-label="Next video reviews"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Video Reviews Section End -->
+
     <!-- Consultation CTA Start -->
     <section
         class="page-book-appointment treatment-skin-analysis-section hair-transplant-appointment-section about-appointment-section">
@@ -724,6 +792,25 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js?v=certifications-20261019"></script>
+    <script>
+        var patientVideoSlider = new Swiper('.patient-video-slider', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: { delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: true },
+            watchOverflow: true,
+            navigation: { prevEl: '.patient-video-prev', nextEl: '.patient-video-next' },
+            pagination: { el: '.patient-video-pagination', clickable: true },
+            keyboard: { enabled: true, onlyInViewport: true },
+            a11y: { enabled: true },
+            breakpoints: { 768: { slidesPerView: 2 }, 1200: { slidesPerView: 3 } }
+        });
+        jQuery('.patient-video-card').on('mfpOpen', function () {
+            patientVideoSlider.autoplay.stop();
+        }).on('mfpClose', function () {
+            patientVideoSlider.autoplay.start();
+        });
+    </script>
 </body>
 
 </html>
