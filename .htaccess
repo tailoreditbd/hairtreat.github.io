@@ -7,6 +7,12 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Preserve old article URLs after the Bangla slug change.
+  RewriteRule ^(?:about/blog/|blog/)?best-hair-transplant-service-bangladesh(?:/index\.html|\.html|/)?$ blog/best-hair-transplant-service-bangla [NC,R=301,L]
+  RewriteRule ^best-hair-transplant-service-bangla(?:/index\.html|\.html|/)?$ blog/best-hair-transplant-service-bangla [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/best-hair-transplant-service-bangla/index\.html(?:[?\s]) [NC]
+  RewriteRule ^blog/best-hair-transplant-service-bangla/index\.html$ blog/best-hair-transplant-service-bangla [NC,R=301,L]
+
   # Use one canonical URL format everywhere: no trailing slash (except the homepage).
   RewriteCond %{REQUEST_URI} !^/$
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -89,11 +95,11 @@ RewriteRule ^(.+?)/?$ $1.html [L]
   RewriteRule ^(?:contact-us|contact)(?:\.html|/)?$ about/contact-us [NC,R=301,L]
   RewriteRule ^hours-and-location(?:\.html|/)?$ about/hours-and-location [NC,R=301,L]
   RewriteRule ^about/blog(?:/index\.html|/)?$ blog [NC,R=301,L]
-  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)(?:/index\.html|\.html|/)?$ blog/$1 [NC,R=301,L]
+  RewriteRule ^about/blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangla)(?:/index\.html|\.html|/)?$ blog/$1 [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/index\.html(?:[?\s]) [NC]
   RewriteRule ^blog/index\.html$ blog [NC,R=301,L]
   RewriteRule ^blog/$ blog [NC,R=301,L]
-  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)(?:\.html|/)$ blog/$1 [NC,R=301,L]
+  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangla)(?:\.html|/)$ blog/$1 [NC,R=301,L]
   RewriteRule ^about/(contact-us|hours-and-location|blog)/$ about/$1 [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/(contact-us|hours-and-location)\.html(?:[?\s]) [NC]
   RewriteRule ^about/(contact-us|hours-and-location)\.html$ about/$1 [NC,R=301,L]
@@ -105,7 +111,7 @@ RewriteRule ^(.+?)/?$ $1.html [L]
   RewriteRule ^about/certifications$ about/certifications/index.html [NC,L]
   RewriteRule ^about/hair-transplant-cost$ about/hair-transplant-cost/index.html [NC,L]
   RewriteRule ^blog$ blog/index.html [NC,L]
-  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangladesh)$ blog/$1/index.html [NC,L]
+  RewriteRule ^blog/(top-10-hair-transplant-clinics-in-bangladesh|top-10-hair-transplant-surgeons-in-bangladesh|best-hair-transplant-service-bangla)$ blog/$1/index.html [NC,L]
   # Local XAMPP project path. Use / when deploying at the domain root.
   RewriteBase /hairtreat/
 
@@ -168,9 +174,9 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteRule ^blog/top-10-hair-transplant-clinics-in-bangladesh/$ blog/top-10-hair-transplant-clinics-in-bangladesh [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/top-10-hair-transplant-clinics-in-bangladesh\.html(?:[?\s]) [NC]
   RewriteRule ^blog/top-10-hair-transplant-clinics-in-bangladesh\.html$ blog/top-10-hair-transplant-clinics-in-bangladesh [NC,R=301,L]
-  RewriteRule ^blog/best-hair-transplant-service-bangladesh/$ blog/best-hair-transplant-service-bangladesh [NC,R=301,L]
-  RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/best-hair-transplant-service-bangladesh\.html(?:[?\s]) [NC]
-  RewriteRule ^blog/best-hair-transplant-service-bangladesh\.html$ blog/best-hair-transplant-service-bangladesh [NC,R=301,L]
+  RewriteRule ^blog/best-hair-transplant-service-bangla/$ blog/best-hair-transplant-service-bangla [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/best-hair-transplant-service-bangla\.html(?:[?\s]) [NC]
+  RewriteRule ^blog/best-hair-transplant-service-bangla\.html$ blog/best-hair-transplant-service-bangla [NC,R=301,L]
   RewriteRule ^book-appointment/$ book-appointment [NC,R=301,L]
   RewriteRule ^blog/top-10-hair-transplant-surgeons-in-bangladesh/$ blog/top-10-hair-transplant-surgeons-in-bangladesh [NC,R=301,L]
   RewriteCond %{THE_REQUEST} \s/+[^\s?]*blog/top-10-hair-transplant-surgeons-in-bangladesh\.html(?:[?\s]) [NC]
@@ -340,7 +346,7 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteRule ^blog-single$ blog-single.html [NC,L]
   RewriteRule ^blog$ blog/index.html [NC,L]
   RewriteRule ^blog/top-10-hair-transplant-clinics-in-bangladesh$ blog/top-10-hair-transplant-clinics-in-bangladesh.html [NC,L]
-  RewriteRule ^blog/best-hair-transplant-service-bangladesh$ blog/best-hair-transplant-service-bangladesh.html [NC,L]
+  RewriteRule ^blog/best-hair-transplant-service-bangla$ blog/best-hair-transplant-service-bangla.html [NC,L]
   RewriteRule ^blog/top-10-hair-transplant-surgeons-in-bangladesh$ blog/top-10-hair-transplant-surgeons-in-bangladesh.html [NC,L]
   RewriteRule ^book-appointment$ book-appointment.html [NC,L]
   RewriteRule ^case-study-single$ case-study-single.html [NC,L]
