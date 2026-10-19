@@ -16538,3 +16538,44 @@ header.main-header .header-sticky.active{
         transform: none;
     }
 }
+.floating-whatsapp-btn{
+	position: fixed;
+	right: max(28px, env(safe-area-inset-right));
+	bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #25d366;
+	color: #fff;
+	font-size: 34px;
+	line-height: 1;
+	text-decoration: none;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.floating-whatsapp-btn:hover,
+.floating-whatsapp-btn:focus{
+	background: #128c7e;
+	color: #fff;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+}
+
+.floating-whatsapp-btn:focus-visible{
+	outline: 3px solid #128c7e;
+	outline-offset: 4px;
+}
+
+@media (max-width: 767px){
+	.floating-whatsapp-btn{
+		right: max(18px, env(safe-area-inset-right));
+		bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+		width: 54px;
+		height: 54px;
+		font-size: 30px;
+	}
+}
