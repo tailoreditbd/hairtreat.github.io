@@ -194,6 +194,10 @@
             priceLink.text('Price & Packages');
             menu.prepend(priceLink.closest('li'));
         }
+        var awardsLink = menu.find('a[href="about/awards-achievement"]').first();
+        if (awardsLink.length && !menu.find('a[href="about/certifications"]').length) {
+            awardsLink.closest('li').after('<li class="nav-item"><a class="nav-link" href="about/certifications">Certifications</a></li>');
+        }
     });
 
     /* Compact contact numbers beside the mobile menu on every page. */
