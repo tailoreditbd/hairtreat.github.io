@@ -174,6 +174,7 @@
         .home-consultation-locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
         .home-consultation-locations p { margin: 0; padding: 16px; border: 1px solid rgba(255,255,255,.25); border-radius: 12px; color: #fff; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
         .home-consultation-locations a, .home-consultation-call { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+        .home-consultation-locations a[href^="tel:"] { display: inline; padding: 0; position: relative; z-index: 2; pointer-events: auto; cursor: pointer; }
         .home-consultation-actions { display: flex; flex-direction: column; align-items: stretch; gap: 14px; width: 100%; max-width: 300px; margin-left: auto; }
         .home-consultation-actions .btn-appointment-red { width: 100%; max-width: 100%; line-height: 1.4; text-align: center; }
         .home-consultation-actions .home-consultation-call { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.7); border-radius: 50px; color: #fff; background: rgba(255,255,255,.08); font-size: 14px; font-weight: 600; line-height: 1.5; text-align: center; text-decoration: none; }
@@ -794,7 +795,7 @@
   </div>
 
   <!-- Call for Appointment Section Start -->
-    <div class="call-for-appointment-section">
+    <div class="call-for-appointment-section" style="padding-bottom: 20px;">
         <div class="container">
             <div class="appointment-banner-box">
                 <div class="row align-items-center">
@@ -829,98 +830,85 @@
     </div>
     <!-- Call for Appointment Section End -->
 
-  <div class="our-faqs uttara-faq-section">
+  <div class="our-faqs uttara-faq-section" style="padding-top: 20px !important;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-12">
           <div class="section-title section-title-center">
             <p class="section-subtitle wow fadeInUp">Got Questions?</p>
-            <h2 class="text-anime-style-3" data-cursor="-opaque" style="font-size: 32px;">FAQ about hair transplant cost
-              in Bangladesh</h2>
+            <h2 class="text-anime-style-3" data-cursor="-opaque" style="font-size: 32px;">FAQs about hair transplant cost</h2>
           </div>
           <div class="faq-accordion" id="accordion">
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading1"><button class="accordion-button" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
-                  aria-controls="collapse1">How much does hair transplant cost in Bangladesh?</button></h3>
+                  aria-controls="collapse1">How much does a hair transplant cost in Bangladesh?</button></h3>
               <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>Hair transplant cost depends on graft number, technique, donor area condition, and the selected
-                    package. A consultation is needed to confirm the exact cost.</p>
-                </div>
+                <div class="accordion-body"><p>At HairTreat, normal FUE starts at 25&ndash;30 BDT per graft, Sapphire FUE at 35&ndash;45 BDT, and DHI at 60&ndash;75 BDT. Package offers start from 20 BDT per graft. Total cost depends on graft count, technique, and package.</p></div>
               </div>
             </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
-                  aria-controls="collapse2">What is the cost per graft for hair transplant?</button></h3>
+                  aria-controls="collapse2">What is the cost per graft for a hair transplant?</button></h3>
               <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>The cost per graft may vary based on the selected technique. Normal FUE, Sapphire FUE, and DHI
-                    usually have different per-graft pricing.</p>
-                </div>
+                <div class="accordion-body"><p>It depends on the technique. Normal FUE is the lowest, Sapphire FUE sits in the middle, and DHI is the highest.</p></div>
               </div>
             </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
                   aria-controls="collapse3">Is Sapphire FUE more expensive than normal FUE?</button></h3>
               <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>Yes, Sapphire FUE usually costs more than normal FUE because it uses sapphire blades for more
-                    precise channel opening and advanced placement planning.</p>
-                </div>
+                <div class="accordion-body"><p>Yes. Sapphire FUE uses sapphire blades for more precise channel opening and density planning, so it costs more per graft.</p></div>
               </div>
             </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading4"><button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
-                  aria-controls="collapse4">How many grafts do I need for hair transplant?</button></h3>
+                  aria-controls="collapse4">How many grafts do I need?</button></h3>
               <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>The required graft number depends on your bald area, hairline design, crown condition, and donor
-                    hair quality. A doctor can confirm this after checking your scalp.</p>
-                </div>
+                <div class="accordion-body"><p>It depends on your bald area, hairline design, crown condition, and donor hair quality. A doctor confirms the number after checking your scalp.</p></div>
               </div>
             </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading5"><button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
-                  aria-controls="collapse5">Is hair transplant in Bangladesh affordable?</button></h3>
+                  aria-controls="collapse5">What do the HairTreat packages include?</button></h3>
               <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>Yes, hair transplant in Bangladesh is often more affordable compared to many international clinics,
-                    especially for NRB and local patients.</p>
-                </div>
+                <div class="accordion-body"><p>Every package covers PRP sessions, doctor consultations, meals on surgery day and an aftercare kit. The Diamond and Platinum packages also include free post-surgery medicine, and Platinum adds Minoxidil, Finasteride and shampoo packs.</p></div>
               </div>
             </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading6"><button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
-                  aria-controls="collapse6">Does HairTreat offer packages for NRB patients?</button></h3>
+                  aria-controls="collapse6">Is a hair transplant in Bangladesh affordable?</button></h3>
               <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>Yes, HairTreat offers treatment planning and package support for overseas Bangladeshis who want
-                    hair transplant treatment during their visit to Bangladesh.</p>
-                </div>
+                <div class="accordion-body"><p>Yes. Hair transplant in Bangladesh is often more affordable than at many international clinics, especially for NRB and local patients.</p></div>
               </div>
             </div>
-            <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+            <div class="accordion-item wow fadeInUp">
               <h3 class="accordion-header" id="heading7"><button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false"
-                  aria-controls="collapse7">Can I know the exact price before consultation?</button></h3>
+                  aria-controls="collapse7">Does HairTreat offer packages for NRB patients?</button></h3>
               <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
                 data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  <p>You can get an estimated idea, but the exact price is confirmed after consultation because graft
-                    requirement and treatment technique vary from patient to patient.</p>
-                </div>
+                <div class="accordion-body"><p>Yes. We offer treatment planning and package support for overseas Bangladeshis visiting Bangladesh.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item wow fadeInUp">
+              <h3 class="accordion-header" id="heading8"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false"
+                  aria-controls="collapse8">Can I know the exact price before consultation?</button></h3>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                data-bs-parent="#accordion">
+                <div class="accordion-body"><p>You can get an estimate from this page, but the exact price is confirmed after consultation because graft needs and technique differ for every patient.</p></div>
               </div>
             </div>
           </div>
