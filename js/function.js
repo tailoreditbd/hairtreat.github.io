@@ -184,6 +184,17 @@
         });
     }
 
+    /* Compact contact numbers beside the mobile menu on every page. */
+    $('.navbar-toggle').each(function () {
+        if ($(this).siblings('.mobile-header-contacts').length) return;
+        $(this).before(
+            '<div class="mobile-header-contacts" aria-label="Call our clinics">' +
+                '<a href="tel:+8801805002681"><span>Uttara:</span> 01805 002681</a>' +
+                '<a href="tel:+8801805002688"><span>Tangail:</span> 01805 002688</a>' +
+            '</div>'
+        );
+    });
+
     /* Slick Menu JS */
     $('#menu').slicknav({
         label : '',

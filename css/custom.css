@@ -16538,6 +16538,88 @@ header.main-header .header-sticky.active{
         transform: none;
     }
 }
+.mobile-header-contacts{
+    display: none;
+}
+
+@media only screen and (max-width: 991px){
+    .navbar > .container-fluid{
+        gap: 10px;
+    }
+
+    .navbar .navbar-brand{
+        flex: 0 1 auto;
+        min-width: 0;
+        margin-right: auto;
+    }
+
+    .navbar .navbar-brand img{
+        width: clamp(90px, 30vw, 160px);
+        max-width: 100%;
+        transform: none;
+    }
+
+    .navbar .mobile-header-contacts{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        gap: 0;
+        padding: 3px 8px;
+        border: 1px solid rgba(197, 91, 54, 0.14);
+        border-radius: 10px;
+        background: #fff8f4;
+    }
+
+    .mobile-header-contacts a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        padding: 7px 0;
+        color: var(--primary-color);
+        font-size: clamp(10px, 2.7vw, 12px);
+        font-weight: 600;
+        line-height: 1.35;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+    }
+
+    .mobile-header-contacts a + a{
+        border-top: 1px solid rgba(197, 91, 54, 0.12);
+    }
+
+    .mobile-header-contacts a span{
+        color: var(--accent-color);
+        font-size: 9px;
+        font-weight: 500;
+    }
+
+    .mobile-header-contacts a:focus-visible{
+        outline: 2px solid var(--accent-color);
+        outline-offset: 2px;
+    }
+
+    .navbar .navbar-toggle{
+        flex: 0 0 38px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    .navbar > .container-fluid{
+        gap: 6px;
+    }
+
+    .navbar .mobile-header-contacts{
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+
+    .mobile-header-contacts a{
+        gap: 4px;
+    }
+}
+
 .floating-whatsapp-btn{
 	position: fixed;
 	right: max(28px, env(safe-area-inset-right));
