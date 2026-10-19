@@ -1,3 +1,30 @@
+/* Shared WhatsApp button for every page using this script. */
+(function () {
+    function mountWhatsAppButton() {
+        document.querySelectorAll('.mobile-whatsapp-btn').forEach(function (button) {
+            button.remove();
+        });
+
+        if (document.querySelector('.floating-whatsapp-btn')) return;
+
+        var button = document.createElement('a');
+        button.className = 'floating-whatsapp-btn';
+        button.href = 'https://wa.me/8801805002681';
+        button.target = '_blank';
+        button.rel = 'noopener noreferrer';
+        button.setAttribute('aria-label', 'Chat with HairTreat on WhatsApp');
+        button.title = 'Chat on WhatsApp';
+        button.innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i>';
+        document.body.appendChild(button);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', mountWhatsAppButton, { once: true });
+    } else {
+        mountWhatsAppButton();
+    }
+})();
+
 /* Keep live and local canonical URLs consistent without relying on Cloudflare. */
 (function () {
     var path = window.location.pathname;
