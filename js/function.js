@@ -184,6 +184,18 @@
         });
     }
 
+    /* Keep the pricing item first in the About submenu without changing its URL. */
+    $('.about-menu > ul').each(function () {
+        var menu = $(this);
+        var priceLink = menu.find('a').filter(function () {
+            return /(?:^|\/)hair-transplant-cost\/?$/.test($(this).attr('href') || '');
+        }).first();
+        if (priceLink.length) {
+            priceLink.text('Price & Packages');
+            menu.prepend(priceLink.closest('li'));
+        }
+    });
+
     /* Compact contact numbers beside the mobile menu on every page. */
     $('.navbar-toggle').each(function () {
         if ($(this).siblings('.mobile-header-contacts').length) return;
