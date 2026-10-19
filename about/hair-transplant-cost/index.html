@@ -171,15 +171,22 @@
     <style>
         .call-for-appointment-section .appointment-banner-title { text-transform: none; }
         .home-consultation-summary { color: #fff; line-height: 1.6; margin-bottom: 20px; }
-        .home-consultation-locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-        .home-consultation-locations p { margin: 0; padding: 16px; border: 1px solid rgba(255,255,255,.25); border-radius: 12px; color: #fff; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
-        .home-consultation-locations a, .home-consultation-call { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
-        .home-consultation-locations a[href^="tel:"] { display: inline; padding: 0; position: relative; z-index: 2; pointer-events: auto; cursor: pointer; }
+        .home-consultation-locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
+        .home-consultation-location-card { display: flex; flex-direction: column; align-items: flex-start; padding: 38px; border: 1px solid #ead8d0; border-radius: 28px; background: #fcf7f4; }
+        .home-consultation-location-icon { width: 64px; height: 64px; border-radius: 18px; background: #57210d; display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
+        .home-consultation-location-card:last-child .home-consultation-location-icon { background: #d35f32; }
+        .home-consultation-location-icon img { width: 28px; height: 28px; filter: brightness(0) invert(1); }
+        .home-consultation-location-card > strong { display: block; margin-bottom: 18px; }
+        .home-consultation-location-card p { margin: 0 0 25px; font-size: 17px; line-height: 1.7; color: #666; overflow-wrap: anywhere; }
+        .home-consultation-location-card .btn-default { margin-top: auto; }
+        .home-consultation-call { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+        @media (max-width: 575px) { .home-consultation-location-card { padding: 26px; } }
         .home-consultation-actions { display: flex; flex-direction: column; align-items: stretch; gap: 14px; width: 100%; max-width: 300px; margin-left: auto; }
         .home-consultation-actions .btn-appointment-red { width: 100%; max-width: 100%; line-height: 1.4; text-align: center; }
         .home-consultation-actions .home-consultation-call { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.7); border-radius: 50px; color: #fff; background: rgba(255,255,255,.08); font-size: 14px; font-weight: 600; line-height: 1.5; text-align: center; text-decoration: none; }
         .home-consultation-actions .home-consultation-call:hover { background: rgba(255,255,255,.18); }
-        .home-consultation-call:hover, .home-consultation-locations a:hover { color: #fff; }
+        .home-consultation-call:hover { color: #fff; }
+
         @media (max-width: 991px) {
             .home-consultation-locations { grid-template-columns: 1fr; }
             .home-consultation-actions { align-items: stretch; margin-right: auto; }
@@ -811,10 +818,7 @@
                         <div class="appointment-banner-info">
                             <h3 class="appointment-banner-title">Book a free hair transplant consultation</h3>
                             <p class="home-consultation-summary">Get a graft estimate and package recommendation based on your own scalp. Visit us in Dhaka or Tangail, or call to book.</p>
-                            <div class="home-consultation-locations">
-                                <p><strong>Dhaka (Uttara):</strong> HairTreat, Lift 4, House 1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka 1230. Phone: <a href="tel:+8801805002681">(+88) 01805 002681</a></p>
-                                <p><strong>Tangail:</strong> Talukder Clinic and Nursing Home, Puraton Bus Stand, Tangail Sadar. Phone: <a href="tel:+8801805002688">(+88) 01805 002688</a></p>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 text-lg-end text-md-end">
@@ -824,6 +828,20 @@
                             <a href="https://wa.me/8801805002681" class="home-consultation-call" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call (+88) 01805 002681</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="home-consultation-locations">
+                <div class="home-consultation-location-card">
+                    <div class="home-consultation-location-icon"><img src="images/icon-location.svg" alt="" aria-hidden="true"></div>
+                    <strong>Dhaka (Uttara):</strong>
+                    <p>HairTreat, Lift 4, House 1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka 1230.</p>
+                    <a href="tel:+8801805002681" class="btn-default">Phone: (+88) 01805 002681</a>
+                </div>
+                <div class="home-consultation-location-card">
+                    <div class="home-consultation-location-icon"><img src="images/icon-location.svg" alt="" aria-hidden="true"></div>
+                    <strong>Tangail:</strong>
+                    <p>Talukder Clinic and Nursing Home, Puraton Bus Stand, Tangail Sadar.</p>
+                    <a href="tel:+8801805002688" class="btn-default">Phone: (+88) 01805 002688</a>
                 </div>
             </div>
         </div>
