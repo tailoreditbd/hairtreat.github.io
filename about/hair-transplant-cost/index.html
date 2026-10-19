@@ -168,6 +168,22 @@
         .pricing-why-choose .what-we-image-2 { margin: 0 auto; }
       }
     </style>
+    <style>
+        .call-for-appointment-section .appointment-banner-title { text-transform: none; }
+        .home-consultation-summary { color: #fff; line-height: 1.6; margin-bottom: 20px; }
+        .home-consultation-locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+        .home-consultation-locations p { margin: 0; padding: 16px; border: 1px solid rgba(255,255,255,.25); border-radius: 12px; color: #fff; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
+        .home-consultation-locations a, .home-consultation-call { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+        .home-consultation-actions { display: flex; flex-direction: column; align-items: stretch; gap: 14px; width: 100%; max-width: 300px; margin-left: auto; }
+        .home-consultation-actions .btn-appointment-red { width: 100%; max-width: 100%; line-height: 1.4; text-align: center; }
+        .home-consultation-actions .home-consultation-call { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.7); border-radius: 50px; color: #fff; background: rgba(255,255,255,.08); font-size: 14px; font-weight: 600; line-height: 1.5; text-align: center; text-decoration: none; }
+        .home-consultation-actions .home-consultation-call:hover { background: rgba(255,255,255,.18); }
+        .home-consultation-call:hover, .home-consultation-locations a:hover { color: #fff; }
+        @media (max-width: 991px) {
+            .home-consultation-locations { grid-template-columns: 1fr; }
+            .home-consultation-actions { align-items: stretch; margin-right: auto; }
+        }
+    </style>
 </head>
 
 <body>
@@ -777,6 +793,42 @@
     </div>
   </div>
 
+  <!-- Call for Appointment Section Start -->
+    <div class="call-for-appointment-section">
+        <div class="container">
+            <div class="appointment-banner-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <!-- Left side: empty image placeholder area -->
+                        <div class="appointment-banner-image-placeholder">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <img src="images/appintment-section.png" alt="Call for Appointment">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <!-- Middle content -->
+                        <div class="appointment-banner-info">
+                            <h3 class="appointment-banner-title">Book a free hair transplant consultation</h3>
+                            <p class="home-consultation-summary">Get a graft estimate and package recommendation based on your own scalp. Visit us in Dhaka or Tangail, or call to book.</p>
+                            <div class="home-consultation-locations">
+                                <p><strong>Dhaka (Uttara):</strong> HairTreat, Lift 4, House 1/B, Garib E Newaz Avenue, Sector 11, Uttara, Dhaka 1230. Phone: <a href="tel:+8801805002681">(+88) 01805 002681</a></p>
+                                <p><strong>Tangail:</strong> Talukder Clinic and Nursing Home, Puraton Bus Stand, Tangail Sadar. Phone: <a href="tel:+8801805002688">(+88) 01805 002688</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 text-lg-end text-md-end">
+                        <!-- Right side: red button -->
+                        <div class="home-consultation-actions">
+                            <a href="book-appointment" class="btn-appointment-red">Book Free Appointment</a>
+                            <a href="https://wa.me/8801805002681" class="home-consultation-call" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call (+88) 01805 002681</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call for Appointment Section End -->
+
   <div class="our-faqs uttara-faq-section">
     <div class="container">
       <div class="row align-items-center">
@@ -877,6 +929,8 @@
     </div>
   </div>
   <!-- Our Faqs Section End -->
+
+
   <!-- Footer Main Start -->
   <footer class="main-footer bg-section dark-section">
     <div class="container">
