@@ -16462,15 +16462,17 @@ header.main-header .header-sticky.active{
     }
 
     .header-contact-location{
-        display: flex;
+        display: grid;
+        grid-template-columns: 5.7ch 15px auto;
         align-items: center;
-        gap: 0;
+        column-gap: 1px;
         padding: 3px 5px;
         border-bottom: 1px solid rgba(92, 38, 15, 0.45);
         border-radius: 3px;
         font-size: 15px;
         font-weight: 700;
         line-height: 1.25;
+        font-variant-numeric: tabular-nums;
         transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
     }
 
@@ -16487,13 +16489,15 @@ header.main-header .header-sticky.active{
 
     .header-contact-location > span{
         min-width: 0;
-        margin-right: 4px;
+        margin-right: 0;
+        text-align: left;
     }
 
     .header-contact-location > i{
         color: var(--accent-color);
         font-size: 15px;
-        margin-right: 5px;
+        margin-right: 0;
+        text-align: center;
     }
 
     .header-contact-location > a{
@@ -16518,7 +16522,6 @@ header.main-header .header-sticky.active{
 
 @media only screen and (min-width: 992px) and (max-width: 1300px){
     .header-contact-location{
-        gap: 0;
         padding: 4px 3px;
         font-size: 13px;
     }
@@ -16571,10 +16574,10 @@ header.main-header .header-sticky.active{
     }
 
     .mobile-header-contacts a{
-        display: flex;
+        display: grid;
+        grid-template-columns: 30px auto;
         align-items: center;
-        justify-content: space-between;
-        gap: 6px;
+        gap: 1px;
         padding: 7px 0;
         color: var(--primary-color);
         font-size: clamp(10px, 2.7vw, 12px);
