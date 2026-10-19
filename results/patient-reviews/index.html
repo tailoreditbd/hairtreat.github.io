@@ -80,6 +80,38 @@
     <!-- Main Custom Css -->
     <link href="css/custom.css?v=nav-number-align-20261019" rel="stylesheet" media="screen">
     <style>
+        .patient-video-popup .mfp-container {
+            padding: 48px 16px 24px;
+        }
+        .patient-video-popup .mfp-close,
+        .patient-video-popup .mfp-close:active {
+            position: absolute;
+            top: -36px;
+            right: 0;
+            width: auto;
+            min-width: 58px;
+            height: 30px;
+            padding: 0 10px;
+            border-radius: 5px;
+            background: #fff;
+            color: #222;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            opacity: 1;
+            cursor: pointer;
+        }
+        .patient-video-popup .mfp-close:focus-visible {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+        @media (orientation: landscape) and (max-height: 600px) {
+            .patient-video-popup .mfp-content {
+                max-width: calc(177.78vh - 196px);
+            }
+        }
         .page-testimonials {
             padding-bottom: 10px;
         }
@@ -805,10 +837,18 @@
             a11y: { enabled: true },
             breakpoints: { 768: { slidesPerView: 2 }, 1200: { slidesPerView: 3 } }
         });
-        jQuery('.patient-video-card').on('mfpOpen', function () {
-            patientVideoSlider.autoplay.stop();
-        }).on('mfpClose', function () {
-            patientVideoSlider.autoplay.start();
+        jQuery('.patient-video-card').magnificPopup({
+            type: 'iframe',
+            mainClass: 'mfp-fade patient-video-popup',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: true,
+            closeBtnInside: true,
+            closeMarkup: '<button title="Close video" aria-label="Close video" type="button" class="mfp-close">Close</button>',
+            callbacks: {
+                open: function () { patientVideoSlider.autoplay.stop(); },
+                close: function () { patientVideoSlider.autoplay.start(); }
+            }
         });
     </script>
 </body>
