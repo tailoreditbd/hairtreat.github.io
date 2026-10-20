@@ -16702,3 +16702,14 @@ header.main-header .header-sticky.active{
         height: 50px;
     }
 }
+
+/* Center clinic phone rows on phones. */
+@media only screen and (max-width: 767px){
+    .mobile-header-contacts a[href^="tel:"]{
+        justify-content: center;
+        text-align: center;
+    }
+    .mobile-header-contacts a[href^="tel:"] span{
+        text-align: center;
+    }
+}
