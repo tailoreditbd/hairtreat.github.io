@@ -3993,10 +3993,6 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 	height: 225px !important;
 	padding: 0 !important;
-	max-width: 100% !important;
-	margin: 0 !important;
-	border-radius: 0 !important;
-	width: 100% !important;
 }
 
 .page-header.page-header-blog-image .page-header-box{
