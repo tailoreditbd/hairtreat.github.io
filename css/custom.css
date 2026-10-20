@@ -16741,3 +16741,17 @@ header.main-header .header-sticky.active{
         max-width: 160px;
     }
 }
+
+/* Compact primary treatment dropdowns. */
+@media only screen and (min-width: 992px){
+    .main-menu ul li.treatments-menu > ul,
+    .main-menu ul li.transplant-menu > ul {
+        width: 235px;
+        min-width: 235px;
+        max-width: 235px;
+    }
+    .main-menu ul li.treatments-menu > ul > li > a,
+    .main-menu ul li.transplant-menu > ul > li > a {
+        padding: 9px 12px !important;
+    }
+}
