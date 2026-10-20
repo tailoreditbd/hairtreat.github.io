@@ -218,16 +218,34 @@
 
 .fue-content-section p{margin-bottom:20px}.fue-content-section .about-experience-list{margin:20px 0}.fue-procedure-table th,.fue-procedure-table td{padding:18px 24px!important;text-align:left!important;vertical-align:top;line-height:1.6;white-space:normal}.fue-procedure-table p,.recovery-timeline-table p,.comparison-table p{margin:0}.home-clinic-focus-section ul{line-height:1.7;padding-left:24px}.home-clinic-focus-section li{margin-bottom:12px}
 
-        .fue-process-section { padding: 64px 0; }
-        .fue-process-section .section-title { text-align: center; max-width: 850px; margin: 0 auto 36px; }
-        .fue-process-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; list-style: none; padding: 0; margin: 0; }
-        .fue-step-card { position: relative; background: #fff; border: 1px solid #efded5; border-radius: 24px; padding: 28px; box-shadow: 0 8px 24px rgba(72,30,11,.035); }
-        .fue-step-number { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; background: #fff1e9; color: var(--accent-color); border-radius: 14px; font-size: 18px; font-weight: 600; margin-bottom: 22px; }
-        .fue-process-section .fue-step-card .fue-step-title { font-family: var(--default-font); font-size: 16px; line-height: 1.6; color: var(--primary-color); margin: 0 0 14px; }
-        .fue-step-card p { font-size: 15px; line-height: 1.8; margin: 0; }
-        .fue-process-action { margin-top: 36px; }
-        @media (max-width: 991px) { .fue-process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; } }
-        @media (max-width: 575px) { .fue-process-section { padding: 40px 0; } .fue-process-grid { grid-template-columns: 1fr; gap: 16px; } .fue-step-card { padding: 24px; border-radius: 20px; } .fue-step-number { margin-bottom: 16px; } }
+
+        .fue-treatment-process .service-content-title .fue-treatment-step-title {
+            width: calc(100% - 70px);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .fue-treatment-process .service-content-title {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .fue-treatment-process .service-content-title .fue-treatment-step-title {
+            flex: 1 1 0;
+            width: auto;
+            min-width: 0;
+            margin: 0;
+        }
+        .fue-treatment-process .service-content-title .readmore-btn {
+            flex: 0 0 50px;
+            width: 50px;
+            height: 50px;
+            margin: 0;
+        }
     </style>
     <!-- Meta Pixel Code -->
     <script>
@@ -511,45 +529,115 @@
     </div>
     <!-- Section 2 End -->
 
-<section class="fue-process-section bg-section" aria-labelledby="fue-process-title">
+<section class="our-services bg-section fue-treatment-process" aria-labelledby="fue-process-title" style="padding:60px 0;">
         <div class="container">
-            <div class="section-title section-title-center">
-                <h2 id="fue-process-title" style="font-size:32px;">How the FUE procedure works at HairTreat</h2>
-                <p>Every plan starts with a conversation, not a package. Here is the path most patients follow.</p>
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <div class="section-title section-title-center" style="text-align:center;">
+                        <h2 id="fue-process-title" style="font-size:32px;">How the FUE procedure works at HairTreat</h2>
+                        <p>Every plan starts with a conversation, not a package. Here is the path most patients follow.</p>
+                    </div>
+                </div>
             </div>
-            <ol class="fue-process-grid">
-                <li class="fue-step-card">
-                    <span class="fue-step-number" aria-hidden="true">01</span>
-                    <p class="fue-step-title"><strong>Consultation and scalp analysis.</strong></p>
-                    <p>The doctor reviews your hair-loss pattern, family history, medical background, donor density, and goals. You also learn whether FUE is the right match or whether another method suits you better.</p>
-                </li>
-                <li class="fue-step-card">
-                    <span class="fue-step-number" aria-hidden="true">02</span>
-                    <p class="fue-step-title"><strong>Design and graft estimate.</strong></p>
-                    <p>Your hairline is drawn with you, keeping your age, face shape, and future hair loss in mind. A realistic graft range is estimated for the areas you want covered.</p>
-                </li>
-                <li class="fue-step-card">
-                    <span class="fue-step-number" aria-hidden="true">03</span>
-                    <p class="fue-step-title"><strong>Donor hair extraction.</strong></p>
-                    <p>After local anesthesia, grafts are collected one at a time from the donor zone and kept in a protective solution.</p>
-                </li>
-                <li class="fue-step-card">
-                    <span class="fue-step-number" aria-hidden="true">04</span>
-                    <p class="fue-step-title"><strong>Recipient site creation.</strong></p>
-                    <p>Small incisions are opened at a planned angle, depth, and direction so the new hair grows the way natural hair does.</p>
-                </li>
-                <li class="fue-step-card">
-                    <span class="fue-step-number" aria-hidden="true">05</span>
-                    <p class="fue-step-title"><strong>Graft placement.</strong></p>
-                    <p>Grafts are implanted carefully, with single-hair grafts used at the front edge for softness and thicker multi-hair grafts behind for density.</p>
-                </li>
-                <li class="fue-step-card">
-                    <span class="fue-step-number" aria-hidden="true">06</span>
-                    <p class="fue-step-title"><strong>Aftercare briefing.</strong></p>
-                    <p>Before you go home, you receive clear written and verbal instructions for washing, sleeping, medicines, and follow-up visits.</p>
-                </li>
-            </ol>
-            <div class="text-center fue-process-action">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <p class="fue-treatment-step-title"><strong>Consultation and scalp analysis.</strong></p>
+                                <button type="button" class="readmore-btn" aria-label="Consultation and scalp analysis." style="border:0;padding:0;cursor:pointer;"><img src="images/arrow-white.svg" alt=""></button>
+                            </div>
+                            <p>The doctor reviews your hair-loss pattern, family history, medical background, donor density, and goals. You also learn whether FUE is the right match or whether another method suits you better.</p>
+                        </div>
+                        <div class="service-image">
+                            <div class="service-image-frame">
+                                <figure class="image-anime"><img src="images/choose-us-section-2.png" alt="Consultation and scalp analysis." loading="lazy"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <p class="fue-treatment-step-title"><strong>Design and graft estimate.</strong></p>
+                                <button type="button" class="readmore-btn" aria-label="Design and graft estimate." style="border:0;padding:0;cursor:pointer;"><img src="images/arrow-white.svg" alt=""></button>
+                            </div>
+                            <p>Your hairline is drawn with you, keeping your age, face shape, and future hair loss in mind. A realistic graft range is estimated for the areas you want covered.</p>
+                        </div>
+                        <div class="service-image">
+                            <div class="service-image-frame">
+                                <figure class="image-anime"><img src="images/hair-line-correction.jpg.jpeg" alt="Design and graft estimate." loading="lazy"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <p class="fue-treatment-step-title"><strong>Donor hair extraction.</strong></p>
+                                <button type="button" class="readmore-btn" aria-label="Donor hair extraction." style="border:0;padding:0;cursor:pointer;"><img src="images/arrow-white.svg" alt=""></button>
+                            </div>
+                            <p>After local anesthesia, grafts are collected one at a time from the donor zone and kept in a protective solution.</p>
+                        </div>
+                        <div class="service-image">
+                            <div class="service-image-frame">
+                                <figure class="image-anime"><img src="images/FUE.jpg.jpeg" alt="Donor hair extraction." loading="lazy"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <p class="fue-treatment-step-title"><strong>Recipient site creation.</strong></p>
+                                <button type="button" class="readmore-btn" aria-label="Recipient site creation." style="border:0;padding:0;cursor:pointer;"><img src="images/arrow-white.svg" alt=""></button>
+                            </div>
+                            <p>Small incisions are opened at a planned angle, depth, and direction so the new hair grows the way natural hair does.</p>
+                        </div>
+                        <div class="service-image">
+                            <div class="service-image-frame">
+                                <figure class="image-anime"><img src="images/best-sapphire-fue-hair-transplant.png" alt="Recipient site creation." loading="lazy"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <p class="fue-treatment-step-title"><strong>Graft placement.</strong></p>
+                                <button type="button" class="readmore-btn" aria-label="Graft placement." style="border:0;padding:0;cursor:pointer;"><img src="images/arrow-white.svg" alt=""></button>
+                            </div>
+                            <p>Grafts are implanted carefully, with single-hair grafts used at the front edge for softness and thicker multi-hair grafts behind for density.</p>
+                        </div>
+                        <div class="service-image">
+                            <div class="service-image-frame">
+                                <figure class="image-anime"><img src="images/best-sapphire-fue-hair-transplant-2.png" alt="Graft placement." loading="lazy"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="service-content">
+                            <div class="service-content-title">
+                                <p class="fue-treatment-step-title"><strong>Aftercare briefing.</strong></p>
+                                <button type="button" class="readmore-btn" aria-label="Aftercare briefing." style="border:0;padding:0;cursor:pointer;"><img src="images/arrow-white.svg" alt=""></button>
+                            </div>
+                            <p>Before you go home, you receive clear written and verbal instructions for washing, sleeping, medicines, and follow-up visits.</p>
+                        </div>
+                        <div class="service-image">
+                            <div class="service-image-frame">
+                                <figure class="image-anime"><img src="images/choose-hair-treat-section-1.png" alt="Aftercare briefing." loading="lazy"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top:25px;">
                 <a href="https://hairtreat.com.bd/book-appointment" class="btn-default">Make an Appointment</a>
             </div>
         </div>
