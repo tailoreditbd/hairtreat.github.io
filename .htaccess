@@ -62,6 +62,8 @@ RewriteRule ^(.+?)/?$ $1.html [L]
   RewriteRule ^hair-treatments/(?:hair-transplant/)?(hair-prp|gfc-prp)(?:\.html|/index\.html|/)?$ other-treatments/$1 [NC,R=301,L]
   RewriteRule ^hair-treatments/(?:hair-transplant/)?sapphire-hair-transplant(?:\.html|/index\.html|/)?$ hair-transplant/method/sapphire [NC,R=301,L]
 
+  RewriteRule ^hair-transplant/method/turkish-fue$ hair-transplant/method/turkish-fue/index.html [NC,L]
+
   # Serve the flattened Hair Transplant project folder.
   RewriteRule ^hair-transplant$ hair-transplant/index.html [NC,L]
   RewriteRule ^hair-transplant/method$ hair-transplant/method/index.html [NC,L]

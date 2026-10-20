@@ -119,6 +119,15 @@
         }
     });
 
+    $('.method-menu > ul').each(function () {
+        var menu = $(this);
+        if (!menu.find('a[href="hair-transplant/method/turkish-fue"]').length) {
+            menu.find('a[href="hair-transplant/method/fue"]').closest('li').after(
+                '<li class="nav-item"><a class="nav-link" href="hair-transplant/method/turkish-fue">Turkish FUE</a></li>'
+            );
+        }
+    });
+
     $('.footer-links.quick-links ul').html(
         '<li><a href="./">Home</a></li>' +
         '<li><a href="hair-transplant">Hair Transplant</a></li>' +
