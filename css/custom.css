@@ -16713,3 +16713,31 @@ header.main-header .header-sticky.active{
         text-align: center;
     }
 }
+
+/* Match every desktop dropdown to the Hair Transplant menu width. */
+@media only screen and (min-width: 992px){
+    .main-menu ul li.submenu > ul {
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+
+/* Compact dropdowns near the header phone numbers. */
+@media only screen and (min-width: 992px){
+    .main-menu ul li.about-menu > ul {
+        width: 240px;
+        min-width: 240px;
+        max-width: 240px;
+    }
+    .main-menu ul li.results-menu > ul {
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
+    }
+    .main-menu ul li.laser-hair-removal-menu > ul {
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px;
+    }
+}
