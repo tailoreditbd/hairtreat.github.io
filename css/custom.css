@@ -683,6 +683,11 @@ body{
 	line-height: 1.3em;
 }
 
+.awards-achievement-page .our-achievements .section-title h1.achievements-section-title{
+	font-size: 34px !important;
+	line-height: 1.3em;
+}
+
 .awards-achievement-page .our-achievements{
 	padding-top: 60px;
 }
