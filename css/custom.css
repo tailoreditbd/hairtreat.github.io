@@ -15601,6 +15601,38 @@ header.main-header .header-sticky.active{
 	padding: 30px 0 20px;
 }
 
+/* Match homepage blog image cards to the Our Treatments image frames. */
+.home-page .our-blog-posts .post-item{
+	padding: 40px;
+}
+
+.home-page .our-blog-posts .post-featured-image a{
+	border-radius: 30px;
+}
+
+.home-page .our-blog-posts .post-featured-image figure,
+.home-page .our-blog-posts .post-featured-image img{
+	width: 100%;
+	height: 190px;
+}
+
+.home-page .our-blog-posts .post-featured-image img{
+	aspect-ratio: auto;
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 991px){
+	.home-page .our-blog-posts .post-item{
+		padding: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.home-page .our-blog-posts .post-item{
+		padding: 20px;
+	}
+}
+
 .home-page .home-about-section,
 .home-page .our-services,
 .home-page .why-choose-hairtreat-section,
