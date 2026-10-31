@@ -48,12 +48,12 @@
 
     /* Shared HairTreat Header and Footer Content */
     $('.navbar-brand img').attr({
-        src: 'images/hairtreat-logo.png',
+        src: 'images/logo/hairtreat-header-logo.svg',
         alt: 'HairTreat'
     });
 
     $('.footer-logo img').attr({
-        src: 'images/hairtreat-logo.png',
+        src: 'images/logo/hairtreat-header-logo.svg',
         alt: 'HairTreat'
     });
 

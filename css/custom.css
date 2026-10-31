@@ -807,7 +807,7 @@ header.main-header .header-sticky.active{
 	width: 100%;
 	max-width: 178px;
 	height: auto;
-	transform: translateY(-12px);
+	transform: translate(12px, -12px);
 }
 
 .mobile-whatsapp-btn{
@@ -16592,7 +16592,7 @@ header.main-header .header-sticky.active{
     .navbar .navbar-brand img{
         width: 100%;
         max-width: 160px;
-        transform: none;
+        transform: translateX(12px);
     }
 
     .navbar .mobile-header-contacts{
