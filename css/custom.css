@@ -16789,3 +16789,21 @@ header.main-header .header-sticky.active{
         padding: 9px 12px !important;
     }
 }
+
+/* Shared black hover state for call-to-action buttons. */
+.btn-default:hover,
+.btn-default.btn-highlighted:hover,
+.btn-default:hover::before,
+.btn-default:hover::after,
+.btn-default.btn-highlighted:hover::after,
+.readmore-btn:hover,
+.mobile-header-contacts a.mobile-header-appointment:hover {
+    background-color: #0F1012 !important;
+    color: #fff !important;
+}
+.btn-default.btn-highlighted:hover::before {
+    background-image: url('../images/arrow-white.svg');
+}
+.readmore-btn:hover img {
+    filter: brightness(0) invert(1);
+}
