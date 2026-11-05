@@ -16797,6 +16797,9 @@ header.main-header .header-sticky.active{
 .btn-default:hover::after,
 .btn-default.btn-highlighted:hover::after,
 .readmore-btn:hover,
+.btn-appointment-red:hover,
+.btn-appointment-red:hover::before,
+.btn-appointment-red:hover::after,
 .mobile-header-contacts a.mobile-header-appointment:hover {
     background-color: #0F1012 !important;
     color: #fff !important;
