@@ -16591,8 +16591,9 @@ header.main-header .header-sticky.active{
 
     .navbar .navbar-brand img{
         width: 100%;
-        max-width: 160px;
-        transform: translateX(12px);
+        max-width: 130px;
+        min-width: 0;
+        transform: none;
     }
 
     .navbar .mobile-header-contacts{
