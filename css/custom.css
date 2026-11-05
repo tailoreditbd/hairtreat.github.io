@@ -48,7 +48,7 @@
 :root{
 	--primary-color				: #481E0B;
 	--secondary-color			: #FCF4F1;
-	--text-color				: #69615D;
+	--text-color				: #0F1012;
 	--accent-color				: #CD5F37;
 	--white-color				: #FFFFFF;
 	--divider-color				: #CD5F371A;
@@ -2561,7 +2561,7 @@ header.main-header .header-sticky.active{
 }
 
 .doctor-specialist-list li{
-	color: #555;
+	color: var(--text-color);
 	font-size: 16px;
 	line-height: 1.6;
 	margin-bottom: 12px;
@@ -2588,7 +2588,7 @@ header.main-header .header-sticky.active{
 }
 
 .banani-doctor-profile__content > p:not(.section-subtitle){
-	color: #555;
+	color: var(--text-color);
 	font-size: 16px;
 	line-height: 1.7;
 	margin-bottom: 24px;
@@ -12844,7 +12844,7 @@ header.main-header .header-sticky.active{
 .steps-process-table tbody td.step-details-text {
   font-size: 16px;
   font-weight: 400;
-  color: #555;
+  color: var(--text-color);
   line-height: 1.6;
 }
 .steps-process-table tbody tr:hover td.step-title-text,
@@ -12906,7 +12906,7 @@ header.main-header .header-sticky.active{
 .comparison-table tbody td {
   padding: 18px 25px;
   font-size: 15px;
-  color: #555;
+  color: var(--text-color);
   line-height: 1.6;
   text-align: left;
   border-right: 1px solid rgba(72, 30, 11, 0.12) !important;
