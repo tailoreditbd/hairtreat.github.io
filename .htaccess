@@ -382,7 +382,7 @@ RewriteRule ^about/awards-achievement$ about/awards-achievement/index.html [NC,L
   RewriteRule ^service-single$ service-single.html [NC,L]
   RewriteRule ^team-single$ team-single.html [NC,L]
   RewriteRule ^team$ team.html [NC,L]
-  RewriteRule ^other-treatments$ transplant.html [NC,L]
+  RewriteRule ^other-treatments$ other-treatments/index.html [NC,L]
   RewriteRule ^hair-treatments$ treatments.html [NC,L]
   RewriteRule ^uttara$ service-area/uttara [NC,R=301,L]
   RewriteRule ^video-gallery$ video-gallery.html [NC,L]
