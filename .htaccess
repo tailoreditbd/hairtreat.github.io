@@ -7,11 +7,14 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Doctor's Profile clean URL and legacy aliases.
-  RewriteRule ^doctor-profile(?:\.html)?/?$ doctors-profile [R=301,L]
-  RewriteCond %{THE_REQUEST} \s/+[^\s?]*doctors-profile\.html(?:[?\s]) [NC]
-  RewriteRule ^doctors-profile\.html$ doctors-profile [R=301,L]
-  RewriteRule ^doctors-profile$ doctors-profile.html [L]
+  # Doctor's Profile belongs under About. Keep legacy links redirected.
+  RewriteRule ^doctors?-profile(?:\.html|/index\.html|/)?$ about/doctors-profile [NC,R=301,L]
+  RewriteRule ^about/doctors-profile/$ about/doctors-profile [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/doctors-profile/index\.html(?:[?\s]) [NC]
+  RewriteRule ^about/doctors-profile/index\.html$ about/doctors-profile [NC,R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+[^\s?]*about/doctors-profile\.html(?:[?\s]) [NC]
+  RewriteRule ^about/doctors-profile\.html$ about/doctors-profile [NC,R=301,L]
+  RewriteRule ^about/doctors-profile$ about/doctors-profile/index.html [NC,L]
 
   # Preserve old article URLs after the Bangla slug change.
   RewriteRule ^(?:about/blog/|blog/)?best-hair-transplant-service-bangladesh(?:/index\.html|\.html|/)?$ blog/best-hair-transplant-service-bangla [NC,R=301,L]

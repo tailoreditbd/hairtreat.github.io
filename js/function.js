@@ -193,7 +193,7 @@
         });
     }
 
-    /* Keep the pricing item first in the About submenu without changing its URL. */
+    /* Keep Doctor's Profile first, followed by pricing, in the About submenu. */
     $('.about-menu > ul').each(function () {
         var menu = $(this);
         var priceLink = menu.find('a').filter(function () {
@@ -203,6 +203,8 @@
             priceLink.text('Price & Packages');
             menu.prepend(priceLink.closest('li'));
         }
+        var profileLink = menu.find('a[href="about/doctors-profile"]').first();
+        if (profileLink.length) menu.prepend(profileLink.closest('li'));
         var awardsLink = menu.find('a[href="about/awards-achievement"]').first();
         if (awardsLink.length && !menu.find('a[href="about/certifications"]').length) {
             awardsLink.closest('li').after('<li class="nav-item"><a class="nav-link" href="about/certifications">Certifications</a></li>');
