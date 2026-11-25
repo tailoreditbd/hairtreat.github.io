@@ -238,18 +238,40 @@
     if ($('.hero-slider-layout .swiper').length) {
         $('.hero-slider-layout .swiper').each(function() {
             const $this = $(this);
-            new Swiper(this, {
+            const heroSlider = new Swiper(this, {
                 slidesPerView : 1,
                 speed: 1000,
                 spaceBetween: 0,
                 loop: true,
                 autoplay: {
                     delay: 4000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
                 },
                 pagination: {
                     el: $this.find('.hero-pagination')[0] || '.hero-pagination',
                     clickable: true,
                 },
+            });
+
+            // Hold autoplay for the entire touch, including a stationary finger.
+            let touchHeld = false;
+            this.addEventListener('touchstart', function() {
+                touchHeld = true;
+                heroSlider.autoplay.stop();
+            }, { passive: true });
+
+            function resumeAfterTouch(event) {
+                if (!touchHeld || event.touches.length || heroSlider.destroyed) return;
+                touchHeld = false;
+                heroSlider.autoplay.start();
+            }
+
+            window.addEventListener('touchend', resumeAfterTouch, { passive: true });
+            window.addEventListener('touchcancel', resumeAfterTouch, { passive: true });
+            heroSlider.on('destroy', function() {
+                window.removeEventListener('touchend', resumeAfterTouch);
+                window.removeEventListener('touchcancel', resumeAfterTouch);
             });
         });
     }
