@@ -1195,7 +1195,7 @@ header.main-header .header-sticky.active{
 	background-size: cover;
 	transform: scale(1);
 	transform-origin: center center;
-	animation: homeBannerZoom 8s ease-out forwards;
+	animation: none;
 	z-index: 0;
 }
 
@@ -11453,6 +11453,11 @@ header.main-header .header-sticky.active{
 }
 
 @media (min-width: 768px){
+	/* Keep zoomed backgrounds inside their own slide. */
+	.hero.hero-home-banner .hero-slide{
+		overflow: hidden;
+	}
+
 	.hero.hero-home-banner{
 		height: clamp(620px, calc(100vh - 92px), 780px);
 		min-height: 0;
@@ -11482,7 +11487,7 @@ header.main-header .header-sticky.active{
 		background-position: center center;
 		transform: scale(1);
 		transform-origin: center center;
-		animation: homeBannerZoom 8s ease-out forwards;
+		animation: none;
 	}
 
 	.hero.hero-home-banner .swiper-slide-active .hero-slide::after{

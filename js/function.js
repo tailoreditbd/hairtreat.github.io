@@ -238,6 +238,7 @@
     if ($('.hero-slider-layout .swiper').length) {
         $('.hero-slider-layout .swiper').each(function() {
             const $this = $(this);
+
             const heroSlider = new Swiper(this, {
                 slidesPerView : 1,
                 speed: 1000,
