@@ -16843,3 +16843,11 @@ header.main-header .header-sticky.active{
 .readmore-btn:hover img {
     filter: brightness(0) invert(1);
 }
+
+/* Give every mobile hero image the same circular presentation. */
+@media (max-width: 767px){
+    .hero.hero-home-banner .hero-image .hairtreat-hero-banner{
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
