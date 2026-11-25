@@ -7,12 +7,6 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Doctor's Profile: preserve old links and serve one canonical URL.
-  RewriteRule ^doctor-profile(?:\.html)?/?$ doctors-profile [R=301,L]
-  RewriteCond %{THE_REQUEST} \s/+[^\s?]*doctors-profile\.html(?:[?\s]) [NC]
-  RewriteRule ^doctors-profile\.html$ doctors-profile [R=301,L]
-  RewriteRule ^doctors-profile$ doctors-profile.html [L]
-
   # Preserve old article URLs after the Bangla slug change.
   RewriteRule ^(?:about/blog/|blog/)?best-hair-transplant-service-bangladesh(?:/index\.html|\.html|/)?$ blog/best-hair-transplant-service-bangla [NC,R=301,L]
   RewriteRule ^best-hair-transplant-service-bangla(?:/index\.html|\.html|/)?$ blog/best-hair-transplant-service-bangla [NC,R=301,L]

@@ -16843,10 +16843,3 @@ header.main-header .header-sticky.active{
 .readmore-btn:hover img {
     filter: brightness(0) invert(1);
 }
-
-/* Match the compact desktop navigation seen at 80% browser zoom. */
-@media only screen and (min-width: 992px){
-    .main-header .navbar{
-        zoom: 0.8;
-    }
-}
