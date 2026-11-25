@@ -245,6 +245,8 @@
                 loop: true,
                 autoplay: {
                     delay: 4000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
                 },
                 pagination: {
                     el: $this.find('.hero-pagination')[0] || '.hero-pagination',
