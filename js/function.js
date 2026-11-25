@@ -255,24 +255,51 @@
                 },
             });
 
-            // Hold autoplay for the entire touch, including a stationary finger.
+            // Capture touch before Swiper handles the gesture, across the whole hero.
+            const touchTarget = this.closest('.hero-slider-layout');
+            const heldPointers = new Set();
             let touchHeld = false;
-            this.addEventListener('touchstart', function() {
+            let allowTouchMove = heroSlider.allowTouchMove;
+
+            function holdForTouch(event) {
+                if (event.pointerType && event.pointerType !== 'touch' && event.pointerType !== 'pen') return;
+                if (heroSlider.destroyed) return;
+                if (event.pointerId !== undefined) heldPointers.add(event.pointerId);
+                if (touchHeld) return;
                 touchHeld = true;
+                allowTouchMove = heroSlider.allowTouchMove;
+                heroSlider.allowTouchMove = false;
                 heroSlider.autoplay.stop();
-            }, { passive: true });
+
+                // Also freeze a slide that was already moving when touched.
+                if (heroSlider.animating) {
+                    const translate = heroSlider.getTranslate();
+                    heroSlider.setTransition(0);
+                    heroSlider.setTranslate(translate);
+                    heroSlider.transitionEnd();
+                }
+            }
 
             function resumeAfterTouch(event) {
-                if (!touchHeld || event.touches.length || heroSlider.destroyed) return;
+                if (event.pointerId !== undefined) heldPointers.delete(event.pointerId);
+                if (!touchHeld || heldPointers.size || (event.touches && event.touches.length) || heroSlider.destroyed) return;
                 touchHeld = false;
+                heroSlider.allowTouchMove = allowTouchMove;
+                heroSlider.slideTo(heroSlider.activeIndex, 300);
                 heroSlider.autoplay.start();
             }
 
-            window.addEventListener('touchend', resumeAfterTouch, { passive: true });
-            window.addEventListener('touchcancel', resumeAfterTouch, { passive: true });
+            const touchEvents = window.PointerEvent
+                ? ['pointerdown', 'pointerup', 'pointercancel']
+                : ['touchstart', 'touchend', 'touchcancel'];
+            const touchOptions = { passive: true, capture: true };
+            touchTarget.addEventListener(touchEvents[0], holdForTouch, touchOptions);
+            window.addEventListener(touchEvents[1], resumeAfterTouch, touchOptions);
+            window.addEventListener(touchEvents[2], resumeAfterTouch, touchOptions);
             heroSlider.on('destroy', function() {
-                window.removeEventListener('touchend', resumeAfterTouch);
-                window.removeEventListener('touchcancel', resumeAfterTouch);
+                touchTarget.removeEventListener(touchEvents[0], holdForTouch, true);
+                window.removeEventListener(touchEvents[1], resumeAfterTouch, true);
+                window.removeEventListener(touchEvents[2], resumeAfterTouch, true);
             });
         });
     }
